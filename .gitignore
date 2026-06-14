@@ -1,0 +1,6 @@
+nba.db
+*.db
+.env
+*.key
+__pycache__/
+*.pyc
