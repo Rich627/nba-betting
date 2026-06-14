@@ -43,6 +43,44 @@ GPT, Claude, Gemini, DeepSeek, Moonshot/Kimi, xAI Grok via OpenRouter. Each mode
 - **P4 automation:** crons + WhatsApp group.
 - Build/test on **2026 Finals now**; full value next season (**Oct 2026**).
 
+## 7b. Layered architecture (v2 — mirrors football-betting)
+Added 2026-06 to give NBA the same deep, decoupled layers football has. **ADDITIVE** — P0 tables/scripts untouched.
+
+```
+[1 data/]      nba_api → SQLite
+               • games / team_game_stats / odds (P0, unchanged)
+               • players + player_game_stats (~45 metrics) ← NEW player layer
+               • rest_days_* / is_b2b_* on games + team_game_stats ← NEW
+        ↓
+[2 features/]  rolling.py (player last-10 form) + zscore.py (same-position z-score)
+        ↓
+[3 analysis/]  4 INDEPENDENT modules, each analyze(game_id)→{score,confidence,reasoning_md}
+   ├─ player_ability        net same-position roster strength (minute-weighted)
+   ├─ lineup_pace_matchup   ORTG vs DRTG efficiency + pace style matchup
+   ├─ injuries_rest_b2b     FIRST-CLASS: rest/b2b + injuries (biggest NBA line mover)
+   └─ odds_value            model-implied vs market-implied prob (the edge layer)
+   → persisted to module_outputs table (independently backtestable)
+        ↓
+[4 models/ + engine/]  engine/consensus.py fuses module_outputs (+ optional OpenRouter
+                       LLM preds) → home_win_prob → engine/edge.py recommends bets.
+                       LLM prompt (models/predict.game_dict_from_db) NOW INCLUDES module outputs.
+        ↓
+[5 backtest/]  run.py replays final games, STRICT pre-game cutoff (before_date=game_date),
+               hit-rate / ROI / Brier per module AND per consensus.
+```
+
+**Schema:** `db/schema_v2.sql` (new tables), applied additively by `db/migrate.py`
+(also ALTERs rest/b2b columns onto existing tables — never drops). `data/db.py` is the
+shared connection helper all layers import.
+
+**Key principle (from football):** every module is decoupled — can be toggled / backtested
+alone to prove it has real edge before it earns consensus weight. injuries_rest_b2b is
+weighted highest (1.4) as the dominant NBA line mover.
+
+**Free-data guarantee:** the entire layered pipeline (data → features → analysis →
+module consensus → backtest) runs with NO API keys. OpenRouter (LLM blend) and
+the-odds-api (odds/edge) are optional enhancers; absence is handled gracefully.
+
 ## 8. Risks / notes
 - NBA lines are efficient — realistic edge is thin; set expectations, flat small stakes, no chasing ([[feedback_betting_advice_conservative]]).
 - the-odds-api free tier = 500 req/mo → cache odds, don't over-poll.

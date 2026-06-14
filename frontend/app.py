@@ -28,6 +28,18 @@ def models():
 def predictions():
     return q("SELECT game_id,model,market,pick,confidence FROM predictions ORDER BY created_at DESC LIMIT 100")
 
+@app.get("/api/modules")
+def modules():
+    """Analysis-module outputs (player_ability / lineup_pace_matchup / injuries_rest_b2b / odds_value)."""
+    return q("SELECT game_id,module,score,confidence,reasoning_md FROM module_outputs ORDER BY created_at DESC LIMIT 200")
+
+@app.get("/api/players")
+def players():
+    """Top recent player-game lines from the new player-level data layer."""
+    return q("""SELECT pl.name,p.team,p.position,p.game_date,p.pts,p.reb,p.ast,p.ts_pct,p.usg_pct,p.off_rating
+                FROM player_game_stats p JOIN players pl ON pl.player_id=p.player_id
+                ORDER BY p.game_date DESC, p.pts DESC LIMIT 100""")
+
 @app.get("/", response_class=HTMLResponse)
 def home():
     rows = games()
@@ -42,4 +54,4 @@ table{{border-collapse:collapse;width:100%;max-width:760px}}td,th{{padding:.4rem
 <h1>🏀 NBA Predictor <span class=muted>— games & model picks</span></h1>
 <p class=muted>Read-only. Model predictions + edge vs line appear here once odds/models are wired.</p>
 <table><tr><th>Date</th><th>Away</th><th></th><th>Home</th><th>Status</th></tr>{trs}</table>
-<p class=muted>API: /api/games · /api/models · /api/predictions</p></body></html>"""
+<p class=muted>API: /api/games · /api/models · /api/predictions · /api/modules · /api/players</p></body></html>"""

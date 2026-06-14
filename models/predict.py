@@ -24,16 +24,46 @@ OUTPUT_SCHEMA = ('{"winner":"<HOME_ABBR|AWAY_ABBR>","win_prob":0.0-1.0,'
                  '"confidence":"high|med|low","key_factors":["...","..."],"reasoning":"1-3 sentences"}')
 
 def build_prompt(game: dict) -> str:
-    """game: {home, away, home_stats, away_stats, injuries, recent_form, odds}"""
+    """game: {home, away, home_stats, away_stats, injuries, recent_form, odds, modules}"""
+    modules_md = game.get("modules_md", "")
+    module_block = f"\nQuantitative analysis modules (signed: + favors home, - favors away):\n{modules_md}\n" if modules_md else ""
     return (
         f"NBA game: {game['away']} (away) @ {game['home']} (home).\n"
         f"Home recent/stats: {game.get('home_stats','n/a')}\n"
         f"Away recent/stats: {game.get('away_stats','n/a')}\n"
         f"Injuries/load mgmt: {game.get('injuries','none reported')}\n"
         f"Recent form / rest / b2b: {game.get('recent_form','n/a')}\n"
-        f"Current market odds (for context, predict independently): {game.get('odds','n/a')}\n\n"
+        f"Current market odds (for context, predict independently): {game.get('odds','n/a')}\n"
+        f"{module_block}\n"
+        f"Base your judgement on the data above; do NOT invent numbers not given. "
         f"Predict the result. Respond with ONLY this JSON:\n{OUTPUT_SCHEMA}"
     )
+
+
+def game_dict_from_db(game_id, con=None):
+    """Assemble the model-input game dict from the DB, INCLUDING analysis-module outputs.
+    This is the wiring point: analysis/* -> module_outputs -> LLM prompt."""
+    import os as _os
+    import sys as _sys
+    _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+    from data.db import connect
+    con = con or connect()
+    g = con.execute("SELECT * FROM games WHERE game_id=?", (game_id,)).fetchone()
+    if not g:
+        return None
+    mods = con.execute(
+        "SELECT module,score,confidence,reasoning_md FROM module_outputs WHERE game_id=?", (game_id,)
+    ).fetchall()
+    modules_md = "\n".join(
+        f"  - {m['module']}: score={m['score']:+.2f} conf={m['confidence']:.2f} — {m['reasoning_md']}"
+        for m in mods
+    )
+    rest = (f"home rest {g['rest_days_home']}d (b2b={g['is_b2b_home']}), "
+            f"away rest {g['rest_days_away']}d (b2b={g['is_b2b_away']})")
+    return {
+        "home": g["home_team"], "away": g["away_team"],
+        "recent_form": rest, "modules_md": modules_md,
+    }
 
 def predict_one(slug: str, prompt: str, key: str, timeout=60) -> dict:
     body = json.dumps({"model": slug, "messages": [
