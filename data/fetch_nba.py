@@ -4,6 +4,9 @@ Usage: python3 data/fetch_nba.py --date 2026-06-13   |   --recent 7
 """
 import sqlite3, argparse, datetime, os, sys, time
 from nba_api.stats.endpoints import scoreboardv2
+from nba_api.stats.static import teams as _teams
+# offline team_id -> abbreviation map (no network), reliable vs sparse line_score
+TEAM_ABBR = {t["id"]: t["abbreviation"] for t in _teams.get_teams()}
 
 DB = os.path.join(os.path.dirname(__file__), "..", "nba.db")
 
@@ -29,6 +32,7 @@ def fetch_date(con, d):
         ls = line[line["GAME_ID"] == gid]
         home_id, away_id = g["HOME_TEAM_ID"], g["VISITOR_TEAM_ID"]
         def team_abbr(tid):
+            if tid in TEAM_ABBR: return TEAM_ABBR[tid]
             row = ls[ls["TEAM_ID"] == tid]
             return row["TEAM_ABBREVIATION"].iloc[0] if len(row) else str(tid)
         def team_pts(tid):
