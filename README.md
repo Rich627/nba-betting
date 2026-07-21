@@ -3,7 +3,10 @@ Multi-LLM (via OpenRouter) NBA game-prediction + edge-vs-line betting system wit
 **layered analysis architecture** (mirrors sibling `football-betting`). Public read-only
 dashboard. See `PLAN.md` for full architecture.
 
-Status: P0 data layer working (nba_api → SQLite). v2 layered architecture added (additive).
+Status: full pipeline verified working end-to-end (2026-07-22): data layer, player/analysis
+layers, 6-model OpenRouter consensus, edge engine, settlement, and dashboard all run cleanly.
+No live NBA games/odds right now (off-season) — re-verify once preseason/regular season odds
+go live on the-odds-api.
 
 ## Layers (all FREE-data; no key required to run them)
 ```
@@ -29,7 +32,15 @@ python3 data/fetch_players.py                      # player box+advanced + rest/
 python3 analysis/registry.py <game_id>             # run all 4 analysis modules
 python3 engine/consensus.py <game_id>              # fuse modules → home win prob
 python3 backtest/run.py                            # backtest modules + consensus
-python3 scripts/run_daily.py                       # full orchestrator (free part runs; gated steps explained)
+python3 scripts/run_daily.py                       # full orchestrator: free layers always run;
+                                                    # odds/models/edge/settle steps run automatically
+                                                    # once both keys are set (skip gracefully otherwise)
+```
+
+## Full pipeline (needs both keys)
+```bash
+python3 data/fetch_odds.py      # upcoming NBA odds (the-odds-api; empty result off-season = expected)
+python3 scripts/run_daily.py    # results -> players -> modules -> odds -> 6-LLM predict -> edge -> settle
 ```
 
 ## Smoke tests

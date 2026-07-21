@@ -55,11 +55,11 @@ if __name__ == "__main__":
     a = ap.parse_args()
     con = db()
     dates = []
+    today = datetime.date.today()
     if a.date: dates = [a.date]
     elif a.recent:
-        today = datetime.date(2026,6,14)
         dates = [(today - datetime.timedelta(days=i)).isoformat() for i in range(a.recent)]
-    else: dates = [datetime.date(2026,6,14).isoformat()]
+    else: dates = [today.isoformat()]
     total = 0
     for d in dates:
         try:

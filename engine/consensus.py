@@ -66,7 +66,8 @@ def consensus_for_game(game_id, con=None, llm_preds=None):
         source = "modules+LLM"
     else:
         home_prob = round(mod_prob, 3)
-        source = "modules-only (no OPENROUTER_API_KEY)"
+        reason = "no OPENROUTER_API_KEY" if not os.environ.get("OPENROUTER_API_KEY") else "no llm_preds passed in"
+        source = f"modules-only ({reason})"
 
     g = con.execute("SELECT home_team,away_team FROM games WHERE game_id=?", (game_id,)).fetchone()
     return {

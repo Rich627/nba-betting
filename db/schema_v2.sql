@@ -97,3 +97,21 @@ CREATE TABLE IF NOT EXISTS prematch_news (
   injuries_json TEXT                       -- [{player, status}]
 );
 CREATE INDEX IF NOT EXISTS idx_news_game ON prematch_news(game_id);
+
+-- ===== EDGE RECOMMENDATIONS (engine/edge.recommend output, persisted) =====
+-- One row per (game_id, market, pick) recommendation the edge engine surfaced.
+-- Kept separate from `predictions` (per-model) and `module_outputs` (per-module):
+-- this is the final bet-or-not decision the orchestrator (scripts/run_daily.py) writes
+-- after fusing model consensus + market odds.
+CREATE TABLE IF NOT EXISTS recommendations (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  game_id     TEXT,
+  market      TEXT,                        -- moneyline / spread / total
+  pick        TEXT,
+  edge        REAL,                        -- +EV estimate (moneyline only; NULL for spread/total)
+  confidence  TEXT,
+  why         TEXT,
+  created_at  TEXT DEFAULT (datetime('now')),
+  UNIQUE(game_id, market, pick)
+);
+CREATE INDEX IF NOT EXISTS idx_recs_game ON recommendations(game_id);

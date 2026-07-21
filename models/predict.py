@@ -6,14 +6,17 @@ Each model returns an OBJECTIVE prediction (not a bet) — the edge engine turns
 import os, json, urllib.request, urllib.error
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-# name -> OpenRouter slug (one key for all). Update slugs to current versions when wiring.
+# name -> OpenRouter slug (one key for all).
+# Verified live against OpenRouter's /api/v1/models catalog + a real JSON-emitting
+# test call on 2026-07-22. kimi-k2.7 and grok-4 were stale (400/404 "deprecated,
+# switch to grok-4.3") -> replaced with the slugs football-betting already verified.
 MODELS = {
     "GPT":      "openai/gpt-5.5",
     "Claude":   "anthropic/claude-opus-4.8",
     "Gemini":   "google/gemini-3.5-flash",
     "DeepSeek": "deepseek/deepseek-v4-pro",
-    "Kimi":     "moonshotai/kimi-k2.7",
-    "Grok":     "x-ai/grok-4",
+    "Kimi":     "moonshotai/kimi-k2-0905",
+    "Grok":     "x-ai/grok-4.3",
 }
 
 SYSTEM = ("You are an elite NBA analyst. Predict the game OBJECTIVELY from the data. "
@@ -87,6 +90,30 @@ def predict_all(game: dict, key: str = None) -> dict:
             out[name] = predict_one(slug, prompt, key)
         except Exception as e:
             out[name] = {"error": f"{type(e).__name__}: {str(e)[:120]}"}
+    return out
+
+
+def to_home_perspective(preds: dict, home_abbr: str) -> dict:
+    """Models predict from their own OUTPUT_SCHEMA (winner=HOME_ABBR|AWAY_ABBR, win_prob=
+    prob of THAT winner). engine.edge.weighted_consensus needs each model normalized to
+    home_win_prob. This is the missing wiring step between models/predict and engine/edge."""
+    out = {}
+    for name, p in preds.items():
+        if not isinstance(p, dict) or "error" in p:
+            out[name] = p
+            continue
+        try:
+            wp = float(p.get("win_prob", 0.5))
+            home_win_prob = wp if str(p.get("winner", "")).upper() == home_abbr.upper() else 1 - wp
+            out[name] = {
+                **p,
+                "home_win_prob": round(home_win_prob, 3),
+                "pred_home_score": p.get("pred_home_score"),
+                "pred_away_score": p.get("pred_away_score"),
+                "pred_total": p.get("pred_total"),
+            }
+        except (TypeError, ValueError):
+            out[name] = {"error": "malformed model output (couldn't normalize win_prob)"}
     return out
 
 if __name__ == "__main__":
