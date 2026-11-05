@@ -29,6 +29,7 @@ import argparse
 import datetime
 import os
 import sys
+import uuid
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -53,29 +54,32 @@ def utcnow():
 
 
 # ----------------------------------------------------------------------------- pending
-_PENDING_PATH = [None]
+_PENDING_PATHS = []
 
 
 def queue_message(section: str, msg: str, dry_run: bool):
-    """Append one message block to this run's pending file, flushed immediately (a run
-    killed by the cron timeout must not lose what it already produced — MLB lost two
-    days of alerts that way in 2026-08)."""
+    """Publish one complete, immutable pending file per section. Readers may consume
+    it immediately; later sections never append to a file the reader could delete."""
     print("\n" + "=" * 60 + f"\n[{section}]\n" + msg)
     if dry_run:
         return
     os.makedirs(PENDING_DIR, exist_ok=True)
-    if _PENDING_PATH[0] is None:
-        _PENDING_PATH[0] = os.path.join(PENDING_DIR, f"nba-sweep-{utcnow():%Y%m%dT%H%M%SZ}.md")
-        with open(_PENDING_PATH[0], "w") as f:
+    path = os.path.join(PENDING_DIR, f"nba-sweep-{utcnow():%Y%m%dT%H%M%SZ}-{uuid.uuid4().hex}.md")
+    tmp = path + ".tmp"
+    try:
+        with open(tmp, "x", encoding="utf-8") as f:
             f.write(f"---\nchat_id: {NBA_CHAT_ID}\ntask: nba-sweep\n---\n\n")
             f.write("NBA 系統（~/Desktop/nba-betting）自動產生的訊息。每個 ## 區塊各發成一則訊息到 NBA 群組，"
                     "原文照發（可微調語氣，數字、賠率、建議一律不得更動或自行補充）。\n")
+            f.write(f"\n## {section}\n\n{msg}\n")
             f.flush()
             os.fsync(f.fileno())
-    with open(_PENDING_PATH[0], "a") as f:
-        f.write(f"\n## {section}\n\n{msg}\n")
-        f.flush()
-        os.fsync(f.fileno())
+        os.replace(tmp, path)
+    finally:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+    _PENDING_PATHS.append(path)
+    return path
 
 
 # ----------------------------------------------------------------------------- helpers
@@ -203,7 +207,7 @@ def predict_game(con, g, weights, skip_models):
     con.commit()
     c = E.weighted_consensus(preds, weights=weights or None)
     if not c:
-        return head + f"\n模型無回應（{n_ok}/{len(preds)}）"
+        raise RuntimeError(f"no usable model predictions ({n_ok}/{len(preds)}); leaving game eligible for retry")
     fav = home if c["home_win_prob"] >= 0.5 else away
     fav_p = c["home_win_prob"] if fav == home else 1 - c["home_win_prob"]
     ph = round((c["pred_total"] + c["pred_margin"]) / 2)
@@ -228,6 +232,9 @@ def predict_game(con, g, weights, skip_models):
 
 
 def notification_pass(con, hours_ahead, skip_models, dry_run, limit=None):
+    if skip_models:
+        print(" [notify] models disabled; leaving games eligible for retry")
+        return
     now = utcnow()
     end = now + datetime.timedelta(hours=hours_ahead)
     cands = [g for g in con.execute(
@@ -352,8 +359,9 @@ def main():
     else:
         notification_pass(con, a.hours_ahead, skip_models=not ok_key, dry_run=a.dry_run, limit=a.limit)
 
-    if _PENDING_PATH[0]:
-        print(f"\n[pending] {_PENDING_PATH[0]}")
+    if _PENDING_PATHS:
+        for path in _PENDING_PATHS:
+            print(f"\n[pending] {path}")
     else:
         print("\n(nothing queued this run)")
 

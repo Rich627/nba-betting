@@ -114,13 +114,16 @@ def build(con):
     for r in hist_rows:
         series.setdefault(r["model"], {})[r["as_of_date"]] = r["pnl"]
     history = {"dates": dates, "series": {m: [vals.get(d) for d in dates] for m, vals in series.items()}}
-    recs_graded = [r for g in results for r in g["recs"] if r["result"] in ("WON", "LOST")]
+    recs_graded = con.execute(
+        "SELECT COUNT(*) AS bets, COALESCE(SUM(result='WON'),0) AS wins, COALESCE(SUM(pnl),0) AS pnl "
+        "FROM recommendations WHERE result IN ('WON','LOST') AND pnl IS NOT NULL"
+    ).fetchone()
     summary = {
         "n_predicted_games": con.execute("SELECT COUNT(DISTINCT game_id) FROM predictions WHERE market='moneyline'").fetchone()[0],
         "n_recs": con.execute("SELECT COUNT(*) FROM recommendations").fetchone()[0],
-        "recs_won": sum(1 for r in recs_graded if r["result"] == "WON"),
-        "recs_graded": len(recs_graded),
-        "recs_pnl": round(sum(r["pnl"] or 0 for r in recs_graded), 1),
+        "recs_won": recs_graded["wins"],
+        "recs_graded": recs_graded["bets"],
+        "recs_pnl": round(recs_graded["pnl"], 1),
     }
     return {
         "generated_at": now.astimezone(T.DISPLAY_TZ).isoformat(timespec="seconds"),

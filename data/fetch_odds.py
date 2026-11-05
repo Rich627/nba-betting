@@ -3,8 +3,9 @@
 Needs ODDS_API_KEY. One bulk call = (number of markets) credits, regardless of how
 many games it returns: h2h,spreads,totals = 3 credits.
 
-Every bookmaker's price is stored (odds PK = game_id/book/market/selection, upserted),
-and game_odds_dict() collapses them to the MEDIAN across books. Median, not max: the
+Every bookmaker's price is stored (odds PK = game_id/book/market/selection, upserted).
+game_odds_dict() chooses the most common quoted line and its lower median price,
+always an observed quote rather than an average of different lines/prices. Not max: the
 MLB sibling learned on 2026-07-25 that one bad book (betrivers quoting 8.5/1.04 on a
 ~1.9/1.9 game) turns "best price" into fake +591% edges.
 
@@ -22,7 +23,8 @@ import os
 import sys
 import urllib.error
 import urllib.request
-from statistics import median
+from collections import Counter
+from statistics import median, median_low
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from data.db import connect  # noqa: E402
@@ -123,7 +125,7 @@ def fetch_upcoming(con, regions="us", markets="h2h,spreads,totals", timeout=25):
 
 def game_odds_dict(con, game_id):
     """{ml_home, ml_away, spread_line (home line), spread_home_odds, spread_away_odds,
-        total_line, over_odds, under_odds, n_books, fetched_at} — MEDIAN across books.
+        total_line, over_odds, under_odds, n_books, fetched_at} — observed middle quotes.
     Empty dict when no odds are stored for the game."""
     g = con.execute("SELECT home_team,away_team FROM games WHERE game_id=?", (game_id,)).fetchone()
     if not g:
@@ -134,32 +136,42 @@ def game_odds_dict(con, game_id):
     ).fetchall()
     if not rows:
         return {}
-    prices, lines, books = {}, {}, set()
+    quotes, books = {}, set()
     latest = max(r["fetched_at"] or "" for r in rows)
     for r in rows:
         k = (r["market"], r["selection"])
-        if r["price"] is not None:
-            prices.setdefault(k, []).append(float(r["price"]))
-        if r["line"] is not None:
-            lines.setdefault(k, []).append(float(r["line"]))
-        books.add(r["book"])
+        if r["price"] is not None and r["price"] > 1:
+            quotes.setdefault(k, []).append(r)
+            books.add(r["book"])
 
-    def med(d, k):
-        v = d.get(k)
-        return round(median(v), 3) if v else None
+    def price(rows):
+        # With an even count, averaging the middle prices invents an unquoted price.
+        return median_low([r["price"] for r in rows]) if rows else None
+
+    def line_market(market, first, second, opposite=False):
+        a = [r for r in quotes.get((market, first), []) if r["line"] is not None]
+        b = [r for r in quotes.get((market, second), []) if r["line"] is not None]
+        counts = Counter(r["line"] for r in a)
+        candidates = set(counts) & {(-r["line"] if opposite else r["line"]) for r in b}
+        if not candidates:
+            return None
+        middle = median([r["line"] for r in a])
+        # Ties choose an observed line nearest the median, then the lower line.
+        line = min(candidates, key=lambda v: (-counts[v], abs(v - middle), v))
+        other_line = -line if opposite else line
+        return (line, price([r for r in a if r["line"] == line]),
+                price([r for r in b if r["line"] == other_line]))
 
     out = {"n_books": len(books), "fetched_at": latest}
-    if med(prices, ("h2h", home)):
-        out["ml_home"] = med(prices, ("h2h", home))
-        out["ml_away"] = med(prices, ("h2h", away))
-    if med(lines, ("spreads", home)) is not None:
-        out["spread_line"] = med(lines, ("spreads", home))
-        out["spread_home_odds"] = med(prices, ("spreads", home))
-        out["spread_away_odds"] = med(prices, ("spreads", away))
-    if med(lines, ("totals", "Over")) is not None:
-        out["total_line"] = med(lines, ("totals", "Over"))
-        out["over_odds"] = med(prices, ("totals", "Over"))
-        out["under_odds"] = med(prices, ("totals", "Under"))
+    ml_home, ml_away = price(quotes.get(("h2h", home), [])), price(quotes.get(("h2h", away), []))
+    if ml_home is not None and ml_away is not None:
+        out["ml_home"], out["ml_away"] = ml_home, ml_away
+    spread = line_market("spreads", home, away, opposite=True)
+    if spread:
+        out["spread_line"], out["spread_home_odds"], out["spread_away_odds"] = spread
+    total = line_market("totals", "Over", "Under")
+    if total:
+        out["total_line"], out["over_odds"], out["under_odds"] = total
     return out
 
 

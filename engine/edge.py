@@ -78,17 +78,20 @@ def recommend(consensus, odds, edge_threshold=EDGE_THRESHOLD, min_agreement=MIN_
             side = "home" if cover_home else "away"
             line = sl if cover_home else -sl
             d = odds.get("spread_home_odds" if cover_home else "spread_away_odds")
-            recs.append({"market": "spread", "pick": f"{side} {line:+g}", "odds": d, "line": line, "edge": None,
-                         "confidence": "med",
-                         "why": f"共識分差 {c['pred_margin']:+.1f} vs 盤口 {sl:+g}（差 {abs(diff):.1f} 分）"})
+            if d and d > 1:
+                recs.append({"market": "spread", "pick": f"{side} {line:+g}", "odds": d, "line": line, "edge": None,
+                             "confidence": "med",
+                             "why": f"共識分差 {c['pred_margin']:+.1f} vs 盤口 {sl:+g}（差 {abs(diff):.1f} 分）"})
     # Total O/U
     tl = odds.get("total_line")
     if tl is not None and abs(c["pred_total"] - tl) >= TOTAL_BUFFER:
         over = c["pred_total"] > tl
-        recs.append({"market": "total", "pick": "over" if over else "under",
-                     "odds": odds.get("over_odds" if over else "under_odds"), "line": tl, "edge": None,
-                     "confidence": "med",
-                     "why": f"共識總分 {c['pred_total']:.0f} vs 盤口 {tl:g}"})
+        d = odds.get("over_odds" if over else "under_odds")
+        if d and d > 1:
+            recs.append({"market": "total", "pick": "over" if over else "under",
+                         "odds": d, "line": tl, "edge": None,
+                         "confidence": "med",
+                         "why": f"共識總分 {c['pred_total']:.0f} vs 盤口 {tl:g}"})
     return recs
 
 

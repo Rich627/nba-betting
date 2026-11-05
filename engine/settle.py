@@ -50,11 +50,11 @@ def settle(con, stake=STAKE):
         if not g:
             continue
         hs, as_ = g["home_score"], g["away_score"]
+        price = p["odds"]
         if hs == as_:
             result, pnl = "PUSH", 0.0
         else:
             winner = g["home_team"] if hs > as_ else g["away_team"]
-            price = p["odds"]
             if not price or price <= 1:
                 if p["game_id"] not in odds_cache:
                     odds_cache[p["game_id"]] = game_odds_dict(con, p["game_id"])
@@ -109,7 +109,7 @@ def grade_recommendations_for_game(con, game_id, stake=STAKE):
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     out = []
     recs = con.execute(
-        "SELECT rowid, market, pick, odds, line FROM recommendations WHERE game_id=?", (game_id,)
+        "SELECT id, market, pick, odds, line FROM recommendations WHERE game_id=?", (game_id,)
     ).fetchall()
     for r in recs:
         market, pick, odds, line = r["market"], r["pick"], r["odds"], r["line"]
@@ -126,7 +126,9 @@ def grade_recommendations_for_game(con, game_id, stake=STAKE):
                 result = "PUSH"
             else:
                 result = "WON" if ((pick == "over") == (total > line)) else "LOST"
-        if result == "WON" and odds and odds > 1:
+        if result in ("WON", "LOST") and (not odds or odds <= 1):
+            result = "UNGRADED"
+        if result == "WON":
             pnl = round(stake * (odds - 1), 2)
         elif result == "LOST":
             pnl = -stake
@@ -135,8 +137,8 @@ def grade_recommendations_for_game(con, game_id, stake=STAKE):
         else:
             pnl = None
         con.execute(
-            "UPDATE recommendations SET result=?, pnl=?, settled_at=? WHERE rowid=?",
-            (result, pnl, now, r["rowid"]),
+            "UPDATE recommendations SET result=?, pnl=?, settled_at=? WHERE id=?",
+            (result, pnl, now, r["id"]),
         )
         out.append({"market": market, "pick": pick, "odds": odds, "line": line, "result": result, "pnl": pnl})
     con.commit()
