@@ -4,3 +4,4 @@ nba.db
 *.key
 __pycache__/
 *.pyc
+*.db.bak*

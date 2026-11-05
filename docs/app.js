@@ -6,7 +6,7 @@
   const fmtPnl = (v) => (v == null ? '—' : (v > 0 ? '+' : '') + Math.round(v));
   const pct = (v) => (v == null ? '—' : Math.round(v * 100) + '%');
   const cls = (v) => (v > 0 ? 'pos' : v < 0 ? 'neg' : '');
-  const COLORS = { GPT: '#10a37f', Claude: '#d97757', Gemini: '#4285f4', DeepSeek: '#4d6bfe', Kimi: '#8b5cf6', Grok: '#9ca3af' };
+  const COLORS = { GPT: '#10a37f', Claude: '#d97757', Gemini: '#4285f4', DeepSeek: '#4d6bfe', Kimi: '#8b5cf6', Grok: '#9ca3af', GLM: '#e11d74' };
   let DATA = null;
 
   // theme

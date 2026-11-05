@@ -38,7 +38,7 @@ try:
 except Exception:  # noqa: BLE001
     pass
 
-from data import fetch_espn, fetch_odds, teams as T  # noqa: E402
+from data import fetch_espn, fetch_news, fetch_odds, teams as T  # noqa: E402
 from data.db import connect  # noqa: E402
 from engine import edge as E, settle as S  # noqa: E402
 from models import predict as M  # noqa: E402
@@ -249,9 +249,21 @@ def notification_pass(con, hours_ahead, skip_models, dry_run, limit=None):
             print(f" [notify] {g['game_id']} FAILED: {type(e).__name__}: {str(e)[:200]}")
     if not blocks:
         return
-    n_rec = sum(b.count("👉") for b in blocks)
-    header = f"🏀 *NBA 賽前分析*（{len(blocks)} 場 · {n_rec} 個建議）" + ("" if skip_models else " — 紙上驗證中，小注或不下")
-    queue_message("賽前分析", header + "\n\n" + "\n\n".join(blocks), dry_run)
+    # Summary first: the bets, then the deadline, then the per-game detail. Rich reads
+    # this right before sleeping (05:30 TW) — the first three lines must be enough.
+    picks = []
+    for b in blocks:
+        head = b.split("\n")[0]
+        for line in b.split("\n"):
+            if line.startswith("👉"):
+                picks.append(f"{line} — {head.strip('*').split('*')[0].strip()}")
+    first_tip = min(T.parse_utc(g["commence_time"]) for g in cands if g["game_id"] in done)
+    deadline = f"⏰ 最早開賽 {T.tw_label(T.iso_utc(first_tip))} 台灣時間，要下的話在那之前。"
+    if picks:
+        summary = f"🏀 *NBA 今日建議*（{len(picks)} 注 / {len(blocks)} 場）\n" + "\n".join(picks) + f"\n{deadline}\n紙上驗證中，小注或不下。"
+    else:
+        summary = f"🏀 *NBA 今日建議*：{len(blocks)} 場都沒有 +EV，今天不買。\n{deadline}"
+    queue_message("賽前分析", summary + "\n\n— 各場明細 —\n\n" + "\n\n".join(blocks), dry_run)
     if not dry_run:
         con.executemany("UPDATE games SET notified_at=? WHERE game_id=?", [(now.isoformat(), gid) for gid in done])
         con.commit()
@@ -267,12 +279,18 @@ def digest_pass(con, dry_run, hours=30):
     if not games:
         print(" [digest] nothing new to list")
         return
-    lines = [f"🗓 *NBA 賽程*（台灣時間，{len(games)} 場）"]
+    lines = [f"🗓 *NBA 明日賽程*（台灣時間，{len(games)} 場）"]
     for g in games:
         o = fetch_odds.game_odds_dict(con, g["game_id"])
-        ml = f" · 獨贏 {o['ml_home']:.2f}/{o['ml_away']:.2f}" if o.get("ml_home") else ""
-        lines.append(f"{T.tw_label(g['commence_time'])} {T.matchup_zh(g['home_team'], g['away_team'])}{ml}")
-    lines.append("賽前分析會在開賽前另外發。")
+        home, away = g["home_team"], g["away_team"]
+        mk = ""
+        if o.get("ml_home"):
+            fav, price = (home, o["ml_home"]) if o["ml_home"] < o["ml_away"] else (away, o["ml_away"])
+            mk = f" · 看好 {T.zh(fav)} {price:.2f}"
+            if o.get("spread_line") is not None:
+                mk += f"（讓 {abs(o['spread_line']):g}）"
+        lines.append(f"{T.tw_label(g['commence_time'])} {T.matchup_zh(home, away)}{mk}")
+    lines.append("模型分析＋下注建議 05:30 發（美國下午場 20:00 發）。")
     queue_message("賽程", "\n".join(lines), dry_run)
     if not dry_run:
         con.executemany("UPDATE games SET digest_at=? WHERE game_id=?", [(now.isoformat(), g["game_id"]) for g in games])
@@ -301,22 +319,30 @@ def main():
     for d, res in fetch_espn.fetch_window(con, days_back=2, days_fwd=1).items():
         print(f" [espn] {d}: {res}")
     fetch_espn.compute_rest(con)
-    # [2] form + injuries
+    # [2] form + injuries + news
     try:
         print(f" [espn] standings {fetch_espn.fetch_standings(con)} teams, injuries {fetch_espn.fetch_injuries(con)} rows")
     except Exception as e:  # noqa: BLE001
         print(f" [espn] standings/injuries FAILED: {type(e).__name__}: {str(e)[:120]}")
+    try:
+        n_news, n_teams = fetch_news.fetch_for_upcoming(con)
+        print(f" [news] {n_news} new team-headlines (league feed + {n_teams} team feeds)")
+    except Exception as e:  # noqa: BLE001
+        print(f" [news] FAILED: {type(e).__name__}: {str(e)[:120]}")
 
-    # [3] odds — only when something is actually inside the window (credits are finite)
+    # [3] odds — only when something is actually inside the window (credits are finite).
+    # A sweep fetches h2h+spreads+totals (3 credits); the digest fetches h2h+spreads (2)
+    # so the evening schedule shows tomorrow's lines.
     end = now + datetime.timedelta(hours=a.hours_ahead if not a.digest else 30)
+    gate_col = "digest_at" if a.digest else "notified_at"
     pending_games = [g for g in con.execute(
-        "SELECT commence_time FROM games WHERE status='scheduled' AND notified_at IS NULL AND commence_time IS NOT NULL"
+        f"SELECT commence_time FROM games WHERE status='scheduled' AND {gate_col} IS NULL AND commence_time IS NOT NULL"
     ) if now < T.parse_utc(g["commence_time"]) <= end]
-    if odds_key and not skip_odds and pending_games and not a.digest:
-        n_ev, n_rows, note, _ = fetch_odds.fetch_upcoming(con)
+    if odds_key and not skip_odds and pending_games:
+        n_ev, n_rows, note, _ = fetch_odds.fetch_upcoming(con, markets="h2h,spreads" if a.digest else "h2h,spreads,totals")
         print(f" [odds] {note}")
     else:
-        print(f" [odds] skipped ({'digest' if a.digest else 'no games in window' if not pending_games else 'NBA_SKIP_ODDS' if skip_odds else 'no key'})")
+        print(f" [odds] skipped ({'no games in window' if not pending_games else 'NBA_SKIP_ODDS' if skip_odds else 'no key'})")
 
     # [4] settle
     settlement_pass(con, a.dry_run)

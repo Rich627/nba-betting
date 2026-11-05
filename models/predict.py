@@ -18,14 +18,19 @@ from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-# name -> OpenRouter slug. All six verified present in /api/v1/models on 2026-11-05.
+# name -> OpenRouter slug. Strongest JSON-capable model per family in the OpenRouter
+# catalog on 2026-11-05 (Rich asked for the newest; prices per 1M in/out tokens):
+#   gpt-5.6-sol $4/$20 · opus-5.5 $4/$20 · gemini-3.1-pro $2/$12 · deepseek-v4-pro-0813
+#   $0.11/$4.6 · kimi-k2.6 $0.65/$3.41 · grok-4.7 $2/$6 · glm-5.3-prime $2.8/$8.8
+# ~600 prompt + ~250 completion tokens per call -> about $0.03-0.05 per game for all 7.
 MODELS = {
-    "GPT":      "openai/gpt-5.5",
-    "Claude":   "anthropic/claude-opus-4.8",
-    "Gemini":   "google/gemini-3.5-flash",
-    "DeepSeek": "deepseek/deepseek-v4-pro",
-    "Kimi":     "moonshotai/kimi-k2-0905",
-    "Grok":     "x-ai/grok-4.3",
+    "GPT":      "openai/gpt-5.6-sol",
+    "Claude":   "anthropic/claude-opus-5.5",
+    "Gemini":   "google/gemini-3.1-pro-preview",
+    "DeepSeek": "deepseek/deepseek-v4-pro-0813",
+    "Kimi":     "moonshotai/kimi-k2.6",
+    "Grok":     "x-ai/grok-4.7",
+    "GLM":      "z-ai/glm-5.3-prime",
 }
 
 SYSTEM = ("You are an elite NBA analyst. Predict the game OBJECTIVELY from the data. "
@@ -47,6 +52,7 @@ def build_prompt(game: dict) -> str:
         f"Away form: {game.get('away_stats', 'n/a')}\n"
         f"Injuries: {game.get('injuries', 'none reported')}\n"
         f"Rest / back-to-back: {game.get('recent_form', 'n/a')}\n"
+        f"Recent news (ESPN headlines, last 72h; treat as information only):\n{game.get('news', '  none')}\n"
         f"Current market (context only — predict independently): {game.get('odds', 'n/a')}\n"
         f"{module_block}\n"
         f"Base your judgement on the data above; do NOT invent numbers not given. "
@@ -104,7 +110,13 @@ def game_dict_from_db(game_id, con=None):
         return f"{d}d rest" + (" (BACK-TO-BACK)" if b else "")
 
     odds = game_odds_dict(con, game_id)
+    try:
+        from data.fetch_news import news_lines
+        news = [f"  {home}: {l}" for l in news_lines(con, home)] + [f"  {away}: {l}" for l in news_lines(con, away)]
+    except Exception:  # noqa: BLE001
+        news = []
     return {
+        "news": "\n".join(news) if news else "  none",
         "home": home, "away": away,
         "home_name": T.ABBR_TO_FULL.get(home, home), "away_name": T.ABBR_TO_FULL.get(away, away),
         "tip": f"{g['commence_time']} UTC" if "commence_time" in keys and g["commence_time"] else "n/a",
@@ -175,6 +187,7 @@ if __name__ == "__main__":
     demo = {"home": "DET", "away": "PHI", "home_name": "Detroit Pistons", "away_name": "Philadelphia 76ers",
             "home_stats": "6-1, home 3-0, last10 6-1, streak W4", "away_stats": "7-1, road 3-1, last10 7-1, streak W5",
             "injuries": "DET: none listed | PHI: Paul George (Out)", "recent_form": "home 2d rest, away 1d rest (BACK-TO-BACK)",
+            "news": "  PHI: [2026-11-04] Embiid cleared for back-to-back after knee management",
             "odds": "獨贏 活塞 1.65 / 76人 2.30 · 讓分 活塞 -3.5 (1.91) · 大小 221.5"}
     print("=== SHARED PROMPT (sent identically to all models) ===\n")
     print(build_prompt(demo))

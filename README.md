@@ -16,12 +16,13 @@ anything.
 ## America/Phoenix, so the crontab slots are these minus 15h)
 
 ```
-05:30, 20:00  sweep   ESPN schedule/standings/injuries -> the-odds-api (median of ~9 books,
-                      in-play prices skipped) -> 6 LLMs in parallel -> consensus -> edge
-                      -> ONE 賽前分析 message queued for the NBA WhatsApp group
+05:30, 20:00  sweep   ESPN schedule/standings/injuries/news -> the-odds-api (median of ~9
+                      books, in-play prices skipped) -> 7 LLMs in parallel -> consensus -> edge
+                      -> ONE message: today's bets first, the first tip-off as the deadline,
+                      then per-game detail — queued for the NBA WhatsApp group
 15:15, 19:15  settle  ESPN results -> grade every model pick + recommendation at the price
                       captured when it was made -> wallets -> 賽果 message
-21:00         digest  tomorrow's slate in Taiwan time
+21:00         digest  tomorrow's slate in Taiwan time with the current favourite + spread
 each run      scripts/deploy_site.sh rebuilds docs/data/site.json and pushes (GitHub Pages)
 ```
 
@@ -39,7 +40,9 @@ data/      fetch_espn.py   schedule + results + standings + injuries (free, no k
            fetch_players.py / fetch_results.py   optional nba_api layer (stats.nba.com is
                            often unreachable; the scheduler does not depend on it)
 features/ analysis/        player-level modules (only run when nba_api data exists)
-models/    predict.py      ONE shared prompt -> GPT / Claude / Gemini / DeepSeek / Kimi / Grok
+           fetch_news.py   ESPN news feed (league + per-team), last-72h headlines go into the prompt
+models/    predict.py      ONE shared prompt -> gpt-5.6-sol / claude-opus-5.5 / gemini-3.1-pro /
+                           deepseek-v4-pro-0813 / kimi-k2.6 / grok-4.7 / glm-5.3-prime (OpenRouter)
 engine/    edge.py         consensus + EV; moneyline needs EV >= +5% and 66% agreement,
                            spread needs a 3-pt buffer, total a 6-pt buffer
            settle.py       real-price grading, z-gated model weights, wallet history
@@ -75,8 +78,9 @@ Each layer runs standalone too: `python3 data/fetch_espn.py`, `python3 data/fetc
 ## Budget
 
 the-odds-api free tier = 500 credits/month. A sweep costs 3 credits (h2h+spreads+totals,
-one bulk call) and only runs the call when a game tips inside the window, so a normal
-day is 3-6 credits. OpenRouter: 6 calls per game, ~10-14 games/day in season.
+one bulk call), the digest 2, and the call only runs when a game is inside the window, so
+a normal day is 5-8 credits. OpenRouter: 7 calls per game (~$0.03-0.05), ~10-14 games/day
+in season, so roughly $15-20/month.
 
 ## Known limitations
 

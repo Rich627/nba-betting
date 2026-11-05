@@ -43,6 +43,10 @@ ADD_COLUMNS = [
     ("recommendations", "pnl", "REAL"),
     ("recommendations", "settled_at", "TEXT"),
     ("recommendations", "close_odds", "REAL"), # closing price of the picked side (CLV)
+    # v3.1: ESPN news feed (data/fetch_news.py)
+    ("prematch_news", "headline", "TEXT"),
+    ("prematch_news", "published", "TEXT"),
+    ("prematch_news", "url", "TEXT"),
 ]
 
 
@@ -75,6 +79,9 @@ def migrate(con):
         if col not in _columns(con, table):
             con.execute(f"ALTER TABLE {table} ADD COLUMN {col} {typ}")
             added.append(f"{table}.{col}")
+    # Indexes on columns that only exist after the ALTERs above.
+    if _table_exists(con, "prematch_news"):
+        con.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_news_team_headline ON prematch_news(team, headline)")
     con.commit()
     return added
 

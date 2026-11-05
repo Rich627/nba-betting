@@ -8,7 +8,7 @@
 #   sweep [hours] (default, 14h) ESPN + odds (3 credits, only if a game is in the window)
 #                 + 6 LLMs + edge + settle.
 #   settle        results + settlement only. 0 odds credits, 0 model spend.
-#   digest        tomorrow's slate (Taiwan times). 0 credits.
+#   digest        tomorrow's slate (Taiwan times) with current lines. 2 credits.
 #
 # Crontab. The mini's system clock is America/Phoenix (MST, UTC-7, no DST — verified
 # 2026-11-05 via /etc/localtime; it is NOT Asia/Taipei, whatever older notes say), so the
@@ -19,7 +19,7 @@
 #   15 0  * * *  ~/whatsapp-cron-nba.sh settle     # 15:15 TW — all games final by ~14:00 TW
 #   15 4  * * *  ~/whatsapp-cron-nba.sh settle     # 19:15 TW — backstop
 #   0  6  * * *  ~/whatsapp-cron-nba.sh digest     # 21:00 TW — tomorrow's schedule
-# Budget: <= 6 odds credits/day (~180/month of the 500 free), 6 OpenRouter calls/game.
+# Budget: <= 8 odds credits/day (~240/month of the 500 free), 7 OpenRouter calls/game.
 set -uo pipefail
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 
@@ -34,7 +34,7 @@ cd "$REPO" || { echo "[$(date)] missing $REPO" >>"$LOG"; exit 1; }
 case "$MODE" in
   sweep)  ARGS="--hours-ahead ${2:-14}" ;;
   settle) ARGS="--skip-models --hours-ahead 0"; export NBA_SKIP_ODDS=1 ;;
-  digest) ARGS="--digest"; export NBA_SKIP_ODDS=1 ;;
+  digest) ARGS="--digest" ;;   # fetches h2h+spreads (2 credits) so the evening list shows lines
   *) echo "[$(date)] unknown mode $MODE" >>"$LOG"; exit 2 ;;
 esac
 
