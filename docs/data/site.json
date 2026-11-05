@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T20:36:29-07:00",
+ "generated_at": "2026-11-04T21:20:23-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -42,14 +42,14 @@
    "odds": {
     "n_books": 6,
     "fetched_at": "2026-11-05T02:35:18Z",
-    "ml_home": 1.64,
-    "ml_away": 2.2,
+    "ml_home": 1.61,
+    "ml_away": 2.15,
     "spread_line": -2.5,
-    "spread_home_odds": 1.86,
-    "spread_away_odds": 1.88,
+    "spread_home_odds": 1.85,
+    "spread_away_odds": 1.9,
     "total_line": 199.5,
-    "over_odds": 1.885,
-    "under_odds": 1.86
+    "over_odds": 1.9,
+    "under_odds": 1.85
    },
    "consensus": null,
    "models": [],
@@ -73,14 +73,14 @@
    "odds": {
     "n_books": 6,
     "fetched_at": "2026-11-05T02:35:18Z",
-    "ml_home": 1.485,
-    "ml_away": 2.575,
+    "ml_home": 1.48,
+    "ml_away": 2.55,
     "spread_line": -4.5,
-    "spread_home_odds": 1.84,
-    "spread_away_odds": 1.91,
+    "spread_home_odds": 1.87,
+    "spread_away_odds": 1.89,
     "total_line": 223.5,
-    "over_odds": 1.915,
-    "under_odds": 1.84
+    "over_odds": 1.92,
+    "under_odds": 1.83
    },
    "consensus": null,
    "models": [],
@@ -104,14 +104,14 @@
    "odds": {
     "n_books": 6,
     "fetched_at": "2026-11-05T02:35:18Z",
-    "ml_home": 1.56,
-    "ml_away": 2.375,
-    "spread_line": -4.0,
-    "spread_home_odds": 1.875,
-    "spread_away_odds": 1.86,
-    "total_line": 243.0,
-    "over_odds": 1.86,
-    "under_odds": 1.885
+    "ml_home": 1.53,
+    "ml_away": 2.3,
+    "spread_line": -4.5,
+    "spread_home_odds": 1.88,
+    "spread_away_odds": 1.85,
+    "total_line": 243.5,
+    "over_odds": 1.91,
+    "under_odds": 1.85
    },
    "consensus": null,
    "models": [],
@@ -135,14 +135,14 @@
    "odds": {
     "n_books": 6,
     "fetched_at": "2026-11-05T02:35:18Z",
-    "ml_home": 1.825,
-    "ml_away": 1.955,
-    "spread_line": -0.5,
-    "spread_home_odds": 1.89,
-    "spread_away_odds": 1.86,
-    "total_line": 235.0,
-    "over_odds": 1.885,
-    "under_odds": 1.86
+    "ml_home": 1.82,
+    "ml_away": 1.94,
+    "spread_line": -1.5,
+    "spread_home_odds": 1.85,
+    "spread_away_odds": 1.82,
+    "total_line": 234.5,
+    "over_odds": 1.85,
+    "under_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -170,10 +170,10 @@
     "ml_away": 5.4,
     "spread_line": -12.5,
     "spread_home_odds": 1.91,
-    "spread_away_odds": 1.92,
-    "total_line": 227.0,
-    "over_odds": 1.91,
-    "under_odds": 1.91
+    "spread_away_odds": 1.91,
+    "total_line": 226.5,
+    "over_odds": 1.87,
+    "under_odds": 1.94
    },
    "consensus": null,
    "models": [],
@@ -200,8 +200,8 @@
     "ml_home": 5.75,
     "ml_away": 1.15,
     "spread_line": 12.0,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91,
+    "spread_home_odds": 1.95,
+    "spread_away_odds": 1.9,
     "total_line": 233.5,
     "over_odds": 1.91,
     "under_odds": 1.91
@@ -320,10 +320,10 @@
     "ml_away": 1.46,
     "spread_line": 6.0,
     "spread_home_odds": 1.91,
-    "spread_away_odds": 1.94,
+    "spread_away_odds": 1.91,
     "total_line": 233.5,
     "over_odds": 1.93,
-    "under_odds": 1.91
+    "under_odds": 1.89
    },
    "consensus": {
     "home_win_prob": 0.333,
@@ -490,14 +490,14 @@
    "odds": {
     "n_books": 6,
     "fetched_at": "2026-11-05T02:35:18Z",
-    "ml_home": 1.225,
+    "ml_home": 1.22,
     "ml_away": 4.2,
-    "spread_line": -7.75,
-    "spread_home_odds": 1.87,
-    "spread_away_odds": 1.87,
+    "spread_line": -7.5,
+    "spread_home_odds": 1.83,
+    "spread_away_odds": 1.91,
     "total_line": 218.5,
     "over_odds": 1.85,
-    "under_odds": 1.89
+    "under_odds": 1.88
    },
    "consensus": null,
    "models": [],
@@ -522,13 +522,13 @@
     "n_books": 6,
     "fetched_at": "2026-11-05T02:35:18Z",
     "ml_home": 1.13,
-    "ml_away": 5.75,
+    "ml_away": 5.5,
     "spread_line": -9.5,
-    "spread_home_odds": 1.895,
-    "spread_away_odds": 1.86,
-    "total_line": 218.75,
+    "spread_home_odds": 1.87,
+    "spread_away_odds": 1.87,
+    "total_line": 218.5,
     "over_odds": 1.91,
-    "under_odds": 1.84
+    "under_odds": 1.76
    },
    "consensus": null,
    "models": [],
@@ -552,14 +552,14 @@
    "odds": {
     "n_books": 6,
     "fetched_at": "2026-11-05T02:35:18Z",
-    "ml_home": 1.265,
-    "ml_away": 3.625,
+    "ml_home": 1.26,
+    "ml_away": 3.6,
     "spread_line": -4.5,
-    "spread_home_odds": 1.815,
-    "spread_away_odds": 1.925,
-    "total_line": 217.75,
-    "over_odds": 1.85,
-    "under_odds": 1.88
+    "spread_home_odds": 1.8,
+    "spread_away_odds": 1.94,
+    "total_line": 217.5,
+    "over_odds": 1.8,
+    "under_odds": 1.95
    },
    "consensus": null,
    "models": [],
@@ -583,14 +583,14 @@
    "odds": {
     "n_books": 6,
     "fetched_at": "2026-11-05T02:35:18Z",
-    "ml_home": 3.9,
-    "ml_away": 1.255,
+    "ml_home": 3.85,
+    "ml_away": 1.25,
     "spread_line": 6.5,
-    "spread_home_odds": 1.905,
+    "spread_home_odds": 1.91,
     "spread_away_odds": 1.85,
     "total_line": 214.5,
-    "over_odds": 1.89,
-    "under_odds": 1.85
+    "over_odds": 1.91,
+    "under_odds": 1.8
    },
    "consensus": null,
    "models": [],
@@ -614,12 +614,12 @@
    "odds": {
     "n_books": 6,
     "fetched_at": "2026-11-05T02:35:18Z",
-    "spread_line": -33.25,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.885,
-    "total_line": 250.0,
-    "over_odds": 1.84,
-    "under_odds": 1.905
+    "spread_line": -33.5,
+    "spread_home_odds": 1.9,
+    "spread_away_odds": 1.83,
+    "total_line": 250.5,
+    "over_odds": 1.83,
+    "under_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -646,11 +646,11 @@
     "ml_home": 23.0,
     "ml_away": 1.01,
     "spread_line": 8.5,
-    "spread_home_odds": 1.93,
-    "spread_away_odds": 1.825,
+    "spread_home_odds": 1.98,
+    "spread_away_odds": 1.8,
     "total_line": 213.5,
-    "over_odds": 1.93,
-    "under_odds": 1.82
+    "over_odds": 1.83,
+    "under_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -675,11 +675,11 @@
     "n_books": 6,
     "fetched_at": "2026-11-05T02:35:18Z",
     "spread_line": 14.5,
-    "spread_home_odds": 1.8,
-    "spread_away_odds": 1.95,
-    "total_line": 226.5,
-    "over_odds": 1.83,
-    "under_odds": 1.91
+    "spread_home_odds": 1.82,
+    "spread_away_odds": 1.76,
+    "total_line": 225.5,
+    "over_odds": 1.77,
+    "under_odds": 1.4
    },
    "consensus": null,
    "models": [],
