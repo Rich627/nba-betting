@@ -12,7 +12,8 @@ inflated by grading every pick at a flat 1.91 — this repo grades at the real m
 price (see `engine/settle.py`). Read the wallet curve on the site before believing
 anything.
 
-## What runs (cron on the mini, Asia/Taipei)
+## What runs (cron on the mini; times below are Taiwan — the mini's own clock is
+## America/Phoenix, so the crontab slots are these minus 15h)
 
 ```
 05:30, 20:00  sweep   ESPN schedule/standings/injuries -> the-odds-api (median of ~9 books,

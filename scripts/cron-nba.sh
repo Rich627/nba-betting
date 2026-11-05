@@ -5,18 +5,20 @@
 # This wrapper only handles env, mode, timeout and logging. No claude processes.
 #
 # Modes:
-#   sweep   (default) ESPN + odds (3 credits, only if a game is in the window) + 6 LLMs
-#                     + edge + settle. Window 14h.
-#   settle            results + settlement only. 0 odds credits, 0 model spend.
-#   digest            tomorrow's slate (Taiwan times). 0 credits.
+#   sweep [hours] (default, 14h) ESPN + odds (3 credits, only if a game is in the window)
+#                 + 6 LLMs + edge + settle.
+#   settle        results + settlement only. 0 odds credits, 0 model spend.
+#   digest        tomorrow's slate (Taiwan times). 0 credits.
 #
-# Crontab (mini runs Asia/Taipei, UTC+8). NBA tips are 07:00-11:30 TW on a normal day,
-# 01:00-04:00 TW for US-afternoon games (weekends/holidays):
-#   30 5  * * *  ~/whatsapp-cron-nba.sh sweep    # morning slate, before Rich sleeps
-#   0  20 * * *  ~/whatsapp-cron-nba.sh sweep    # early (US afternoon) tips; usually 0 games -> 0 credits
-#   15 15 * * *  ~/whatsapp-cron-nba.sh settle   # all games final by ~14:00 TW
-#   15 19 * * *  ~/whatsapp-cron-nba.sh settle   # backstop
-#   0  21 * * *  ~/whatsapp-cron-nba.sh digest   # tomorrow's schedule
+# Crontab. The mini's system clock is America/Phoenix (MST, UTC-7, no DST — verified
+# 2026-11-05 via /etc/localtime; it is NOT Asia/Taipei, whatever older notes say), so the
+# slots below are MST = Taiwan time minus 15h. NBA tips are 07:00-11:30 TW (16:00-20:30
+# MST) on a normal day, 01:00-04:00 TW (10:00-13:00 MST) for US-afternoon games:
+#   30 14 * * *  ~/whatsapp-cron-nba.sh sweep      # 05:30 TW — morning slate, before Rich sleeps
+#   0  5  * * *  ~/whatsapp-cron-nba.sh sweep 8    # 20:00 TW — early (US afternoon) tips only
+#   15 0  * * *  ~/whatsapp-cron-nba.sh settle     # 15:15 TW — all games final by ~14:00 TW
+#   15 4  * * *  ~/whatsapp-cron-nba.sh settle     # 19:15 TW — backstop
+#   0  6  * * *  ~/whatsapp-cron-nba.sh digest     # 21:00 TW — tomorrow's schedule
 # Budget: <= 6 odds credits/day (~180/month of the 500 free), 6 OpenRouter calls/game.
 set -uo pipefail
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
@@ -30,7 +32,7 @@ TIMEOUT="$(command -v gtimeout || command -v timeout || true)"
 cd "$REPO" || { echo "[$(date)] missing $REPO" >>"$LOG"; exit 1; }
 
 case "$MODE" in
-  sweep)  ARGS="--hours-ahead 14" ;;
+  sweep)  ARGS="--hours-ahead ${2:-14}" ;;
   settle) ARGS="--skip-models --hours-ahead 0"; export NBA_SKIP_ODDS=1 ;;
   digest) ARGS="--digest"; export NBA_SKIP_ODDS=1 ;;
   *) echo "[$(date)] unknown mode $MODE" >>"$LOG"; exit 2 ;;
