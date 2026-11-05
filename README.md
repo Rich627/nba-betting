@@ -1,64 +1,86 @@
 # NBA Betting Predictor
-Multi-LLM (via OpenRouter) NBA game-prediction + edge-vs-line betting system with a deep
-**layered analysis architecture** (mirrors sibling `football-betting`). Public read-only
-dashboard. See `PLAN.md` for full architecture.
 
-Status: full pipeline verified working end-to-end (2026-07-22): data layer, player/analysis
-layers, 6-model OpenRouter consensus, edge engine, settlement, and dashboard all run cleanly.
-No live NBA games/odds right now (off-season) — re-verify once preseason/regular season odds
-go live on the-odds-api.
+Multi-LLM (via OpenRouter) NBA game-prediction + edge-vs-line system, live for the
+2026-27 season since 2026-11-05. Same shape as the sibling `football-betting` (World Cup)
+and `mlb-betting` projects: free data layer -> multi-model consensus -> edge engine ->
+settlement at real prices -> WhatsApp + public site. See `PLAN.md` for the original
+architecture and `scripts/run_scheduler.py` for what actually runs.
 
-## Layers (all FREE-data; no key required to run them)
+**Status: paper-trading. No edge demonstrated yet.** The MLB sibling was stopped on
+2026-09-01 after 332 graded recommendations at -12% ROI, and its wallets had been
+inflated by grading every pick at a flat 1.91 — this repo grades at the real median
+price (see `engine/settle.py`). Read the wallet curve on the site before believing
+anything.
+
+## What runs (cron on the mini, Asia/Taipei)
+
 ```
-data/      nba_api → SQLite. Player-level ~45 metrics + rest/b2b.
-features/  rolling last-10 form + same-position z-score.
-analysis/  4 independent modules → {score, confidence, reasoning_md}:
-           player_ability · lineup_pace_matchup · injuries_rest_b2b · odds_value
-engine/    consensus fuses module_outputs (+ optional LLM) → edge → bet recs.
-backtest/  replay past games, strict pre-game cutoff, hit-rate/ROI/Brier per module.
-frontend/  FastAPI read-only dashboard.
+05:30, 20:00  sweep   ESPN schedule/standings/injuries -> the-odds-api (median of ~9 books,
+                      in-play prices skipped) -> 6 LLMs in parallel -> consensus -> edge
+                      -> ONE 賽前分析 message queued for the NBA WhatsApp group
+15:15, 19:15  settle  ESPN results -> grade every model pick + recommendation at the price
+                      captured when it was made -> wallets -> 賽果 message
+21:00         digest  tomorrow's slate in Taiwan time
+each run      scripts/deploy_site.sh rebuilds docs/data/site.json and pushes (GitHub Pages)
+```
+
+The scheduler never sends WhatsApp itself: it appends to
+`~/.whatsapp-channel/pending/nba-sweep-*.md` and the Kai agent forwards. Idempotent via
+`games.notified_at / settled_notified_at / digest_at`.
+
+## Layers
+
+```
+data/      fetch_espn.py   schedule + results + standings + injuries (free, no key, reliable)
+           fetch_odds.py   the-odds-api basketball_nba; all books stored, MEDIAN used
+           teams.py        one naming map for nba_api / ESPN / odds-api; canonical game id
+                           = "<ET date>_<AWAY>@<HOME>" so no source needs reconciling
+           fetch_players.py / fetch_results.py   optional nba_api layer (stats.nba.com is
+                           often unreachable; the scheduler does not depend on it)
+features/ analysis/        player-level modules (only run when nba_api data exists)
+models/    predict.py      ONE shared prompt -> GPT / Claude / Gemini / DeepSeek / Kimi / Grok
+engine/    edge.py         consensus + EV; moneyline needs EV >= +5% and 66% agreement,
+                           spread needs a 3-pt buffer, total a 6-pt buffer
+           settle.py       real-price grading, z-gated model weights, wallet history
+scripts/   run_scheduler.py  the loop; cron-nba.sh wrapper; deploy_site.sh
+pipeline/  build_site_json.py -> docs/data/site.json
+docs/      static site (GitHub Pages, source = main /docs)
+frontend/  old FastAPI dashboard (loopback), still works
 ```
 
 ## Setup
+
 ```bash
-pip install -r requirements.txt
-python3 db/migrate.py                       # apply schema (additive, idempotent)
+pip install -r requirements.txt           # nba_api pandas fastapi uvicorn python-dotenv requests
+cp .env.example .env                      # OPENROUTER_API_KEY, ODDS_API_KEY
+python3 db/migrate.py                     # additive, idempotent (v1 + v2 + v3)
 ```
 
-## Run the free pipeline (no keys needed)
+## Run
+
 ```bash
-python3 data/fetch_results.py --since 06/01/2026   # game results (P0)
-python3 data/fetch_players.py                      # player box+advanced + rest/b2b
-python3 analysis/registry.py <game_id>             # run all 4 analysis modules
-python3 engine/consensus.py <game_id>              # fuse modules → home win prob
-python3 backtest/run.py                            # backtest modules + consensus
-python3 scripts/run_daily.py                       # full orchestrator: free layers always run;
-                                                    # odds/models/edge/settle steps run automatically
-                                                    # once both keys are set (skip gracefully otherwise)
+python3 scripts/run_scheduler.py --dry-run --skip-models   # data + odds, prints messages, marks nothing
+python3 scripts/run_scheduler.py --dry-run --limit 1       # one real 6-model prediction
+python3 scripts/run_scheduler.py                           # what cron runs
+NBA_SKIP_ODDS=1 python3 scripts/run_scheduler.py --skip-models --hours-ahead 0   # settle only
+python3 scripts/run_scheduler.py --digest                  # tomorrow's schedule
+python3 pipeline/build_site_json.py                        # rebuild the site data
 ```
 
-## Full pipeline (needs both keys)
-```bash
-python3 data/fetch_odds.py      # upcoming NBA odds (the-odds-api; empty result off-season = expected)
-python3 scripts/run_daily.py    # results -> players -> modules -> odds -> 6-LLM predict -> edge -> settle
-```
+Each layer runs standalone too: `python3 data/fetch_espn.py`, `python3 data/fetch_odds.py`,
+`python3 engine/settle.py`, `python3 engine/edge.py` (self-test), `python3 models/predict.py`
+(prints the shared prompt, no key needed).
 
-## Smoke tests
-```bash
-python3 features/rolling.py     # last-10 rolling form
-python3 features/zscore.py      # same-position z-scores
-python3 analysis/player_ability.py        # (or any analysis/*.py)
-```
+## Budget
 
-## Dashboard
-```bash
-uvicorn frontend.app:app --host 0.0.0.0 --port 8800   # access via Tailscale/SSH tunnel
-# API: /api/games /api/models /api/predictions /api/modules /api/players
-```
+the-odds-api free tier = 500 credits/month. A sweep costs 3 credits (h2h+spreads+totals,
+one bulk call) and only runs the call when a game tips inside the window, so a normal
+day is 3-6 credits. OpenRouter: 6 calls per game, ~10-14 games/day in season.
 
-## Keys (optional enhancers — system runs without them)
-Copy `.env.example` → `.env`:
-- `OPENROUTER_API_KEY` — blends 6-LLM consensus on top of the analysis modules.
-- `ODDS_API_KEY` — the-odds-api.com free tier; enables the odds_value module + edge-vs-line recs.
+## Known limitations
 
-Without keys: data → features → analysis → module consensus → backtest all still run on free nba_api data.
+- Spread/total recommendations have no probability behind them, only a buffer vs the
+  consensus number; moneyline is the only market with a real EV.
+- Model weights stay uniform until a model's hit rate is significant (>=30 bets, z>=2).
+- Closing-line value (`recommendations.close_odds`) has a column but no capture job yet.
+- Analysis modules (player-level) only contribute when stats.nba.com is reachable.

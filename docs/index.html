@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBA Master 預測 2026-27</title>
+  <meta name="description" content="六個 AI 模型對每場 NBA 比賽的勝負、比分與盤口預測，含每個模型的紙上錢包。純娛樂，別跟著下注。">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('nba-theme');
+        var dark = saved ? saved === 'dark' : !(window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      } catch (_) { document.documentElement.dataset.theme = 'dark'; }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"
+          integrity="sha384-bs/nf9FbdNouRbMiFcrcZfLXYPKiPaGVGplVbv7dLGECccEXDW+S3zjqSKR5ZEaD" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css?v=20261105a">
+</head>
+<body>
+  <div class="banner">⚠️ 純娛樂，別跟著下注 — 以下全部是 AI 模型的玩票預測與紙上錢包，不是投注建議</div>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <h1 class="brand"><span class="dot"></span>NBA Master 預測 <span class="pill">2026-27</span></h1>
+      <div class="header-actions">
+        <a class="btn" href="#results">賽果</a>
+        <a class="btn" href="#wallet">模型錢包</a>
+        <button class="btn" id="theme-toggle" type="button" aria-label="切換深淺色">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="stats" class="stats-strip" aria-label="摘要"></section>
+
+    <section id="wallet" class="section">
+      <div class="section-head">
+        <h2>模型錢包</h2>
+        <p class="muted">每個模型每場獨贏押 100，照當時 9 家書商中位數賠率結算。曲線往下就是沒 edge。</p>
+      </div>
+      <div class="card chart-card"><canvas id="wallet-chart" height="120"></canvas></div>
+      <div id="leaderboard" class="leaderboard"></div>
+    </section>
+
+    <section id="upcoming" class="section">
+      <div class="section-head">
+        <h2>賽前預測</h2>
+        <p class="muted">台灣時間。沒跑模型的場次只列賽程。</p>
+      </div>
+      <div id="upcoming-list" class="grid"></div>
+    </section>
+
+    <section id="results" class="section">
+      <div class="section-head">
+        <h2>最近賽果</h2>
+        <p class="muted">模型命中 = 獨贏方向猜對；建議欄是 edge 引擎真的喊過的注。</p>
+      </div>
+      <div id="results-list" class="grid"></div>
+    </section>
+  </main>
+
+  <div id="detail" class="modal hidden" role="dialog" aria-modal="true">
+    <button type="button" class="modal-backdrop" data-close aria-label="關閉"></button>
+    <div class="modal-panel">
+      <div class="modal-head">
+        <h2 id="detail-title">比賽</h2>
+        <button type="button" class="btn" data-close aria-label="關閉">✕</button>
+      </div>
+      <div id="detail-body"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>NBA Master 預測 2026-27 · 六個 AI 模型的玩票預測 · <span id="generated"></span></p>
+    <p class="accent">純娛樂，別跟著下注</p>
+  </footer>
+
+  <script src="app.js?v=20261105a"></script>
+</body>
+</html>
