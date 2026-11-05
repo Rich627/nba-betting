@@ -44,5 +44,7 @@ else
 fi
 EXIT=$?
 [ "$EXIT" -eq 124 ] && echo "[$(date)] TIMED OUT after 40m" >>"$LOG"
+# Refresh the public site (no-op push when nothing changed). Never blocks the sweep.
+bash scripts/deploy_site.sh >>"$LOG" 2>&1 || echo "[$(date)] site deploy failed (non-fatal)" >>"$LOG"
 echo "[$(date)] === nba $MODE done exit=$EXIT ===" >>"$LOG"
 exit 0
