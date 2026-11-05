@@ -15,7 +15,7 @@ Each run:
   [5] notification pass: every scheduled game tipping within --hours-ahead and
       not yet notified -> analysis modules (if player data) -> 6 LLMs -> consensus
       -> edge -> queue ONE consolidated 賽前 message
-  [6] --digest: queue tomorrow's slate (Taiwan times), no models, no odds
+  [6] --digest: queue the next 24h slate (Arizona times) with current lines, no models
 
 Usage:
   python3 scripts/run_scheduler.py                    # normal sweep
@@ -173,7 +173,7 @@ def _run_modules(con, gid):
 def predict_game(con, g, weights, skip_models):
     """Run models + edge for one game; store predictions/recs; return the message block."""
     gid, home, away = g["game_id"], g["home_team"], g["away_team"]
-    head = f"*{T.matchup_zh(home, away)}* {T.tw_label(g['commence_time'])}"
+    head = f"*{T.matchup_zh(home, away)}* {T.local_label(g['commence_time'])}"
     odds = fetch_odds.game_odds_dict(con, gid)
     if skip_models:
         return head + "\n" + fetch_odds.odds_summary(odds, home, away) + "\n（未跑模型）"
@@ -250,7 +250,7 @@ def notification_pass(con, hours_ahead, skip_models, dry_run, limit=None):
     if not blocks:
         return
     # Summary first: the bets, then the deadline, then the per-game detail. Rich reads
-    # this right before sleeping (05:30 TW) — the first three lines must be enough.
+    # this ~2h before tip-off (Arizona time) — the first three lines must be enough.
     picks = []
     for b in blocks:
         head = b.split("\n")[0]
@@ -258,7 +258,7 @@ def notification_pass(con, hours_ahead, skip_models, dry_run, limit=None):
             if line.startswith("👉"):
                 picks.append(f"{line} — {head.strip('*').split('*')[0].strip()}")
     first_tip = min(T.parse_utc(g["commence_time"]) for g in cands if g["game_id"] in done)
-    deadline = f"⏰ 最早開賽 {T.tw_label(T.iso_utc(first_tip))} 台灣時間，要下的話在那之前。"
+    deadline = f"⏰ 最早開賽 {T.local_label(T.iso_utc(first_tip))}（{T.DISPLAY_TZ_ZH}），要下的話在那之前。"
     if picks:
         summary = f"🏀 *NBA 今日建議*（{len(picks)} 注 / {len(blocks)} 場）\n" + "\n".join(picks) + f"\n{deadline}\n紙上驗證中，小注或不下。"
     else:
@@ -269,7 +269,7 @@ def notification_pass(con, hours_ahead, skip_models, dry_run, limit=None):
         con.commit()
 
 
-def digest_pass(con, dry_run, hours=30):
+def digest_pass(con, dry_run, hours=24):
     now = utcnow()
     end = now + datetime.timedelta(hours=hours)
     games = [g for g in con.execute(
@@ -279,7 +279,7 @@ def digest_pass(con, dry_run, hours=30):
     if not games:
         print(" [digest] nothing new to list")
         return
-    lines = [f"🗓 *NBA 明日賽程*（台灣時間，{len(games)} 場）"]
+    lines = [f"🗓 *NBA 今日賽程*（{T.DISPLAY_TZ_ZH}，{len(games)} 場）"]
     for g in games:
         o = fetch_odds.game_odds_dict(con, g["game_id"])
         home, away = g["home_team"], g["away_team"]
@@ -289,8 +289,8 @@ def digest_pass(con, dry_run, hours=30):
             mk = f" · 看好 {T.zh(fav)} {price:.2f}"
             if o.get("spread_line") is not None:
                 mk += f"（讓 {abs(o['spread_line']):g}）"
-        lines.append(f"{T.tw_label(g['commence_time'])} {T.matchup_zh(home, away)}{mk}")
-    lines.append("模型分析＋下注建議 05:30 發（美國下午場 20:00 發）。")
+        lines.append(f"{T.local_label(g['commence_time'])} {T.matchup_zh(home, away)}{mk}")
+    lines.append("模型分析＋下注建議會在每場開賽前 1-3 小時發。")
     queue_message("賽程", "\n".join(lines), dry_run)
     if not dry_run:
         con.executemany("UPDATE games SET digest_at=? WHERE game_id=?", [(now.isoformat(), g["game_id"]) for g in games])
@@ -300,7 +300,7 @@ def digest_pass(con, dry_run, hours=30):
 # ----------------------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--hours-ahead", type=float, default=14.0)
+    ap.add_argument("--hours-ahead", type=float, default=3.0)
     ap.add_argument("--skip-models", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--limit", type=int, default=None, help="cap games sent to the model layer this run")
@@ -331,15 +331,15 @@ def main():
         print(f" [news] FAILED: {type(e).__name__}: {str(e)[:120]}")
 
     # [3] odds — only when something is actually inside the window (credits are finite).
-    # A sweep fetches h2h+spreads+totals (3 credits); the digest fetches h2h+spreads (2)
-    # so the evening schedule shows tomorrow's lines.
-    end = now + datetime.timedelta(hours=a.hours_ahead if not a.digest else 30)
+    # h2h+spreads = 2 credits per call (totals dropped 2026-11-05: no probability behind a
+    # totals rec and the 2h-cadence sweeps need the budget; NBA_ODDS_MARKETS overrides).
+    end = now + datetime.timedelta(hours=a.hours_ahead if not a.digest else 24)
     gate_col = "digest_at" if a.digest else "notified_at"
     pending_games = [g for g in con.execute(
         f"SELECT commence_time FROM games WHERE status='scheduled' AND {gate_col} IS NULL AND commence_time IS NOT NULL"
     ) if now < T.parse_utc(g["commence_time"]) <= end]
     if odds_key and not skip_odds and pending_games:
-        n_ev, n_rows, note, _ = fetch_odds.fetch_upcoming(con, markets="h2h,spreads" if a.digest else "h2h,spreads,totals")
+        n_ev, n_rows, note, _ = fetch_odds.fetch_upcoming(con, markets=os.environ.get("NBA_ODDS_MARKETS", "h2h,spreads"))
         print(f" [odds] {note}")
     else:
         print(f" [odds] skipped ({'no games in window' if not pending_games else 'NBA_SKIP_ODDS' if skip_odds else 'no key'})")

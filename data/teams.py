@@ -11,12 +11,17 @@ game_key(), so no cross-source reconciliation is ever needed:
     game_key("2026-11-05", home="DET", away="PHI") -> "2026-11-05_PHI@DET"
 """
 import datetime
+import os
 from zoneinfo import ZoneInfo
 
 from nba_api.stats.static import teams as _teams
 
 ET = ZoneInfo("America/New_York")
 TW = ZoneInfo("Asia/Taipei")
+# Timezone every human-facing time is rendered in (WhatsApp, site). Rich moved back to
+# Arizona in autumn 2026 (confirmed 2026-11-05); override with NBA_TZ if that changes.
+DISPLAY_TZ = ZoneInfo(os.environ.get("NBA_TZ", "America/Phoenix"))
+DISPLAY_TZ_ZH = os.environ.get("NBA_TZ_ZH", "亞利桑那時間")
 
 TEAMS = _teams.get_teams()
 FULL_TO_ABBR = {t["full_name"]: t["abbreviation"] for t in TEAMS}
@@ -81,10 +86,15 @@ def et_date(iso: str) -> str:
     return parse_utc(iso).astimezone(ET).date().isoformat()
 
 
-def tw_label(iso: str) -> str:
-    """UTC tip-off -> '11/5(四) 08:10' in Taiwan time."""
-    dt = parse_utc(iso).astimezone(TW)
+def local_label(iso: str, tz=None) -> str:
+    """UTC tip-off -> '11/5(四) 17:00' in DISPLAY_TZ (or the given tz)."""
+    dt = parse_utc(iso).astimezone(tz or DISPLAY_TZ)
     return f"{dt.month}/{dt.day}({WEEKDAY_ZH[dt.weekday()]}) {dt:%H:%M}"
+
+
+def tw_label(iso: str) -> str:
+    """Kept for callers that explicitly want Taiwan time."""
+    return local_label(iso, TW)
 
 
 def game_key(et_date_str: str, home: str, away: str) -> str:

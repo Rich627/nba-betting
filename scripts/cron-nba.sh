@@ -5,21 +5,22 @@
 # This wrapper only handles env, mode, timeout and logging. No claude processes.
 #
 # Modes:
-#   sweep [hours] (default, 14h) ESPN + odds (3 credits, only if a game is in the window)
-#                 + 6 LLMs + edge + settle.
+#   sweep [hours] (default 3h) ESPN + odds (2 credits, only if a game tips inside the
+#                 window) + 7 LLMs + edge + settle. Every game is picked up by the first
+#                 sweep whose window reaches it, i.e. 1-3h before tip-off (Rich asked for
+#                 ~2h, 2026-11-05).
 #   settle        results + settlement only. 0 odds credits, 0 model spend.
-#   digest        tomorrow's slate (Taiwan times) with current lines. 2 credits.
+#   digest        next-24h slate with current favourite + spread. 2 credits.
 #
-# Crontab. The mini's system clock is America/Phoenix (MST, UTC-7, no DST — verified
-# 2026-11-05 via /etc/localtime; it is NOT Asia/Taipei, whatever older notes say), so the
-# slots below are MST = Taiwan time minus 15h. NBA tips are 07:00-11:30 TW (16:00-20:30
-# MST) on a normal day, 01:00-04:00 TW (10:00-13:00 MST) for US-afternoon games:
-#   30 14 * * *  ~/whatsapp-cron-nba.sh sweep      # 05:30 TW — morning slate, before Rich sleeps
-#   0  5  * * *  ~/whatsapp-cron-nba.sh sweep 8    # 20:00 TW — early (US afternoon) tips only
-#   15 0  * * *  ~/whatsapp-cron-nba.sh settle     # 15:15 TW — all games final by ~14:00 TW
-#   15 4  * * *  ~/whatsapp-cron-nba.sh settle     # 19:15 TW — backstop
-#   0  6  * * *  ~/whatsapp-cron-nba.sh digest     # 21:00 TW — tomorrow's schedule
-# Budget: <= 8 odds credits/day (~240/month of the 500 free), 7 OpenRouter calls/game.
+# Crontab. Rich and the mini are both in Arizona (America/Phoenix, MST, UTC-7, no DST —
+# verified 2026-11-05 via /etc/localtime). NBA tips: 17:00-20:30 MST on a normal day,
+# 10:00-13:00 MST for weekend/holiday afternoon games:
+#   0 8       * * *  ~/whatsapp-cron-nba.sh digest   # today's slate + lines
+#   0 9-19/2  * * *  ~/whatsapp-cron-nba.sh sweep    # 09,11,13,15,17,19 — 3h window each
+#   45 23     * * *  ~/whatsapp-cron-nba.sh settle   # west-coast games are final by ~22:30
+#   0 7       * * *  ~/whatsapp-cron-nba.sh settle   # backstop (sweeps settle too)
+# Budget: a normal day is 3 sweeps with games + digest = ~8 odds credits (~240/month of
+# the 500 free; weekends ~12). 7 OpenRouter calls/game, ~$0.09/game.
 set -uo pipefail
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 
@@ -32,7 +33,7 @@ TIMEOUT="$(command -v gtimeout || command -v timeout || true)"
 cd "$REPO" || { echo "[$(date)] missing $REPO" >>"$LOG"; exit 1; }
 
 case "$MODE" in
-  sweep)  ARGS="--hours-ahead ${2:-14}" ;;
+  sweep)  ARGS="--hours-ahead ${2:-3}" ;;
   settle) ARGS="--skip-models --hours-ahead 0"; export NBA_SKIP_ODDS=1 ;;
   digest) ARGS="--digest" ;;   # fetches h2h+spreads (2 credits) so the evening list shows lines
   *) echo "[$(date)] unknown mode $MODE" >>"$LOG"; exit 2 ;;

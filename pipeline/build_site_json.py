@@ -73,7 +73,7 @@ def _game(con, g):
     models, consensus = _models_for(con, g["game_id"], home, away)
     d = {
         "game_id": g["game_id"], "game_date": g["game_date"], "status": g["status"],
-        "commence_time": g["commence_time"], "tw": T.tw_label(g["commence_time"]) if g["commence_time"] else "",
+        "commence_time": g["commence_time"], "tw": T.local_label(g["commence_time"]) if g["commence_time"] else "",
         "home": home, "away": away, "home_zh": T.zh(home), "away_zh": T.zh(away),
         "home_name": T.ABBR_TO_FULL.get(home, home), "away_name": T.ABBR_TO_FULL.get(away, away),
         "home_score": g["home_score"], "away_score": g["away_score"],
@@ -123,7 +123,8 @@ def build(con):
         "recs_pnl": round(sum(r["pnl"] or 0 for r in recs_graded), 1),
     }
     return {
-        "generated_at": now.astimezone(T.TW).isoformat(timespec="seconds"),
+        "generated_at": now.astimezone(T.DISPLAY_TZ).isoformat(timespec="seconds"),
+        "timezone": str(T.DISPLAY_TZ),
         "season": "2026-27",
         "models": list(MODELS),
         "stake": 100,

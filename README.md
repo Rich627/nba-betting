@@ -12,17 +12,17 @@ inflated by grading every pick at a flat 1.91 — this repo grades at the real m
 price (see `engine/settle.py`). Read the wallet curve on the site before believing
 anything.
 
-## What runs (cron on the mini; times below are Taiwan — the mini's own clock is
-## America/Phoenix, so the crontab slots are these minus 15h)
+## What runs (cron on the mini, America/Phoenix — Rich's timezone too)
 
 ```
-05:30, 20:00  sweep   ESPN schedule/standings/injuries/news -> the-odds-api (median of ~9
-                      books, in-play prices skipped) -> 7 LLMs in parallel -> consensus -> edge
-                      -> ONE message: today's bets first, the first tip-off as the deadline,
-                      then per-game detail — queued for the NBA WhatsApp group
-15:15, 19:15  settle  ESPN results -> grade every model pick + recommendation at the price
-                      captured when it was made -> wallets -> 賽果 message
-21:00         digest  tomorrow's slate in Taiwan time with the current favourite + spread
+09-19 every 2h  sweep   ESPN schedule/standings/injuries/news -> the-odds-api (h2h+spreads,
+                        median of ~9 books, in-play prices skipped) -> 7 LLMs in parallel ->
+                        consensus -> edge -> ONE message per sweep: the bets first, the first
+                        tip-off as the deadline, then per-game detail. 3h window, so each game
+                        is predicted 1-3h before tip-off.
+23:45, 07:00    settle  ESPN results -> grade every model pick + recommendation at the price
+                        captured when it was made -> wallets -> 賽果 message
+08:00           digest  today's slate (Arizona time) with the current favourite + spread
 each run      scripts/deploy_site.sh rebuilds docs/data/site.json and pushes (GitHub Pages)
 ```
 
@@ -77,10 +77,11 @@ Each layer runs standalone too: `python3 data/fetch_espn.py`, `python3 data/fetc
 
 ## Budget
 
-the-odds-api free tier = 500 credits/month. A sweep costs 3 credits (h2h+spreads+totals,
-one bulk call), the digest 2, and the call only runs when a game is inside the window, so
-a normal day is 5-8 credits. OpenRouter: 7 calls per game (~$0.03-0.05), ~10-14 games/day
-in season, so roughly $15-20/month.
+the-odds-api free tier = 500 credits/month. Each odds call is 2 credits (h2h+spreads;
+totals dropped) and only runs when a game is inside the window, so a normal day is ~8
+credits, a weekend ~12 (~250-300/month). OpenRouter: 7 calls per game, measured $0.085
+per game on 2026-11-05 (opus-5.5 / gpt-5.6 reasoning tokens), ~12 games/day in season,
+so roughly $30/month.
 
 ## Known limitations
 
