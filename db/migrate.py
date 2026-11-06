@@ -47,6 +47,8 @@ ADD_COLUMNS = [
     ("prematch_news", "headline", "TEXT"),
     ("prematch_news", "published", "TEXT"),
     ("prematch_news", "url", "TEXT"),
+    # 2026-11-06: bilingual site — the same reasoning in Traditional Chinese
+    ("predictions", "reasoning_zh", "TEXT"),
 ]
 
 

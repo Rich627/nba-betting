@@ -38,7 +38,8 @@ SYSTEM = ("You are an elite NBA analyst. Predict the game OBJECTIVELY from the d
 
 OUTPUT_SCHEMA = ('{"winner":"<HOME_ABBR|AWAY_ABBR>","win_prob":0.0-1.0,'
                  '"pred_home_score":int,"pred_away_score":int,"pred_total":int,'
-                 '"confidence":"high|med|low","key_factors":["...","..."],"reasoning":"1-3 sentences"}')
+                 '"confidence":"high|med|low","key_factors":["...","..."],"reasoning":"1-3 sentences in English",'
+                 '"reasoning_zh":"the same reasoning in Traditional Chinese (Taiwan usage)"}')
 
 
 def build_prompt(game: dict) -> str:

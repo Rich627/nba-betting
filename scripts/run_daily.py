@@ -105,16 +105,17 @@ def main():
                     continue
                 pc.execute(
                     """INSERT INTO predictions(game_id,model,market,pick,win_prob,pred_margin,
-                        pred_total,confidence,reasoning,created_at)
-                       VALUES(?,?,?,?,?,?,?,?,?,datetime('now'))
+                        pred_total,confidence,reasoning,reasoning_zh,created_at)
+                       VALUES(?,?,?,?,?,?,?,?,?,?,datetime('now'))
                        ON CONFLICT(game_id,model,market) DO UPDATE SET
                          pick=excluded.pick, win_prob=excluded.win_prob,
                          pred_margin=excluded.pred_margin, pred_total=excluded.pred_total,
                          confidence=excluded.confidence, reasoning=excluded.reasoning,
+                         reasoning_zh=excluded.reasoning_zh,
                          created_at=excluded.created_at""",
                     (gid, model, "moneyline", p.get("winner"), p.get("win_prob"),
                      (p.get("pred_home_score", 0) or 0) - (p.get("pred_away_score", 0) or 0),
-                     p.get("pred_total"), p.get("confidence"), p.get("reasoning")),
+                     p.get("pred_total"), p.get("confidence"), p.get("reasoning"), p.get("reasoning_zh")),
                 )
                 n_pred += 1
             pc.commit()

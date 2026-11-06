@@ -194,14 +194,14 @@ def predict_game(con, g, weights, skip_models):
         price = odds.get("ml_home") if pick == home else odds.get("ml_away")
         con.execute(
             """INSERT INTO predictions(game_id,model,market,pick,win_prob,pred_margin,pred_total,confidence,
-                                        reasoning,odds,created_at)
-               VALUES(?,?,?,?,?,?,?,?,?,?,?)
+                                        reasoning,reasoning_zh,odds,created_at)
+               VALUES(?,?,?,?,?,?,?,?,?,?,?,?)
                ON CONFLICT(game_id,model,market) DO UPDATE SET pick=excluded.pick, win_prob=excluded.win_prob,
                  pred_margin=excluded.pred_margin, pred_total=excluded.pred_total, confidence=excluded.confidence,
-                 reasoning=excluded.reasoning, odds=excluded.odds, created_at=excluded.created_at""",
+                 reasoning=excluded.reasoning, reasoning_zh=excluded.reasoning_zh, odds=excluded.odds, created_at=excluded.created_at""",
             (gid, model, "moneyline", pick, p["home_win_prob"],
              (p.get("pred_home_score") or 0) - (p.get("pred_away_score") or 0),
-             p.get("pred_total"), p.get("confidence"), p.get("reasoning"), price, now),
+             p.get("pred_total"), p.get("confidence"), p.get("reasoning"), p.get("reasoning_zh"), price, now),
         )
         n_ok += 1
     con.commit()

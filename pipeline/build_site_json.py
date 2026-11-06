@@ -26,9 +26,17 @@ OUT = os.path.join(ROOT, "docs", "data", "site.json")
 RESULT_DAYS = 14
 
 
-def _pick_label(home, away, pick, market, line=None):
+def _pick_label(home, away, pick, market, line=None, lang="zh"):
     side = pick.split(" ")[0]
-    team = T.zh(home) if side == "home" else T.zh(away)
+    abbr = home if side == "home" else away
+    if lang == "en":
+        team = T.ABBR_TO_NICK.get(abbr, abbr)
+        if market == "moneyline":
+            return f"{team} ML"
+        if market == "spread":
+            return f"{team} {pick.split(' ')[1]}"
+        return f"{'Over' if pick == 'over' else 'Under'} {line:g}" if line is not None else "Total"
+    team = T.zh(abbr)
     if market == "moneyline":
         return f"獨贏 {team}"
     if market == "spread":
@@ -38,15 +46,17 @@ def _pick_label(home, away, pick, market, line=None):
 
 def _models_for(con, gid, home, away):
     rows = con.execute(
-        "SELECT model,pick,win_prob,pred_margin,pred_total,confidence,reasoning,odds,result,pnl "
+        "SELECT model,pick,win_prob,pred_margin,pred_total,confidence,reasoning,reasoning_zh,odds,result,pnl "
         "FROM predictions WHERE game_id=? AND market='moneyline'", (gid,)
     ).fetchall()
     out, preds = [], {}
     for r in rows:
         out.append({
             "name": r["model"], "pick": r["pick"], "pick_zh": T.zh(r["pick"]),
+            "pick_en": T.ABBR_TO_NICK.get(r["pick"], r["pick"]),
             "home_win_prob": r["win_prob"], "pred_margin": r["pred_margin"], "pred_total": r["pred_total"],
-            "confidence": r["confidence"], "reasoning": r["reasoning"], "odds": r["odds"],
+            "confidence": r["confidence"], "reasoning": r["reasoning"], "reasoning_zh": r["reasoning_zh"],
+            "odds": r["odds"],
             "result": r["result"], "pnl": r["pnl"],
         })
         if r["win_prob"] is not None and r["pred_total"] is not None:
@@ -63,6 +73,7 @@ def _models_for(con, gid, home, away):
 def _recs_for(con, gid, home, away):
     return [{
         "market": r["market"], "pick": r["pick"], "label": _pick_label(home, away, r["pick"], r["market"], r["line"]),
+        "label_en": _pick_label(home, away, r["pick"], r["market"], r["line"], lang="en"),
         "odds": r["odds"], "line": r["line"], "edge": r["edge"], "confidence": r["confidence"], "why": r["why"],
         "result": r["result"], "pnl": r["pnl"],
     } for r in con.execute("SELECT * FROM recommendations WHERE game_id=? ORDER BY market", (gid,))]
@@ -76,6 +87,7 @@ def _game(con, g):
         "commence_time": g["commence_time"], "tw": T.local_label(g["commence_time"]) if g["commence_time"] else "",
         "home": home, "away": away, "home_zh": T.zh(home), "away_zh": T.zh(away),
         "home_name": T.ABBR_TO_FULL.get(home, home), "away_name": T.ABBR_TO_FULL.get(away, away),
+        "home_en": T.ABBR_TO_NICK.get(home, home), "away_en": T.ABBR_TO_NICK.get(away, away),
         "home_score": g["home_score"], "away_score": g["away_score"],
         "odds": game_odds_dict(con, g["game_id"]) or None,
         "consensus": consensus, "models": models, "recs": _recs_for(con, g["game_id"], home, away),
@@ -84,6 +96,7 @@ def _game(con, g):
         fav = home if consensus["home_win_prob"] >= 0.5 else away
         d["consensus"]["fav"] = fav
         d["consensus"]["fav_zh"] = T.zh(fav)
+        d["consensus"]["fav_en"] = T.ABBR_TO_NICK.get(fav, fav)
         d["consensus"]["fav_prob"] = consensus["home_win_prob"] if fav == home else round(1 - consensus["home_win_prob"], 3)
     graded = [m for m in models if m["result"] in ("WON", "LOST")]
     d["hits"] = f"{sum(1 for m in graded if m['result'] == 'WON')}/{len(graded)}" if graded else None

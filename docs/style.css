@@ -70,4 +70,4 @@ a { color: inherit; }
 .site-footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 24px 16px; text-align: center; color: var(--muted); font-size: .78rem; font-family: ui-monospace, monospace; }
 .site-footer p { margin: 2px 0; }
 .site-footer .accent { color: var(--primary); font-weight: 700; }
-@media (max-width: 560px) { .brand { font-size: 1rem; } .header-actions .btn:not(#theme-toggle) { display: none; } }
+@media (max-width: 560px) { .brand { font-size: 1rem; } .header-actions .btn:not(#theme-toggle):not(#lang-toggle) { display: none; } }

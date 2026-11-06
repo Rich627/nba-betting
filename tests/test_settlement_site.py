@@ -61,3 +61,29 @@ class SettlementTests(DatabaseTest):
     def test_empty_summary_has_zero_counts(self):
         s = build(self.con)["summary"]
         self.assertEqual((s["n_recs"], s["recs_won"], s["recs_graded"], s["recs_pnl"]), (0, 0, 0, 0))
+
+
+class BilingualSiteTests(DatabaseTest):
+    def test_site_carries_english_and_chinese_fields(self):
+        self.game()  # LAL @ BOS, tipping in an hour
+        self.recommendation(market="spread", pick="away +4.5", odds=1.9, line=4.5)
+        self.recommendation(market="total", pick="under", odds=1.9, line=221.5)
+        self.con.execute(
+            "INSERT INTO predictions(game_id,model,market,pick,win_prob,pred_margin,pred_total,reasoning,reasoning_zh) "
+            "VALUES('game','GPT','moneyline','BOS',0.6,4,220,'Boston is rested.','塞爾提克體力充足。')"
+        )
+        self.con.commit()
+        g = build(self.con)["upcoming"][0]
+        self.assertEqual((g["home_en"], g["away_en"]), ("Celtics", "Lakers"))
+        self.assertEqual((g["home_zh"], g["away_zh"]), ("塞爾提克", "湖人"))
+        m = g["models"][0]
+        self.assertEqual((m["reasoning"], m["reasoning_zh"]), ("Boston is rested.", "塞爾提克體力充足。"))
+        self.assertEqual((m["pick_en"], m["pick_zh"]), ("Celtics", "塞爾提克"))
+        self.assertEqual(g["consensus"]["fav_en"], "Celtics")
+        labels = {r["market"]: (r["label"], r["label_en"]) for r in g["recs"]}
+        self.assertEqual(labels["spread"], ("讓分 湖人 +4.5", "Lakers +4.5"))
+        self.assertEqual(labels["total"], ("總分 小 221.5", "Under 221.5"))
+
+    def test_prompt_asks_for_chinese_reasoning(self):
+        from models.predict import build_prompt
+        self.assertIn('"reasoning_zh"', build_prompt({"home": "BOS", "away": "LAL"}))
