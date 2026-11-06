@@ -26,7 +26,7 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 MODE="${1:-sweep}"
 LOG="$HOME/whatsapp-cron-nba.log"
-REPO="$HOME/Desktop/nba-betting"
+REPO="${NBA_REPO:-$HOME/nba-betting}"
 PY="/usr/bin/python3"
 TIMEOUT="$(command -v gtimeout || command -v timeout || true)"
 
@@ -48,6 +48,6 @@ fi
 EXIT=$?
 [ "$EXIT" -eq 124 ] && echo "[$(date)] TIMED OUT after 40m" >>"$LOG"
 # Refresh the public site (no-op push when nothing changed). Never blocks the sweep.
-bash scripts/deploy_site.sh >>"$LOG" 2>&1 || echo "[$(date)] site deploy failed (non-fatal)" >>"$LOG"
+${TIMEOUT:+"$TIMEOUT" --kill-after=30s 5m} bash scripts/deploy_site.sh >>"$LOG" 2>&1 || echo "[$(date)] site deploy failed (non-fatal)" >>"$LOG"
 echo "[$(date)] === nba $MODE done exit=$EXIT ===" >>"$LOG"
 exit 0

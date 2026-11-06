@@ -69,7 +69,7 @@ def queue_message(section: str, msg: str, dry_run: bool):
     try:
         with open(tmp, "x", encoding="utf-8") as f:
             f.write(f"---\nchat_id: {NBA_CHAT_ID}\ntask: nba-sweep\n---\n\n")
-            f.write("NBA 系統（~/Desktop/nba-betting）自動產生的訊息。每個 ## 區塊各發成一則訊息到 NBA 群組，"
+            f.write("NBA 系統（~/nba-betting）自動產生的訊息。每個 ## 區塊各發成一則訊息到 NBA 群組，"
                     "原文照發（可微調語氣，數字、賠率、建議一律不得更動或自行補充）。\n")
             f.write(f"\n## {section}\n\n{msg}\n")
             f.flush()
