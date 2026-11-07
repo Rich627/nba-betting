@@ -54,8 +54,10 @@ features/ analysis/        player-level modules (only run when nba_api data exis
            fetch_news.py   ESPN news feed (league + per-team), last-72h headlines go into the prompt
 models/    predict.py      ONE shared prompt -> gpt-5.6-sol / claude-opus-5.5 / gemini-3.1-pro /
                            deepseek-v4-pro-0813 / kimi-k2.6 / grok-4.7 / glm-5.3-prime (OpenRouter)
-engine/    edge.py         consensus + EV; moneyline needs EV >= +5% and 66% agreement,
-                           spread needs a 3-pt buffer, total a 6-pt buffer
+engine/    edge.py         consensus + EV; moneyline only on the models' side, probability
+                           = average of model consensus and vig-free market, EV +5%..+15%
+                           (above = model error, whole game skipped), 66% agreement;
+                           spread needs a 3-pt buffer (not on the moneyline side), total 6
            settle.py       real-price grading, z-gated model weights, wallet history
 scripts/   run_scheduler.py  the loop; cron-nba.sh wrapper; deploy_site.sh
 pipeline/  build_site_json.py -> docs/data/site.json
