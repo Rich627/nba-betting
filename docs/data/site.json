@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T15:05:12-07:00",
+ "generated_at": "2026-11-06T17:01:31-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,7 +13,7 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 11,
+  "n_predicted_games": 13,
   "n_recs": 4,
   "recs_won": 0,
   "recs_graded": 0,
@@ -66,35 +66,43 @@
  "wallet_history": {
   "dates": [
    "2026-11-05",
-   "2026-11-06"
+   "2026-11-06",
+   "2026-11-07"
   ],
   "series": {
    "Claude": [
     61.0,
+    205.0,
     205.0
    ],
    "DeepSeek": [
     61.0,
+    205.0,
     205.0
    ],
    "GLM": [
     46.0,
+    190.0,
     190.0
    ],
    "GPT": [
     61.0,
+    22.0,
     22.0
    ],
    "Gemini": [
     61.0,
+    205.0,
     205.0
    ],
    "Grok": [
     61.0,
+    205.0,
     205.0
    ],
    "Kimi": [
     61.0,
+    205.0,
     205.0
    ]
   }
@@ -1202,8 +1210,124 @@
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.61,
+    "pred_margin": 5.0,
+    "pred_total": 234.1,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "LAL",
+    "fav_zh": "湖人",
+    "fav_en": "Lakers",
+    "fav_prob": 0.61
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.62,
+     "pred_margin": 5.0,
+     "pred_total": 237.0,
+     "confidence": "med",
+     "reasoning": "Portland's stronger point differential and unbeaten road record make this competitive, but its significant absences tilt the matchup toward a healthy Lakers team at home. Doncic's elite recent scoring form gives LAL the best late-game advantage.",
+     "reasoning_zh": "波特蘭擁有較佳的得失分差，且客場仍保持不敗，因此本場預計會相當接近；但多名重要球員缺陣，使陣容健康且坐鎮主場的湖人更占優勢。唐西奇近期的頂尖得分狀態，也讓湖人在比賽末段更具優勢。",
+     "odds": 1.67,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.58,
+     "pred_margin": 4.0,
+     "pred_total": 234.0,
+     "confidence": "low",
+     "reasoning": "Portland has the better point differential and a perfect road record, but missing three rotation players, including Morant and Sharpe, cuts into its depth. The Lakers are healthy, at home, and riding Doncic's scoring streak, so they are slight favorites in what should be a close, high-scoring game.",
+     "reasoning_zh": "拓荒者的得失分差較佳，客場也保持全勝，但莫蘭特、夏普等三名輪換球員缺陣，削弱了板凳深度。湖人陣容完整、坐擁主場，加上唐西奇得分手感火燙，因此略為看好，預期是一場比分接近的高得分比賽。",
+     "odds": 1.67,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.65,
+     "pred_margin": 7.0,
+     "pred_total": 237.0,
+     "confidence": "med",
+     "reasoning": "Although Portland is undefeated on the road and boasts a strong point differential, the absence of Ja Morant and Shaedon Sharpe leaves them vulnerable. The Lakers are fully healthy and feature a red-hot Luka Doncic, which should be enough to secure a home victory in a high-scoring matchup.",
+     "reasoning_zh": "儘管拓荒者在客場保持不敗且擁有出色的得失分差，但缺少莫蘭特（Ja Morant）和夏普（Shaedon Sharpe）讓他們戰力受損。湖人目前陣容健康，加上東契奇（Luka Doncic）手感火燙，有望在這場高比分的對決中捍衛主場。",
+     "odds": 1.67,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.62,
+     "pred_margin": 4.0,
+     "pred_total": 234.0,
+     "confidence": "med",
+     "reasoning": "LAL has a slight edge due to home court, a healthy roster, and Luka Doncic's elite form, while Portland's strong road record is offset by key backcourt injuries.",
+     "reasoning_zh": "湖人因主場優勢、陣容完整且 Luka Doncic 狀態火燙而略占上風；拓荒者雖然客場強勢，但缺少 Ja Morant 與 Shaedon Sharpe，後場戰力受損。",
+     "odds": 1.67,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.6,
+     "pred_margin": 4.0,
+     "pred_total": 234.0,
+     "confidence": "med",
+     "reasoning": "Even though Portland has the West's best record and an unbeaten road mark, the absence of Morant and Sharpe severely thins its backcourt rotation. Luka Doncic's elite scoring streak gives the well-rested Lakers a narrow edge at home.",
+     "reasoning_zh": "儘管波特蘭擁有西區最佳戰績與客場全勝的表現，但Morant與Sharpe的缺陣大幅削弱其後場輪替深度。Luka Doncic正處於歷史級的進攻火熱狀態，讓獲得充分休息的湖人在主場擁有微弱優勢。",
+     "odds": 1.67,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.57,
+     "pred_margin": 4.0,
+     "pred_total": 234.0,
+     "confidence": "med",
+     "reasoning": "Portland’s stronger point differential and perfect road record make this closer than the market, but home court, a fully available Lakers roster, and Doncic’s scoring surge outweigh Sharpe’s absence. Both teams score about 122 per game, so the edge is small: Lakers by a narrow margin in a high-total game.",
+     "reasoning_zh": "拓荒者淨勝分較佳且客場5勝0敗，比賽比盤口更接近；但湖人主場、陣容齊全，加上Doncic連續六場35分以上，足以抵銷Sharpe等傷兵。雙方場均得分都約122分，預期是一場高分近戰，湖人小勝。",
+     "odds": 1.67,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.63,
+     "pred_margin": 7.0,
+     "pred_total": 229.0,
+     "confidence": "med",
+     "reasoning": "Portland's stronger net rating and perfect road record are heavily discounted by Ja Morant's absence (plus Sharpe and Krejci), while a fully healthy Lakers team at home is riding a historic Luka Doncic scoring streak. I project a close but comfortable Lakers win, roughly in line with the market's -3 spread.",
+     "reasoning_zh": "拓荒者雖然淨勝分較佳且客場5勝0敗，但Ja Morant（加上Sharpe與Krejci）缺陣影響重大，而湖人全員健康、坐擁主場優勢，且Luka Doncic正處於連續六場得分35+的火燙狀態。預期湖人將拿下接近但相對穩固的勝利，與市場讓分約3分相符。",
+     "odds": 1.67,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -1232,8 +1356,124 @@
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.131,
+    "pred_margin": -13.4,
+    "pred_total": 227.1,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "SAS",
+    "fav_zh": "馬刺",
+    "fav_en": "Spurs",
+    "fav_prob": 0.869
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.11,
+     "pred_margin": -14.0,
+     "pred_total": 230.0,
+     "confidence": "high",
+     "reasoning": "San Antonio holds major advantages in current form, scoring differential and availability, with no rest disadvantage. Sacramento's poor defense and depleted rotation make the Spurs the clear pick, although home court keeps the projection short of certainty.",
+     "reasoning_zh": "聖安東尼奧在近期狀態、得失分差與陣容完整度上都占有明顯優勢，且休息天數沒有劣勢。沙加緬度防守不佳又有多名球員缺陣，因此馬刺是明確較合理的選擇，但國王的主場優勢仍使勝率未達接近百分之百。",
+     "odds": 1.1,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.15,
+     "pred_margin": -13.0,
+     "pred_total": 225.0,
+     "confidence": "high",
+     "reasoning": "San Antonio is on a six-game win streak, and Wembanyama is playing at a historic level. Sacramento is 1-7 with a -14 differential and is missing several rotation players, including Keegan Murray. The Kings' home court should keep it somewhat closer than the season numbers suggest, but the Spurs should win comfortably, by around 13 points.",
+     "reasoning_zh": "馬刺六連勝，溫班亞馬狀態達到歷史級水準。國王戰績1勝7敗、場均淨負14分，且包括基根·莫瑞在內多名輪換球員缺陣。國王主場或許能讓比分比賽季數據顯示的稍微接近一些，但馬刺應能輕鬆取勝，預估贏約13分。",
+     "odds": 1.1,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.12,
+     "pred_margin": -17.0,
+     "pred_total": 229.0,
+     "confidence": "high",
+     "reasoning": "The Spurs are riding a six-game winning streak fueled by Victor Wembanyama's historic performances, while the Kings are struggling significantly on defense, allowing over 123 points per game. With Sacramento missing key contributors like Keegan Murray, San Antonio's overwhelming momentum and superior talent should easily secure a road victory.",
+     "reasoning_zh": "馬刺目前處於六連勝的絕佳狀態，這主要歸功於文班亞馬（Victor Wembanyama）史詩級的表現；反觀國王防守端漏洞百出，場均失分高達123分以上。加上國王缺少基根·穆雷（Keegan Murray）等主力球員，馬刺憑藉壓倒性的氣勢與天賦優勢，應能輕鬆在客場拿下勝利。",
+     "odds": 1.1,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.1,
+     "pred_margin": -16.0,
+     "pred_total": 222.0,
+     "confidence": "high",
+     "reasoning": "San Antonio is in far better form and healthier, while Sacramento is struggling badly at home and missing key players, making a comfortable Spurs road win likely.",
+     "reasoning_zh": "馬刺狀態火熱且溫班亞瑪剛砍下52分，國王傷兵滿營且主場尚未開胡，預期馬刺能在客場輕鬆取勝。",
+     "odds": 1.1,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.14,
+     "pred_margin": -11.0,
+     "pred_total": 229.0,
+     "confidence": "high",
+     "reasoning": "San Antonio enters on a six-game winning streak with elite point differential and road form, while Sacramento owns the West's worst record, a porous defense surrendering over 123 points per game, and multiple key injuries. Wembanyama's career-night momentum and the Spurs' 2-0 road record against the Kings' 0-3 home mark create a lopsided matchup. Sacramento's missing rotation pieces further erode their ability to keep pace.",
+     "reasoning_zh": "聖安東尼奧帶著六連勝與優異的淨分差和客場戰績進入比賽，沙加緬度則是西區墊底的1勝7負，防守場均失分超過123分，且有多名主力傷缺。溫班亞馬剛創下生涯新高氣勢如虹，加上馬刺客場2勝0敗對上國王主場0勝3敗，戰力差距懸殊，國王難以抗衡。",
+     "odds": 1.1,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.16,
+     "pred_margin": -13.0,
+     "pred_total": 227.0,
+     "confidence": "high",
+     "reasoning": "San Antonio’s form, net rating and undefeated road record are far stronger than Sacramento’s 1-7 start and winless home mark. With both teams on equal rest and the Kings missing multiple rotation players, the Spurs are clear favorites for a comfortable road win, though an eight-game sample still leaves some variance.",
+     "reasoning_zh": "馬刺的近況、淨勝分與客場不敗，明顯優於國王的1勝7敗與主場尚未開胡。雙方休息天數相同，國王又缺席多位輪換球員，馬刺仍是明顯熱門，應能在客場輕鬆取勝，只是八場樣本仍有一定波動。",
+     "odds": 1.1,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.14,
+     "pred_margin": -10.0,
+     "pred_total": 228.0,
+     "confidence": "high",
+     "reasoning": "San Antonio's elite two-way form (6-2, W6, +8.3 diff) meets a Sacramento team that is 1-7, 0-3 at home, and depleted by injuries to Keegan Murray and Ben Simmons. Wembanyama's historic 52/24/8 performance signals peak form, so the Spurs should control this game comfortably despite the Kings' home court, with a projected margin around 10 points.",
+     "reasoning_zh": "馬刺近況火熱（6勝2敗、6連勝、淨勝分+8.3），對上戰績慘淡的國王（1勝7敗、主場0勝3敗、淨勝分-14.0），且國王缺少Keegan Murray與Ben Simmons等主力。Wembanyama剛繳出生涯新高52分、24籃板、8阻攻的史詩級表現，即使國王坐擁主場優勢，馬刺仍應能穩定取勝，預估勝分約在10分左右。",
+     "odds": 1.1,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
