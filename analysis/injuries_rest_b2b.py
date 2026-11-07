@@ -4,8 +4,11 @@
 Combines two signals available pre-game:
   1. REST / BACK-TO-BACK: from games.rest_days_* / is_b2b_* (computed by data layer).
      A team on a b2b (or markedly less rest) is at a measurable disadvantage.
-  2. INJURIES: from prematch_news.injuries_json (status OUT/DOUBTFUL/QUESTIONABLE),
-     weighted by the player's recent role (rolling minutes) so losing a star hurts more.
+  2. INJURIES, weighted by role so losing a star hurts more.
+     Live (no before_date): data.injuries — official NBA report first, ESPN fallback,
+     ESPN season minutes per game. Needs no nba_api data (2026-11-06).
+     Backtest (before_date): prematch_news.injuries_json + nba_api rolling minutes,
+     so no injury news from after the cutoff leaks in.
 
   python3 analysis/injuries_rest_b2b.py <game_id>
 """
@@ -16,7 +19,6 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from analysis._common import clamp, empty, game_row, get_con  # noqa: E402
-from features.rolling import load_player_games, rolling_form  # noqa: E402
 
 # injury status -> probability the player effectively misses impact
 _STATUS_W = {"out": 1.0, "doubtful": 0.75, "questionable": 0.35, "probable": 0.1, "gtd": 0.4}
@@ -45,8 +47,22 @@ def _rest_signal(g):
     return clamp(s), "; ".join(notes) or "rest even"
 
 
+def _live_injury_signal(con, g, snap=None):
+    """+ favors home: away missing more expected rotation minutes => positive."""
+    from data import injuries as INJ
+    snap = snap or INJ.snapshot(con, g["game_id"])
+    if not snap or not any(snap["teams"].values()):
+        return 0.0, None
+    away_hit = INJ.impact(snap["teams"].get(g["away_team"], []))
+    home_hit = INJ.impact(snap["teams"].get(g["home_team"], []))
+    net = (away_hit - home_hit) / 36.0
+    note = f"injury impact: {g['away_team']} -{away_hit:.0f} min vs {g['home_team']} -{home_hit:.0f} min"
+    return clamp(net), note
+
+
 def _injury_signal(con, g, cutoff, window):
-    """+ favors home: away missing more minute-weighted talent => positive."""
+    """Backtest path. + favors home: away missing more minute-weighted talent => positive."""
+    from features.rolling import load_player_games, rolling_form
     news = con.execute(
         "SELECT team,injuries_json FROM prematch_news WHERE game_id=?", (g["game_id"],)
     ).fetchall()
@@ -86,7 +102,7 @@ def _injury_signal(con, g, cutoff, window):
     return clamp(net), note
 
 
-def analyze(game_id, con=None, before_date=None, window=10):
+def analyze(game_id, con=None, before_date=None, window=10, injury_snapshot=None):
     con = get_con(con)
     g = game_row(con, game_id)
     if not g:
@@ -94,7 +110,10 @@ def analyze(game_id, con=None, before_date=None, window=10):
     cutoff = before_date or g["game_date"]
 
     rest_s, rest_note = _rest_signal(g)
-    inj_s, inj_note = _injury_signal(con, g, cutoff, window)
+    if before_date is None:
+        inj_s, inj_note = _live_injury_signal(con, g, injury_snapshot)
+    else:
+        inj_s, inj_note = _injury_signal(con, g, cutoff, window)
 
     have_inj = inj_note is not None
     # rest is the reliable always-present signal; injuries dominate when present

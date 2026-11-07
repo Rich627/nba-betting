@@ -16,6 +16,11 @@ Each run:
       not yet notified -> analysis modules (if player data) -> 6 LLMs -> consensus
       -> edge -> queue ONE consolidated 賽前 message
   [6] --digest: queue the next 24h slate (Arizona times) with current lines, no models
+  [7] --recheck: 3-25 min before tip, re-read the injury picture (official NBA report +
+      ESPN) and diff it against the snapshot stored at prediction time. A material change
+      (>= 8 expected rotation minutes) voids the game's recommendations, re-runs the models
+      at fresh odds (2 credits, once per run) and queues one ⚠️ 傷兵異動 message.
+      Exit status 10 means something was queued (the cron wrapper redeploys the site).
 
 Usage:
   python3 scripts/run_scheduler.py                    # normal sweep
@@ -23,6 +28,7 @@ Usage:
   python3 scripts/run_scheduler.py --skip-models      # data + odds only (no OpenRouter spend)
   python3 scripts/run_scheduler.py --dry-run          # print, don't mark or queue
   python3 scripts/run_scheduler.py --digest           # tomorrow's schedule only
+  python3 scripts/run_scheduler.py --recheck          # pre-tip injury re-check
   NBA_SKIP_ODDS=1 ...                                 # settlement-only (0 credits)
 """
 import argparse
@@ -39,7 +45,7 @@ try:
 except Exception:  # noqa: BLE001
     pass
 
-from data import fetch_espn, fetch_news, fetch_odds, teams as T  # noqa: E402
+from data import fetch_espn, fetch_news, fetch_odds, fetch_official_injuries, injuries as INJ, teams as T  # noqa: E402
 from data.db import connect  # noqa: E402
 from engine import edge as E, settle as S  # noqa: E402
 from models import predict as M  # noqa: E402
@@ -47,6 +53,9 @@ from models import predict as M  # noqa: E402
 PENDING_DIR = os.path.expanduser("~/.whatsapp-channel/pending")
 NBA_CHAT_ID = "120363428418779899@g.us"
 MARKET_ZH = {"moneyline": "獨贏", "spread": "讓分", "total": "大小"}
+STATUS_ZH = {"Out": "缺陣", "Doubtful": "可能缺陣", "Questionable": "出賽成疑", "Probable": "可能出賽",
+             "Available": "可出賽", "Day-To-Day": "每日觀察", "not listed": "未列名單"}
+RECHECK_WINDOW_MIN = (3, 25)    # (earliest, latest) min before tip; 3 lets the next run catch a skipped one
 
 
 def utcnow():
@@ -161,28 +170,33 @@ def settlement_pass(con, dry_run):
         con.commit()
 
 
-def _run_modules(con, gid):
-    """Analysis modules need nba_api player rows; skip silently when there are none."""
+def _run_modules(con, gid, snap=None):
+    """All modules when nba_api player rows exist; otherwise only injuries_rest_b2b, which
+    runs on the official/ESPN injury view + ESPN season minutes (no nba_api needed)."""
     has_players = con.execute("SELECT 1 FROM player_game_stats LIMIT 1").fetchone()
-    if not has_players:
-        return 0
     try:
         from analysis.registry import run_all
-        return len(run_all(gid, con) or {})
+        only = None if has_players else ["injuries_rest_b2b"]
+        return len(run_all(gid, con, modules=only, injury_snapshot=snap) or {})
     except Exception as e:  # noqa: BLE001
         print(f"   modules failed for {gid}: {type(e).__name__}: {str(e)[:100]}")
         return 0
 
 
-def predict_game(con, g, weights, skip_models):
-    """Run models + edge for one game; store predictions/recs; return the message block."""
+def predict_game(con, g, weights, skip_models, snap=None, save_kind="predict"):
+    """Run models + edge for one game; store predictions/recs; return the message block.
+    The injury snapshot the models see is stored as `save_kind` (the re-check baseline)."""
     gid, home, away = g["game_id"], g["home_team"], g["away_team"]
     head = f"*{T.matchup_zh(home, away)}* {T.local_label(g['commence_time'])}"
     odds = fetch_odds.game_odds_dict(con, gid)
     if skip_models:
         return head + "\n" + fetch_odds.odds_summary(odds, home, away) + "\n（未跑模型）"
-    _run_modules(con, gid)
-    game = M.game_dict_from_db(gid, con)
+    if snap is None:
+        snap = INJ.snapshot(con, gid)
+    if save_kind and snap:
+        INJ.save_snapshot(con, gid, save_kind, snap)
+    _run_modules(con, gid, snap)
+    game = M.game_dict_from_db(gid, con, injury_snapshot=snap)
     preds = M.to_home_perspective(M.predict_all(game), home)
     now = utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     n_ok = 0
@@ -276,6 +290,84 @@ def notification_pass(con, hours_ahead, skip_models, dry_run, limit=None):
         con.commit()
 
 
+def _change_line(c):
+    old = STATUS_ZH.get(c["old"], c["old"])
+    new = STATUS_ZH.get(c["new"], c["new"])
+    role = f"，場均 {c['min']:.0f} 分鐘" if c["min"] else ""
+    return f"• {T.zh(c['team'])} {c['player']}：{old} → *{new}*{role}"
+
+
+def recheck_pass(con, dry_run, window=RECHECK_WINDOW_MIN, refresh_odds=None):
+    """Pre-tip injury re-check. Returns the number of games whose picks changed."""
+    now = utcnow()
+    lo, hi = (now + datetime.timedelta(minutes=m) for m in window)
+    cands = [g for g in con.execute(
+        "SELECT game_id, home_team, away_team, commence_time FROM games WHERE status='scheduled' "
+        "AND notified_at IS NOT NULL AND rechecked_at IS NULL AND commence_time IS NOT NULL ORDER BY commence_time"
+    ) if lo < T.parse_utc(g["commence_time"]) <= hi]
+    if not cands:
+        print(f" [recheck] no predicted game tips in {window[0]}-{window[1]} min")
+        return 0
+    have_models = bool(os.environ.get("OPENROUTER_API_KEY"))
+    weights = S.weights_from_record(con)
+    odds_fresh = False
+    blocks, checked = [], []
+    for g in cands:
+        gid, home, away = g["game_id"], g["home_team"], g["away_team"]
+        base = INJ.load_snapshot(con, gid, "predict")
+        new = INJ.snapshot(con, gid)
+        if not base or not new:
+            print(f" [recheck] {gid}: no prediction-time snapshot; nothing to compare")
+            checked.append(gid)
+            continue
+        changes = INJ.diff(base, new)
+        open_q = INJ.unresolved(new)
+        if not changes:
+            print(f" [recheck] {gid}: no material change"
+                  + (f" (still undecided: {', '.join(e['player'] for e in open_q)})" if open_q else ""))
+            if not dry_run:
+                INJ.save_snapshot(con, gid, "recheck", new, {"changes": []})
+            checked.append(gid)
+            continue
+        print(f" [recheck] {gid}: {len(changes)} material change(s): "
+              + "; ".join(f"{c['player']} {c['old']}->{c['new']}" for c in changes))
+        old_recs = [dict(r) for r in con.execute(
+            "SELECT market,pick,odds,line,edge FROM recommendations WHERE game_id=?", (gid,))]
+        head = f"⚠️ *傷兵異動* {T.matchup_zh(home, away)} {T.local_label(g['commence_time'])}"
+        lines = [head] + [_change_line(c) for c in changes[:6]]
+        if old_recs:
+            lines.append("原建議作廢：" + "、".join(
+                pick_label(home, away, r["pick"], r["market"]) + (f" @{r['odds']:.2f}" if r.get("odds") else "")
+                for r in old_recs))
+        if dry_run:
+            blocks.append("\n".join(lines + ["（dry-run：未重跑）"]))
+            continue
+        INJ.save_snapshot(con, gid, "recheck", new, {"changes": changes, "voided": old_recs})
+        con.execute("DELETE FROM recommendations WHERE game_id=? AND result IS NULL", (gid,))
+        con.commit()
+        if not have_models:
+            lines.append("模型未啟用，這場先別下。")
+        else:
+            if not odds_fresh and refresh_odds:
+                refresh_odds()
+                odds_fresh = True
+            try:
+                block = predict_game(con, g, weights, False, snap=new, save_kind=None)
+                lines.append("— 依最新名單重跑 —")
+                lines += block.split("\n")[1:]
+            except Exception as e:  # noqa: BLE001
+                print(f" [recheck] {gid} re-run FAILED: {type(e).__name__}: {str(e)[:200]}")
+                lines.append("重跑失敗，這場先別下。")
+        blocks.append("\n".join(lines))
+        checked.append(gid)
+    if blocks:
+        queue_message("賽前異動", "\n\n".join(blocks) + "\n\n開賽前最後確認，紙上驗證中。", dry_run)
+    if not dry_run and checked:
+        con.executemany("UPDATE games SET rechecked_at=? WHERE game_id=?", [(now.isoformat(), gid) for gid in checked])
+        con.commit()
+    return len(blocks)
+
+
 def digest_pass(con, dry_run, hours=24):
     now = utcnow()
     end = now + datetime.timedelta(hours=hours)
@@ -305,6 +397,18 @@ def digest_pass(con, dry_run, hours=24):
 
 
 # ----------------------------------------------------------------------------- main
+def refresh_injuries(con):
+    """ESPN injuries, the official NBA report and ESPN season minutes. Each is free and
+    independent: one failing source never blocks the others or the run."""
+    for name, fn in (("espn injuries", lambda: f"{fetch_espn.fetch_injuries(con)} rows"),
+                     ("official report", lambda: "{} rows ({})".format(*fetch_official_injuries.fetch(con))),
+                     ("season minutes", lambda: f"{INJ.fetch_season_stats(con)} players")):
+        try:
+            print(f" [injuries] {name}: {fn()}")
+        except Exception as e:  # noqa: BLE001
+            print(f" [injuries] {name} FAILED: {type(e).__name__}: {str(e)[:120]}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hours-ahead", type=float, default=3.0)
@@ -312,6 +416,7 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--limit", type=int, default=None, help="cap games sent to the model layer this run")
     ap.add_argument("--digest", action="store_true", help="queue tomorrow's schedule instead of predictions")
+    ap.add_argument("--recheck", action="store_true", help="pre-tip injury re-check only (exit 10 if queued)")
     a = ap.parse_args()
 
     ok_key = None if a.skip_models else os.environ.get("OPENROUTER_API_KEY")
@@ -327,10 +432,19 @@ def main():
         print(f" [espn] {d}: {res}")
     fetch_espn.compute_rest(con)
     # [2] form + injuries + news
+    refresh_injuries(con)
+    if a.recheck:
+        def refresh_odds():
+            if odds_key and not skip_odds:
+                print(f" [odds] {fetch_odds.fetch_upcoming(con, markets=os.environ.get('NBA_ODDS_MARKETS', 'h2h,spreads'))[2]}")
+        n = recheck_pass(con, a.dry_run, refresh_odds=refresh_odds)
+        for path in _PENDING_PATHS:
+            print(f"\n[pending] {path}")
+        return 10 if n and not a.dry_run else 0
     try:
-        print(f" [espn] standings {fetch_espn.fetch_standings(con)} teams, injuries {fetch_espn.fetch_injuries(con)} rows")
+        print(f" [espn] standings {fetch_espn.fetch_standings(con)} teams")
     except Exception as e:  # noqa: BLE001
-        print(f" [espn] standings/injuries FAILED: {type(e).__name__}: {str(e)[:120]}")
+        print(f" [espn] standings FAILED: {type(e).__name__}: {str(e)[:120]}")
     try:
         n_news, n_teams = fetch_news.fetch_for_upcoming(con)
         print(f" [news] {n_news} new team-headlines (league feed + {n_teams} team feeds)")
@@ -364,7 +478,8 @@ def main():
             print(f"\n[pending] {path}")
     else:
         print("\n(nothing queued this run)")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

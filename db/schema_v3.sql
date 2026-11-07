@@ -24,3 +24,25 @@ CREATE TABLE IF NOT EXISTS model_wallet_history (
   as_of_date TEXT, model TEXT, bets INTEGER, wins INTEGER, pnl REAL,
   PRIMARY KEY (as_of_date, model)
 );
+
+-- 2026-11-06: official NBA injury report (15-minute PDF), cleared + reloaded each run.
+-- game_date is the PDF's MM/DD/YYYY; status includes Probable/Questionable/Doubtful/
+-- Available and 'NOT YET SUBMITTED' (player = '').
+CREATE TABLE IF NOT EXISTS official_injuries (
+  team TEXT, player TEXT, status TEXT, reason TEXT, matchup TEXT, game_date TEXT,
+  report TEXT, report_label TEXT,
+  PRIMARY KEY (team, player, game_date)
+);
+
+-- ESPN season averages per player (role weight for injury impact), reloaded each run.
+CREATE TABLE IF NOT EXISTS player_season_stats (
+  player_key TEXT, player TEXT, team TEXT, gp REAL, avg_min REAL, avg_pts REAL, as_of TEXT,
+  PRIMARY KEY (player_key, team)
+);
+
+-- What the injury picture looked like when a game was predicted ('predict') and at the
+-- pre-tip re-check ('recheck'; payload also archives any voided recommendations).
+CREATE TABLE IF NOT EXISTS injury_snapshots (
+  game_id TEXT, kind TEXT, taken_at TEXT, payload TEXT,
+  PRIMARY KEY (game_id, kind)
+);

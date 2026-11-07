@@ -23,6 +23,10 @@ anything.
 23:45, 07:00    settle  ESPN results -> grade every model pick + recommendation at the price
                         captured when it was made -> wallets -> 賽果 message
 08:00           digest  today's slate (Arizona time) with the current favourite + spread
+08-20 :05/:20/  recheck 3-25 min before each predicted tip: official NBA injury report + ESPN
+  :35/:50               vs the snapshot the models saw. A rotation player's status change
+                        (>= 8 expected minutes) voids the picks, re-runs the models at fresh
+                        odds and sends one ⚠️ 傷兵異動 message. No change = no message, no spend.
 each run      scripts/deploy_site.sh rebuilds docs/data/site.json and pushes (GitHub Pages)
 ```
 
@@ -36,12 +40,17 @@ publish a no-bet conclusion or mark the game as notified.
 
 ```
 data/      fetch_espn.py   schedule + results + standings + injuries (free, no key, reliable)
+           fetch_official_injuries.py  the league's 15-minute injury PDF (Probable /
+                           Questionable / Doubtful / Out), parsed with the standard library
+           injuries.py     one injury view per game (official first, ESPN fallback) with ESPN
+                           season minutes as role weight; snapshots + diff for the re-check
            fetch_odds.py   all books stored; most common line + observed lower median price
            teams.py        one naming map for nba_api / ESPN / odds-api; canonical game id
                            = "<ET date>_<AWAY>@<HOME>" so no source needs reconciling
            fetch_players.py / fetch_results.py   optional nba_api layer (stats.nba.com is
                            often unreachable; the scheduler does not depend on it)
-features/ analysis/        player-level modules (only run when nba_api data exists)
+features/ analysis/        player-level modules (only run when nba_api data exists;
+                           injuries_rest_b2b runs live without it on data/injuries.py)
            fetch_news.py   ESPN news feed (league + per-team), last-72h headlines go into the prompt
 models/    predict.py      ONE shared prompt -> gpt-5.6-sol / claude-opus-5.5 / gemini-3.1-pro /
                            deepseek-v4-pro-0813 / kimi-k2.6 / grok-4.7 / glm-5.3-prime (OpenRouter)
@@ -70,6 +79,7 @@ python3 scripts/run_scheduler.py --dry-run --limit 1       # one real 6-model pr
 python3 scripts/run_scheduler.py                           # what cron runs
 NBA_SKIP_ODDS=1 python3 scripts/run_scheduler.py --skip-models --hours-ahead 0   # settle only
 python3 scripts/run_scheduler.py --digest                  # tomorrow's schedule
+python3 scripts/run_scheduler.py --recheck --dry-run       # pre-tip injury re-check preview
 python3 pipeline/build_site_json.py                        # rebuild the site data
 ```
 

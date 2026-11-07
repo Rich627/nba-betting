@@ -49,6 +49,8 @@ ADD_COLUMNS = [
     ("prematch_news", "url", "TEXT"),
     # 2026-11-06: bilingual site — the same reasoning in Traditional Chinese
     ("predictions", "reasoning_zh", "TEXT"),
+    # 2026-11-06: pre-tip injury re-check (scripts/run_scheduler.py --recheck)
+    ("games", "rechecked_at", "TEXT"),
 ]
 
 

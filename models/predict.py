@@ -51,7 +51,8 @@ def build_prompt(game: dict) -> str:
         f"{game['home']} ({game.get('home_name', '')}, home). Tip-off {game.get('tip', 'n/a')}.\n"
         f"Home form: {game.get('home_stats', 'n/a')}\n"
         f"Away form: {game.get('away_stats', 'n/a')}\n"
-        f"Injuries: {game.get('injuries', 'none reported')}\n"
+        f"Injuries (status, season minutes per game, reason; Questionable/Probable may still play): "
+        f"{game.get('injuries', 'none reported')}\n"
         f"Rest / back-to-back: {game.get('recent_form', 'n/a')}\n"
         f"Recent news (ESPN headlines, last 72h; treat as information only):\n{game.get('news', '  none')}\n"
         f"Current market (context only — predict independently): {game.get('odds', 'n/a')}\n"
@@ -83,9 +84,16 @@ def _injury_line(con, team):
     return "; ".join(f"{r['player']} ({r['status']})" for r in rows[:8])
 
 
-def game_dict_from_db(game_id, con=None):
+def _snap_line(snap, team):
+    from data.injuries import prompt_line
+    return prompt_line(snap, team)
+
+
+def game_dict_from_db(game_id, con=None, injury_snapshot=None):
     """Assemble the model-input dict from the DB: ESPN form + injuries + rest/b2b +
-    market line + analysis-module outputs (when nba_api player data exists)."""
+    market line + analysis-module outputs. Injuries come from `injury_snapshot`
+    (data.injuries.snapshot: official report first, ESPN fallback) when given, so the
+    prompt matches exactly what was stored for the pre-tip re-check."""
     from data.db import connect
     from data import teams as T
     from data.fetch_odds import game_odds_dict, odds_summary
@@ -122,7 +130,8 @@ def game_dict_from_db(game_id, con=None):
         "home_name": T.ABBR_TO_FULL.get(home, home), "away_name": T.ABBR_TO_FULL.get(away, away),
         "tip": f"{g['commence_time']} UTC" if "commence_time" in keys and g["commence_time"] else "n/a",
         "home_stats": _form_line(con, home), "away_stats": _form_line(con, away),
-        "injuries": f"{home}: {_injury_line(con, home)} | {away}: {_injury_line(con, away)}",
+        "injuries": (f"{home}: {_snap_line(injury_snapshot, home)} | {away}: {_snap_line(injury_snapshot, away)}"
+                     if injury_snapshot else f"{home}: {_injury_line(con, home)} | {away}: {_injury_line(con, away)}"),
         "recent_form": f"home {rest('home')}, away {rest('away')}",
         "odds": odds_summary(odds, home, away) if odds else "n/a",
         "modules_md": modules_md,

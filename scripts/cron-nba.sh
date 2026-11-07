@@ -11,6 +11,11 @@
 #                 ~2h, 2026-11-05).
 #   settle        results + settlement only. 0 odds credits, 0 model spend.
 #   digest        next-24h slate with current favourite + spread. 2 credits.
+#   recheck       pre-tip injury re-check (official NBA report + ESPN, free). Each
+#                 predicted game is compared 3-25 min before tip with the injury snapshot
+#                 the models saw. Only a material change spends anything: 2 odds credits
+#                 (once per run) + one model re-run for that game. The site is redeployed
+#                 only when the run queued a message (python exit 10).
 #
 # Crontab. Rich and the mini are both in Arizona (America/Phoenix, MST, UTC-7, no DST —
 # verified 2026-11-05 via /etc/localtime). NBA tips: 17:00-20:30 MST on a normal day,
@@ -19,6 +24,7 @@
 #   0 9-19/2  * * *  ~/whatsapp-cron-nba.sh sweep    # 09,11,13,15,17,19 — 3h window each
 #   45 23     * * *  ~/whatsapp-cron-nba.sh settle   # west-coast games are final by ~22:30
 #   0 7       * * *  ~/whatsapp-cron-nba.sh settle   # backstop (sweeps settle too)
+#   5,20,35,50 8-20 * * * ~/whatsapp-cron-nba.sh recheck  # every 15 min, off the :00 sweeps
 # Budget: a normal day is 3 sweeps with games + digest = ~8 odds credits (~240/month of
 # the 500 free; weekends ~12). 7 OpenRouter calls/game, ~$0.09/game.
 set -uo pipefail
@@ -36,18 +42,29 @@ case "$MODE" in
   sweep)  ARGS="--hours-ahead ${2:-3}" ;;
   settle) ARGS="--skip-models --hours-ahead 0"; export NBA_SKIP_ODDS=1 ;;
   digest) ARGS="--digest" ;;   # fetches h2h+spreads (2 credits) so the evening list shows lines
+  recheck) ARGS="--recheck" ;;
   *) echo "[$(date)] unknown mode $MODE" >>"$LOG"; exit 2 ;;
 esac
 
+# One run at a time: a recheck at :05 must not write nba.db while the :00 sweep still is.
+# lockf waits up to 10 min for the lock (exit 75 if it never gets it).
+LOCK=()
+[ -x /usr/bin/lockf ] && LOCK=(/usr/bin/lockf -t 600 "$HOME/.nba-cron.lock")
+
 echo "[$(date)] === nba $MODE start ===" >>"$LOG"
 if [ -n "$TIMEOUT" ]; then
-  "$TIMEOUT" --kill-after=30s 40m "$PY" scripts/run_scheduler.py $ARGS >>"$LOG" 2>&1
+  ${LOCK[@]+"${LOCK[@]}"} "$TIMEOUT" --kill-after=30s 40m "$PY" scripts/run_scheduler.py $ARGS >>"$LOG" 2>&1
 else
-  "$PY" scripts/run_scheduler.py $ARGS >>"$LOG" 2>&1
+  ${LOCK[@]+"${LOCK[@]}"} "$PY" scripts/run_scheduler.py $ARGS >>"$LOG" 2>&1
 fi
 EXIT=$?
 [ "$EXIT" -eq 124 ] && echo "[$(date)] TIMED OUT after 40m" >>"$LOG"
+[ "$EXIT" -eq 75 ] && echo "[$(date)] lock busy for 10 min, skipped" >>"$LOG"
 # Refresh the public site (no-op push when nothing changed). Never blocks the sweep.
-${TIMEOUT:+"$TIMEOUT" --kill-after=30s 5m} bash scripts/deploy_site.sh >>"$LOG" 2>&1 || echo "[$(date)] site deploy failed (non-fatal)" >>"$LOG"
+# A recheck redeploys only when it queued something (exit 10); it is then a success.
+if [ "$MODE" != "recheck" ] || [ "$EXIT" -eq 10 ]; then
+  ${TIMEOUT:+"$TIMEOUT" --kill-after=30s 5m} bash scripts/deploy_site.sh >>"$LOG" 2>&1 || echo "[$(date)] site deploy failed (non-fatal)" >>"$LOG"
+fi
+[ "$MODE" = "recheck" ] && [ "$EXIT" -eq 10 ] && EXIT=0
 echo "[$(date)] === nba $MODE done exit=$EXIT ===" >>"$LOG"
 exit 0
