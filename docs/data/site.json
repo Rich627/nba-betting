@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T09:00:12-07:00",
+ "generated_at": "2026-11-08T11:00:42-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,7 +13,7 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 20,
+  "n_predicted_games": 21,
   "n_recs": 6,
   "recs_won": 0,
   "recs_graded": 6,
@@ -134,15 +134,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T15:00:07Z",
-    "ml_home": 4.25,
+    "fetched_at": "2026-11-08T18:00:06Z",
+    "ml_home": 4.29,
     "ml_away": 1.24,
-    "spread_line": 9.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.91
+    "spread_line": 9.0,
+    "spread_home_odds": 1.95,
+    "spread_away_odds": 1.87
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.191,
+    "pred_margin": -10.1,
+    "pred_total": 223.9,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "PHI",
+    "fav_zh": "76人",
+    "fav_en": "76ers",
+    "fav_prob": 0.809
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.19,
+     "pred_margin": -11.0,
+     "pred_total": 229.0,
+     "confidence": "high",
+     "reasoning": "Philadelphia's superior record, road performance and defense create a substantial matchup advantage against a Chicago team being outscored by 18 points per game. Extra rest helps the Bulls, but their defensive form and broader injury concerns make a 76ers win the more likely outcome.",
+     "reasoning_zh": "費城憑藉較佳戰績、客場表現與防守，對上場均淨負18分的芝加哥具有明顯優勢。公牛休息時間較長雖有幫助，但近期防守低迷且傷病疑慮較多，因此76人勝出的可能性較高。",
+     "odds": 1.24,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.24,
+     "pred_margin": -9.0,
+     "pred_total": 221.0,
+     "confidence": "med",
+     "reasoning": "Philadelphia's form and road record far outclass a Chicago team getting outscored by 18 points per game and carrying more injury uncertainty. Chicago's rest advantage and PHI's flat showing in Cleveland narrow the gap slightly, but PHI should still win by high single digits.",
+     "reasoning_zh": "76人的近期狀態與客場戰績遠勝公牛，公牛場均淨負18分，且傷兵不確定性更高。公牛休息較充足，76人在克里夫蘭表現低迷，略微縮小差距，但76人仍應以接近10分的差距取勝。",
+     "odds": 1.24,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.18,
+     "pred_margin": -10.0,
+     "pred_total": 226.0,
+     "confidence": "high",
+     "reasoning": "The Bulls have been abysmal defensively, allowing nearly 130 points per game and suffering a six-game losing streak. Despite Chicago having a rest advantage, the 76ers are the top seed in the East with a far superior roster and a solid defense that should easily contain the Bulls.",
+     "reasoning_zh": "公牛隊的防守表現極其糟糕，場均失分接近130分，且目前處於六連敗的低潮。儘管芝加哥在休息天數上佔優，但76人作為東區第一種子，陣容實力遠勝對手，其穩固的防守應能輕鬆壓制公牛。",
+     "odds": 1.24,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.14,
+     "pred_margin": -12.0,
+     "pred_total": 224.0,
+     "confidence": "high",
+     "reasoning": "Philadelphia's strong record and road form outweigh Chicago's rest advantage. The Bulls' poor defense and losing streak make a home upset unlikely.",
+     "reasoning_zh": "費城強勢的戰績與客場表現勝過芝加哥的休息優勢。公牛糟糕的防守與連敗讓主場爆冷機率不高。",
+     "odds": 1.24,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.19,
+     "pred_margin": -10.0,
+     "pred_total": 216.0,
+     "confidence": "high",
+     "reasoning": "Philadelphia holds overwhelming advantages in record, point differential, and road performance against a Chicago team that is last in the conference, winless at home, and on a six-game skid; while the Bulls have extra rest, their significantly worse injury situation and porous defense make an upset unlikely.",
+     "reasoning_zh": "費城在戰績、淨勝分與客場表現上皆佔據壓倒性優勢，面對的是分區墊底、主場未勝且連敗六場的芝加哥；雖然公牛多休息了兩天，但他們更嚴重的傷兵問題與糟糕的防守讓爆冷機率極低。",
+     "odds": 1.24,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.24,
+     "pred_margin": -9.0,
+     "pred_total": 229.0,
+     "confidence": "high",
+     "reasoning": "Philadelphia’s record, road form, and defense are far stronger than Chicago’s, which is allowing nearly 130 points and has lost six straight. Extra rest and home court give the Bulls a modest offset, but the injury-minute gap and point differential still point to a Sixers win by about nine.",
+     "reasoning_zh": "費城七六人的戰績、客場表現與防守都明顯優於芝加哥公牛；公牛場均失分接近130且連敗六場。公牛休息較多且坐擁主場，只能部分抵銷劣勢，傷兵分鐘數與攻防差距仍支持七六人約贏九分。",
+     "odds": 1.24,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.16,
+     "pred_margin": -10.0,
+     "pred_total": 222.0,
+     "confidence": "high",
+     "reasoning": "Philadelphia's elite form (8-2, +2.8 differential) against a Chicago team that is 1-7 with a -18.0 differential and a six-game skid points decisively to a road win, even accounting for Chicago's rest advantage and Embiid's foot management. Chicago's thinner injury-depleted rotation and 0-2 home mark further tilt the game toward the 76ers winning by double digits.",
+     "reasoning_zh": "76人戰績(8-2、分差+2.8)全面壓制公牛(1-7、分差-18.0、六連敗、主場0勝2敗),即使公牛多休息兩天、恩比德腳傷列為 probable,勝負天平仍明顯偏向76人。公牛傷兵眾多、輪替吃緊,看好76人客場以兩位數分差取勝。",
+     "odds": 1.24,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -164,10 +280,10 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T15:00:07Z",
-    "ml_home": 1.56,
-    "ml_away": 2.53,
-    "spread_line": -4.5,
+    "fetched_at": "2026-11-08T18:00:06Z",
+    "ml_home": 1.53,
+    "ml_away": 2.59,
+    "spread_line": -5.0,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
@@ -194,12 +310,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T15:00:07Z",
-    "ml_home": 1.17,
-    "ml_away": 5.3,
-    "spread_line": -11.5,
-    "spread_home_odds": 1.95,
-    "spread_away_odds": 1.88
+    "fetched_at": "2026-11-08T18:00:06Z",
+    "ml_home": 1.15,
+    "ml_away": 5.75,
+    "spread_line": -12.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -224,12 +340,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T15:00:07Z",
+    "fetched_at": "2026-11-08T18:00:06Z",
     "ml_home": 1.31,
     "ml_away": 3.6,
     "spread_line": -7.5,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
+    "spread_home_odds": 1.88,
+    "spread_away_odds": 1.93
    },
    "consensus": null,
    "models": [],
@@ -254,7 +370,7 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T15:00:07Z",
+    "fetched_at": "2026-11-08T18:00:06Z",
     "ml_home": 6.25,
     "ml_away": 1.13,
     "spread_line": 13.0,
@@ -284,9 +400,9 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T15:00:07Z",
-    "ml_home": 2.05,
-    "ml_away": 1.8,
+    "fetched_at": "2026-11-08T18:00:06Z",
+    "ml_home": 2.03,
+    "ml_away": 1.81,
     "spread_line": 1.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
@@ -314,12 +430,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T15:00:07Z",
+    "fetched_at": "2026-11-08T18:00:06Z",
     "ml_home": 4.4,
-    "ml_away": 1.23,
+    "ml_away": 1.22,
     "spread_line": 10.0,
     "spread_home_odds": 1.91,
-    "spread_away_odds": 1.9
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
