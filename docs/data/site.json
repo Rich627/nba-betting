@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T18:05:49-07:00",
+ "generated_at": "2026-11-07T19:00:06-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -22,45 +22,45 @@
  "wallet": [
   {
    "model": "Claude",
-   "bets": 13,
-   "wins": 11,
-   "pnl": 283.0
+   "bets": 14,
+   "wins": 12,
+   "pnl": 314.0
   },
   {
    "model": "DeepSeek",
-   "bets": 13,
-   "wins": 11,
-   "pnl": 283.0
+   "bets": 14,
+   "wins": 12,
+   "pnl": 314.0
   },
   {
    "model": "Gemini",
-   "bets": 13,
-   "wins": 11,
-   "pnl": 283.0
+   "bets": 14,
+   "wins": 12,
+   "pnl": 314.0
   },
   {
    "model": "Grok",
-   "bets": 13,
-   "wins": 11,
-   "pnl": 283.0
+   "bets": 14,
+   "wins": 12,
+   "pnl": 314.0
   },
   {
    "model": "GLM",
-   "bets": 12,
-   "wins": 10,
-   "pnl": 268.0
+   "bets": 13,
+   "wins": 11,
+   "pnl": 299.0
   },
   {
    "model": "GPT",
-   "bets": 13,
-   "wins": 10,
-   "pnl": 100.0
+   "bets": 14,
+   "wins": 11,
+   "pnl": 131.0
   },
   {
    "model": "Kimi",
-   "bets": 13,
-   "wins": 9,
-   "pnl": -15.0
+   "bets": 14,
+   "wins": 10,
+   "pnl": 16.0
   }
  ],
  "wallet_history": {
@@ -75,43 +75,43 @@
     61.0,
     205.0,
     283.0,
-    283.0
+    314.0
    ],
    "DeepSeek": [
     61.0,
     205.0,
     283.0,
-    283.0
+    314.0
    ],
    "GLM": [
     46.0,
     190.0,
     268.0,
-    268.0
+    299.0
    ],
    "GPT": [
     61.0,
     22.0,
     100.0,
-    100.0
+    131.0
    ],
    "Gemini": [
     61.0,
     205.0,
     283.0,
-    283.0
+    314.0
    ],
    "Grok": [
     61.0,
     205.0,
     283.0,
-    283.0
+    314.0
    ],
    "Kimi": [
     61.0,
     205.0,
     -15.0,
-    -15.0
+    16.0
    ]
   }
  },
@@ -130,8 +130,8 @@
    "away_name": "Brooklyn Nets",
    "home_en": "Hawks",
    "away_en": "Nets",
-   "home_score": 22,
-   "away_score": 34,
+   "home_score": 66,
+   "away_score": 70,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-08T00:35:03Z",
@@ -265,7 +265,7 @@
   {
    "game_id": "2026-11-07_NYK@CLE",
    "game_date": "2026-11-07",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-08T01:00:00Z",
    "tw": "11/7(六) 18:00",
    "home": "CLE",
@@ -276,8 +276,8 @@
    "away_name": "New York Knicks",
    "home_en": "Cavaliers",
    "away_en": "Knicks",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 45,
+   "away_score": 43,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-08T01:05:02Z",
@@ -411,7 +411,7 @@
   {
    "game_id": "2026-11-07_WAS@OKC",
    "game_date": "2026-11-07",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-08T01:00:00Z",
    "tw": "11/7(六) 18:00",
    "home": "OKC",
@@ -422,8 +422,8 @@
    "away_name": "Washington Wizards",
    "home_en": "Thunder",
    "away_en": "Wizards",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 44,
+   "away_score": 29,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-08T01:05:02Z",
@@ -571,7 +571,7 @@
   {
    "game_id": "2026-11-07_ORL@GSW",
    "game_date": "2026-11-07",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-08T01:30:00Z",
    "tw": "11/7(六) 18:30",
    "home": "GSW",
@@ -582,8 +582,8 @@
    "away_name": "Orlando Magic",
    "home_en": "Warriors",
    "away_en": "Magic",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 23,
+   "away_score": 9,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-08T01:05:02Z",
@@ -1273,8 +1273,8 @@
      "reasoning": "Denver has the stronger overall profile, and Haliburton's absence creates the clearest personnel disadvantage in the matchup. Equal rest removes a scheduling edge, while the Mexico City setting makes Indiana's nominal home status less meaningful.",
      "reasoning_zh": "丹佛的整體表現較佳，而哈利伯頓缺陣是本場最明顯的人員劣勢。雙方休息天數相同，沒有賽程優勢；加上比賽在墨西哥城舉行，印第安納名義上的主場優勢也較有限。",
      "odds": 1.31,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 31.0
     },
     {
      "name": "Claude",
@@ -1288,8 +1288,8 @@
      "reasoning": "With Haliburton out and the game at a neutral site in Mexico City, Denver's Jokic-led roster holds a clear talent and form edge over a 3-6 Pacers team with a negative point differential. Indiana's recent road competitiveness keeps the margin around the spread, not a blowout.",
      "reasoning_zh": "溜馬當家控衛哈利伯頓缺陣，加上本場在墨西哥城中立場地進行，以約基奇為核心的金塊在戰力與近況上明顯佔優，而溜馬開季3勝6負、淨勝分為負。不過溜馬客場表現尚有競爭力，預期分差落在讓分附近，不至於大比分落敗。",
      "odds": 1.31,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 31.0
     },
     {
      "name": "Gemini",
@@ -1303,8 +1303,8 @@
      "reasoning": "With Tyrese Haliburton out, the Pacers lose their primary offensive engine, making it extremely difficult to keep pace with Nikola Jokic and the Nuggets. Furthermore, this game is being played at high altitude in Mexico City, stripping Indiana of any true home-court advantage and playing into Denver's hands. Denver's superior health and Jokic's elite play should lead to a comfortable victory.",
      "reasoning_zh": "由於哈利伯頓（Tyrese Haliburton）缺陣，溜馬失去了進攻發動機，很難與約基奇（Nikola Jokic）帶領的金塊抗衡。此外，這場比賽在墨西哥城的高海拔地區舉行，溜馬不僅沒有真正的主場優勢，高海拔反而更有利於適應高原氣候的金塊。金塊陣容相對健康，預計能輕鬆拿下勝利。",
      "odds": 1.31,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 31.0
     },
     {
      "name": "DeepSeek",
@@ -1318,8 +1318,8 @@
      "reasoning": "Denver has a clear edge with Indiana missing Haliburton and struggling at home, while Jokic and the Nuggets are healthier and in better recent form. The neutral-site setting reduces home-court advantage for the Pacers, so Denver winning by around 8 points is the most likely outcome.",
      "reasoning_zh": "金塊整體健康與近況優於溜馬，且哈利伯頓缺陣對溜馬進攻影響重大；加上墨西哥城中立場地降低溜馬主場優勢，金塊以約8分取勝最為可能。",
      "odds": 1.31,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 31.0
     },
     {
      "name": "Kimi",
@@ -1333,8 +1333,8 @@
      "reasoning": "Indiana is severely shorthanded without its star Tyrese Haliburton and has yet to win a home game this season, while Denver fields a nearly full roster led by an in-form Nikola Jokic. The quantitative injury model strongly favors the Nuggets and the market line reflects this disparity. Expect Denver to control the game and win comfortably.",
      "reasoning_zh": "印第安納溜馬本季主場0勝4負，且此役缺少核心泰瑞斯·哈利伯頓與多名輪替球員，進攻與組織嚴重受損；丹佛金塊則陣容相對齊整，尼古拉·約基奇近期狀態火熱並剛拿下大三元。量化傷病模型明顯看好金塊，預料丹佛將穩定掌控比賽並輕鬆取勝。",
      "odds": 1.31,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 31.0
     },
     {
      "name": "Grok",
@@ -1348,8 +1348,8 @@
      "reasoning": "Denver is the stronger side on record and scoring margin, and Indiana is missing its primary creator in Haliburton along with other rotation minutes while Denver is essentially full strength. Even rest and a possible neutral Mexico City setting do not offset that gap, so Denver is the pick by about nine points, with moderate confidence given the small sample.",
      "reasoning_zh": "金塊戰績與得失分差都優於溜馬，溜馬又缺陣主力組織核心哈利伯頓及其他輪替，金塊則幾乎全員可出賽。雙方休息天數相同，即便比賽可能在墨西哥城進行，仍不足以抵銷這個落差，因此看好金塊約贏九分，但賽季樣本仍小，信心為中等。",
      "odds": 1.31,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 31.0
     },
     {
      "name": "GLM",
@@ -1363,12 +1363,12 @@
      "reasoning": "Denver holds a decisive health edge (IND loses ~45 mpg including Haliburton, DEN loses none) while Jokic is in peak form coming off a triple-double. The 'home' game in Mexico City gives struggling Indiana (0-4 at home, -3.0 point differential) little true advantage, so Denver should control this game by high single digits.",
      "reasoning_zh": "金塊傷兵狀況乾淨,溜馬卻少了主控哈利伯頓(場均約33分鐘,合計損失約45分鐘輪值),而約基奇剛繳出32分大三元、狀態火熱。比賽在墨西哥城舉行,本季主場0勝4敗、淨勝分-3.0的溜馬幾乎沒有主場優勢,看好金塊以接近雙位數的分差取勝。",
      "odds": 1.31,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 31.0
     }
    ],
    "recs": [],
-   "hits": null
+   "hits": "7/7"
   },
   {
    "game_id": "2026-11-06_POR@LAL",
