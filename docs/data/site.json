@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T16:35:27-07:00",
+ "generated_at": "2026-11-08T17:02:05-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,7 +13,7 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 25,
+  "n_predicted_games": 27,
   "n_recs": 6,
   "recs_won": 0,
   "recs_graded": 6,
@@ -22,45 +22,45 @@
  "wallet": [
   {
    "model": "Claude",
-   "bets": 20,
-   "wins": 17,
-   "pnl": 392.0
+   "bets": 21,
+   "wins": 18,
+   "pnl": 414.0
   },
   {
    "model": "DeepSeek",
-   "bets": 20,
-   "wins": 17,
-   "pnl": 392.0
+   "bets": 21,
+   "wins": 18,
+   "pnl": 414.0
   },
   {
    "model": "Gemini",
-   "bets": 20,
-   "wins": 17,
-   "pnl": 392.0
+   "bets": 21,
+   "wins": 18,
+   "pnl": 414.0
   },
   {
    "model": "Grok",
-   "bets": 20,
-   "wins": 17,
-   "pnl": 392.0
+   "bets": 21,
+   "wins": 18,
+   "pnl": 414.0
   },
   {
    "model": "GLM",
-   "bets": 19,
-   "wins": 16,
-   "pnl": 377.0
+   "bets": 20,
+   "wins": 17,
+   "pnl": 399.0
   },
   {
    "model": "GPT",
-   "bets": 20,
-   "wins": 16,
-   "pnl": 209.0
+   "bets": 21,
+   "wins": 17,
+   "pnl": 231.0
   },
   {
    "model": "Kimi",
-   "bets": 20,
-   "wins": 15,
-   "pnl": 94.0
+   "bets": 21,
+   "wins": 16,
+   "pnl": 116.0
   }
  ],
  "wallet_history": {
@@ -68,50 +68,58 @@
    "2026-11-05",
    "2026-11-06",
    "2026-11-07",
-   "2026-11-08"
+   "2026-11-08",
+   "2026-11-09"
   ],
   "series": {
    "Claude": [
     61.0,
     205.0,
     283.0,
-    392.0
+    392.0,
+    414.0
    ],
    "DeepSeek": [
     61.0,
     205.0,
     283.0,
-    392.0
+    392.0,
+    414.0
    ],
    "GLM": [
     46.0,
     190.0,
     268.0,
-    377.0
+    377.0,
+    399.0
    ],
    "GPT": [
     61.0,
     22.0,
     100.0,
-    209.0
+    209.0,
+    231.0
    ],
    "Gemini": [
     61.0,
     205.0,
     283.0,
-    392.0
+    392.0,
+    414.0
    ],
    "Grok": [
     61.0,
     205.0,
     283.0,
-    392.0
+    392.0,
+    414.0
    ],
    "Kimi": [
     61.0,
     205.0,
     -15.0,
-    94.0
+    94.0,
+    116.0
    ]
   }
  },
@@ -130,8 +138,8 @@
    "away_name": "Los Angeles Lakers",
    "home_en": "Pistons",
    "away_en": "Lakers",
-   "home_score": 14,
-   "away_score": 38,
+   "home_score": 38,
+   "away_score": 53,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-08T22:00:07Z",
@@ -280,7 +288,7 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T23:35:02Z",
+    "fetched_at": "2026-11-09T00:00:07Z",
     "ml_home": 1.14,
     "ml_away": 6.0,
     "spread_line": -12.5,
@@ -426,7 +434,7 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T23:35:02Z",
+    "fetched_at": "2026-11-09T00:00:07Z",
     "ml_home": 1.33,
     "ml_away": 3.48,
     "spread_line": -7.5,
@@ -572,7 +580,7 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T23:35:02Z",
+    "fetched_at": "2026-11-09T00:00:07Z",
     "ml_home": 6.3,
     "ml_away": 1.13,
     "spread_line": 13.5,
@@ -718,15 +726,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T23:35:02Z",
+    "fetched_at": "2026-11-09T00:00:07Z",
     "ml_home": 2.05,
     "ml_away": 1.8,
     "spread_line": 1.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.427,
+    "pred_margin": -3.9,
+    "pred_total": 229.0,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "NOP",
+    "fav_zh": "鵜鶘",
+    "fav_en": "Pelicans",
+    "fav_prob": 0.573
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "NOP",
+     "pick_zh": "鵜鶘",
+     "pick_en": "Pelicans",
+     "home_win_prob": 0.43,
+     "pred_margin": -3.0,
+     "pred_total": 229.0,
+     "confidence": "med",
+     "reasoning": "NOP's superior record, scoring output, and point differential outweigh LAC's rest advantage and home court. LAC's seven-game losing streak and depleted roster make NOP the slightly more likely winner, though the matchup remains competitive.",
+     "reasoning_zh": "鵜鶘較佳的戰績、得分火力與正負分差，足以壓過快艇的休息天數及主場優勢。快艇目前七連敗且陣容缺兵，使鵜鶘略為更可能獲勝，但比賽仍可能相當接近。",
+     "odds": 1.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "NOP",
+     "pick_zh": "鵜鶘",
+     "pick_en": "Pelicans",
+     "home_win_prob": 0.45,
+     "pred_margin": -4.0,
+     "pred_total": 228.0,
+     "confidence": "low",
+     "reasoning": "New Orleans has been clearly better on both point differential and offensive output, while the Clippers are short-handed and have lost seven straight. The Clippers' rest advantage and home court narrow the gap, so this is a modest lean to the Pelicans in line with the market.",
+     "reasoning_zh": "鵜鶘在得失分差與進攻產出上都明顯優於快艇，而快艇傷兵眾多且已吞下七連敗。快艇的休息優勢與主場因素縮小了差距，因此僅小幅看好鵜鶘，與市場看法一致。",
+     "odds": 1.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "NOP",
+     "pick_zh": "鵜鶘",
+     "pick_en": "Pelicans",
+     "home_win_prob": 0.42,
+     "pred_margin": -4.0,
+     "pred_total": 228.0,
+     "confidence": "med",
+     "reasoning": "The Clippers are on a severe 7-game losing streak and are missing key offensive pieces in Bradley Beal and Brandon Ingram. Although Los Angeles has a rest advantage, the Pelicans boast a much more potent offense and a healthier rotation, making them the favorites to win on the road.",
+     "reasoning_zh": "快艇目前深陷7連敗泥沼，且陣中缺少了畢爾（Bradley Beal）與英格倫（Brandon Ingram）等關鍵進攻核心。儘管洛杉磯擁有較多的休息天數，但鵜鶘的進攻火力更為旺盛且陣容相對健康，看好他們能在客場拿下勝利。",
+     "odds": 1.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "NOP",
+     "pick_zh": "鵜鶘",
+     "pick_en": "Pelicans",
+     "home_win_prob": 0.38,
+     "pred_margin": -6.0,
+     "pred_total": 226.0,
+     "confidence": "med",
+     "reasoning": "Despite LAC having rest advantage, their 1-7 record, 7-game losing streak, and multiple key injuries outweigh the rest edge. NOP has been more competitive with a positive point differential and fewer impactful absences.",
+     "reasoning_zh": "儘管快艇有休息優勢，但他們1勝7敗、7連敗以及多名關鍵球員缺陣的影響大於休息優勢。鵜鶘戰績較佳、淨勝分為正，且缺陣影響較小。",
+     "odds": 1.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "NOP",
+     "pick_zh": "鵜鶘",
+     "pick_en": "Pelicans",
+     "home_win_prob": 0.46,
+     "pred_margin": -2.0,
+     "pred_total": 232.0,
+     "confidence": "med",
+     "reasoning": "New Orleans' superior scoring ability and positive point differential narrowly outweigh Los Angeles' rest and home-court edges, though the Clippers' fresher legs and urgency keep the game within single digits.",
+     "reasoning_zh": "鵜鶘更優的得分能力與正分差險勝快艇的休息與主場優勢，但快艇更充沛的體力與止敗渴望讓比賽維持在個位數差距。",
+     "odds": 1.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "NOP",
+     "pick_zh": "鵜鶘",
+     "pick_en": "Pelicans",
+     "home_win_prob": 0.42,
+     "pred_margin": -4.0,
+     "pred_total": 230.0,
+     "confidence": "low",
+     "reasoning": "New Orleans has the clearly better record and point differential, while the Clippers are 1-7 and on a seven-game slide. Home court and extra rest narrow that gap, and the given injury-minute impact is nearly even, so this projects as a close Pelicans win rather than a blowout. Early-season samples and a tight market keep confidence low.",
+     "reasoning_zh": "鵜鶘戰績與得失分明顯較佳，快艇則是1勝7敗且連敗七場。主場與多兩天休息會縮小差距，給定的傷兵分鐘影響也大致相當，因此預測鵜鶘小勝而非大勝。季初樣本仍小、盤口也只小幅看好鵜鶘，信心偏低。",
+     "odds": 1.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "NOP",
+     "pick_zh": "鵜鶘",
+     "pick_en": "Pelicans",
+     "home_win_prob": 0.43,
+     "pred_margin": -4.0,
+     "pred_total": 230.0,
+     "confidence": "med",
+     "reasoning": "Despite LAC's rest advantage, their 1-7 record, 7-game losing streak, and heavy injury list (Beal, Ingram, Jackson out) outweigh freshness, while NOP's superior point differential and 120+ ppg offense suggest a narrow road win. Expect a close, moderately high-scoring game around a 4-point NOP margin.",
+     "reasoning_zh": "儘管快艇擁有休息優勢（4天 vs 2天），但他們1勝7敗的戰績、7連敗與嚴重傷兵名單（比爾、英格拉姆、傑克森缺陣）抵銷了體能優勢；鵜鶘淨勝分較佳且場均得分超過120分，預期能在客場小勝。預期比賽膠著、總分中等偏高，鵜鶘約贏4分。",
+     "odds": 1.8,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -748,15 +872,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-08T23:35:02Z",
+    "fetched_at": "2026-11-09T00:00:07Z",
     "ml_home": 4.94,
     "ml_away": 1.19,
     "spread_line": 11.0,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.201,
+    "pred_margin": -10.7,
+    "pred_total": 229.0,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "MIA",
+    "fav_zh": "熱火",
+    "fav_en": "Heat",
+    "fav_prob": 0.799
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.18,
+     "pred_margin": -11.0,
+     "pred_total": 231.0,
+     "confidence": "high",
+     "reasoning": "Miami has been materially more competitive and enters with advantages in health and rest. Sacramento's poor defense, winless home record, and uncertainty around Sabonis make the Heat the objective pick despite both teams' losing records.",
+     "reasoning_zh": "邁阿密本季的競爭力明顯較佳，且在健康狀況與休息天數上都占優勢。沙加緬度防守低迷、主場仍未開胡，加上沙波尼斯出賽存疑，因此即使兩隊戰績都不理想，熱火仍是較合理的選擇。",
+     "odds": 1.19,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.23,
+     "pred_margin": -9.0,
+     "pred_total": 229.0,
+     "confidence": "med",
+     "reasoning": "Sacramento has been one of the league's worst teams, at 1-8 with a -14.1 differential, winless at home and possibly without Sabonis. Miami is mediocre but clearly better and fully healthy. The market's +11 line looks a bit steep, so I project Miami to win by about 9.",
+     "reasoning_zh": "國王是聯盟最差的球隊之一，戰績1勝8敗、場均淨失分14.1，主場至今未嘗勝績，Sabonis也可能缺陣。熱火表現雖然平庸，但實力明顯較強且陣容完整。市場開出的讓11分略嫌偏高，預測熱火約贏9分。",
+     "odds": 1.19,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.15,
+     "pred_margin": -15.0,
+     "pred_total": 227.0,
+     "confidence": "high",
+     "reasoning": "Sacramento has been abysmal this season, holding a 1-8 record with a league-worst -14.1 point differential. With Domantas Sabonis questionable and Miami boasting a clean injury report along with an extra day of rest, the Heat are heavily favored to secure a comfortable road victory.",
+     "reasoning_zh": "國王隊本季表現慘不忍睹，戰績僅1勝8敗且場均勝分差高達-14.1分。加上主力中鋒沙波尼斯出戰成疑，而熱火隊不僅全員健康，還多了一天的休息時間，預期熱火能在客場輕鬆取勝。",
+     "odds": 1.19,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.15,
+     "pred_margin": -11.0,
+     "pred_total": 227.0,
+     "confidence": "high",
+     "reasoning": "Miami has a clear rest and injury edge against a struggling Sacramento team that is winless at home, so the Heat should control the game and win comfortably.",
+     "reasoning_zh": "邁阿密在休息與傷兵上都佔優，面對主場尚未開胡且近況極糟的沙加緬度，預期熱火能掌控比賽並以雙位數差距獲勝。",
+     "odds": 1.19,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.2,
+     "pred_margin": -9.0,
+     "pred_total": 231.0,
+     "confidence": "high",
+     "reasoning": "The Heat are objectively superior in health, rest, net rating and record, while the depleted Kings are defensively porous and struggling at home even before accounting for Sabonis's questionable status.",
+     "reasoning_zh": "熱火在健康狀況、休息天數、淨勝分與戰績各方面均明顯佔優；國王陣容殘缺、防守漏洞極大，且主場持續低迷，Sabonis的出戰疑慮更進一步削弱其戰力。",
+     "odds": 1.19,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.28,
+     "pred_margin": -11.0,
+     "pred_total": 231.0,
+     "confidence": "med",
+     "reasoning": "Sacramento’s 1-8 record, winless home mark, and frontcourt absences outweigh the home setting. Miami is flawed but healthier and slightly fresher, so it should win by about eleven; Sabonis’s questionable status keeps confidence moderate.",
+     "reasoning_zh": "國王目前1勝8敗、主場0勝4敗，前場傷兵加上Sabonis出賽成疑，削弱了主場優勢。熱火同樣不穩，但陣容較健康且多休息一天，預期可客場取勝約11分；因Sabonis狀態未明，信心維持中等。",
+     "odds": 1.19,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.22,
+     "pred_margin": -9.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "Miami is the healthier and fresher side facing a Kings team that is 1-8, 0-4 at home, and potentially without Sabonis (36 mpg, questionable), which compounds Sacramento's league-worst -14.1 differential. Miami's superior form and Sacramento's defensive leakage (123.3 allowed) point to a comfortable road win, though Miami's own poor defense keeps the total elevated.",
+     "reasoning_zh": "熱火傷兵名單乾淨且多休息一天，面對1勝8敗、主場0勝4敗的國王；沙波尼斯（場均36分鐘）因左膝痠痛列為出賽存疑，若缺陣將使國王戰力大幅下滑，加上國王分差-14.1、場均失分123.3，熱火可望客場輕鬆取勝，但熱火自身防守不佳（場均失分122.6），預期總分偏高。",
+     "odds": 1.19,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -888,7 +1128,7 @@
    "away_score": null,
    "odds": {
     "n_books": 5,
-    "fetched_at": "2026-11-08T23:35:02Z",
+    "fetched_at": "2026-11-09T00:00:07Z",
     "ml_home": 1.31,
     "ml_away": 3.6,
     "spread_line": -8.5,
@@ -918,7 +1158,7 @@
    "away_score": null,
    "odds": {
     "n_books": 5,
-    "fetched_at": "2026-11-08T23:35:02Z",
+    "fetched_at": "2026-11-09T00:00:07Z",
     "ml_home": 3.4,
     "ml_away": 1.32,
     "spread_line": 8.5,
@@ -1003,8 +1243,8 @@
      "reasoning": "Philadelphia has the substantially stronger form, point differential, road record, and injury outlook. Chicago's four days of rest provide some upset potential, but its defensive performance and depleted rotation make PHI the clear objective pick.",
      "reasoning_zh": "費城在近期戰績、得失分差、客場表現與傷病狀況上都明顯占優。芝加哥休息四天確實增加一些爆冷可能，但其防守表現不佳且輪替陣容受損，因此客觀上仍應看好 PHI。",
      "odds": 1.22,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 22.0
     },
     {
      "name": "Claude",
@@ -1018,8 +1258,8 @@
      "reasoning": "Chicago's -18 point differential and Powell's absence point to a clear talent and form gap. Philadelphia is 8-2 with Embiid active. The Bulls' extra rest and a possible PHI letdown after the Cleveland blowout keep the expected margin near the 9.5-point spread.",
      "reasoning_zh": "公牛場均淨負18分且Powell缺陣，與76人在實力和狀態上差距明顯。76人戰績8勝2敗，Embiid可以出賽。公牛休息較充足，76人也可能在克里夫蘭慘敗後狀態起伏，因此預估勝分差接近9.5分的讓分。",
      "odds": 1.22,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 22.0
     },
     {
      "name": "Gemini",
@@ -1033,8 +1273,8 @@
      "reasoning": "The 76ers are dominating the Eastern Conference with an 8-2 record, while the Bulls are struggling massively on a six-game losing streak with an abysmal -18.0 point differential. Chicago's defense is conceding nearly 130 points per game, and missing key scorer Norman Powell will only make it harder for them to keep pace with a healthy Philadelphia squad.",
      "reasoning_zh": "76人目前以8勝2敗的戰績在東區領跑，而公牛則深陷六連敗泥淖，且場均淨負分高達18分。芝加哥的防守形同虛設（場均失分近130分），加上主力得分手鮑威爾（Norman Powell）缺陣，面對陣容齊整的費城大軍，公牛在主場恐難有招架之力。",
      "odds": 1.22,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 22.0
     },
     {
      "name": "DeepSeek",
@@ -1048,8 +1288,8 @@
      "reasoning": "Philadelphia has a massive edge in record, point differential, and injury situation. Chicago's depleted rotation and poor form make an upset unlikely despite home rest advantage.",
      "reasoning_zh": "費城在戰績、得失分差和傷病情況上都佔有巨大優勢。芝加哥陣容不整且狀態低迷，即使有主場休息優勢，爆冷機會仍低。",
      "odds": 1.22,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 22.0
     },
     {
      "name": "Kimi",
@@ -1063,8 +1303,8 @@
      "reasoning": "Philadelphia enters with vastly superior record, road performance, and net rating, while Chicago is mired in a six-game skid with significant injuries to key rotation players. Although the Bulls hold a rest advantage, the 76ers' available core and dominant season profile make an away victory highly probable.",
      "reasoning_zh": "費城76人擁有遠優於芝加哥公牛的戰績、客場表現與淨勝分，而公牛正深陷六連敗且傷兵滿營。儘管公牛休息天數較多，但76人核心陣容完整，客場取勝機率極高。",
      "odds": 1.22,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 22.0
     },
     {
      "name": "Grok",
@@ -1078,8 +1318,8 @@
      "reasoning": "Philadelphia is the clearly better side on record, recent form, and net rating, and Chicago’s defense has been historically leaky while missing Powell’s 29 minutes. A simple blend of the given scoring rates points to a high-teens PHI edge; CHI’s extra rest and PHI’s loss in Cleveland plus Embiid’s managed foot only trim that, not reverse it.",
      "reasoning_zh": "76人在戰績、近況與淨效率都明顯優於公牛，公牛防守失分極高且少了Powell約29分鐘。以雙方攻防數據粗估，76人仍有約十數分優勢；公牛多休息、76人剛輸給騎士以及Embiid腳傷管理只會縮小差距，不足以翻盤。",
      "odds": 1.22,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 22.0
     },
     {
      "name": "GLM",
@@ -1093,12 +1333,12 @@
      "reasoning": "Philadelphia's elite form (8-2, +2.8 differential) clashes with a Chicago team on a 6-game slide with a -18.0 differential and key injuries (Powell out), while Embiid is confirmed available for the 76ers. Chicago's 4-day rest advantage and home court only marginally narrow what the data suggests is a comfortable double-digit road win. Expected scores derived from CHI's league-worst defense (129.6 allowed) point to PHI ~119, CHI ~109.",
      "reasoning_zh": "費城76人戰績8勝2敗、淨勝分+2.8，對上1勝7敗、淨勝分-18且苦吞6連敗的公牛；公牛又少了Norman Powell等主力輪替（合計缺陣47分鐘），而76人方面Embiid確認可以出賽，客場戰績也有4勝1敗。公牛僅有4天休息的體能優勢與主場之利，數據顯示76人應能輕鬆贏下兩位數的分差，預估76人約119分、公牛約109分。",
      "odds": 1.22,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 22.0
     }
    ],
    "recs": [],
-   "hits": null
+   "hits": "7/7"
   },
   {
    "game_id": "2026-11-07_SAS@POR",
