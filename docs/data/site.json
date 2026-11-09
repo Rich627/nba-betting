@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T18:35:51-07:00",
+ "generated_at": "2026-11-08T19:00:06-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -22,45 +22,45 @@
  "wallet": [
   {
    "model": "Claude",
-   "bets": 21,
+   "bets": 22,
    "wins": 18,
-   "pnl": 414.0
+   "pnl": 314.0
   },
   {
    "model": "DeepSeek",
-   "bets": 21,
+   "bets": 22,
    "wins": 18,
-   "pnl": 414.0
+   "pnl": 314.0
   },
   {
    "model": "Gemini",
-   "bets": 21,
+   "bets": 22,
    "wins": 18,
-   "pnl": 414.0
+   "pnl": 314.0
   },
   {
    "model": "Grok",
-   "bets": 21,
+   "bets": 22,
    "wins": 18,
-   "pnl": 414.0
+   "pnl": 314.0
   },
   {
    "model": "GLM",
-   "bets": 20,
+   "bets": 21,
    "wins": 17,
-   "pnl": 399.0
+   "pnl": 299.0
   },
   {
    "model": "GPT",
-   "bets": 21,
+   "bets": 22,
    "wins": 17,
-   "pnl": 231.0
+   "pnl": 131.0
   },
   {
    "model": "Kimi",
-   "bets": 21,
+   "bets": 22,
    "wins": 16,
-   "pnl": 116.0
+   "pnl": 16.0
   }
  ],
  "wallet_history": {
@@ -77,199 +77,53 @@
     205.0,
     283.0,
     392.0,
-    414.0
+    314.0
    ],
    "DeepSeek": [
     61.0,
     205.0,
     283.0,
     392.0,
-    414.0
+    314.0
    ],
    "GLM": [
     46.0,
     190.0,
     268.0,
     377.0,
-    399.0
+    299.0
    ],
    "GPT": [
     61.0,
     22.0,
     100.0,
     209.0,
-    231.0
+    131.0
    ],
    "Gemini": [
     61.0,
     205.0,
     283.0,
     392.0,
-    414.0
+    314.0
    ],
    "Grok": [
     61.0,
     205.0,
     283.0,
     392.0,
-    414.0
+    314.0
    ],
    "Kimi": [
     61.0,
     205.0,
     -15.0,
     94.0,
-    116.0
+    16.0
    ]
   }
  },
  "upcoming": [
-  {
-   "game_id": "2026-11-08_LAL@DET",
-   "game_date": "2026-11-08",
-   "status": "live",
-   "commence_time": "2026-11-08T23:00:00Z",
-   "tw": "11/8(日) 16:00",
-   "home": "DET",
-   "away": "LAL",
-   "home_zh": "活塞",
-   "away_zh": "湖人",
-   "home_name": "Detroit Pistons",
-   "away_name": "Los Angeles Lakers",
-   "home_en": "Pistons",
-   "away_en": "Lakers",
-   "home_score": 110,
-   "away_score": 114,
-   "odds": {
-    "n_books": 9,
-    "fetched_at": "2026-11-08T22:00:07Z",
-    "ml_home": 1.37,
-    "ml_away": 3.2,
-    "spread_line": -7.0,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
-   },
-   "consensus": {
-    "home_win_prob": 0.719,
-    "pred_margin": 8.3,
-    "pred_total": 218.3,
-    "agreement": 1.0,
-    "n_models": 7,
-    "fav": "DET",
-    "fav_zh": "活塞",
-    "fav_en": "Pistons",
-    "fav_prob": 0.719
-   },
-   "models": [
-    {
-     "name": "GPT",
-     "pick": "DET",
-     "pick_zh": "活塞",
-     "pick_en": "Pistons",
-     "home_win_prob": 0.72,
-     "pred_margin": 8.0,
-     "pred_total": 220.0,
-     "confidence": "med",
-     "reasoning": "Detroit's defense, rest advantage, and home court should be more decisive with Doncic unavailable. The Pistons' own absences keep this from being a high-confidence pick, but Detroit is better positioned to control a lower-scoring game than the Lakers' season average suggests.",
-     "reasoning_zh": "在唐西奇缺陣的情況下，底特律的防守、休息優勢與主場條件應會更具決定性。活塞同樣有杜倫與以賽亞・喬缺陣，因此信心未達高檔，但底特律較有能力把比賽控制在低於湖人本季平均水準的得分節奏。",
-     "odds": 1.38,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Claude",
-     "pick": "DET",
-     "pick_zh": "活塞",
-     "pick_en": "Pistons",
-     "home_win_prob": 0.7,
-     "pred_margin": 8.0,
-     "pred_total": 222.0,
-     "confidence": "med",
-     "reasoning": "Doncic's absence removes the Lakers' dominant scoring engine, and Detroit is the more rested team with a strong defense. Duren and Joe being out trims Detroit's edge somewhat, but the Pistons remain clear favorites at home, roughly in line with the market.",
-     "reasoning_zh": "唐西奇因下背緊繃缺陣，湖人失去主要得分引擎，活塞則休息較充足且防守穩健。杜倫與喬伊缺陣稍微削弱活塞優勢，但主場作戰仍明顯看好，與盤口大致相符。",
-     "odds": 1.38,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Gemini",
-     "pick": "DET",
-     "pick_zh": "活塞",
-     "pick_en": "Pistons",
-     "home_win_prob": 0.74,
-     "pred_margin": 9.0,
-     "pred_total": 219.0,
-     "confidence": "high",
-     "reasoning": "The absence of Luka Doncic is a devastating blow to the Lakers' offense, as he has been averaging over 40 points per game. Combined with Detroit's elite defense and a significant four-day rest advantage, the Pistons are in a prime position to control the pace and secure a comfortable home victory.",
-     "reasoning_zh": "Luka Doncic 的缺陣對湖人進攻端是毀滅性的打擊，他本季場均得分超過 40 分。再加上活塞擁有出色的防守以及長達四天的休息優勢，底特律非常有機會在主場控制節奏並輕鬆拿下勝利。",
-     "odds": 1.38,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "DeepSeek",
-     "pick": "DET",
-     "pick_zh": "活塞",
-     "pick_en": "Pistons",
-     "home_win_prob": 0.73,
-     "pred_margin": 8.0,
-     "pred_total": 216.0,
-     "confidence": "high",
-     "reasoning": "The Lakers lose their primary offensive engine in Doncic on the road, while Detroit has better rest, home court, and a strong defense. Detroit's market edge and the injury/rest module both point to a Pistons win by roughly 7-9 points.",
-     "reasoning_zh": "湖人客場缺少唐西奇這名主要進攻核心，活塞則擁有較充分休息、主場優勢與強悍防守，因此預期活塞能以約7至9分取勝。",
-     "odds": 1.38,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Kimi",
-     "pick": "DET",
-     "pick_zh": "活塞",
-     "pick_en": "Pistons",
-     "home_win_prob": 0.72,
-     "pred_margin": 6.0,
-     "pred_total": 220.0,
-     "confidence": "high",
-     "reasoning": "Dončić's absence strips Los Angeles of its leading scorer and primary creator, while Detroit's four-day rest and stingy defense position the Pistons to control pace and exploit a depleted Lakers attack.",
-     "reasoning_zh": "唐西奇的缺陣使湖人失去頭號得分與進攻發動機，而活塞擁有四天休息優勢與強悍防守（場均失分101.75），能在主場掌控節奏並壓制陣容受損的湖人進攻。",
-     "odds": 1.38,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Grok",
-     "pick": "DET",
-     "pick_zh": "活塞",
-     "pick_en": "Pistons",
-     "home_win_prob": 0.68,
-     "pred_margin": 8.0,
-     "pred_total": 216.0,
-     "confidence": "med",
-     "reasoning": "Detroit is fresher at home and faces a Lakers team missing its primary scorer, so Los Angeles's 122-point offense should drop sharply against a defense allowing 101.75. The Pistons' missing pieces are lower-minute role players, not a 40-point creator, which supports a Detroit win by about eight.",
-     "reasoning_zh": "活塞休息較充足且坐鎮主場，對手又少了場均約40分的核心唐西奇，湖人進攻面對只失101.75分的防守應明顯下滑。活塞缺的是出場時間較短的角色球員，因此預期活塞以約8分優勢取勝。",
-     "odds": 1.38,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "GLM",
-     "pick": "DET",
-     "pick_zh": "活塞",
-     "pick_en": "Pistons",
-     "home_win_prob": 0.74,
-     "pred_margin": 11.0,
-     "pred_total": 215.0,
-     "confidence": "high",
-     "reasoning": "LAL's historically hot start has been almost entirely Doncic-driven (40.1 PPG), and his absence against a DET team allowing a league-elite 101.75 PPG at home on 4 days' rest is a decisive edge. Even with Duren and Joe out, Detroit's depth covers 33 mpg far more easily than the Lakers can replace 36 minutes of Doncic. Expect Detroit to control the game and win by roughly double digits.",
-     "reasoning_zh": "湖人開季火熱幾乎全靠唐西奇（場均超過40分），他因下背緊繃缺陣，面對場均僅失101.75分的活塞頂級防守，加上活塞主場作戰且多休息兩天，優勢明顯倒向底特律。即使杜倫與喬缺陣，活塞的深度足以補上33分鐘的缺口，遠比湖人填補唐西奇36分鐘的空缺容易，預期活塞以約兩位數差距取勝。",
-     "odds": 1.38,
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "recs": [],
-   "hits": null
-  },
   {
    "game_id": "2026-11-08_UTA@MIN",
    "game_date": "2026-11-08",
@@ -284,8 +138,8 @@
    "away_name": "Utah Jazz",
    "home_en": "Timberwolves",
    "away_en": "Jazz",
-   "home_score": 63,
-   "away_score": 61,
+   "home_score": 90,
+   "away_score": 78,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-09T00:00:07Z",
@@ -430,8 +284,8 @@
    "away_name": "Brooklyn Nets",
    "home_en": "Mavericks",
    "away_en": "Nets",
-   "home_score": 58,
-   "away_score": 35,
+   "home_score": 66,
+   "away_score": 46,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-09T00:00:07Z",
@@ -576,8 +430,8 @@
    "away_name": "Boston Celtics",
    "home_en": "Bucks",
    "away_en": "Celtics",
-   "home_score": 27,
-   "away_score": 23,
+   "home_score": 41,
+   "away_score": 54,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-09T00:00:07Z",
@@ -1224,6 +1078,152 @@
   }
  ],
  "results": [
+  {
+   "game_id": "2026-11-08_LAL@DET",
+   "game_date": "2026-11-08",
+   "status": "final",
+   "commence_time": "2026-11-08T23:00:00Z",
+   "tw": "11/8(日) 16:00",
+   "home": "DET",
+   "away": "LAL",
+   "home_zh": "活塞",
+   "away_zh": "湖人",
+   "home_name": "Detroit Pistons",
+   "away_name": "Los Angeles Lakers",
+   "home_en": "Pistons",
+   "away_en": "Lakers",
+   "home_score": 116,
+   "away_score": 121,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-08T22:00:07Z",
+    "ml_home": 1.37,
+    "ml_away": 3.2,
+    "spread_line": -7.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
+   "consensus": {
+    "home_win_prob": 0.719,
+    "pred_margin": 8.3,
+    "pred_total": 218.3,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "DET",
+    "fav_zh": "活塞",
+    "fav_en": "Pistons",
+    "fav_prob": 0.719
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "DET",
+     "pick_zh": "活塞",
+     "pick_en": "Pistons",
+     "home_win_prob": 0.72,
+     "pred_margin": 8.0,
+     "pred_total": 220.0,
+     "confidence": "med",
+     "reasoning": "Detroit's defense, rest advantage, and home court should be more decisive with Doncic unavailable. The Pistons' own absences keep this from being a high-confidence pick, but Detroit is better positioned to control a lower-scoring game than the Lakers' season average suggests.",
+     "reasoning_zh": "在唐西奇缺陣的情況下，底特律的防守、休息優勢與主場條件應會更具決定性。活塞同樣有杜倫與以賽亞・喬缺陣，因此信心未達高檔，但底特律較有能力把比賽控制在低於湖人本季平均水準的得分節奏。",
+     "odds": 1.38,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Claude",
+     "pick": "DET",
+     "pick_zh": "活塞",
+     "pick_en": "Pistons",
+     "home_win_prob": 0.7,
+     "pred_margin": 8.0,
+     "pred_total": 222.0,
+     "confidence": "med",
+     "reasoning": "Doncic's absence removes the Lakers' dominant scoring engine, and Detroit is the more rested team with a strong defense. Duren and Joe being out trims Detroit's edge somewhat, but the Pistons remain clear favorites at home, roughly in line with the market.",
+     "reasoning_zh": "唐西奇因下背緊繃缺陣，湖人失去主要得分引擎，活塞則休息較充足且防守穩健。杜倫與喬伊缺陣稍微削弱活塞優勢，但主場作戰仍明顯看好，與盤口大致相符。",
+     "odds": 1.38,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Gemini",
+     "pick": "DET",
+     "pick_zh": "活塞",
+     "pick_en": "Pistons",
+     "home_win_prob": 0.74,
+     "pred_margin": 9.0,
+     "pred_total": 219.0,
+     "confidence": "high",
+     "reasoning": "The absence of Luka Doncic is a devastating blow to the Lakers' offense, as he has been averaging over 40 points per game. Combined with Detroit's elite defense and a significant four-day rest advantage, the Pistons are in a prime position to control the pace and secure a comfortable home victory.",
+     "reasoning_zh": "Luka Doncic 的缺陣對湖人進攻端是毀滅性的打擊，他本季場均得分超過 40 分。再加上活塞擁有出色的防守以及長達四天的休息優勢，底特律非常有機會在主場控制節奏並輕鬆拿下勝利。",
+     "odds": 1.38,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "DET",
+     "pick_zh": "活塞",
+     "pick_en": "Pistons",
+     "home_win_prob": 0.73,
+     "pred_margin": 8.0,
+     "pred_total": 216.0,
+     "confidence": "high",
+     "reasoning": "The Lakers lose their primary offensive engine in Doncic on the road, while Detroit has better rest, home court, and a strong defense. Detroit's market edge and the injury/rest module both point to a Pistons win by roughly 7-9 points.",
+     "reasoning_zh": "湖人客場缺少唐西奇這名主要進攻核心，活塞則擁有較充分休息、主場優勢與強悍防守，因此預期活塞能以約7至9分取勝。",
+     "odds": 1.38,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Kimi",
+     "pick": "DET",
+     "pick_zh": "活塞",
+     "pick_en": "Pistons",
+     "home_win_prob": 0.72,
+     "pred_margin": 6.0,
+     "pred_total": 220.0,
+     "confidence": "high",
+     "reasoning": "Dončić's absence strips Los Angeles of its leading scorer and primary creator, while Detroit's four-day rest and stingy defense position the Pistons to control pace and exploit a depleted Lakers attack.",
+     "reasoning_zh": "唐西奇的缺陣使湖人失去頭號得分與進攻發動機，而活塞擁有四天休息優勢與強悍防守（場均失分101.75），能在主場掌控節奏並壓制陣容受損的湖人進攻。",
+     "odds": 1.38,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Grok",
+     "pick": "DET",
+     "pick_zh": "活塞",
+     "pick_en": "Pistons",
+     "home_win_prob": 0.68,
+     "pred_margin": 8.0,
+     "pred_total": 216.0,
+     "confidence": "med",
+     "reasoning": "Detroit is fresher at home and faces a Lakers team missing its primary scorer, so Los Angeles's 122-point offense should drop sharply against a defense allowing 101.75. The Pistons' missing pieces are lower-minute role players, not a 40-point creator, which supports a Detroit win by about eight.",
+     "reasoning_zh": "活塞休息較充足且坐鎮主場，對手又少了場均約40分的核心唐西奇，湖人進攻面對只失101.75分的防守應明顯下滑。活塞缺的是出場時間較短的角色球員，因此預期活塞以約8分優勢取勝。",
+     "odds": 1.38,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "GLM",
+     "pick": "DET",
+     "pick_zh": "活塞",
+     "pick_en": "Pistons",
+     "home_win_prob": 0.74,
+     "pred_margin": 11.0,
+     "pred_total": 215.0,
+     "confidence": "high",
+     "reasoning": "LAL's historically hot start has been almost entirely Doncic-driven (40.1 PPG), and his absence against a DET team allowing a league-elite 101.75 PPG at home on 4 days' rest is a decisive edge. Even with Duren and Joe out, Detroit's depth covers 33 mpg far more easily than the Lakers can replace 36 minutes of Doncic. Expect Detroit to control the game and win by roughly double digits.",
+     "reasoning_zh": "湖人開季火熱幾乎全靠唐西奇（場均超過40分），他因下背緊繃缺陣，面對場均僅失101.75分的活塞頂級防守，加上活塞主場作戰且多休息兩天，優勢明顯倒向底特律。即使杜倫與喬缺陣，活塞的深度足以補上33分鐘的缺口，遠比湖人填補唐西奇36分鐘的空缺容易，預期活塞以約兩位數差距取勝。",
+     "odds": 1.38,
+     "result": "LOST",
+     "pnl": -100.0
+    }
+   ],
+   "recs": [],
+   "hits": "0/7"
+  },
   {
    "game_id": "2026-11-08_PHI@CHI",
    "game_date": "2026-11-08",
