@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T16:37:43-07:00",
+ "generated_at": "2026-11-09T17:03:24-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,7 +13,7 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 32,
+  "n_predicted_games": 35,
   "n_recs": 8,
   "recs_won": 0,
   "recs_graded": 6,
@@ -69,7 +69,8 @@
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
-   "2026-11-09"
+   "2026-11-09",
+   "2026-11-10"
   ],
   "series": {
    "Claude": [
@@ -77,6 +78,7 @@
     205.0,
     283.0,
     392.0,
+    291.0,
     291.0
    ],
    "DeepSeek": [
@@ -84,6 +86,7 @@
     205.0,
     283.0,
     392.0,
+    291.0,
     291.0
    ],
    "GLM": [
@@ -91,6 +94,7 @@
     190.0,
     268.0,
     377.0,
+    276.0,
     276.0
    ],
    "GPT": [
@@ -98,6 +102,7 @@
     22.0,
     100.0,
     209.0,
+    108.0,
     108.0
    ],
    "Gemini": [
@@ -105,6 +110,7 @@
     205.0,
     283.0,
     392.0,
+    291.0,
     291.0
    ],
    "Grok": [
@@ -112,6 +118,7 @@
     205.0,
     283.0,
     392.0,
+    291.0,
     291.0
    ],
    "Kimi": [
@@ -119,6 +126,7 @@
     205.0,
     -15.0,
     94.0,
+    -7.0,
     -7.0
    ]
   }
@@ -142,12 +150,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-09T23:35:03Z",
-    "ml_home": 1.71,
-    "ml_away": 2.2,
+    "fetched_at": "2026-11-10T00:00:08Z",
+    "ml_home": 1.7,
+    "ml_away": 2.21,
     "spread_line": -2.5,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
+    "spread_home_odds": 1.9,
+    "spread_away_odds": 1.92
    },
    "consensus": {
     "home_win_prob": 0.596,
@@ -288,12 +296,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-09T23:35:03Z",
-    "ml_home": 3.8,
-    "ml_away": 1.29,
+    "fetched_at": "2026-11-10T00:00:08Z",
+    "ml_home": 3.6,
+    "ml_away": 1.31,
     "spread_line": 8.5,
-    "spread_home_odds": 1.92,
-    "spread_away_odds": 1.88
+    "spread_home_odds": 1.89,
+    "spread_away_odds": 1.93
    },
    "consensus": {
     "home_win_prob": 0.217,
@@ -448,12 +456,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-09T23:35:03Z",
+    "fetched_at": "2026-11-10T00:00:08Z",
     "ml_home": 1.24,
-    "ml_away": 4.3,
+    "ml_away": 4.25,
     "spread_line": -9.0,
-    "spread_home_odds": 1.9,
-    "spread_away_odds": 1.95
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": {
     "home_win_prob": 0.727,
@@ -594,7 +602,7 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-09T23:35:03Z",
+    "fetched_at": "2026-11-10T00:00:08Z",
     "ml_home": 2.01,
     "ml_away": 1.83,
     "spread_line": 1.5,
@@ -754,12 +762,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-09T23:35:03Z",
-    "ml_home": 1.54,
-    "ml_away": 2.56,
+    "fetched_at": "2026-11-10T00:00:08Z",
+    "ml_home": 1.53,
+    "ml_away": 2.6,
     "spread_line": -4.5,
     "spread_home_odds": 1.87,
-    "spread_away_odds": 1.92
+    "spread_away_odds": 1.95
    },
    "consensus": {
     "home_win_prob": 0.653,
@@ -900,15 +908,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-09T23:35:03Z",
+    "fetched_at": "2026-11-10T00:00:08Z",
     "ml_home": 1.57,
     "ml_away": 2.49,
     "spread_line": -4.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.571,
+    "pred_margin": 3.0,
+    "pred_total": 225.3,
+    "agreement": 0.86,
+    "n_models": 7,
+    "fav": "HOU",
+    "fav_zh": "火箭",
+    "fav_en": "Rockets",
+    "fav_prob": 0.571
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.62,
+     "pred_margin": 5.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "Houston's superior early-season point differential, defense, and home performance give it the edge. Denver can exploit Houston's depleted center rotation if Nikola Jokic plays, keeping the matchup competitive and limiting confidence.",
+     "reasoning_zh": "休士頓開季至今擁有較佳的得失分差、防守表現與主場戰績，因此稍占優勢。若 Nikola Jokic 如期上場，丹佛可利用火箭中鋒輪替人手不足的弱點，讓比賽維持膠著，因此信心僅為中等。",
+     "odds": 1.57,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.58,
+     "pred_margin": 4.0,
+     "pred_total": 224.0,
+     "confidence": "low",
+     "reasoning": "Houston's superior margin and home edge favor them, while Denver's delayed travel and banged-up starters add fatigue risk. Houston's missing center depth against Jokic narrows the gap, so this is a modest home lean roughly in line with the market.",
+     "reasoning_zh": "火箭淨勝分較佳且主場戰績4勝1敗，金塊從墨西哥城出發的班機延誤，加上先發多人帶傷，有疲勞風險。不過火箭中鋒深度不足，難以對位約基奇，因此差距縮小，僅小幅看好主隊，與盤口相近。",
+     "odds": 1.57,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.63,
+     "pred_margin": 6.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "Although Denver's starters have been upgraded to probable, the team is dealing with significant travel delays returning from Mexico City, which could lead to fatigue. Houston has been dominant at home with a stellar +9.0 net rating and should capitalize on the Nuggets' sluggishness, despite missing backup big men to guard Jokic.",
+     "reasoning_zh": "儘管金塊的先發球員已升級為極有可能出賽，但球隊從墨西哥城返回時遭遇嚴重的班機延誤，可能會導致體能下滑。火箭在主場表現強勢，淨勝分高達 +9.0，儘管缺少替補中鋒來防守 Jokic，仍有望利用金塊的疲態拿下勝利。",
+     "odds": 1.57,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.56,
+     "pred_margin": 3.0,
+     "pred_total": 229.0,
+     "confidence": "med",
+     "reasoning": "Houston's home strength and better season-long net rating give them a slight edge, but Denver's probable starters and Houston's missing frontcourt depth make this closer than the market line.",
+     "reasoning_zh": "火箭主場表現和整季淨效率較佳，略佔上風；但金塊先發大概率出賽，加上火箭前場缺人，讓比賽比盤口更接近。",
+     "odds": 1.57,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "DEN",
+     "pick_zh": "金塊",
+     "pick_en": "Nuggets",
+     "home_win_prob": 0.48,
+     "pred_margin": -3.0,
+     "pred_total": 225.0,
+     "confidence": "med",
+     "reasoning": "Despite Houston's stronger record and home court, the Nuggets carry the only quantitative module edge (injuries/rest) and face a Rockets frontcourt depleted of Capela and Adams, while Denver's entire rotation has been upgraded to probable. The travel fatigue is offset by Houston's own two-game skid and missing interior defense, allowing Denver to steal a narrow road win.",
+     "reasoning_zh": "儘管火箭戰績與主場優勢較佳，金塊仍在傷病與體能模組中佔優，且火箭禁區因 Capela 與 Adams 缺陣而薄弱，金塊先發陣容已全數升級為可能出賽；綜合評估下金塊有望在客場險勝。",
+     "odds": 2.49,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.56,
+     "pred_margin": 3.0,
+     "pred_total": 223.0,
+     "confidence": "med",
+     "reasoning": "Houston’s home record and much better point differential support a narrow home win, but the loss of all backup bigs against a probable Jokic keeps this tight. Denver’s plane-delay travel and a fully probable but banged-up starting group offset their slight injury-minute edge and two-game win streak.",
+     "reasoning_zh": "火箭主場戰績與明顯較佳的淨勝分支持一場小勝，但替補中鋒全部缺陣，面對大概率出賽的約基奇，優勢會被壓縮。金塊自墨西哥城旅途受擾，先發全員僅列可能出賽且帶傷，抵銷了傷兵分鐘與近期連勝的小優勢。",
+     "odds": 1.57,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.57,
+     "pred_margin": 3.0,
+     "pred_total": 225.0,
+     "confidence": "low",
+     "reasoning": "Houston's superior overall form (+9.0 differential, 4-1 at home) gives them the edge, but losing Capela and Adams leaves no backup centers against Jokic, and Denver arrives with road momentum despite the travel disruption — expect a tight game leaning Houston by a small margin.",
+     "reasoning_zh": "火箭整體戰績與淨勝分較佳（+9.0 對 +2.2）且擁有主場優勢，理應小幅看好；但 Capela 與 Adams 缺陣使火箭禁區深度耗盡，難以輪替消耗 Jokic，加上金塊近期二連勝、客場氣勢正盛，雖受班機延誤影響仍具威脅，預期比數接近、火箭小勝。",
+     "odds": 1.57,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -930,15 +1054,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-09T23:35:03Z",
+    "fetched_at": "2026-11-10T00:00:08Z",
     "ml_home": 4.0,
     "ml_away": 1.27,
     "spread_line": 9.0,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.259,
+    "pred_margin": -8.0,
+    "pred_total": 226.3,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "SAS",
+    "fav_zh": "馬刺",
+    "fav_en": "Spurs",
+    "fav_prob": 0.741
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.24,
+     "pred_margin": -8.0,
+     "pred_total": 228.0,
+     "confidence": "med",
+     "reasoning": "San Antonio's superior scoring differential, defense, and undefeated road record outweigh Phoenix's home-court advantage and the Spurs' injury disadvantage. Vassell being out lowers the margin and confidence, but the overall form still points clearly toward SAS.",
+     "reasoning_zh": "聖安東尼奧在得失分差、防守表現與客場戰績方面明顯占優，足以壓過鳳凰城的主場優勢及馬刺的傷兵劣勢。Devin Vassell 缺陣會縮小預期分差並降低信心，但整體近況仍明確支持馬刺。",
+     "odds": 1.27,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.28,
+     "pred_margin": -8.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "San Antonio's large edge in point differential and red-hot form, led by Wembanyama, outweighs the absences of Vassell and Harris. Phoenix's recent home wins were narrow and low-scoring, so a Spurs win by around 7-9 points looks likely. The market price of 1.27 slightly overstates the Spurs given their depth losses.",
+     "reasoning_zh": "馬刺淨勝分大幅領先，且在溫班亞瑪帶領下手感火燙，足以抵銷瓦塞爾與哈里斯缺陣的影響。太陽近期主場勝利都是險勝、得分偏低，預估馬刺約以7至9分勝出。考量馬刺的輪替深度受損，市場1.27的賠率略微高估了馬刺。",
+     "odds": 1.27,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.22,
+     "pred_margin": -10.0,
+     "pred_total": 224.0,
+     "confidence": "high",
+     "reasoning": "The Spurs are on a dominant 8-game winning streak, fueled by Victor Wembanyama's stellar performances, and remain undefeated on the road. Although San Antonio is missing Devin Vassell, Phoenix's defense has been porous this season, allowing over 118 points per game. The Spurs' significant advantage in point differential and overall form makes them strong favorites to win.",
+     "reasoning_zh": "馬刺目前處於強勢的8連勝，在文班亞馬的火熱狀態帶領下，客場至今保持不敗。儘管聖安東尼奧缺少了主力得分手瓦塞爾，但太陽本季防守表現不佳，場均失分超過118分。馬刺在得失分差與整體近況上佔據絕對優勢，預計能順利拿下勝利。",
+     "odds": 1.27,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.26,
+     "pred_margin": -8.0,
+     "pred_total": 226.0,
+     "confidence": "med",
+     "reasoning": "Phoenix has home court and an injury/rest edge, but San Antonio's superior form, road record, and point differential make the Spurs the clear pick.",
+     "reasoning_zh": "鳳凰城有主場與傷兵優勢，但聖安東尼奧的狀態、客場戰績和得失分差明顯較佳，因此馬刺是明確的贏球熱門。",
+     "odds": 1.27,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.32,
+     "pred_margin": -6.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "San Antonio’s superior record, road dominance, and stingy defense make them the likely winner despite missing key rotation pieces. Phoenix’s home court and favorable injury situation keep the game within single digits, but the Suns’ negative point differential and porous defense are difficult to overcome.",
+     "reasoning_zh": "聖安東尼奧的更佳戰績、客場主宰力與嚴密防守，使他們儘管缺少重要輪替球員仍是較可能獲勝的一方。鳳凰城的主場優勢與較佳的傷兵狀況能讓比賽維持在個位數分差，但太陽負分的場均淨勝分與薄弱的防守難以扭轉結果。",
+     "odds": 1.27,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.29,
+     "pred_margin": -7.0,
+     "pred_total": 229.0,
+     "confidence": "med",
+     "reasoning": "San Antonio's record, eight-game streak, undefeated road mark, and +10.3 scoring margin outweigh Phoenix's home court and a modest injury edge. Vassell's absence should keep the margin in single digits, but the Spurs remain the clearer side to win.",
+     "reasoning_zh": "馬刺目前8勝2敗、八連勝、客場4勝0敗，得失分差+10.3，整體仍優於3勝5敗、得失分差-6.2的太陽，主場優勢與有限傷兵因素不足以翻盤。瓦塞爾（場均30分鐘）與哈里斯缺陣會收窄分差，但馬刺仍較有機會取勝。",
+     "odds": 1.27,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.2,
+     "pred_margin": -9.0,
+     "pred_total": 229.0,
+     "confidence": "high",
+     "reasoning": "San Antonio's elite form (8-2, unbeaten on the road, +10.3 differential, Wembanyama rolling) creates a gap Phoenix's modest two-game surge and home court cannot close, even with the Spurs missing Vassell and Harris. Expect a Spurs win by roughly 9-10 points in a ~229-total game.",
+     "reasoning_zh": "馬刺近況火熱（8連勝、客場4勝0敗、淨勝分+10.3，溫班亞瑪狀態爆棚），即使缺少Vassell與Tobias Harris，整體戰力仍明顯優於太陽；太陽雖剛拿下本季首次二連勝且主場3勝2敗，仍難以填補差距，預期馬刺贏約9-10分，總分約229。",
+     "odds": 1.27,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -960,15 +1200,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-09T23:35:03Z",
-    "ml_home": 1.18,
-    "ml_away": 5.25,
+    "fetched_at": "2026-11-10T00:00:08Z",
+    "ml_home": 1.17,
+    "ml_away": 5.26,
     "spread_line": -11.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.851,
+    "pred_margin": 14.0,
+    "pred_total": 229.7,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "GSW",
+    "fav_zh": "勇士",
+    "fav_en": "Warriors",
+    "fav_prob": 0.851
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "GSW",
+     "pick_zh": "勇士",
+     "pick_en": "Warriors",
+     "home_win_prob": 0.86,
+     "pred_margin": 13.0,
+     "pred_total": 231.0,
+     "confidence": "high",
+     "reasoning": "Golden State has a substantial rest and availability advantage, with New Orleans missing two major scorers and playing the second night of a back-to-back. The Warriors' strong home form and seven-game winning streak make them the clear pick despite their own absences.",
+     "reasoning_zh": "金州在休息與球員可用性方面占有明顯優勢，紐奧良不僅缺少兩名主要得分手，還要在客場背靠背出賽。儘管勇士也有傷兵，但其主場表現出色且正值七連勝，因此仍是明確較看好的一方。",
+     "odds": 1.17,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "GSW",
+     "pick_zh": "勇士",
+     "pick_en": "Warriors",
+     "home_win_prob": 0.81,
+     "pred_margin": 12.0,
+     "pred_total": 230.0,
+     "confidence": "high",
+     "reasoning": "New Orleans is badly depleted without Zion, Murphy, Missi and Watford, and is playing the second night of a road back-to-back. Golden State is rested, rolling on a 7-game streak and strong at home. GSW's own absences (Butler, Porzingis, Moody, Richard) limit the margin, so a double-digit win near the spread is likely.",
+     "reasoning_zh": "鵜鶘缺少 Zion、Murphy、Missi 與 Watford，陣容嚴重殘缺，且是客場背靠背的第二戰；勇士則休息充足、七連勝且主場表現強勢。勇士本身也缺 Butler、Porzingis、Moody 與 Richard，分差可能有限，預期勇士以兩位數左右勝出，接近盤口讓分。",
+     "odds": 1.17,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "GSW",
+     "pick_zh": "勇士",
+     "pick_en": "Warriors",
+     "home_win_prob": 0.88,
+     "pred_margin": 16.0,
+     "pred_total": 232.0,
+     "confidence": "high",
+     "reasoning": "The Warriors are well-rested and riding a seven-game winning streak, fueled by Stephen Curry's stellar play. Meanwhile, the Pelicans are on the second night of a back-to-back and missing crucial starters in Zion Williamson and Trey Murphy III. Given the rest advantage and injury disparity, Golden State should comfortably handle New Orleans at home.",
+     "reasoning_zh": "勇士目前享有充分的休息，且在柯瑞（Stephen Curry）火熱狀態的帶領下正處於七連勝的佳績。反觀鵜鶘不僅面臨背靠背的疲勞賽程，還缺少了威廉森（Zion Williamson）與墨菲（Trey Murphy III）等核心先發。在體能與陣容完整度都有明顯落差的情況下，勇士有望在主場輕鬆取勝。",
+     "odds": 1.17,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "GSW",
+     "pick_zh": "勇士",
+     "pick_en": "Warriors",
+     "home_win_prob": 0.88,
+     "pred_margin": 13.0,
+     "pred_total": 229.0,
+     "confidence": "high",
+     "reasoning": "Golden State is at home, well-rested, and facing a depleted New Orleans team on a back-to-back. The Warriors' recent form and massive injury advantage make them clear favorites despite the large spread.",
+     "reasoning_zh": "金州勇士主場作戰、休息充足，且面對背靠背且傷兵滿營的紐奧良鵜鶘。勇士近況火熱且傷病優勢明顯，即使讓分偏大，仍是明顯佔優的一方。",
+     "odds": 1.17,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "GSW",
+     "pick_zh": "勇士",
+     "pick_en": "Warriors",
+     "home_win_prob": 0.84,
+     "pred_margin": 15.0,
+     "pred_total": 229.0,
+     "confidence": "high",
+     "reasoning": "The Pelicans enter the second night of a back-to-back without Zion Williamson and Trey Murphy III, stripping them of nearly half their usual rotation minutes against a well-rested Warriors squad. Golden State rides a seven-game winning streak with elite home form and a far superior point differential, creating a massive structural advantage. The data points overwhelmingly to a Warriors win.",
+     "reasoning_zh": "鵜鶘在背靠背第二戰缺少Zion Williamson與Trey Murphy III，輪換陣容損失近103分鐘，面對休息充分且主場戰績5勝1敗的勇士處於極大劣勢。勇士正處於七連勝，攻守效率與賽程優勢均明顯領先，數據強烈支持勇士勝出。",
+     "odds": 1.17,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "GSW",
+     "pick_zh": "勇士",
+     "pick_en": "Warriors",
+     "home_win_prob": 0.81,
+     "pred_margin": 12.0,
+     "pred_total": 228.0,
+     "confidence": "high",
+     "reasoning": "Golden State is better on record, home form, and rest, while New Orleans is short-handed on a back-to-back after two straight losses. Even with Butler, Porzingis, and Moody out, the given injury and schedule edge still points to a comfortable home win rather than a toss-up.",
+     "reasoning_zh": "勇士在戰績、主場與休息上都較優，鵜鶘則在背靠背、連敗兩場且缺少錫安與墨菲等主力的情況下作客。即便勇士也缺巴特勒、波津吉斯與穆迪，給定的傷兵與賽程優勢仍指向主場輕鬆取勝，而非五五波。",
+     "odds": 1.17,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "GSW",
+     "pick_zh": "勇士",
+     "pick_en": "Warriors",
+     "home_win_prob": 0.88,
+     "pred_margin": 17.0,
+     "pred_total": 229.0,
+     "confidence": "high",
+     "reasoning": "New Orleans is decimated by injuries (Zion, Murphy, Missi, Watford all out) and playing a road back-to-back, while Golden State is on a 7-game win streak with 2 days rest, a 5-1 home record, and Curry in peak form. The Warriors' own injuries are long-term absences already baked into their current form, so the edge is decisively home. Expect a comfortable double-digit Golden State win.",
+     "reasoning_zh": "鵜鶘傷兵慘重（Zion Williamson、Trey Murphy III、Missi、Watford 全數缺陣，合計約每場103分鐘的戰力），又是客場背靠背出賽且近期二連敗；反觀勇士7連勝、休息2天、主場5勝1敗，Curry剛繳出41分延長賽勝場。勇士自家傷兵（Butler、Porzingis、Moody）屬長期缺陣，已反映在目前戰績中，因此主隊優勢明顯，預期勇士大幅取勝。",
+     "odds": 1.17,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -990,11 +1346,11 @@
    "away_score": null,
    "odds": {
     "n_books": 5,
-    "fetched_at": "2026-11-09T23:35:03Z",
+    "fetched_at": "2026-11-10T00:00:08Z",
     "ml_home": 1.09,
     "ml_away": 8.1,
     "spread_line": -15.5,
-    "spread_home_odds": 1.91,
+    "spread_home_odds": 1.93,
     "spread_away_odds": 1.89
    },
    "consensus": null,
@@ -1020,7 +1376,7 @@
    "away_score": null,
    "odds": {
     "n_books": 7,
-    "fetched_at": "2026-11-09T23:35:03Z",
+    "fetched_at": "2026-11-10T00:00:08Z",
     "ml_home": 1.98,
     "ml_away": 1.85,
     "spread_line": 1.5,
@@ -1115,10 +1471,10 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 3,
-    "fetched_at": "2026-11-09T23:35:03Z",
+    "n_books": 4,
+    "fetched_at": "2026-11-10T00:00:08Z",
     "ml_home": 2.0,
-    "ml_away": 1.85,
+    "ml_away": 1.82,
     "spread_line": 1.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
