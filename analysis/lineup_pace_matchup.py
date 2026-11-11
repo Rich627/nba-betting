@@ -2,8 +2,9 @@
 """Module: lineup_pace_matchup — style/pace matchup from team-level rolling ratings.
 
 Builds each team's recent offensive rating, defensive rating and pace (minute-weighted
-from player_game_stats) and scores the matchup: a team whose offense outperforms the
-opponent's defense, adjusted for pace, gets the edge.
+from player_game_stats, whose ratings are the team's per-game points per 100 possessions)
+and scores the matchup: each offense is expected to score its ORTG plus what the other
+defense allows; the side with the better expected margin gets the edge.
 
   python3 analysis/lineup_pace_matchup.py <game_id>
 """
@@ -51,10 +52,14 @@ def analyze(game_id, con=None, before_date=None, window=10):
     if not ph or not pa or None in (ph["ortg"], pa["ortg"], ph["drtg"], pa["drtg"]):
         return empty("insufficient rating data for matchup")
 
-    # net efficiency edge: (home offense vs away defense) - (away offense vs home defense)
-    home_attack = ph["ortg"] - pa["drtg"]
-    away_attack = pa["ortg"] - ph["drtg"]
-    net = home_attack - away_attack  # >0 favors home
+    # Additive matchup: home's expected offense = its ORTG + how much the away defense
+    # allows (DRTG is points ALLOWED, so a high DRTG helps the attacker). Same for away.
+    # The league average cancels in the difference, leaving the net-rating gap.
+    # (Before 2026-11-10 this subtracted the opponent's DRTG, rewarding attacks that
+    # faced good defenses; it never ran live because player_game_stats was empty.)
+    home_attack = ph["ortg"] + pa["drtg"]
+    away_attack = pa["ortg"] + ph["drtg"]
+    net = home_attack - away_attack  # = (home ORTG-DRTG) - (away ORTG-DRTG); >0 favors home
     score = clamp(net / 12.0)  # ~12 pts/100 poss net edge saturates
 
     pace_note = ""
@@ -65,8 +70,9 @@ def analyze(game_id, con=None, before_date=None, window=10):
 
     confidence = clamp(0.35 + 0.4 * min(abs(net), 12) / 12, 0, 0.85)
     md = (
-        f"**Lineup/pace matchup** — {home} eff edge {home_attack:+.1f} vs {away} {away_attack:+.1f} "
-        f"(net {net:+.1f} per 100).{pace_note} Favors **{home if net>=0 else away}**."
+        f"**Lineup/pace matchup** (last-{window}, team per-100) — {home} ORTG {ph['ortg']:.1f} / DRTG {ph['drtg']:.1f} "
+        f"vs {away} {pa['ortg']:.1f} / {pa['drtg']:.1f}: matchup net {net:+.1f} per 100.{pace_note} "
+        f"Favors **{home if net>=0 else away}**."
     )
     return {"score": round(score, 3), "confidence": round(confidence, 3), "reasoning_md": md}
 

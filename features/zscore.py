@@ -20,21 +20,27 @@ Z_METRICS = ["r_pts", "r_reb", "r_ast", "r_stl", "r_blk", "r_ts_pct",
              "r_usg_pct", "r_off_rating", "r_pie", "r_plus_minus"]
 
 
-def position_zscores(form_df):
+def position_zscores(form_df, ref_min=10.0):
     """Add z_<metric> columns: z-score of each metric within its position group.
+    The group mean/std come from rotation players (rolling minutes >= ref_min) so
+    two-minute garbage-time lines don't set the bar; everyone still gets a z.
     Players with no position fall into a single 'UNK' bucket. Std==0 -> z=0."""
     if form_df.empty:
         return form_df
     df = form_df.copy()
     df["_pos"] = df["position"].fillna("UNK")
+    mins = df["r_min"].astype(float) if "r_min" in df.columns else pd.Series(ref_min, index=df.index)
     metrics = [m for m in Z_METRICS if m in df.columns]
     for m in metrics:
         zcol = "z_" + m[2:] if m.startswith("r_") else "z_" + m
         df[zcol] = 0.0
         for pos, grp in df.groupby("_pos"):
             vals = grp[m].astype(float)
-            mu = vals.mean(skipna=True)
-            sd = vals.std(skipna=True, ddof=0)
+            ref = vals[mins[grp.index] >= ref_min]
+            if ref.notna().sum() < 5:
+                ref = vals
+            mu = ref.mean(skipna=True)
+            sd = ref.std(skipna=True, ddof=0)
             if pd.isna(sd) or sd == 0:
                 z = pd.Series(0.0, index=grp.index)
             else:
@@ -49,8 +55,11 @@ def player_strength(zdf, weights=None):
     z-metrics. Used by analysis/player_ability. Returns dict player_id -> score."""
     if zdf.empty:
         return {}
+    # off_rating is the TEAM's rating in each game (ESPN box has no on-court split,
+    # see data/fetch_players.py), so it says nothing about the player; it stays in
+    # Z_METRICS for display but carries no weight here.
     default_w = {
-        "z_pts": 1.0, "z_ts_pct": 0.8, "z_pie": 1.2, "z_off_rating": 0.6,
+        "z_pts": 1.0, "z_ts_pct": 0.8, "z_pie": 1.2,
         "z_plus_minus": 0.6, "z_reb": 0.4, "z_ast": 0.5, "z_stl": 0.3, "z_blk": 0.3,
     }
     w = weights or default_w

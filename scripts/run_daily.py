@@ -43,7 +43,7 @@ def main():
     from data import fetch_players
     from data.db import connect as _connect
     pc = _connect()
-    okg, total = fetch_players.backfill(pc, limit=None)
+    okg, total, _ = fetch_players.backfill(pc, limit=None)
     fetch_players.compute_rest_b2b(pc)
     print(f" [1b] player stats: {total} rows across {okg} new games; rest/b2b computed")
 

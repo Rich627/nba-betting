@@ -12,6 +12,10 @@ Each run:
       window and NBA_SKIP_ODDS != 1                                           (3 credits)
   [4] settlement pass: grade predictions + recs for newly-final games, rebuild
       model wallets, queue one 賽果 message + leaderboard
+  [4b] player box scores (ESPN game summary, free) for final games that have none yet
+      -> player_game_stats, which feeds rolling form / same-position z-scores /
+      availability-weighted roster strength in the analysis modules. Time-boxed;
+      a failure is logged and never stops the run
   [5] notification pass: every scheduled game tipping within --hours-ahead and
       not yet notified -> analysis modules (if player data) -> 6 LLMs -> consensus
       -> edge -> queue ONE consolidated 賽前 message
@@ -170,13 +174,39 @@ def settlement_pass(con, dry_run):
         con.commit()
 
 
+PLAYER_FETCH_BUDGET_S = 90    # stop starting new box-score pulls after this; rest wait for next run
+PLAYER_FETCH_MAX_GAMES = 40
+
+
+def player_stats_pass(con, budget_s=PLAYER_FETCH_BUDGET_S, limit=PLAYER_FETCH_MAX_GAMES):
+    """Per-player box scores for final games that have none yet. Never raises."""
+    try:
+        from data import fetch_players
+        ok, rows, failed = fetch_players.fetch_new(con, limit=limit, budget_s=budget_s, timeout=15,
+                                                   log=lambda m: print(" " + m.strip()))
+        if ok or failed:
+            print(f" [players] {rows} player rows from {ok} game(s)" + (f", {failed} skipped" if failed else ""))
+        else:
+            print(" [players] up to date")
+    except Exception as e:  # noqa: BLE001
+        print(f" [players] FAILED: {type(e).__name__}: {str(e)[:120]}")
+
+
+# odds_value is not run live: it turns the plain SUM of the other module scores into a
+# "model" probability (two saturated modules -> 90%+) and puts that next to the market
+# in the prompt. The engine already compares the LLM consensus with the market (edge.py).
+LIVE_MODULES = ["player_ability", "lineup_pace_matchup", "injuries_rest_b2b"]
+
+
 def _run_modules(con, gid, snap=None):
-    """All modules when nba_api player rows exist; otherwise only injuries_rest_b2b, which
-    runs on the official/ESPN injury view + ESPN season minutes (no nba_api needed)."""
+    """Player modules (player_ability, lineup_pace_matchup) + injuries_rest_b2b once player
+    box scores exist; otherwise only injuries_rest_b2b, which runs on the official/ESPN
+    injury view + ESPN season minutes. Modules that lack data for a game return
+    confidence 0 and stay out of the prompt."""
     has_players = con.execute("SELECT 1 FROM player_game_stats LIMIT 1").fetchone()
     try:
         from analysis.registry import run_all
-        only = None if has_players else ["injuries_rest_b2b"]
+        only = LIVE_MODULES if has_players else ["injuries_rest_b2b"]
         return len(run_all(gid, con, modules=only, injury_snapshot=snap) or {})
     except Exception as e:  # noqa: BLE001
         print(f"   modules failed for {gid}: {type(e).__name__}: {str(e)[:100]}")
@@ -467,6 +497,8 @@ def main():
 
     # [4] settle
     settlement_pass(con, a.dry_run)
+    # [4b] player box scores for newly-final games (data only; feeds the modules below)
+    player_stats_pass(con)
     # [5] / [6]
     if a.digest:
         digest_pass(con, a.dry_run)

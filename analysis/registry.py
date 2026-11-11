@@ -24,7 +24,8 @@ MODULES = {
 def run_all(game_id, con=None, before_date=None, persist=True, modules=None, injury_snapshot=None):
     """Run every module (or only `modules`); return {module: {score, confidence, reasoning_md}}.
     Feeds the non-odds module scores into odds_value. Persists to module_outputs.
-    `injury_snapshot` (data.injuries.snapshot) goes to injuries_rest_b2b in live runs."""
+    `injury_snapshot` (data.injuries.snapshot) goes to injuries_rest_b2b and player_ability
+    (availability weighting) in live runs."""
     con = get_con(con)
     out = {}
     for name, fn in MODULES.items():
@@ -33,7 +34,7 @@ def run_all(game_id, con=None, before_date=None, persist=True, modules=None, inj
         try:
             if name == "odds_value":
                 res = fn(game_id, con, module_scores={k: v for k, v in out.items()}, before_date=before_date)
-            elif name == "injuries_rest_b2b":
+            elif name in ("injuries_rest_b2b", "player_ability"):
                 res = fn(game_id, con, before_date=before_date, injury_snapshot=injury_snapshot)
             else:
                 res = fn(game_id, con, before_date=before_date)
