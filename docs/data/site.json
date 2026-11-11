@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T15:01:39-07:00",
+ "generated_at": "2026-11-10T17:03:59-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,8 +13,8 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 37,
-  "n_recs": 8,
+  "n_predicted_games": 40,
+  "n_recs": 10,
   "recs_won": 1,
   "recs_graded": 8,
   "recs_pnl": -609.0
@@ -70,7 +70,8 @@
    "2026-11-07",
    "2026-11-08",
    "2026-11-09",
-   "2026-11-10"
+   "2026-11-10",
+   "2026-11-11"
   ],
   "series": {
    "Claude": [
@@ -79,6 +80,7 @@
     283.0,
     392.0,
     291.0,
+    352.0,
     352.0
    ],
    "DeepSeek": [
@@ -87,6 +89,7 @@
     283.0,
     392.0,
     291.0,
+    352.0,
     352.0
    ],
    "GLM": [
@@ -95,6 +98,7 @@
     268.0,
     377.0,
     276.0,
+    337.0,
     337.0
    ],
    "GPT": [
@@ -103,6 +107,7 @@
     100.0,
     209.0,
     108.0,
+    169.0,
     169.0
    ],
    "Gemini": [
@@ -111,6 +116,7 @@
     283.0,
     392.0,
     291.0,
+    352.0,
     352.0
    ],
    "Grok": [
@@ -119,6 +125,7 @@
     283.0,
     392.0,
     291.0,
+    352.0,
     352.0
    ],
    "Kimi": [
@@ -127,6 +134,7 @@
     -15.0,
     94.0,
     -7.0,
+    -103.0,
     -103.0
    ]
   }
@@ -150,10 +158,10 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-10T22:00:09Z",
-    "ml_home": 1.1,
-    "ml_away": 7.86,
-    "spread_line": -15.5,
+    "fetched_at": "2026-11-11T00:00:09Z",
+    "ml_home": 1.09,
+    "ml_away": 8.32,
+    "spread_line": -16.0,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
@@ -296,11 +304,11 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-10T22:00:09Z",
-    "ml_home": 2.0,
-    "ml_away": 1.83,
+    "fetched_at": "2026-11-11T00:00:09Z",
+    "ml_home": 2.05,
+    "ml_away": 1.81,
     "spread_line": 1.5,
-    "spread_home_odds": 1.91,
+    "spread_home_odds": 1.93,
     "spread_away_odds": 1.91
    },
    "consensus": {
@@ -442,16 +450,146 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-10T22:00:09Z",
-    "ml_home": 1.59,
+    "fetched_at": "2026-11-11T00:00:09Z",
+    "ml_home": 1.58,
     "ml_away": 2.45,
     "spread_line": -3.5,
     "spread_home_odds": 1.88,
     "spread_away_odds": 1.94
    },
-   "consensus": null,
-   "models": [],
-   "recs": [],
+   "consensus": {
+    "home_win_prob": 0.489,
+    "pred_margin": -1.3,
+    "pred_total": 226.4,
+    "agreement": 0.71,
+    "n_models": 7,
+    "fav": "LAC",
+    "fav_zh": "快艇",
+    "fav_en": "Clippers",
+    "fav_prob": 0.511
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "PHX",
+     "pick_zh": "太陽",
+     "pick_en": "Suns",
+     "home_win_prob": 0.56,
+     "pred_margin": 2.0,
+     "pred_total": 228.0,
+     "confidence": "low",
+     "reasoning": "Phoenix gets a narrow edge from home-court performance and the Clippers' winless road record. However, Los Angeles has the better point differential and more rest, so this projects as a close game rather than a strong home favorite.",
+     "reasoning_zh": "鳳凰城憑藉主場表現，以及快艇客場仍未取勝的紀錄，取得些微優勢。不過，洛杉磯的得失分差較佳且休息時間較充足，因此本場較可能是接近的比賽，而非太陽明顯佔優。",
+     "odds": 1.58,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "PHX",
+     "pick_zh": "太陽",
+     "pick_en": "Suns",
+     "home_win_prob": 0.55,
+     "pred_margin": 3.0,
+     "pred_total": 223.0,
+     "confidence": "low",
+     "reasoning": "Phoenix's home edge and Los Angeles's heavy injury list (Beal, Ingram out) outweigh the Suns' back-to-back fatigue and poor point differential. The market's ~61% for PHX looks slightly rich given the rest disadvantage, so this is a lean on the Suns at about 55%.",
+     "reasoning_zh": "太陽的主場優勢，加上快艇傷兵眾多（Beal、Ingram缺陣），抵銷了太陽背靠背作戰的疲勞與較差的得失分差。市場給太陽約61%勝率略顯偏高，考量休息劣勢，僅小幅看好太陽，勝率約55%。",
+     "odds": 1.58,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.48,
+     "pred_margin": -3.0,
+     "pred_total": 225.0,
+     "confidence": "med",
+     "reasoning": "Although the Clippers are winless on the road, they hold a significant rest advantage over the Suns, who are playing on the second night of a back-to-back after a blowout loss. Los Angeles also boasts a better season point differential and carries momentum from recently snapping their losing streak, making them a strong candidate for a road upset.",
+     "reasoning_zh": "儘管快艇本季在客場一勝難求，但他們比背靠背出賽且剛慘敗給馬刺的太陽擁有更多的休息優勢。洛杉磯快艇本季的淨勝分數據較佳，加上剛終止七連敗氣勢回升，非常有機會在客場上演下克上。",
+     "odds": 2.45,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.45,
+     "pred_margin": -3.0,
+     "pred_total": 227.0,
+     "confidence": "low",
+     "reasoning": "Phoenix's back-to-back fatigue and blowout loss offset its home-court edge, while the Clippers are fresher and have been more competitive on point differential. LAC's road struggles make this a close call, but the spot favors the away team.",
+     "reasoning_zh": "太陽背靠背且前一場大敗，抵銷了主場優勢；快艇休息較充分且本季場均得失分差較佳。雖然快艇客場尚未開胡，但這個賽程點略有利於客隊。",
+     "odds": 2.45,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.48,
+     "pred_margin": -2.0,
+     "pred_total": 226.0,
+     "confidence": "med",
+     "reasoning": "Phoenix is on a back-to-back after a blowout loss and heavy minutes, while Los Angeles enters with fresher legs and momentum from ending a seven-game skid. The rest and schedule advantage gives the Clippers a slight edge despite their winless road record.",
+     "reasoning_zh": "鳳凰城太陽在慘敗後背靠背出賽，體能處於劣勢；反觀洛杉磯快艇休息更充分且剛終止七連敗，儘管客場尚未開胡，仍握有小幅勝算。",
+     "odds": 2.45,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.44,
+     "pred_margin": -4.0,
+     "pred_total": 228.0,
+     "confidence": "low",
+     "reasoning": "Phoenix has home court but is on a back-to-back after a blowout, while the Clippers are better by net rating and better rested. The Clippers' 0-4 road record keeps the edge thin, yet rest and the defensive gap support a narrow Los Angeles win in a high-scoring game.",
+     "reasoning_zh": "太陽雖有主場優勢，但剛以122-96大敗且背靠背出賽；快艇淨勝分較佳（-4.0對-8.4）且多休息一天。快艇客場0勝4敗使優勢有限，不過休息與防守差距仍支持快艇在高分對決中小勝。",
+     "odds": 2.45,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.46,
+     "pred_margin": -2.0,
+     "pred_total": 228.0,
+     "confidence": "low",
+     "reasoning": "Despite the market favoring Phoenix, the underlying data slightly favors the rested Clippers: a better net rating (-4.0 vs -8.4), a back-to-back fatigue spot for the Suns after an emotional blowout loss, and fresh offensive momentum from LAC's 139-point breakout. LAC's 0-4 road record and PHX's solid 3-3 home mark keep this near a coin flip, hence low confidence.",
+     "reasoning_zh": "儘管盤口看好太陽，但數據略微傾向休息充足的快艇：淨勝分較佳（-4.0 對 -8.4）、太陽處於背靠背且剛被馬刺大勝26分、快艇剛以139分的火力爆發終止七連敗。不過快艇客場0勝4敗、太陽主場3勝3敗，使本場接近五五波，信心偏低。",
+     "odds": 2.45,
+     "result": null,
+     "pnl": null
+    }
+   ],
+   "recs": [
+    {
+     "market": "moneyline",
+     "pick": "away",
+     "label": "獨贏 快艇",
+     "label_en": "Clippers ML",
+     "odds": 2.45,
+     "line": null,
+     "edge": 0.112,
+     "confidence": "med",
+     "why": "模型 away 勝率 52%、市場 39% → 採 45% vs 賠率 2.45 → EV +11%",
+     "result": null,
+     "pnl": null
+    }
+   ],
    "hits": null
   },
   {
@@ -472,16 +610,146 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-10T22:00:09Z",
-    "ml_home": 4.19,
+    "fetched_at": "2026-11-11T00:00:09Z",
+    "ml_home": 4.2,
     "ml_away": 1.25,
     "spread_line": 9.5,
     "spread_home_odds": 1.87,
     "spread_away_odds": 1.95
    },
-   "consensus": null,
-   "models": [],
-   "recs": [],
+   "consensus": {
+    "home_win_prob": 0.181,
+    "pred_margin": -13.1,
+    "pred_total": 221.7,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "MIA",
+    "fav_zh": "熱火",
+    "fav_en": "Heat",
+    "fav_prob": 0.819
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.16,
+     "pred_margin": -13.0,
+     "pred_total": 223.0,
+     "confidence": "high",
+     "reasoning": "Miami has the stronger form and a major availability advantage against a Utah team missing several high-minute players. Equal rest and Utah's 1-4 home record further support Miami, though the Heat's poor defensive numbers leave some upset risk.",
+     "reasoning_zh": "邁阿密近期戰績較佳，且面對多名高上場時間球員缺陣的猶他，陣容完整度占有明顯優勢。雙方休息天數相同，而爵士主場僅1勝4敗，也更有利於熱火；不過熱火失分偏高，仍存在一定爆冷風險。",
+     "odds": 1.25,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.23,
+     "pred_margin": -10.0,
+     "pred_total": 226.0,
+     "confidence": "med",
+     "reasoning": "Utah is badly depleted, missing its top scorers and frontcourt, and is on an eight-game skid with a -11.7 point differential. Miami's defense is poor, but with Giannis likely playing it should control this matchup, winning by roughly 10, close to the spread.",
+     "reasoning_zh": "爵士傷兵嚴重，喬治、馬卡寧、小傑克森與努爾基奇皆缺陣，且已八連敗，場均淨負11.7分。熱火防守雖然鬆散，但字母哥可望出賽，應能掌控比賽，預估贏約10分，與讓分盤口相近。",
+     "odds": 1.25,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.15,
+     "pred_margin": -16.0,
+     "pred_total": 220.0,
+     "confidence": "high",
+     "reasoning": "Utah is severely depleted, missing their top scorers and defenders in Markkanen, George, and Jackson Jr., while already suffering an 8-game losing streak. Miami is relatively healthy with Giannis Antetokounmpo probable to play, giving them a massive talent and depth advantage that should lead to a comfortable road victory.",
+     "reasoning_zh": "爵士目前深陷8連敗，且陣容嚴重殘缺，包含馬卡南（Lauri Markkanen）、喬治（Keyonte George）與傑克森（Jaren Jackson Jr.）等核心主力皆因傷缺陣。反觀熱火陣容相對完整，且字母哥（Giannis Antetokounmpo）高機率出賽，在天賦與戰力上佔據絕對優勢，預期熱火能輕鬆在客場收下勝利。",
+     "odds": 1.25,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.14,
+     "pred_margin": -14.0,
+     "pred_total": 222.0,
+     "confidence": "high",
+     "reasoning": "Miami's health and talent advantage is overwhelming against a depleted Utah team missing multiple starters, despite being on the road. Utah's poor form and severe injuries make an upset unlikely.",
+     "reasoning_zh": "熱火在健康與陣容深度上明顯優於缺少多名主力的爵士，即使客場作戰仍佔絕對優勢。爵士近期八連敗且傷兵滿營，爆冷機會不高。",
+     "odds": 1.25,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.17,
+     "pred_margin": -14.0,
+     "pred_total": 220.0,
+     "confidence": "high",
+     "reasoning": "Utah is missing four key rotation players accounting for 89 minutes per game, severely depleting its offense and depth, while Miami is essentially full strength with Giannis Antetokounmpo probable. The Jazz are mired in an eight-game losing streak with the conference's worst record, and the quantitative model strongly favors the healthier Heat. Miami's superior road record and Utah's inability to score with its depleted roster make an away win highly likely.",
+     "reasoning_zh": "猶他爵士嚴重缺兵少將，四名主力輪替球員合計缺陣89分鐘，進攻與陣容深度大受打擊，反觀邁阿密熱火在安戴托昆波列為可能出賽下近乎完整。爵士正處於八連敗且為西區墊底的1勝9敗，量化傷兵模型亦強烈偏向熱火；熱火客場戰績佔優，爵士殘陣缺乏抗衡火力，客場取勝機率極高。",
+     "odds": 1.25,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.22,
+     "pred_margin": -11.0,
+     "pred_total": 221.0,
+     "confidence": "high",
+     "reasoning": "Utah is missing its core rotation while Miami has Giannis probable and a better road record, so the injury gap outweighs home court. Season scoring rates plus that absence point to a Miami win by about eleven points.",
+     "reasoning_zh": "爵士核心輪值大量缺陣，熱火則有字母哥大概率出賽且客場戰績較佳，傷兵落差足以蓋過主場優勢。依雙方得失分與缺陣幅度，熱火應以約十一分勝出。",
+     "odds": 1.25,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.2,
+     "pred_margin": -14.0,
+     "pred_total": 220.0,
+     "confidence": "high",
+     "reasoning": "Utah is decimated by injuries, losing roughly 89 minutes per game of production including their top scorers, while Miami gets Giannis back as probable. Combined with Utah's 1-9 record, 8-game losing streak and -11.7 differential, Miami should control this game comfortably on the road.",
+     "reasoning_zh": "爵士傷兵嚴重，Markkanen、Keyonte George、Jaren Jackson Jr. 與 Nurkic 全部缺陣，合計每場約損失89分鐘的戰力；熱火方面 Giannis 列為 probable，大概率會出賽。加上爵士近況1勝9敗、8連敗且淨勝分-11.7，熱火客場3勝3敗，預期熱火能輕鬆獲勝。",
+     "odds": 1.25,
+     "result": null,
+     "pnl": null
+    }
+   ],
+   "recs": [
+    {
+     "market": "spread",
+     "pick": "away -9.5",
+     "label": "讓分 熱火 -9.5",
+     "label_en": "Heat -9.5",
+     "odds": 1.95,
+     "line": -9.5,
+     "edge": null,
+     "confidence": "med",
+     "why": "共識分差 -13.0 vs 盤口 +9.5（差 3.5 分）",
+     "result": null,
+     "pnl": null
+    }
+   ],
    "hits": null
   },
   {
@@ -502,15 +770,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-10T22:00:09Z",
-    "ml_home": 2.85,
+    "fetched_at": "2026-11-11T00:00:09Z",
+    "ml_home": 2.8,
     "ml_away": 1.45,
     "spread_line": 5.5,
     "spread_home_odds": 1.93,
     "spread_away_odds": 1.89
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.549,
+    "pred_margin": 3.1,
+    "pred_total": 221.7,
+    "agreement": 0.86,
+    "n_models": 7,
+    "fav": "SAC",
+    "fav_zh": "國王",
+    "fav_en": "Kings",
+    "fav_prob": 0.549
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "SAC",
+     "pick_zh": "國王",
+     "pick_en": "Kings",
+     "home_win_prob": 0.54,
+     "pred_margin": 3.0,
+     "pred_total": 225.0,
+     "confidence": "low",
+     "reasoning": "Orlando's stronger form and road performance are offset by severe losses to its primary rotation. With Sacramento's key players available, the Kings have a narrow upset edge, but their 1-9 record and poor defense make confidence low.",
+     "reasoning_zh": "奧蘭多較佳的近況與客場表現，被主力輪替嚴重缺陣所抵銷。沙加緬度主要球員可以出賽，因此國王略有爆冷優勢；但其1勝9敗戰績與薄弱防守，讓本場預測信心偏低。",
+     "odds": 2.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "ORL",
+     "pick_zh": "魔術",
+     "pick_en": "Magic",
+     "home_win_prob": 0.46,
+     "pred_margin": -3.0,
+     "pred_total": 223.0,
+     "confidence": "low",
+     "reasoning": "Orlando's injury losses are severe and erase much of its edge over Sacramento, but the Kings' -13.3 differential and winless home record are still worse. ORL's baseline is about 4 points better than SAC's. Home court and the injuries roughly cancel that, so this is a narrow lean to Orlando, and by less than the market's 5.5 points.",
+     "reasoning_zh": "魔術傷兵嚴重，大幅削弱其對國王的優勢，但國王場均分差-13.3且主場未嘗勝績，表現更差。魔術的基本面比國王好約4分，主場優勢加上傷兵因素大致抵銷這個差距，因此只小幅看好魔術，幅度也小於盤口的5.5分。",
+     "odds": 1.45,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "SAC",
+     "pick_zh": "國王",
+     "pick_en": "Kings",
+     "home_win_prob": 0.55,
+     "pred_margin": 6.0,
+     "pred_total": 218.0,
+     "confidence": "med",
+     "reasoning": "Although the Kings have started the season a dismal 1-9, the Magic are severely depleted, missing their top two players in Paolo Banchero and Jalen Suggs. Sacramento still has Domantas Sabonis and Keegan Murray available, which should provide enough offensive firepower at home to overcome an Orlando team lacking its primary creators.",
+     "reasoning_zh": "儘管國王開季僅取得1勝9敗的慘淡戰績，但魔術目前面臨嚴重的傷兵問題，陣中兩大主力班切羅（Paolo Banchero）與薩格斯（Jalen Suggs）皆因傷缺陣。國王在主場仍有沙波尼斯（Domantas Sabonis）與墨瑞（Keegan Murray）坐鎮，這將為他們提供足夠的進攻火力，有望擊敗缺乏主要得分點的魔術。",
+     "odds": 2.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "SAC",
+     "pick_zh": "國王",
+     "pick_en": "Kings",
+     "home_win_prob": 0.56,
+     "pred_margin": 5.0,
+     "pred_total": 225.0,
+     "confidence": "med",
+     "reasoning": "Sacramento is near full strength at home with Sabonis and Murray available, while Orlando is severely shorthanded without Banchero and Suggs. Both teams have poor records, but the injury and home-court edge point to a narrow Kings win.",
+     "reasoning_zh": "沙加緬度在主場近乎健康，沙波尼斯與莫瑞可上場，而奧蘭多缺少班凱羅與蘇格斯等多名輪替。兩隊近況都不佳，但可用球員與主場優勢讓國王有機會小勝。",
+     "odds": 2.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "SAC",
+     "pick_zh": "國王",
+     "pick_en": "Kings",
+     "home_win_prob": 0.55,
+     "pred_margin": 3.0,
+     "pred_total": 219.0,
+     "confidence": "med",
+     "reasoning": "Despite both teams holding losing records, Orlando's extensive injury list—headlined by the absence of Paolo Banchero and Jalen Suggs—creates a massive production gap that outweighs Sacramento's early-season struggles. The Kings field a nearly intact rotation at home, giving them a slight objective edge.",
+     "reasoning_zh": "雖然兩隊戰績都很差，但魔術隊傷兵滿營，尤其是Paolo Banchero與Jalen Suggs的缺席造成巨大的戰力缺口，超過了國王開季低迷的影響。國王在主場以近乎完整陣容出賽，因此擁有客觀的微弱優勢。",
+     "odds": 2.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "SAC",
+     "pick_zh": "國王",
+     "pick_en": "Kings",
+     "home_win_prob": 0.56,
+     "pred_margin": 3.0,
+     "pred_total": 225.0,
+     "confidence": "med",
+     "reasoning": "Sacramento is the worse team on record, home form, and point differential, but Orlando is without Banchero and Suggs, an about 80-minute hole the injury module rates as a clear home edge. With Sabonis and Murray available and both sides rested, the Kings are a slight favorite in a high-variance game between two poor defenses.",
+     "reasoning_zh": "國王的戰績、主場與分差都較差，但魔術缺少班凱羅與薩格斯，輪值約少80分鐘，傷兵評估明顯偏向主隊。薩博尼斯與穆雷都可出賽，雙方也都有休息，因此在兩支防守都差的比賽裡，國王只是小幅優勢。",
+     "odds": 2.8,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "SAC",
+     "pick_zh": "國王",
+     "pick_en": "Kings",
+     "home_win_prob": 0.62,
+     "pred_margin": 5.0,
+     "pred_total": 217.0,
+     "confidence": "med",
+     "reasoning": "Both teams are struggling, but Orlando enters severely shorthanded — Banchero, Suggs, Isaac and Penda out with da Silva questionable (~80+ rotation minutes missing) — while Sacramento fields its full current rotation around Sabonis and Murray. That injury gap plus home court outweighs Orlando's modestly better point differential and extra day of rest, so I lean Sacramento in a low-quality matchup.",
+     "reasoning_zh": "兩隊戰績都不理想，但魔術傷兵極為嚴重：Banchero、Suggs、Isaac、Penda 缺陣，da Silva 出賽成疑，輪替戰力缺口超過 80 分鐘；國王則以 Sabonis、Murray 為核心的現有陣容大致健康。傷兵差距加上主場優勢，足以壓過魔術略佳的淨勝分與多一天休息的優勢，因此看好國王在這場低水準對決中於主場勝出。",
+     "odds": 2.8,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -532,7 +916,7 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-10T22:00:09Z",
+    "fetched_at": "2026-11-11T00:00:09Z",
     "ml_home": 2.05,
     "ml_away": 1.8,
     "spread_line": 2.0,
@@ -562,7 +946,7 @@
    "away_score": null,
    "odds": {
     "n_books": 3,
-    "fetched_at": "2026-11-10T22:00:09Z",
+    "fetched_at": "2026-11-11T00:00:09Z",
     "ml_home": 1.62,
     "ml_away": 2.35,
     "spread_line": -4.5,
@@ -635,13 +1019,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 3,
-    "fetched_at": "2026-11-10T22:00:09Z",
-    "ml_home": 5.51,
-    "ml_away": 1.16,
-    "spread_line": 13.5,
+    "n_books": 4,
+    "fetched_at": "2026-11-11T00:00:09Z",
+    "ml_home": 6.7,
+    "ml_away": 1.11,
+    "spread_line": 14.5,
     "spread_home_odds": 1.95,
-    "spread_away_odds": 1.87
+    "spread_away_odds": 1.9
    },
    "consensus": null,
    "models": [],
@@ -664,7 +1048,15 @@
    "away_en": "Nuggets",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 1,
+    "fetched_at": "2026-11-11T00:00:09Z",
+    "ml_home": 2.36,
+    "ml_away": 1.62,
+    "spread_line": 4.5,
+    "spread_home_odds": 1.85,
+    "spread_away_odds": 1.96
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -710,9 +1102,9 @@
    "away_score": null,
    "odds": {
     "n_books": 3,
-    "fetched_at": "2026-11-10T22:00:09Z",
-    "ml_home": 1.61,
-    "ml_away": 2.38,
+    "fetched_at": "2026-11-11T00:00:09Z",
+    "ml_home": 1.6,
+    "ml_away": 2.4,
     "spread_line": -5.0,
     "spread_home_odds": 1.87,
     "spread_away_odds": 1.95
@@ -760,7 +1152,15 @@
    "away_en": "Warriors",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 3,
+    "fetched_at": "2026-11-11T00:00:09Z",
+    "ml_home": 1.53,
+    "ml_away": 2.58,
+    "spread_line": -4.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -784,7 +1184,7 @@
    "away_score": null,
    "odds": {
     "n_books": 3,
-    "fetched_at": "2026-11-10T22:00:09Z",
+    "fetched_at": "2026-11-11T00:00:09Z",
     "ml_home": 2.11,
     "ml_away": 1.76,
     "spread_line": 2.0,
