@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T18:37:03-07:00",
+ "generated_at": "2026-11-11T19:00:12-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -162,8 +162,8 @@
    "away_name": "Washington Wizards",
    "home_en": "Pacers",
    "away_en": "Wizards",
-   "home_score": 69,
-   "away_score": 64,
+   "home_score": 89,
+   "away_score": 77,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-11T23:35:03Z",
@@ -322,8 +322,8 @@
    "away_name": "Cleveland Cavaliers",
    "home_en": "Knicks",
    "away_en": "Cavaliers",
-   "home_score": 60,
-   "away_score": 69,
+   "home_score": 76,
+   "away_score": 79,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-11T23:35:03Z",
@@ -468,8 +468,8 @@
    "away_name": "Boston Celtics",
    "home_en": "Raptors",
    "away_en": "Celtics",
-   "home_score": 61,
-   "away_score": 54,
+   "home_score": 72,
+   "away_score": 75,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-11T23:35:03Z",
@@ -614,8 +614,8 @@
    "away_name": "San Antonio Spurs",
    "home_en": "Bulls",
    "away_en": "Spurs",
-   "home_score": 41,
-   "away_score": 28,
+   "home_score": 68,
+   "away_score": 48,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-12T00:35:03Z",
@@ -760,8 +760,8 @@
    "away_name": "Denver Nuggets",
    "home_en": "Grizzlies",
    "away_en": "Nuggets",
-   "home_score": 24,
-   "away_score": 35,
+   "home_score": 45,
+   "away_score": 59,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-12T00:35:03Z",
@@ -906,8 +906,8 @@
    "away_name": "Los Angeles Lakers",
    "home_en": "Bucks",
    "away_en": "Lakers",
-   "home_score": 28,
-   "away_score": 30,
+   "home_score": 43,
+   "away_score": 50,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-12T00:35:03Z",
@@ -1052,8 +1052,8 @@
    "away_name": "Brooklyn Nets",
    "home_en": "Pelicans",
    "away_en": "Nets",
-   "home_score": 21,
-   "away_score": 33,
+   "home_score": 45,
+   "away_score": 58,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-12T00:35:03Z",
