@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T16:36:12-07:00",
+ "generated_at": "2026-11-11T17:03:50-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,8 +13,8 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 48,
-  "n_recs": 11,
+  "n_predicted_games": 51,
+  "n_recs": 12,
   "recs_won": 1,
   "recs_graded": 10,
   "recs_pnl": -809.0
@@ -71,7 +71,8 @@
    "2026-11-08",
    "2026-11-09",
    "2026-11-10",
-   "2026-11-11"
+   "2026-11-11",
+   "2026-11-12"
   ],
   "series": {
    "Claude": [
@@ -81,6 +82,7 @@
     392.0,
     291.0,
     352.0,
+    472.0,
     472.0
    ],
    "DeepSeek": [
@@ -90,6 +92,7 @@
     392.0,
     291.0,
     352.0,
+    168.0,
     168.0
    ],
    "GLM": [
@@ -99,6 +102,7 @@
     377.0,
     276.0,
     337.0,
+    153.0,
     153.0
    ],
    "GPT": [
@@ -108,6 +112,7 @@
     209.0,
     108.0,
     169.0,
+    143.0,
     143.0
    ],
    "Gemini": [
@@ -117,6 +122,7 @@
     392.0,
     291.0,
     352.0,
+    520.0,
     520.0
    ],
    "Grok": [
@@ -126,6 +132,7 @@
     392.0,
     291.0,
     352.0,
+    374.0,
     374.0
    ],
    "Kimi": [
@@ -135,6 +142,7 @@
     94.0,
     -7.0,
     -103.0,
+    -81.0,
     -81.0
    ]
   }
@@ -1201,8 +1209,124 @@
     "spread_home_odds": 1.88,
     "spread_away_odds": 1.94
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.383,
+    "pred_margin": -4.4,
+    "pred_total": 215.9,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "ORL",
+    "fav_zh": "魔術",
+    "fav_en": "Magic",
+    "fav_prob": 0.617
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "ORL",
+     "pick_zh": "魔術",
+     "pick_en": "Magic",
+     "home_win_prob": 0.35,
+     "pred_margin": -5.0,
+     "pred_total": 217.0,
+     "confidence": "med",
+     "reasoning": "Orlando has the stronger recent profile and favorable matchup metrics against a Utah team that has lost nine straight and is missing multiple key players. The Magic's own major injuries keep this relatively competitive, but their road performance and available-player quality make them the more likely winner.",
+     "reasoning_zh": "奧蘭多近期整體表現較佳，對上已吞下九連敗且多名主力缺陣的猶他，在對位數據上也占優勢。魔術本身同樣有重要傷兵，因此比賽仍可能接近，但其客場表現與現有可用球員的能力使其勝算較高。",
+     "odds": 1.56,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "ORL",
+     "pick_zh": "魔術",
+     "pick_en": "Magic",
+     "home_win_prob": 0.42,
+     "pred_margin": -3.0,
+     "pred_total": 219.0,
+     "confidence": "low",
+     "reasoning": "Both teams are heavily depleted and on a back-to-back. Orlando's better point differential, road form and the hot Wagner/Black duo give them a modest edge. Utah lost Markkanen and may also be without George, which outweighs the home-court factor, though the margin should be close.",
+     "reasoning_zh": "兩隊皆傷兵滿營且背靠背出賽。魔術的淨勝分較佳、客場表現穩定，加上Wagner與Black手感火燙，略占優勢。爵士少了Markkanen，George也可能缺陣，主場優勢難以彌補，預期比分接近。",
+     "odds": 1.56,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "ORL",
+     "pick_zh": "魔術",
+     "pick_en": "Magic",
+     "home_win_prob": 0.35,
+     "pred_margin": -5.0,
+     "pred_total": 213.0,
+     "confidence": "med",
+     "reasoning": "Utah is severely depleted without Lauri Markkanen and Jaren Jackson Jr., compounding their struggles during a nine-game losing streak. Although Orlando is missing Paolo Banchero, Franz Wagner has proven capable of carrying the offensive load, as seen in their recent win over Sacramento. The Magic's slight edge in defensive rating and overall momentum should allow them to secure a road victory.",
+     "reasoning_zh": "猶他爵士在缺少主力 Lauri Markkanen 與 Jaren Jackson Jr. 的情況下戰力大減，且目前正處於九連敗的低潮。儘管奧蘭多魔術也缺少 Paolo Banchero，但 Franz Wagner 在前一場擊敗國王的比賽中展現了出色的得分能力。魔術在防守端略佔優勢，且近況較佳，預期能在客場拿下勝利。",
+     "odds": 1.56,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "ORL",
+     "pick_zh": "魔術",
+     "pick_en": "Magic",
+     "home_win_prob": 0.38,
+     "pred_margin": -4.0,
+     "pred_total": 214.0,
+     "confidence": "med",
+     "reasoning": "Orlando's available top-end talent and better road form outweigh Utah's home court, while Utah's 9-game slide and key frontcourt absences make an upset unlikely.",
+     "reasoning_zh": "奧蘭多現有可用主力與客場表現優於猶他，且猶他正處九連敗且內線缺兵少將，因此較看好魔術。",
+     "odds": 1.56,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "ORL",
+     "pick_zh": "魔術",
+     "pick_en": "Magic",
+     "home_win_prob": 0.38,
+     "pred_margin": -6.0,
+     "pred_total": 210.0,
+     "confidence": "med",
+     "reasoning": "Despite heavy injuries on both sides, Orlando owns superior road form and available player quality while Utah is in catastrophic form with a 1-10 record and nine consecutive losses, making the Magic the clear choice.",
+     "reasoning_zh": "雙方雖皆傷兵滿營，但奧蘭多魔術擁有較佳的客場表現與可用球員戰力，而猶他爵士以1勝10敗及9連敗的災難性狀態進入比賽，因此魔術為明確選擇。",
+     "odds": 1.56,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "ORL",
+     "pick_zh": "魔術",
+     "pick_en": "Magic",
+     "home_win_prob": 0.42,
+     "pred_margin": -3.0,
+     "pred_total": 223.0,
+     "confidence": "med",
+     "reasoning": "Orlando is the better side on record, road form, and available talent even without Banchero and Suggs. Utah's nine-game skid and absences of Markkanen, Jackson, and Nurkic outweigh a small home-court and injury-minute edge, so the Magic are a moderate favorite in a messy game.",
+     "reasoning_zh": "魔術在戰績、客場狀態與現有可用戰力上仍優於爵士，即便缺少班凱羅與薩格斯。爵士九連敗，又缺馬卡寧、傑克森與努爾基奇，這些劣勢蓋過主場與傷兵分鐘數的些微優勢，因此魔術是這場變數偏高比賽的溫和熱門。",
+     "odds": 1.56,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "ORL",
+     "pick_zh": "魔術",
+     "pick_en": "Magic",
+     "home_win_prob": 0.38,
+     "pred_margin": -5.0,
+     "pred_total": 215.0,
+     "confidence": "med",
+     "reasoning": "Both depleted teams meet on a back-to-back, but Orlando's available core (Wagner, Black) just proved it can win without Banchero and Suggs, while Utah — losers of nine straight — loses its top scorer Markkanen plus Jackson Jr. and possibly Keyonte George. Orlando's better net rating, road form, and remaining talent give them a modest road edge.",
+     "reasoning_zh": "兩支傷兵滿營的球隊都在背靠背出賽，但魔術現有核心（Wagner、Black）剛證明少了 Banchero 與 Suggs 仍能贏球；反觀苦吞九連敗的爵士，不僅失去頭號得分手 Markkanen，還少了 Jackson Jr.，Keyonte George 也列入傷兵名單。魔術的淨勝分、客場戰績與剩餘戰力都較佳，客場略佔上風。",
+     "odds": 1.56,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -1231,8 +1355,124 @@
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.639,
+    "pred_margin": 5.1,
+    "pred_total": 226.6,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "HOU",
+    "fav_zh": "火箭",
+    "fav_en": "Rockets",
+    "fav_prob": 0.639
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.67,
+     "pred_margin": 5.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "The teams have nearly identical overall point differentials, but Houston's home performance and healthier available rotation provide the deciding edge. Golden State's superior recent offensive rating limits confidence and makes a close Houston win more likely than a comfortable one.",
+     "reasoning_zh": "兩隊整體得失分差幾乎相同，但休士頓的主場表現較佳，且可用輪替陣容相對完整，因此取得關鍵優勢。金州近期進攻效率較高並處於八連勝，使預測信心受限，較可能是休士頓小幅勝出，而非輕鬆取勝。",
+     "odds": 1.38,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.61,
+     "pred_margin": 5.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "The teams are nearly even on point differential, and Golden State has a slight last-10 efficiency edge and an eight-game win streak. Houston's home strength and Golden State's depleted backcourt and frontcourt depth tilt the game toward the Rockets. Even so, the market's roughly 70% looks a bit high, so I put Houston near 61%.",
+     "reasoning_zh": "兩隊淨勝分幾乎相同，勇士近十場效率略佔優勢，且正處於八連勝。不過火箭主場表現強勢，勇士的後場與禁區輪替深度又因傷兵而變薄，整體仍偏向火箭。盤口隱含約七成勝率似乎略高，我評估火箭勝率約61%。",
+     "odds": 1.38,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.68,
+     "pred_margin": 7.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "Houston boasts a formidable 5-1 home record and benefits from a healthier roster compared to Golden State, who are missing several key rotation players. Although the Warriors are riding an impressive 8-game winning streak with a potent offense led by Stephen Curry, the Rockets' superior defensive rating and the star power of Kevin Durant and Alperen Sengun give them the edge on their home court.",
+     "reasoning_zh": "休士頓火箭擁有出色的 5 勝 1 敗主場戰績，且陣容健康度優於缺少多名輪替球員的金州勇士。儘管勇士在柯瑞的帶領下火力全開並拉出一波 8 連勝，但火箭更為穩固的防守效率，加上杜蘭特與森根的球星效應，讓他們在主場更具贏面。",
+     "odds": 1.38,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.66,
+     "pred_margin": 6.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "Houston's strong home form and cleaner injury situation outweigh Golden State's win streak, especially with the Warriors missing several key rotation players on the road.",
+     "reasoning_zh": "火箭主場強勢且傷兵問題較輕，勇士雖處連勝但多名主力缺陣，客場戰力受損，因此火箭較有優勢。",
+     "odds": 1.38,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.64,
+     "pred_margin": 4.0,
+     "pred_total": 230.0,
+     "confidence": "med",
+     "reasoning": "Houston's significant health advantage and elite home defense offset Golden State's scorching eight-game winning streak. The Warriors' depleted rotation—missing over 30 minutes of key contributors—should struggle to maintain its top-tier road offense against the Rockets' stingy home unit. The result is a tight, moderately high-scoring affair that tilts toward Houston's depth and defensive identity.",
+     "reasoning_zh": "休士頓火箭顯著的傷兵優勢與頂級主場防守，抵銷了金州勇士火燙的八連勝氣勢。勇士輪替陣容嚴重缺陣，超過30分鐘的關鍵貢獻者無法上場，恐難以維持頂級客場火力來對抗火箭的主場強悍防守。預期這將是一場比分緊湊、總分偏高的比賽，最終由火箭的陣容深度與防守體系取得小幅勝利。",
+     "odds": 1.38,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.62,
+     "pred_margin": 5.0,
+     "pred_total": 225.0,
+     "confidence": "med",
+     "reasoning": "Both clubs are 8-3 with almost the same point differential, so this is not a blowout profile. Houston gets the nod from home form (5-1 vs Golden State's 2-2 road), even rest, and a modest injury-minute edge, while Golden State's higher offensive rating and eight-game streak should keep the game inside a large spread.",
+     "reasoning_zh": "兩隊同為8勝3敗、淨勝分幾乎相同，並非一面倒的對決。火箭靠主場5勝1敗對上勇士客場2勝2敗、休息天數相同，以及傷兵分鐘數的小幅優勢取得上風；勇士較高的進攻效率與八連勝則應能把分差控制在大讓分之內。",
+     "odds": 1.38,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.59,
+     "pred_margin": 4.0,
+     "pred_total": 226.0,
+     "confidence": "med",
+     "reasoning": "These teams are statistically almost identical (both 8-3, ~+9 differential), but Houston's home edge (5-1 at home vs GSW 2-2 on the road) and Golden State's thinner rotation (Williams and Payton II out, ~31 lost minutes vs only Capela's 14 for HOU) tilt a close game to the Rockets. GSW's 8-game win streak and superior offense (ORTG 119.4, +2.4 per-100 matchup edge) should keep the final margin narrow, well inside the market's -6.5 line.",
+     "reasoning_zh": "兩隊戰績同為8-3、淨勝分幾乎相同，但火箭擁有主場優勢（主場5-1，勇士客場僅2-2），且勇士傷兵較多（Williams與Gary Payton II缺陣，合計約31分鐘輪替缺口，火箭僅缺Capela的14分鐘），使這場接近的比賽略微傾向火箭。勇士8連勝、進攻效率頂尖（每100回合得119.4分，對位淨值+2.4），預期分差會很近，應明顯小於盤口的-6.5。",
+     "odds": 1.38,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -1261,9 +1501,139 @@
     "spread_home_odds": 1.87,
     "spread_away_odds": 1.94
    },
-   "consensus": null,
-   "models": [],
-   "recs": [],
+   "consensus": {
+    "home_win_prob": 0.627,
+    "pred_margin": 6.7,
+    "pred_total": 225.6,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "POR",
+    "fav_zh": "拓荒者",
+    "fav_en": "Trail Blazers",
+    "fav_prob": 0.627
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.62,
+     "pred_margin": 8.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "Portland has the clearer availability advantage and slightly stronger recent efficiency profile. OKC's defense and Shai Gilgeous-Alexander keep the matchup competitive, but its depleted rotation makes POR the more likely winner.",
+     "reasoning_zh": "波特蘭在人員可用性方面占有明顯優勢，近期攻守效率也略勝一籌。雷霆的防守與 Shai Gilgeous-Alexander 足以維持競爭力，但輪替陣容嚴重缺員，使拓荒者更有機會取勝。",
+     "odds": 1.69,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.6,
+     "pred_margin": 6.0,
+     "pred_total": 226.0,
+     "confidence": "med",
+     "reasoning": "Rest is even, but OKC is missing far more rotation minutes, and Portland just won the same matchup by 20. Shai Gilgeous-Alexander and OKC's strong defensive rating keep this from being lopsided, so Portland is a moderate favorite, roughly in line with the market.",
+     "reasoning_zh": "雙方都是背靠背，休息條件相同，但雷霆缺陣的輪換分鐘數遠多於拓荒者，且拓荒者前一晚同一組對戰剛以20分差獲勝。亞歷山大與雷霆出色的防守效率讓比賽不至於一面倒，因此拓荒者為中度看好，大致與市場判斷一致。",
+     "odds": 1.69,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.65,
+     "pred_margin": 7.0,
+     "pred_total": 225.0,
+     "confidence": "high",
+     "reasoning": "Oklahoma City enters this back-to-back severely shorthanded, missing crucial starters Chet Holmgren and Jalen Williams, which guts their interior defense and secondary scoring. Portland just blew out the Thunder by 20 points the night before, and with Damian Lillard healthy and playing at home, the Trail Blazers are well-positioned to exploit OKC's depleted rotation again.",
+     "reasoning_zh": "奧克拉荷馬雷霆在背靠背的賽程中面臨嚴重的傷兵潮，缺少了核心先發霍姆格倫（Chet Holmgren）與威廉斯（Jalen Williams），這讓他們的禁區防守與第二得分點受到重創。波特蘭拓荒者前一晚才以20分之差大勝雷霆，在里拉德（Damian Lillard）健康領軍且擁有主場優勢的情況下，拓荒者非常有機會再次擊退陣容殘缺的雷霆。",
+     "odds": 1.69,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.64,
+     "pred_margin": 7.0,
+     "pred_total": 225.0,
+     "confidence": "med",
+     "reasoning": "The model leans Portland because Oklahoma City's injury losses are far more severe, and Portland is at home with better recent form. OKC's SGA keeps it competitive, but the Thunder's depleted rotation likely falls short.",
+     "reasoning_zh": "模型看好拓荒者，主因是雷霆傷兵損失遠較拓荒者嚴重，且拓荒者坐擁主場、近況較佳。雷霆雖有亞歷山大撐場，但輪替深度不足，預料仍會落敗。",
+     "odds": 1.69,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.62,
+     "pred_margin": 6.0,
+     "pred_total": 230.0,
+     "confidence": "med",
+     "reasoning": "Portland holds significant injury advantages with OKC missing 6 players including Jalen Williams and Chet Holmgren. The Blazers already dominated this matchup 123-103 on November 11, and the injury disparity (-124 vs -49 minutes) heavily favors Portland.",
+     "reasoning_zh": "波特蘭在傷兵方面佔據顯著優勢，雷霆缺陣6名球員包括Jalen Williams和Chet Holmgren。拓荒者11月11日才以123-103大勝這個對手，加上傷兵時間差距懸殊（-124對-49分鐘），明顯有利於波特蘭。",
+     "odds": 1.69,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.62,
+     "pred_margin": 7.0,
+     "pred_total": 225.0,
+     "confidence": "med",
+     "reasoning": "Portland is the more complete side in this rematch: Oklahoma City is missing far more rotation minutes, and the Blazers just beat them by 20 with a better season point differential. Rest is a wash on the back-to-back, and a soft 2-2 home mark plus Shai Gilgeous-Alexander still playing keep this from a high-confidence blowout call.",
+     "reasoning_zh": "這場背靠背複賽較完整的是拓荒者：雷霆缺陣輪換分鐘遠多於波特蘭，且拓荒者剛以20分差獲勝、賽季淨勝分也較佳。雙方休息條件相同，但拓荒者主場僅2勝2敗，加上SGA仍可出賽，因此優勢明確卻不足以高度確信大勝。",
+     "odds": 1.69,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.64,
+     "pred_margin": 6.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "Portland won the first game of this home-and-home back-to-back 123-103 with the same injury-depleted rosters, and OKC is missing roughly 123 rotation minutes versus Portland's 49, a depth gap that gets amplified on the second night of a back-to-back. OKC's SGA and stronger overall record keep it competitive, but the injury, matchup, and recent head-to-head evidence all point to Portland at home.",
+     "reasoning_zh": "拓荒者在這組主場背靠背系列賽的第一場，就以123-103擊敗傷兵情況相同的雷霆，且雷霆缺陣的輪替時間（約123分鐘）遠多於拓荒者（約49分鐘），在背靠背第二晚劣勢會被放大。雷霆仍有SGA壓陣且戰績較佳，比賽不至於一面倒，但傷兵、對位與近期交手紀錄都指向主場的拓荒者勝出。",
+     "odds": 1.69,
+     "result": null,
+     "pnl": null
+    }
+   ],
+   "recs": [
+    {
+     "market": "spread",
+     "pick": "home -2.5",
+     "label": "讓分 拓荒者 -2.5",
+     "label_en": "Trail Blazers -2.5",
+     "odds": 1.87,
+     "line": -2.5,
+     "edge": null,
+     "confidence": "med",
+     "why": "共識分差 +6.8 vs 盤口 -2.5（差 4.3 分）",
+     "result": null,
+     "pnl": null
+    }
+   ],
    "hits": null
   },
   {
