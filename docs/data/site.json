@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T07:00:07-07:00",
+ "generated_at": "2026-11-12T08:00:08-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -164,7 +164,15 @@
    "away_en": "Raptors",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-12T15:00:08Z",
+    "ml_home": 1.29,
+    "ml_away": 3.7,
+    "spread_line": -8.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -186,7 +194,15 @@
    "away_en": "Pistons",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-12T15:00:08Z",
+    "ml_home": 4.5,
+    "ml_away": 1.22,
+    "spread_line": 10.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -209,13 +225,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 6,
-    "fetched_at": "2026-11-12T02:05:03Z",
-    "ml_home": 1.5,
-    "ml_away": 2.58,
-    "spread_line": -4.5,
-    "spread_home_odds": 1.87,
-    "spread_away_odds": 1.95
+    "n_books": 9,
+    "fetched_at": "2026-11-12T15:00:08Z",
+    "ml_home": 1.46,
+    "ml_away": 2.83,
+    "spread_line": -5.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -239,13 +255,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 4,
-    "fetched_at": "2026-11-12T02:05:03Z",
-    "ml_home": 1.4,
-    "ml_away": 2.94,
+    "n_books": 9,
+    "fetched_at": "2026-11-12T15:00:08Z",
+    "ml_home": 1.42,
+    "ml_away": 2.97,
     "spread_line": -6.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.95
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
