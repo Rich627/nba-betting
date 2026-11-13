@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T16:36:02-07:00",
+ "generated_at": "2026-11-12T17:01:24-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,7 +13,7 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 54,
+  "n_predicted_games": 55,
   "n_recs": 12,
   "recs_won": 2,
   "recs_graded": 12,
@@ -72,7 +72,8 @@
    "2026-11-09",
    "2026-11-10",
    "2026-11-11",
-   "2026-11-12"
+   "2026-11-12",
+   "2026-11-13"
   ],
   "series": {
    "Claude": [
@@ -83,6 +84,7 @@
     291.0,
     352.0,
     472.0,
+    629.0,
     629.0
    ],
    "DeepSeek": [
@@ -93,6 +95,7 @@
     291.0,
     352.0,
     168.0,
+    545.0,
     545.0
    ],
    "GLM": [
@@ -103,6 +106,7 @@
     276.0,
     337.0,
     153.0,
+    143.0,
     143.0
    ],
    "GPT": [
@@ -113,6 +117,7 @@
     108.0,
     169.0,
     143.0,
+    133.0,
     133.0
    ],
    "Gemini": [
@@ -123,6 +128,7 @@
     291.0,
     352.0,
     520.0,
+    510.0,
     510.0
    ],
    "Grok": [
@@ -133,6 +139,7 @@
     291.0,
     352.0,
     374.0,
+    50.0,
     50.0
    ],
    "Kimi": [
@@ -143,6 +150,7 @@
     -7.0,
     -103.0,
     -81.0,
+    129.0,
     129.0
    ]
   }
@@ -611,8 +619,124 @@
     "spread_home_odds": 1.93,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.72,
+    "pred_margin": 10.0,
+    "pred_total": 219.7,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "PHX",
+    "fav_zh": "太陽",
+    "fav_en": "Suns",
+    "fav_prob": 0.72
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "PHX",
+     "pick_zh": "太陽",
+     "pick_en": "Suns",
+     "home_win_prob": 0.74,
+     "pred_margin": 9.0,
+     "pred_total": 219.0,
+     "confidence": "med",
+     "reasoning": "Phoenix has the clearer offensive and availability advantages, while Charlotte's extra rest is unlikely to offset its major absences and weak scoring profile. PHX is favored to win by roughly nine points, though both teams' losing records keep confidence below high.",
+     "reasoning_zh": "鳳凰城在進攻與可用陣容方面占有較明顯優勢；夏洛特雖多休息一天，但主力缺陣與得分能力偏弱，預計難以完全抵銷。看好太陽約贏9分，但兩隊目前皆為敗多勝少，因此信心未達高等級。",
+     "odds": 1.43,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "PHX",
+     "pick_zh": "太陽",
+     "pick_en": "Suns",
+     "home_win_prob": 0.7,
+     "pred_margin": 9.0,
+     "pred_total": 223.0,
+     "confidence": "med",
+     "reasoning": "Charlotte's already weak offense loses two key rotation players in Miller and Schroder, and Phoenix holds a clear efficiency edge at home. Phoenix's poor defense keeps some variance, but the Suns should win by high single digits.",
+     "reasoning_zh": "黃蜂本就疲弱的進攻又少了米勒與施洛德兩名主要輪替球員，太陽在主場的效率優勢明顯。太陽防守不佳仍帶來變數，但預計能以近10分差距取勝。",
+     "odds": 1.43,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "PHX",
+     "pick_zh": "太陽",
+     "pick_en": "Suns",
+     "home_win_prob": 0.72,
+     "pred_margin": 10.0,
+     "pred_total": 220.0,
+     "confidence": "high",
+     "reasoning": "Phoenix holds a significant offensive advantage over a struggling Charlotte team that averages under 100 points per game. The Hornets are severely hampered by the absences of key contributors Brandon Miller and Dennis Schroder, limiting their scoring options. With Phoenix playing well at home and pushing a faster pace, the Suns are well-positioned to secure a comfortable victory.",
+     "reasoning_zh": "太陽在進攻端對上場均得分不到100分的黃蜂擁有顯著優勢。黃蜂因缺少主力球員 Brandon Miller 和 Dennis Schroder，得分點受到嚴重限制。加上太陽在主場表現穩定且節奏較快，預計能輕鬆拿下這場比賽的勝利。",
+     "odds": 1.43,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "PHX",
+     "pick_zh": "太陽",
+     "pick_en": "Suns",
+     "home_win_prob": 0.72,
+     "pred_margin": 8.0,
+     "pred_total": 220.0,
+     "confidence": "med",
+     "reasoning": "Phoenix has the rest, health and home-court advantages; Charlotte's missing starters and poor road offense make an upset unlikely despite extra rest.",
+     "reasoning_zh": "太陽在健康、主場與進攻節奏上佔優；黃蜂缺少主力且客場進攻疲弱，即使有較多休兵日也不易爆冷。",
+     "odds": 1.43,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "PHX",
+     "pick_zh": "太陽",
+     "pick_en": "Suns",
+     "home_win_prob": 0.76,
+     "pred_margin": 13.0,
+     "pred_total": 217.0,
+     "confidence": "med",
+     "reasoning": "Phoenix is the clear choice because Charlotte is missing its top scorer and primary playmaker among 67 lost rotation minutes, leaving a massive offensive void that the Suns' superior per-possession efficiency and home-court advantage should easily exploit.",
+     "reasoning_zh": "鳳凰城太陽隊是明確的選擇，因為夏洛特黃蜂隊在損失67分鐘輪替時間的情況下，同時缺少了頭號得分手與主要組織者，造成巨大的進攻缺口，而太陽隊憑藉更優異的每次進攻效率與主場優勢應能輕易利用這一弱點。",
+     "odds": 1.43,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "PHX",
+     "pick_zh": "太陽",
+     "pick_en": "Suns",
+     "home_win_prob": 0.68,
+     "pred_margin": 8.0,
+     "pred_total": 218.0,
+     "confidence": "med",
+     "reasoning": "Phoenix is not a strong team, but every given module favors the Suns, led by Charlotte’s absence of Miller and Schroder and an 8.3 per-100 net-rating edge plus home court. The Hornets’ 1-3 road mark and 98.8 points per game point to a low-scoring offense against a Suns team that just scored freely. Small samples and Phoenix’s poor defense keep this short of a high-confidence call, so a moderate home win is the objective read.",
+     "reasoning_zh": "太陽本身並不強，但給定的各項模組都偏向主隊，關鍵是黃蜂缺少Miller與Schroder，且效率淨值落後約8.3並要面對主場。黃蜂客場僅1勝3敗、場均只得98.8分，進攻難以支撐客場搶分。兩隊樣本仍小、太陽防守也差，因此信心僅中等，客觀預測太陽小勝。",
+     "odds": 1.43,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "PHX",
+     "pick_zh": "太陽",
+     "pick_en": "Suns",
+     "home_win_prob": 0.72,
+     "pred_margin": 13.0,
+     "pred_total": 221.0,
+     "confidence": "med",
+     "reasoning": "All three quantitative modules favor Phoenix, and Charlotte enters without Miller and Schroder (~61 combined mpg), gutting an offense already averaging a league-worst-level 98.8 points on the road (1-3). Phoenix's own defense is weak (118.1 allowed), which keeps CHA competitive, but the home court, health edge, and +8.3 per-100 matchup gap point clearly to the Suns.",
+     "reasoning_zh": "三項量化模組均看好太陽,且黃蜂缺少Brandon Miller與Dennis Schroder(合計約61分鐘上場時間),重創本就已貧弱的進攻(場均僅98.8分,客場1勝3敗)。太陽自身防守不佳(場均失118.1分)讓比賽仍有懸念,但主場優勢、傷兵差距與每百回合+8.3的對位優勢,明顯指向太陽獲勝。",
+     "odds": 1.43,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
