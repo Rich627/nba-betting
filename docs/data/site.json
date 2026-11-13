@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T17:01:24-07:00",
+ "generated_at": "2026-11-12T19:00:07-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -159,7 +159,7 @@
   {
    "game_id": "2026-11-12_TOR@PHI",
    "game_date": "2026-11-12",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-13T00:00:00Z",
    "tw": "11/12(四) 17:00",
    "home": "PHI",
@@ -170,8 +170,8 @@
    "away_name": "Toronto Raptors",
    "home_en": "76ers",
    "away_en": "Raptors",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 99,
+   "away_score": 87,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-12T23:35:02Z",
@@ -305,7 +305,7 @@
   {
    "game_id": "2026-11-12_DET@WAS",
    "game_date": "2026-11-12",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-13T00:00:00Z",
    "tw": "11/12(四) 17:00",
    "home": "WAS",
@@ -316,8 +316,8 @@
    "away_name": "Detroit Pistons",
    "home_en": "Wizards",
    "away_en": "Pistons",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 93,
+   "away_score": 96,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-12T23:35:02Z",
@@ -451,7 +451,7 @@
   {
    "game_id": "2026-11-12_DAL@MIN",
    "game_date": "2026-11-12",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-13T01:00:00Z",
    "tw": "11/12(四) 18:00",
    "home": "MIN",
@@ -462,8 +462,8 @@
    "away_name": "Dallas Mavericks",
    "home_en": "Timberwolves",
    "away_en": "Mavericks",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 57,
+   "away_score": 47,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-12T23:35:02Z",
