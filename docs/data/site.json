@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T16:37:14-07:00",
+ "generated_at": "2026-11-13T17:03:03-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,7 +13,7 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 60,
+  "n_predicted_games": 63,
   "n_recs": 14,
   "recs_won": 2,
   "recs_graded": 12,
@@ -73,7 +73,8 @@
    "2026-11-10",
    "2026-11-11",
    "2026-11-12",
-   "2026-11-13"
+   "2026-11-13",
+   "2026-11-14"
   ],
   "series": {
    "Claude": [
@@ -85,6 +86,7 @@
     352.0,
     472.0,
     629.0,
+    773.0,
     773.0
    ],
    "DeepSeek": [
@@ -96,6 +98,7 @@
     352.0,
     168.0,
     545.0,
+    689.0,
     689.0
    ],
    "GLM": [
@@ -106,6 +109,7 @@
     276.0,
     337.0,
     153.0,
+    143.0,
     143.0,
     143.0
    ],
@@ -118,6 +122,7 @@
     169.0,
     143.0,
     133.0,
+    277.0,
     277.0
    ],
    "Gemini": [
@@ -129,6 +134,7 @@
     352.0,
     520.0,
     510.0,
+    654.0,
     654.0
    ],
    "Grok": [
@@ -140,6 +146,7 @@
     352.0,
     374.0,
     50.0,
+    194.0,
     194.0
    ],
    "Kimi": [
@@ -150,6 +157,7 @@
     -7.0,
     -103.0,
     -81.0,
+    129.0,
     129.0,
     129.0
    ]
@@ -924,8 +932,124 @@
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.907,
+    "pred_margin": 16.6,
+    "pred_total": 221.7,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "HOU",
+    "fav_zh": "火箭",
+    "fav_en": "Rockets",
+    "fav_prob": 0.907
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.94,
+     "pred_margin": 18.0,
+     "pred_total": 222.0,
+     "confidence": "high",
+     "reasoning": "Houston holds major advantages in recent efficiency, season form, home performance, and available talent. Utah's depleted lineup and weak offense make an upset unlikely, although Houston's frontcourt absences create some uncertainty around the margin.",
+     "reasoning_zh": "休士頓在近期攻守效率、球季戰績、主場表現與可用球員天賦方面都占有明顯優勢。猶他陣容嚴重短缺且進攻低迷，爆冷機率偏低，但休士頓前場也有人員缺陣，讓勝分差仍存在一些不確定性。",
+     "odds": 1.08,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.88,
+     "pred_margin": 16.0,
+     "pred_total": 224.0,
+     "confidence": "high",
+     "reasoning": "Houston's efficiency edge is massive. Utah is collapsing on a 10-game skid and is without Markkanen and Jackson Jr., which outweighs Houston losing Smart and two backup centers. Expect a comfortable home win of around 15-16 points, roughly in line with the market spread.",
+     "reasoning_zh": "火箭在效率上佔有壓倒性優勢。爵士目前十連敗，且馬卡寧與小傑克森缺陣，這些影響遠大於火箭少了被禁賽的史馬特與兩名替補中鋒。預期火箭在主場輕鬆取勝，分差約15至16分，與盤口讓分大致相符。",
+     "odds": 1.08,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.9,
+     "pred_margin": 17.0,
+     "pred_total": 225.0,
+     "confidence": "high",
+     "reasoning": "The Rockets are dominant at home and face a Jazz team on a 10-game losing streak. Utah is severely depleted without Lauri Markkanen and Jaren Jackson Jr., giving Houston a massive advantage on both ends of the floor.",
+     "reasoning_zh": "火箭在主場表現強勢，而爵士正處於10連敗的低潮。猶他爵士在缺少馬卡南（Lauri Markkanen）和傑克森（Jaren Jackson Jr.）的情況下戰力嚴重受損，這讓休士頓在攻防兩端都佔據了巨大的優勢。",
+     "odds": 1.08,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.93,
+     "pred_margin": 16.0,
+     "pred_total": 218.0,
+     "confidence": "high",
+     "reasoning": "Houston is the clear favorite because it is much stronger at home, Utah is winless on the road and on a 10-game skid, and Utah is missing multiple key players.",
+     "reasoning_zh": "火箭主場強勢，爵士客場全敗且陷入 10 連敗，又缺少多位主力，因此火箭勝算明顯較高。",
+     "odds": 1.08,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.93,
+     "pred_margin": 17.0,
+     "pred_total": 219.0,
+     "confidence": "high",
+     "reasoning": "The Rockets hold enormous advantages in record, home court, health, and advanced metrics against a depleted Jazz team mired in a 10-game losing streak, making a Houston win highly probable.",
+     "reasoning_zh": "火箭在戰績、主場優勢、陣容健康與進階數據上全面佔優，而爵士傷兵滿營且苦吞10連敗，因此火箭勝算極高。",
+     "odds": 1.08,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.87,
+     "pred_margin": 15.0,
+     "pred_total": 223.0,
+     "confidence": "high",
+     "reasoning": "Houston’s strong home form and a +20 per-100 efficiency edge should overwhelm a Utah team on a 10-game skid that is also without Markkanen, Jackson Jr., and Nurkic. Houston’s absences are lower-impact role players and rest is even, so a double-digit home win is the objective read.",
+     "reasoning_zh": "休士頓主場戰績出色，近況百回合效率淨勝約20分，應能壓制連敗十場、且缺少馬卡南、傑克森與努爾基奇的爵士。火箭缺陣多為角色球員，雙方休息天數相同，客觀上較看好主隊以兩位數分差取勝。",
+     "odds": 1.08,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.9,
+     "pred_margin": 17.0,
+     "pred_total": 221.0,
+     "confidence": "high",
+     "reasoning": "Houston is a 9-3 home powerhouse facing a 1-11 Utah side that has lost 10 straight and is missing its three best bigs (Markkanen, Jackson Jr., Nurkic), while the Rockets' injuries are limited to replaceable role players. The per-100 matchup gap of +20.0 strongly favors Houston, and with equal rest there is no scheduling counterweight. Expect a comfortable Rockets win around 17 points, consistent with the market's -15 line.",
+     "reasoning_zh": "火箭以9勝3敗的主場強權之姿，迎戰1勝11敗、已吞下10連敗的爵士，且爵士缺少三大主力（馬卡南、小傑克森、努基奇），而火箭傷停僅為可替補的角色球員。每100回合淨勝差高達+20.0明顯偏向火箭，雙方休息天數相同也沒有賽程劣勢。預期火箭將輕鬆贏約17分，與市場讓分-15的盤口一致。",
+     "odds": 1.08,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -954,8 +1078,124 @@
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.834,
+    "pred_margin": 11.9,
+    "pred_total": 226.1,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "SAS",
+    "fav_zh": "馬刺",
+    "fav_en": "Spurs",
+    "fav_prob": 0.834
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.84,
+     "pred_margin": 12.0,
+     "pred_total": 228.0,
+     "confidence": "high",
+     "reasoning": "San Antonio has the better recent net profile, home court, and a major availability advantage against a Curry-less Warriors team. The Spurs' questionable guards add uncertainty, but their defense and Wembanyama-led talent edge still make them the clear pick.",
+     "reasoning_zh": "聖安東尼奧近期攻守淨值較佳，擁有主場優勢，且面對缺少柯瑞的勇士，在陣容可用性上明顯占優。雖然瓦塞爾與福克斯出賽成疑帶來不確定性，但馬刺的防守與溫班亞馬領軍的天賦優勢，仍使其成為明確較看好的一方。",
+     "odds": 1.15,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.8,
+     "pred_margin": 11.0,
+     "pred_total": 229.0,
+     "confidence": "med",
+     "reasoning": "With Curry and several rotation players out, Golden State's offense loses its engine against a Spurs team that is 10-0 in its last 10 and has a clear edge in defensive efficiency. Fox and Vassell being questionable trims SAS's edge slightly. The -12 spread looks a bit generous, so I'd project roughly an 11-point Spurs win.",
+     "reasoning_zh": "勇士缺少柯瑞及多名輪換球員，進攻失去核心，面對近10場全勝、防守效率明顯較佳的馬刺處於劣勢。Fox與Vassell出賽成疑，使馬刺優勢略為縮小。讓12分稍嫌偏多，預估馬刺約贏11分。",
+     "odds": 1.15,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.86,
+     "pred_margin": 13.0,
+     "pred_total": 219.0,
+     "confidence": "high",
+     "reasoning": "The Spurs are riding a dominant 10-game winning streak and feature a massive matchup advantage with Victor Wembanyama. Meanwhile, the Warriors are severely handicapped by the absence of Stephen Curry, which will stall their offense, especially on the road where they are already struggling. Expect San Antonio to control the pace and secure a comfortable victory.",
+     "reasoning_zh": "馬刺目前正處於強勢的10連勝，且在文班亞馬（Victor Wembanyama）的帶領下擁有巨大的對位優勢。同時，勇士因柯瑞（Stephen Curry）缺陣而戰力大損，這將嚴重影響他們的進攻火力，尤其在客場作戰更是雪上加霜。預期聖安東尼奧能掌控比賽節奏並輕鬆獲勝。",
+     "odds": 1.15,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.86,
+     "pred_margin": 12.0,
+     "pred_total": 228.0,
+     "confidence": "high",
+     "reasoning": "San Antonio's form, home court, and far cleaner injury situation give them a decisive edge over a Golden State team missing Curry and several key players. The models project a double-digit Spurs win with a total near 228.",
+     "reasoning_zh": "聖安東尼奧的近況、主場優勢以及更完整的陣容，面對缺少柯瑞等多名主力的金州勇士具有明顯優勢。模型預測馬刺將以雙位數分差獲勝，總分約 228。",
+     "odds": 1.15,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.87,
+     "pred_margin": 11.0,
+     "pred_total": 227.0,
+     "confidence": "high",
+     "reasoning": "Golden State is missing Stephen Curry and multiple rotation players, crippling their offense against a surging San Antonio team riding a 10-game win streak. The Spurs hold decisive edges in net rating, player ability metrics, and home-court advantage, making a comfortable San Antonio win the most likely outcome.",
+     "reasoning_zh": "金州勇士缺少Stephen Curry及多名輪替球員，進攻火力嚴重受損，而馬刺正處於10連勝的巔峰狀態。馬刺在淨效率、球員能力數據與主場優勢上均佔絕對上風，看好馬刺輕取勝利。",
+     "odds": 1.15,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.75,
+     "pred_margin": 12.0,
+     "pred_total": 228.0,
+     "confidence": "med",
+     "reasoning": "San Antonio's 10-game win streak, better defensive rating, and home court align with matchup and injury modules that all favor the Spurs. Curry's absence removes Golden State's top creator, so even with Fox and Vassell questionable the Warriors are unlikely to win on the road.",
+     "reasoning_zh": "馬刺十連勝、防守效率較佳且坐擁主場，與對位及傷兵模組一致偏向主隊。柯瑞缺陣拿走勇士最主要的進攻核心，即便福克斯與瓦塞爾出賽成疑，勇士客場仍難取勝。",
+     "odds": 1.15,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "SAS",
+     "pick_zh": "馬刺",
+     "pick_en": "Spurs",
+     "home_win_prob": 0.86,
+     "pred_margin": 12.0,
+     "pred_total": 224.0,
+     "confidence": "high",
+     "reasoning": "San Antonio enters on a 10-game win streak with an elite +11.2 net rating and Wembanyama playing at an MVP level, while Golden State is missing Curry, Butler, Porzingis and Moody — a massive 44 minutes per game of absent production. Every quantitative module (injuries, lineup matchup, player ability) points decisively to the Spurs at home, projecting a comfortable ~12-point margin.",
+     "reasoning_zh": "馬刺帶著十連勝與聯盟頂級的+11.2淨勝分出戰，溫班亞瑪狀態火熱；反觀勇士傷兵滿營，柯瑞、巴特勒、波辛吉斯與穆迪全數缺陣，每場損失約44分鐘的戰力。三項量化模型（傷停、陣容對位、球員能力）全面倒向馬刺，預期主場約12分的勝差。",
+     "odds": 1.15,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -984,8 +1224,124 @@
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.201,
+    "pred_margin": -10.3,
+    "pred_total": 227.4,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "POR",
+    "fav_zh": "拓荒者",
+    "fav_en": "Trail Blazers",
+    "fav_prob": 0.799
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.18,
+     "pred_margin": -10.0,
+     "pred_total": 230.0,
+     "confidence": "high",
+     "reasoning": "Portland's superior two-way efficiency, strong road record, and Sacramento's severe defensive and home struggles outweigh the Kings' extra rest and healthier rotation. The injury gap should keep the game more competitive, but Portland remains the clear objective pick.",
+     "reasoning_zh": "波特蘭在攻守效率、客場戰績方面都明顯占優，而沙加緬度的防守與主場表現持續低迷，足以抵銷國王較充足的休息與較完整的輪替。拓荒者的傷兵可能讓比賽更接近，但客觀上仍是明顯較值得看好的一方。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.24,
+     "pred_margin": -9.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "Portland's efficiency edge (last-10 net about +5 vs Sacramento's -12) far outweighs the minor rest advantage for the Kings and Morant's absence. Sacramento has been winless at home, so Portland should win by high single digits, close to the market line.",
+     "reasoning_zh": "拓荒者的效率優勢（近十場淨效率約+5，國王約-12）遠大於國王些微的休息優勢與莫蘭特缺陣的影響。國王本季主場尚未贏球，預期拓荒者以近十分差距獲勝，與市場盤口相近。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.19,
+     "pred_margin": -11.0,
+     "pred_total": 225.0,
+     "confidence": "high",
+     "reasoning": "Despite missing Ja Morant, the Trail Blazers have been dominant on the road and boast a potent offense led by Damian Lillard and Deni Avdija. The Kings are winless at home, allowing an abysmal 121 points per game, making it highly unlikely they can keep pace with Portland's scoring output.",
+     "reasoning_zh": "儘管缺少了 Ja Morant，拓荒者在客場的表現依然強勢，並擁有由 Damian Lillard 和 Deni Avdija 帶領的高效進攻。國王本季在主場一勝難求，且場均失分高達121分，防守端的崩盤讓他們很難與拓荒者的火力抗衡。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.2,
+     "pred_margin": -10.0,
+     "pred_total": 230.0,
+     "confidence": "high",
+     "reasoning": "Portland's much better form, road success, and lineup/pace edge outweigh Sacramento's rest advantage. The Kings' 0-6 home record and poor defense make an upset unlikely, though Portland's injuries keep the margin from being larger.",
+     "reasoning_zh": "波特蘭的近期狀態、客場表現與陣容節奏優勢，勝過沙加緬度的休息優勢。國王主場 0 勝 6 敗且防守不佳，爆冷機會不高，但拓荒者傷兵較多，因此勝分不會過大。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.19,
+     "pred_margin": -12.0,
+     "pred_total": 224.0,
+     "confidence": "high",
+     "reasoning": "Sacramento owns the worst defense and home record in the conference, while Portland has been elite on the road and just swept Oklahoma City without Ja Morant. The quantitative matchup model gives Portland a massive per-100 net rating advantage that outweighs Sacramento's extra rest and lighter injury report.",
+     "reasoning_zh": "國王擁有西區最差的防守與主場戰績（0勝6敗），而拓荒者本季客場強勢（5勝1敗）且在缺少莫蘭特的情況下剛橫掃雷霆。量化對位模型顯示拓荒者擁有巨大的每百回合淨效率優勢，足以壓過國王在休息天數與傷病負擔上的小幅領先。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.23,
+     "pred_margin": -10.0,
+     "pred_total": 226.0,
+     "confidence": "high",
+     "reasoning": "Portland’s record, road form, and per-100 edge over a Kings team that is 0-6 at home and allowing 121 points are decisive. Heavier Blazers injuries and an extra day of Kings rest narrow the margin but do not flip the result.",
+     "reasoning_zh": "拓荒者戰績、客場表現與每百回合效率明顯優於主場0勝6敗、場均失121分的國王。拓荒者傷兵較多且國王多休一天只會縮小分差，不足以翻盤。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "POR",
+     "pick_zh": "拓荒者",
+     "pick_en": "Trail Blazers",
+     "home_win_prob": 0.18,
+     "pred_margin": -10.0,
+     "pred_total": 230.0,
+     "confidence": "high",
+     "reasoning": "Portland's overwhelming form and efficiency edge (5-1 road, +7.2 differential, -17.3 per-100 matchup) faces a Sacramento team that is 1-10 and winless at home (0-6). The Blazers just swept Oklahoma City without Ja Morant, showing their depth covers his absence, so expect a comfortable double-digit Portland win around 120-110 despite Sacramento's slight rest advantage.",
+     "reasoning_zh": "拓荒者近況與效率全面壓制(客場5勝1敗、淨勝分+7.2、每百回合對位差距-17.3),而國王戰績僅1勝10敗且主場0勝6敗。拓荒者才在缺少Ja Morant的情況下橫掃雷霆,證明陣容深度足以彌補他的缺陣,即使國王多休息一天,預期拓荒者仍將以約10分之差、120比110左右取勝。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
