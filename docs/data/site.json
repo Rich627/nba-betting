@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T07:00:07-07:00",
+ "generated_at": "2026-11-14T08:00:08-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -180,7 +180,15 @@
    "away_en": "Nuggets",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-14T15:00:08Z",
+    "ml_home": 5.5,
+    "ml_away": 1.16,
+    "spread_line": 12.0,
+    "spread_home_odds": 1.95,
+    "spread_away_odds": 1.87
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -202,7 +210,15 @@
    "away_en": "Mavericks",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-14T15:00:08Z",
+    "ml_home": 1.95,
+    "ml_away": 1.87,
+    "spread_line": 1.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -224,7 +240,15 @@
    "away_en": "Pistons",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-14T15:00:08Z",
+    "ml_home": 2.65,
+    "ml_away": 1.51,
+    "spread_line": 4.5,
+    "spread_home_odds": 1.95,
+    "spread_away_odds": 1.87
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -246,7 +270,15 @@
    "away_en": "Nets",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-14T15:00:08Z",
+    "ml_home": 1.6,
+    "ml_away": 2.42,
+    "spread_line": -3.5,
+    "spread_home_odds": 1.89,
+    "spread_away_odds": 1.93
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -268,7 +300,15 @@
    "away_en": "Bulls",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-14T15:00:08Z",
+    "ml_home": 1.11,
+    "ml_away": 7.24,
+    "spread_line": -15.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
