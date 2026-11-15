@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T17:40:52-07:00",
+ "generated_at": "2026-11-14T19:00:08-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -186,8 +186,8 @@
    "away_name": "Denver Nuggets",
    "home_en": "Pelicans",
    "away_en": "Nuggets",
-   "home_score": 21,
-   "away_score": 23,
+   "home_score": 82,
+   "away_score": 90,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-15T00:05:04Z",
@@ -321,7 +321,7 @@
   {
    "game_id": "2026-11-14_DAL@CLE",
    "game_date": "2026-11-14",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-15T00:30:00Z",
    "tw": "11/14(六) 17:30",
    "home": "CLE",
@@ -332,8 +332,8 @@
    "away_name": "Dallas Mavericks",
    "home_en": "Cavaliers",
    "away_en": "Mavericks",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 79,
+   "away_score": 60,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-15T00:35:03Z",
@@ -481,7 +481,7 @@
   {
    "game_id": "2026-11-14_DET@MIA",
    "game_date": "2026-11-14",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-15T01:00:00Z",
    "tw": "11/14(六) 18:00",
    "home": "MIA",
@@ -492,8 +492,8 @@
    "away_name": "Detroit Pistons",
    "home_en": "Heat",
    "away_en": "Pistons",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 49,
+   "away_score": 47,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-15T00:35:03Z",
@@ -627,7 +627,7 @@
   {
    "game_id": "2026-11-14_BKN@MEM",
    "game_date": "2026-11-14",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-15T01:00:00Z",
    "tw": "11/14(六) 18:00",
    "home": "MEM",
@@ -638,8 +638,8 @@
    "away_name": "Brooklyn Nets",
    "home_en": "Grizzlies",
    "away_en": "Nets",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 58,
+   "away_score": 45,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-15T00:35:03Z",
@@ -773,7 +773,7 @@
   {
    "game_id": "2026-11-14_CHI@MIN",
    "game_date": "2026-11-14",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-15T01:00:00Z",
    "tw": "11/14(六) 18:00",
    "home": "MIN",
@@ -784,8 +784,8 @@
    "away_name": "Chicago Bulls",
    "home_en": "Timberwolves",
    "away_en": "Bulls",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 38,
+   "away_score": 46,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-15T00:35:03Z",
