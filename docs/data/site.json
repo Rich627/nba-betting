@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T08:00:07-07:00",
+ "generated_at": "2026-11-15T09:00:55-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,7 +13,7 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 69,
+  "n_predicted_games": 70,
   "n_recs": 16,
   "recs_won": 3,
   "recs_graded": 16,
@@ -190,15 +190,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T15:00:07Z",
+    "fetched_at": "2026-11-15T16:00:08Z",
     "ml_home": 1.36,
     "ml_away": 3.25,
     "spread_line": -7.0,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.7,
+    "pred_margin": 7.0,
+    "pred_total": 218.7,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "PHI",
+    "fav_zh": "76人",
+    "fav_en": "76ers",
+    "fav_prob": 0.7
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.71,
+     "pred_margin": 6.0,
+     "pred_total": 220.0,
+     "confidence": "med",
+     "reasoning": "Philadelphia owns the stronger overall profile and faces an Indiana team missing its primary creator, with two other important players questionable. Embiid's absence narrows the gap, but PHI's home performance, rest advantage, and superior recent efficiency support a moderate home win.",
+     "reasoning_zh": "費城整體表現較佳，而印第安納不僅缺少主要進攻發動機 Tyrese Haliburton，另有兩名重要球員出賽成疑。Joel Embiid 缺陣縮小了雙方差距，但費城的主場表現、休息優勢與較佳的近期效率，仍支持其以中等差距取勝。",
+     "odds": 1.36,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.68,
+     "pred_margin": 7.0,
+     "pred_total": 223.0,
+     "confidence": "med",
+     "reasoning": "Philadelphia's stronger form and net rating, plus home court and a rest edge, outweigh losing Embiid. Indiana is missing Haliburton and may lose Nembhard and Nesmith, leaving Siakam with limited creation help. Expect a PHI win by about 6-8, roughly in line with the market.",
+     "reasoning_zh": "76人戰績與淨效率較佳，加上主場與休息優勢，足以抵銷恩比德缺陣的影響。溜馬缺少哈利伯頓，納姆哈德與內史密斯也可能無法上場，西亞卡姆缺乏組織支援。預計76人贏約6至8分，大致與盤口一致。",
+     "odds": 1.36,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.74,
+     "pred_margin": 9.0,
+     "pred_total": 221.0,
+     "confidence": "med",
+     "reasoning": "Although the 76ers are missing Joel Embiid, the Pacers suffer a more devastating blow with the absence of their primary playmaker, Tyrese Haliburton. Philadelphia boasts superior depth with Tyrese Maxey and Jaylen Brown, and benefits from an extra day of rest at home. Indiana's depleted backcourt will struggle to keep pace offensively.",
+     "reasoning_zh": "儘管76人缺少了當家球星恩比德，但溜馬失去核心控衛哈利伯頓的打擊更為致命。費城在馬克西和杰倫·布朗的帶領下擁有更好的陣容深度，且享有主場優勢與多一天的休息時間。溜馬後場傷兵滿營，在進攻端將難以與對手抗衡。",
+     "odds": 1.36,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.7,
+     "pred_margin": 7.0,
+     "pred_total": 219.0,
+     "confidence": "med",
+     "reasoning": "Philadelphia is favored due to superior record, home court, rest advantage, and Indiana's key injuries, especially Haliburton. The Pacers' recent two-game win streak keeps it competitive, but PHI's depth and home form should secure a moderate win.",
+     "reasoning_zh": "費城因較佳戰績、主場優勢、休息天數較多，以及印第安那關鍵傷兵（尤其 Haliburton）而佔優。溜馬近期二連勝雖有競爭力，但費城的深度與主場表現應能拿下中等幅度的勝利。",
+     "odds": 1.36,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.67,
+     "pred_margin": 6.0,
+     "pred_total": 214.0,
+     "confidence": "med",
+     "reasoning": "Philadelphia’s advantages in rest, home court, and injury-adjusted roster strength outweigh the absence of Joel Embiid; the metrics collectively project a moderate Sixers win over a shorthanded Pacers team.",
+     "reasoning_zh": "費城在休息天數、主場優勢與傷病調整後的陣容強度上均佔優勢，彌補了 Joel Embiid 缺陣的影響；各項數據模型綜合預測七六人將以適度分差擊敗人手短缺的溜馬。",
+     "odds": 1.36,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.68,
+     "pred_margin": 7.0,
+     "pred_total": 219.0,
+     "confidence": "med",
+     "reasoning": "Philadelphia is ahead on record, net rating, rest, and every quantitative module, while Indiana is missing more rotation minutes with Haliburton out and two regulars questionable. Embiid's absence caps the Sixers' ceiling and keeps the margin moderate, but home court still points to a Philadelphia win.",
+     "reasoning_zh": "七六人在戰績、淨勝分、休息與三項量化模組都領先，溜馬又因哈利伯頓缺陣、兩名常規輪值出賽成疑而損失更多上場時間。恩比德缺陣會壓低七六人上限、使分差不致過大，但主場優勢仍支持費城取勝。",
+     "odds": 1.36,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "PHI",
+     "pick_zh": "76人",
+     "pick_en": "76ers",
+     "home_win_prob": 0.72,
+     "pred_margin": 7.0,
+     "pred_total": 215.0,
+     "confidence": "med",
+     "reasoning": "All three quantitative modules favor Philadelphia, who enter with far better form, home court, and more rest, and Indiana's injury burden (Haliburton out, Nembhard/Nesmith questionable) is heavier than Embiid's absence given Maxey and Brown remain available. Embiid's plantar fascia absence and Indiana's two-game win streak temper the margin, so PHI wins roughly seven in ten times by about a touchdown.",
+     "reasoning_zh": "三項量化模組均指向費城：76人戰績、主場與休息天數都佔優，且溜馬傷情更重（Haliburton 缺陣，Nembhard、Nesmith 出戰成疑），即使 Embiid 因足底筋膜管理缺陣，Maxey 與 Brown 仍足以撐起球隊。不過 Embiid 缺陣加上溜馬近期二連勝（含擊敗尼克），比分差距不宜過度放大，預期 76人約以 7 分差取勝。",
+     "odds": 1.36,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -220,12 +336,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T15:00:07Z",
-    "ml_home": 2.3,
+    "fetched_at": "2026-11-15T16:00:08Z",
+    "ml_home": 2.25,
     "ml_away": 1.67,
     "spread_line": 3.0,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
+    "spread_home_odds": 1.9,
+    "spread_away_odds": 1.95
    },
    "consensus": null,
    "models": [],
@@ -250,7 +366,7 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T15:00:07Z",
+    "fetched_at": "2026-11-15T16:00:08Z",
     "ml_home": 1.95,
     "ml_away": 1.88,
     "spread_line": 1.0,
@@ -280,12 +396,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T15:00:07Z",
-    "ml_home": 9.25,
+    "fetched_at": "2026-11-15T16:00:08Z",
+    "ml_home": 9.3,
     "ml_away": 1.07,
-    "spread_line": 16.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.93
+    "spread_line": 16.0,
+    "spread_home_odds": 1.95,
+    "spread_away_odds": 1.9
    },
    "consensus": null,
    "models": [],
@@ -310,9 +426,9 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T15:00:07Z",
+    "fetched_at": "2026-11-15T16:00:08Z",
     "ml_home": 1.13,
-    "ml_away": 6.34,
+    "ml_away": 6.25,
     "spread_line": -13.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
@@ -340,12 +456,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T15:00:07Z",
+    "fetched_at": "2026-11-15T16:00:08Z",
     "ml_home": 2.6,
-    "ml_away": 1.53,
+    "ml_away": 1.54,
     "spread_line": 4.5,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
+    "spread_home_odds": 1.88,
+    "spread_away_odds": 1.94
    },
    "consensus": null,
    "models": [],
@@ -370,8 +486,8 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T15:00:07Z",
-    "ml_home": 3.9,
+    "fetched_at": "2026-11-15T16:00:08Z",
+    "ml_home": 3.8,
     "ml_away": 1.28,
     "spread_line": 8.5,
     "spread_home_odds": 1.91,
@@ -400,12 +516,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T15:00:07Z",
-    "ml_home": 3.49,
-    "ml_away": 1.32,
+    "fetched_at": "2026-11-15T16:00:08Z",
+    "ml_home": 3.5,
+    "ml_away": 1.33,
     "spread_line": 7.5,
-    "spread_home_odds": 1.94,
-    "spread_away_odds": 1.88
+    "spread_home_odds": 1.95,
+    "spread_away_odds": 1.87
    },
    "consensus": null,
    "models": [],
@@ -430,7 +546,7 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T15:00:07Z",
+    "fetched_at": "2026-11-15T16:00:08Z",
     "ml_home": 4.64,
     "ml_away": 1.21,
     "spread_line": 10.5,
