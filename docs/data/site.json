@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T14:35:41-07:00",
+ "generated_at": "2026-11-15T15:02:31-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,7 +13,7 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 75,
+  "n_predicted_games": 77,
   "n_recs": 17,
   "recs_won": 3,
   "recs_graded": 16,
@@ -22,45 +22,45 @@
  "wallet": [
   {
    "model": "Gemini",
-   "bets": 69,
-   "wins": 52,
-   "pnl": 324.0
+   "bets": 70,
+   "wins": 53,
+   "pnl": 359.0
   },
   {
    "model": "Claude",
-   "bets": 69,
-   "wins": 52,
-   "pnl": 271.0
+   "bets": 70,
+   "wins": 53,
+   "pnl": 306.0
   },
   {
    "model": "DeepSeek",
-   "bets": 69,
-   "wins": 51,
-   "pnl": 188.0
+   "bets": 70,
+   "wins": 52,
+   "pnl": 223.0
   },
   {
    "model": "Grok",
-   "bets": 69,
-   "wins": 49,
-   "pnl": -12.0
+   "bets": 70,
+   "wins": 50,
+   "pnl": 23.0
   },
   {
    "model": "GPT",
-   "bets": 69,
-   "wins": 49,
-   "pnl": -224.0
+   "bets": 70,
+   "wins": 50,
+   "pnl": -189.0
   },
   {
    "model": "GLM",
-   "bets": 68,
-   "wins": 47,
-   "pnl": -358.0
+   "bets": 69,
+   "wins": 48,
+   "pnl": -323.0
   },
   {
    "model": "Kimi",
-   "bets": 68,
-   "wins": 45,
-   "pnl": -588.0
+   "bets": 69,
+   "wins": 46,
+   "pnl": -553.0
   }
  ],
  "wallet_history": {
@@ -89,7 +89,7 @@
     629.0,
     773.0,
     502.0,
-    271.0
+    306.0
    ],
    "DeepSeek": [
     61.0,
@@ -102,7 +102,7 @@
     545.0,
     689.0,
     418.0,
-    188.0
+    223.0
    ],
    "GLM": [
     46.0,
@@ -115,7 +115,7 @@
     143.0,
     143.0,
     -128.0,
-    -358.0
+    -323.0
    ],
    "GPT": [
     61.0,
@@ -128,7 +128,7 @@
     133.0,
     277.0,
     6.0,
-    -224.0
+    -189.0
    ],
    "Gemini": [
     61.0,
@@ -141,7 +141,7 @@
     510.0,
     654.0,
     554.0,
-    324.0
+    359.0
    ],
    "Grok": [
     61.0,
@@ -154,7 +154,7 @@
     50.0,
     194.0,
     218.0,
-    -12.0
+    23.0
    ],
    "Kimi": [
     61.0,
@@ -167,7 +167,7 @@
     129.0,
     129.0,
     -204.0,
-    -588.0
+    -553.0
    ]
   }
  },
@@ -186,8 +186,8 @@
    "away_name": "Los Angeles Lakers",
    "home_en": "Suns",
    "away_en": "Lakers",
-   "home_score": 17,
-   "away_score": 27,
+   "home_score": 37,
+   "away_score": 54,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-15T20:00:07Z",
@@ -321,7 +321,7 @@
   {
    "game_id": "2026-11-15_CHA@LAC",
    "game_date": "2026-11-15",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-15T21:30:00Z",
    "tw": "11/15(日) 14:30",
    "home": "LAC",
@@ -332,8 +332,8 @@
    "away_name": "Charlotte Hornets",
    "home_en": "Clippers",
    "away_en": "Hornets",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 18,
+   "away_score": 18,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-15T21:35:02Z",
@@ -496,8 +496,8 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T21:35:02Z",
-    "ml_home": 8.0,
+    "fetched_at": "2026-11-15T22:00:07Z",
+    "ml_home": 7.9,
     "ml_away": 1.09,
     "spread_line": 14.5,
     "spread_home_odds": 1.91,
@@ -642,9 +642,9 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T21:35:02Z",
-    "ml_home": 1.09,
-    "ml_away": 7.58,
+    "fetched_at": "2026-11-15T22:00:07Z",
+    "ml_home": 1.1,
+    "ml_away": 7.47,
     "spread_line": -15.0,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
@@ -788,11 +788,11 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T21:35:02Z",
+    "fetched_at": "2026-11-15T22:00:07Z",
     "ml_home": 2.5,
     "ml_away": 1.57,
     "spread_line": 4.0,
-    "spread_home_odds": 1.91,
+    "spread_home_odds": 1.92,
     "spread_away_odds": 1.91
    },
    "consensus": {
@@ -934,15 +934,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T21:35:02Z",
-    "ml_home": 3.62,
+    "fetched_at": "2026-11-15T22:00:07Z",
+    "ml_home": 3.65,
     "ml_away": 1.31,
     "spread_line": 8.0,
     "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
+    "spread_away_odds": 1.9
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.261,
+    "pred_margin": -8.3,
+    "pred_total": 224.6,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "HOU",
+    "fav_zh": "火箭",
+    "fav_en": "Rockets",
+    "fav_prob": 0.739
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.24,
+     "pred_margin": -8.0,
+     "pred_total": 226.0,
+     "confidence": "med",
+     "reasoning": "Houston's superior two-way form and player-quality edge outweigh Washington's extra rest and Houston's significant absences. The Wizards' home court and healthier rotation should keep the margin competitive, but Houston is still the more likely winner.",
+     "reasoning_zh": "休士頓近期攻防效率與球員能力占優，足以抵銷華盛頓多一天休息及火箭多人缺陣的劣勢。巫師的主場優勢與較完整輪替有望讓分差維持在可控範圍，但火箭仍較可能取勝。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.27,
+     "pred_margin": -8.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "Houston is far stronger on both ends, and Washington is in a deep slump. The absences of VanVleet, Smart and Capela trim Houston's margin, keeping it near the 8-point market line. Sengun and Durant should still carry the Rockets past a weak Wizards defense.",
+     "reasoning_zh": "火箭攻守兩端都明顯優於巫師，而巫師正陷入低潮。范弗利特、斯馬特與卡佩拉缺陣會壓縮火箭的優勢，預估分差約在盤口8分附近。申京與杜蘭特仍足以帶領火箭擊敗防守薄弱的巫師。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.26,
+     "pred_margin": -9.0,
+     "pred_total": 225.0,
+     "confidence": "high",
+     "reasoning": "Despite missing key guards Fred VanVleet and Marcus Smart, the Rockets boast a significant overall quality advantage, highlighted by Alperen Sengun's dominant recent form. The Wizards are on a six-game losing streak with a poor defensive rating, and while they have a slight rest edge, Houston's superior offensive efficiency should secure the road victory.",
+     "reasoning_zh": "儘管火箭缺少了范弗利特（Fred VanVleet）和史馬特（Marcus Smart）等關鍵後衛，但他們整體的實力優勢依然明顯，特別是森貢（Alperen Sengun）近期的統治級表現。巫師目前深陷六連敗且防守效率低迷，雖然他們在休息天數上稍佔優勢，但火箭出色的進攻效率應能確保他們在客場拿下勝利。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.3,
+     "pred_margin": -7.0,
+     "pred_total": 225.0,
+     "confidence": "med",
+     "reasoning": "Houston has the better overall talent, form, and lineup metrics, though the Wizards' rest advantage and Houston's absences should make it a controlled but not massive road win.",
+     "reasoning_zh": "火箭整體戰力、近況與陣容數據都優於巫師，但巫師休息時間較多，加上火箭缺兵，預期火箭客場能拿下但分差不會太大。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.23,
+     "pred_margin": -8.0,
+     "pred_total": 224.0,
+     "confidence": "high",
+     "reasoning": "Despite Washington's rest advantage and Houston's significant backcourt absences, the Rockets' per-100 efficiency differential is overwhelming and their availability-weighted talent remains superior. The Wizards' six-game skid and porous defense project poorly against a hot Rockets team that has been dominant over the past two weeks.",
+     "reasoning_zh": "儘管巫師多休息一天且火箭後場傷兵滿營，火箭每100回合的效率差與可用球員實力仍遠勝對手。巫師近期六連敗且防守薄弱，難以抵擋過去兩週表現強勢的火箭。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.29,
+     "pred_margin": -9.0,
+     "pred_total": 225.0,
+     "confidence": "med",
+     "reasoning": "Houston's record, net rating, and Sengun-Durant pairing should still beat a Wizards team on a six-game skid, even without VanVleet, Smart, and Capela. Washington's home rest and lighter minute loss narrow the margin, but the efficiency gap points to a Rockets road win by about nine.",
+     "reasoning_zh": "火箭的戰績、淨效率與申京、杜蘭特組合，仍應能擊敗連敗六場的巫師，即便缺少范弗利特、斯馬特與卡佩拉。巫師主場休息較足、缺陣分鐘較少，會縮小分差，但效率差距仍指向火箭客場以約九分取勝。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "HOU",
+     "pick_zh": "火箭",
+     "pick_en": "Rockets",
+     "home_win_prob": 0.24,
+     "pred_margin": -9.0,
+     "pred_total": 223.0,
+     "confidence": "high",
+     "reasoning": "Houston's superior form and a -15.2 per-100 matchup edge clearly outweigh their backcourt injuries, especially with Sengun rolling and Durant available, while Washington's six-game skid and thin rotation (Champagnie out, Tre Johnson questionable) leave little path to an upset despite a slight rest advantage. Expect a roughly 9-10 point Houston win in a game near WAS's fast pace but well below their defensive standards.",
+     "reasoning_zh": "火箭整體戰力與近況明顯佔優(每百回合對位淨勝15.2分、近10場7勝3敗),即使范弗利特、斯馬特與卡佩拉缺陣,申京剛轟下43分且杜蘭特健康出賽;巫師六連敗、輪替傷兵眾多(香檳尼缺陣、崔·強森成疑),縱有休息優勢也難以翻盤,預期火箭以約9至10分之差取勝。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -964,15 +1080,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T21:35:02Z",
+    "fetched_at": "2026-11-15T22:00:07Z",
     "ml_home": 3.6,
     "ml_away": 1.31,
     "spread_line": 8.5,
-    "spread_home_odds": 1.87,
-    "spread_away_odds": 1.95
+    "spread_home_odds": 1.88,
+    "spread_away_odds": 1.94
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.251,
+    "pred_margin": -9.9,
+    "pred_total": 227.0,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "ATL",
+    "fav_zh": "老鷹",
+    "fav_en": "Hawks",
+    "fav_prob": 0.749
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "ATL",
+     "pick_zh": "老鷹",
+     "pick_en": "Hawks",
+     "home_win_prob": 0.24,
+     "pred_margin": -9.0,
+     "pred_total": 231.0,
+     "confidence": "high",
+     "reasoning": "Atlanta's stronger form, positive season point differential, and substantial recent efficiency edge outweigh Milwaukee's smaller injury burden and home court. The Hawks' faster pace and Milwaukee's weak defense should create enough scoring separation for an Atlanta road win.",
+     "reasoning_zh": "亞特蘭大較佳的近況、正值的球季得失分差，以及明顯的近期效率優勢，足以抵銷密爾瓦基較輕的傷兵負擔與主場優勢。老鷹較快的比賽節奏搭配公鹿薄弱的防守，應能拉開足夠差距並在客場取勝。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "ATL",
+     "pick_zh": "老鷹",
+     "pick_en": "Hawks",
+     "home_win_prob": 0.26,
+     "pred_margin": -9.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "Milwaukee has been one of the league's worst teams, with a -14 point differential and a nine-game skid, while Atlanta holds a clear efficiency edge. Atlanta's injuries trim its depth but not its core of Johnson and Okongwu. Atlanta should win by high single digits, roughly in line with the 8.5-point spread.",
+     "reasoning_zh": "公鹿本季表現聯盟墊底，場均分差-14且已九連敗，老鷹則在攻防效率上明顯佔優。老鷹的傷兵削弱了板凳深度，但Johnson與Okongwu的核心戰力仍在。預期老鷹以接近十分的差距獲勝，與8.5分的讓分盤大致相符。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "ATL",
+     "pick_zh": "老鷹",
+     "pick_en": "Hawks",
+     "home_win_prob": 0.25,
+     "pred_margin": -11.0,
+     "pred_total": 225.0,
+     "confidence": "high",
+     "reasoning": "Milwaukee is in a massive slump, losing nine straight games with a league-worst point differential and a porous defense allowing over 120 points per game. Atlanta's faster pace and superior offensive efficiency should easily exploit the Bucks' defensive weaknesses, even on the road.",
+     "reasoning_zh": "公鹿目前陷入嚴重低潮，吞下9連敗且擁有聯盟最差的得失分差，防守端場均失分超過120分。老鷹較快的節奏與更佳的進攻效率，預計能在客場輕鬆突破公鹿的防線。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "ATL",
+     "pick_zh": "老鷹",
+     "pick_en": "Hawks",
+     "home_win_prob": 0.28,
+     "pred_margin": -9.0,
+     "pred_total": 225.0,
+     "confidence": "med",
+     "reasoning": "Atlanta's significantly better record, point differential, and lineup/pace matchup outweigh Milwaukee's minor injury advantage and home court. Milwaukee's 9-game losing streak and 1-6 home record make an upset unlikely.",
+     "reasoning_zh": "亞特蘭大在戰績、得失分差以及陣容與節奏對位上明顯優於密爾瓦基，即使公鹿在傷兵影響上略占優勢且擁有主場，但 9 連敗與主場 1 勝 6 敗的頹勢難以翻盤。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "ATL",
+     "pick_zh": "老鷹",
+     "pick_en": "Hawks",
+     "home_win_prob": 0.24,
+     "pred_margin": -10.0,
+     "pred_total": 228.0,
+     "confidence": "high",
+     "reasoning": "Milwaukee's catastrophic form (1-12, -14.0 point differential, L9 streak) and worst-in-conference defense are objectively overmatched by Atlanta's +1.4 differential and clear per-possession matchup advantage. The Hawks' faster pace and superior available talent should exploit the Bucks' broken system for a comfortable road win.",
+     "reasoning_zh": "密爾瓦基本季戰績崩盤（1勝12敗、淨勝分-14.0、9連敗）且擁有東區墊底的防守，客觀上無法抵擋亞特蘭大+1.4的淨勝分與明顯的對位優勢。老鷹更快的節奏與更優的可用戰力將撕裂公鹿體系，在客場輕鬆取勝。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "ATL",
+     "pick_zh": "老鷹",
+     "pick_en": "Hawks",
+     "home_win_prob": 0.27,
+     "pred_margin": -11.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "Milwaukee's 1-12 record, nine-game losing streak, and roughly 15-point net-rating gap outweigh a modest injury-minute edge and home court. Atlanta's available star core and better offense should control the faster pace, so the Hawks are favored by about 11 points.",
+     "reasoning_zh": "公鹿1勝12敗、連敗9場，淨效率大約落後15分，即便輪換缺陣分鐘略占優且坐擁主場，仍不足以翻轉劣勢。老鷹核心仍可出賽、進攻也較出色，應能在較快節奏中掌控比賽，預測約以11分優勢取勝。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "ATL",
+     "pick_zh": "老鷹",
+     "pick_en": "Hawks",
+     "home_win_prob": 0.22,
+     "pred_margin": -10.0,
+     "pred_total": 226.0,
+     "confidence": "med",
+     "reasoning": "Milwaukee's historic futility (1-12, L9, -14.0 differential) and a last-10 matchup net of -14.6 per 100 possessions make Atlanta the clear pick despite the Hawks' longer injury list and current L2. Atlanta's stronger offense (109.8 ORtg) against the league-worst Bucks defense should produce a comfortable road win in the 8-12 point range.",
+     "reasoning_zh": "公鹿戰績慘澹（1勝12敗、9連敗、淨勝分-14.0），近10場對位淨值每100回合落後14.6分，即使老鷹傷兵較多（少了Flemings、Newell等輪替）且目前2連敗，仍是明顯的勝方。老鷹較佳的進攻效率（ORtg 109.8）對上聯盟最差的公鹿防守，預估能在客場贏8到12分。",
+     "odds": 1.31,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -994,7 +1226,7 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T21:35:02Z",
+    "fetched_at": "2026-11-15T22:00:07Z",
     "ml_home": 4.7,
     "ml_away": 1.21,
     "spread_line": 10.5,
@@ -1233,8 +1465,8 @@
      "reasoning": "Philadelphia has the stronger overall profile and a major availability advantage because Indiana is without its two primary guards. Embiid being out keeps the matchup competitive, but Maxey and the home side are better positioned to capitalize.",
      "reasoning_zh": "費城整體戰績與攻守表現較佳，而且印第安納同時缺少哈利伯頓與內姆哈德兩名主要後衛，使七六人在可用陣容上占有明顯優勢。恩比德缺陣會縮小差距，但由馬克西領軍且坐擁主場的費城仍較有機會取勝。",
      "odds": 1.35,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 35.0
     },
     {
      "name": "Claude",
@@ -1248,8 +1480,8 @@
      "reasoning": "Indiana's backcourt is gutted without Haliburton and Nembhard, while Philadelphia keeps Maxey and Brown despite losing Embiid. Better form, rest and net rating favor PHI, though their thin frontcourt keeps the margin moderate, near the 7.5 spread.",
      "reasoning_zh": "溜馬後場缺少哈利伯頓與納姆哈德，戰力大減；76人雖然少了恩比德，但仍有馬克西與布朗坐鎮。76人在近況、休息天數與淨效率上都佔優，不過禁區人手不足，預估分差不會太大，約落在讓分7.5分附近。",
      "odds": 1.35,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 35.0
     },
     {
      "name": "Gemini",
@@ -1263,8 +1495,8 @@
      "reasoning": "The Pacers are severely compromised without their starting backcourt of Tyrese Haliburton and Andrew Nembhard, losing significant playmaking and scoring. Although the 76ers are missing Joel Embiid, they still possess enough firepower with Tyrese Maxey and benefit from an extra day of rest at home. Philadelphia's superior defensive rating and overall form should allow them to control the game.",
      "reasoning_zh": "溜馬缺少了先發後場組合 Tyrese Haliburton 和 Andrew Nembhard，在組織與得分上受到重創。儘管 76 人也少了 Joel Embiid，但他們仍有 Tyrese Maxey 領軍，且享有主場優勢與多一天的休息時間。費城較佳的防守效率與近況，應能讓他們順利掌控比賽節奏並拿下勝利。",
      "odds": 1.35,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 35.0
     },
     {
      "name": "DeepSeek",
@@ -1278,8 +1510,8 @@
      "reasoning": "Philadelphia's stronger record, home court, extra rest, and Indiana's key backcourt injuries outweigh Embiid's absence. Indiana's offense should struggle without Haliburton and Nembhard, while Maxey leads PHI and PHI's defense is better.",
      "reasoning_zh": "費城戰績較佳、主場優勢、休息天數較多，且印第安那缺少哈利伯頓和內姆哈德等後場主力，影響大於安比德缺陣。溜馬進攻在缺少後場組織下應會受限，76人防守也較佳，因此看好費城取勝。",
      "odds": 1.35,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 35.0
     },
     {
      "name": "Kimi",
@@ -1293,8 +1525,8 @@
      "reasoning": "Philadelphia retains the stronger available rotation and defensive structure despite Embiid’s absence, while Indiana’s backcourt is gutted by the losses of Haliburton and Nembhard, leaving the Pacers without enough creation or defensive resistance to keep pace on the road.",
      "reasoning_zh": "即使恩比德缺陣，費城仍保有較完整的輪替與防守體系；溜馬在哈利伯頓與奈姆哈德同時缺陣下後場戰力掏空，缺乏足夠的進攻發動與防守抗衡能力在客場跟上節奏。",
      "odds": 1.35,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 35.0
     },
     {
      "name": "Grok",
@@ -1308,8 +1540,8 @@
      "reasoning": "Philadelphia’s record, home form, and rest advantage outweigh Indiana’s two-game streak. Indiana’s absences of Haliburton and Nembhard remove more high-impact minutes than Embiid’s absence, so the Sixers are favored by about a touchdown, not a blowout.",
      "reasoning_zh": "76人戰績、主場與休息優勢優於溜馬的兩連勝。溜馬缺少哈利伯頓與南布哈德，高影響分鐘數多於76人缺少安比德，因此看好76人小勝約7分，而非大勝。",
      "odds": 1.35,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 35.0
     },
     {
      "name": "GLM",
@@ -1323,12 +1555,12 @@
      "reasoning": "Philadelphia's better form, home court, and rest edge hold up even without Embiid, because Indiana is missing its two primary guards (Haliburton and Nembhard, ~66 mpg), which cripples the Pacers' offense more than Embiid's absence hurts the Sixers with Maxey still leading the way. Expect a moderate PHI win around 110-103, with Indiana's recent two-game win streak and Siakam/Nesmith form providing only modest upset risk.",
      "reasoning_zh": "七六人戰績較佳、擁有主場優勢且休息天數較多，即使恩比德缺陣仍佔上風，因為溜馬少了兩名主力後衛（哈利伯頓與內姆哈德，合計約66分鐘），對溜馬進攻的傷害遠大於恩比德缺陣對七六人的影響，畢竟馬克西仍在陣中。預估七六人以約110比103獲勝，溜馬近期二連勝與西亞坎、奈史密斯的狀態僅帶來有限的爆冷機會。",
      "odds": 1.35,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 35.0
     }
    ],
    "recs": [],
-   "hits": null
+   "hits": "7/7"
   },
   {
    "game_id": "2026-11-14_DET@MIA",
