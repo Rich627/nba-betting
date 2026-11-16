@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T16:35:53-07:00",
+ "generated_at": "2026-11-15T17:02:18-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -13,54 +13,54 @@
  ],
  "stake": 100,
  "summary": {
-  "n_predicted_games": 77,
+  "n_predicted_games": 78,
   "n_recs": 17,
-  "recs_won": 3,
-  "recs_graded": 16,
-  "recs_pnl": -1030.0
+  "recs_won": 4,
+  "recs_graded": 17,
+  "recs_pnl": -942.0
  },
  "wallet": [
   {
    "model": "Gemini",
-   "bets": 70,
-   "wins": 53,
-   "pnl": 359.0
+   "bets": 72,
+   "wins": 55,
+   "pnl": 518.0
   },
   {
    "model": "Claude",
-   "bets": 70,
-   "wins": 53,
-   "pnl": 306.0
+   "bets": 72,
+   "wins": 55,
+   "pnl": 465.0
   },
   {
    "model": "DeepSeek",
-   "bets": 70,
-   "wins": 52,
-   "pnl": 223.0
+   "bets": 72,
+   "wins": 54,
+   "pnl": 382.0
   },
   {
    "model": "Grok",
-   "bets": 70,
-   "wins": 50,
-   "pnl": 23.0
+   "bets": 72,
+   "wins": 52,
+   "pnl": 182.0
   },
   {
    "model": "GPT",
-   "bets": 70,
-   "wins": 50,
-   "pnl": -189.0
+   "bets": 72,
+   "wins": 52,
+   "pnl": -30.0
   },
   {
    "model": "GLM",
-   "bets": 69,
-   "wins": 48,
-   "pnl": -323.0
+   "bets": 71,
+   "wins": 50,
+   "pnl": -164.0
   },
   {
    "model": "Kimi",
-   "bets": 69,
-   "wins": 46,
-   "pnl": -553.0
+   "bets": 71,
+   "wins": 48,
+   "pnl": -394.0
   }
  ],
  "wallet_history": {
@@ -75,7 +75,8 @@
    "2026-11-12",
    "2026-11-13",
    "2026-11-14",
-   "2026-11-15"
+   "2026-11-15",
+   "2026-11-16"
   ],
   "series": {
    "Claude": [
@@ -89,7 +90,8 @@
     629.0,
     773.0,
     502.0,
-    306.0
+    306.0,
+    465.0
    ],
    "DeepSeek": [
     61.0,
@@ -102,7 +104,8 @@
     545.0,
     689.0,
     418.0,
-    223.0
+    223.0,
+    382.0
    ],
    "GLM": [
     46.0,
@@ -115,7 +118,8 @@
     143.0,
     143.0,
     -128.0,
-    -323.0
+    -323.0,
+    -164.0
    ],
    "GPT": [
     61.0,
@@ -128,7 +132,8 @@
     133.0,
     277.0,
     6.0,
-    -189.0
+    -189.0,
+    -30.0
    ],
    "Gemini": [
     61.0,
@@ -141,7 +146,8 @@
     510.0,
     654.0,
     554.0,
-    359.0
+    359.0,
+    518.0
    ],
    "Grok": [
     61.0,
@@ -154,7 +160,8 @@
     50.0,
     194.0,
     218.0,
-    23.0
+    23.0,
+    182.0
    ],
    "Kimi": [
     61.0,
@@ -167,317 +174,12 @@
     129.0,
     129.0,
     -204.0,
-    -553.0
+    -553.0,
+    -394.0
    ]
   }
  },
  "upcoming": [
-  {
-   "game_id": "2026-11-15_LAL@PHX",
-   "game_date": "2026-11-15",
-   "status": "live",
-   "commence_time": "2026-11-15T21:00:00Z",
-   "tw": "11/15(日) 14:00",
-   "home": "PHX",
-   "away": "LAL",
-   "home_zh": "太陽",
-   "away_zh": "湖人",
-   "home_name": "Phoenix Suns",
-   "away_name": "Los Angeles Lakers",
-   "home_en": "Suns",
-   "away_en": "Lakers",
-   "home_score": 116,
-   "away_score": 122,
-   "odds": {
-    "n_books": 9,
-    "fetched_at": "2026-11-15T20:00:07Z",
-    "ml_home": 2.35,
-    "ml_away": 1.62,
-    "spread_line": 3.0,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.9
-   },
-   "consensus": {
-    "home_win_prob": 0.383,
-    "pred_margin": -5.0,
-    "pred_total": 230.7,
-    "agreement": 1.0,
-    "n_models": 7,
-    "fav": "LAL",
-    "fav_zh": "湖人",
-    "fav_en": "Lakers",
-    "fav_prob": 0.617
-   },
-   "models": [
-    {
-     "name": "GPT",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.37,
-     "pred_margin": -5.0,
-     "pred_total": 231.0,
-     "confidence": "med",
-     "reasoning": "LAL's superior scoring margin, road performance, and recent efficiency matchup outweigh the impact of Reaves being out. PHX's 5-3 home record and LAL's heavier injury burden should keep the game competitive.",
-     "reasoning_zh": "湖人較優異的得失分差、客場表現與近期攻防效率對位，足以抵銷 Austin Reaves 缺陣的影響。不過太陽主場戰績為 5 勝 3 敗，加上湖人傷病負擔較重，預期比賽仍會相當接近。",
-     "odds": 1.65,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Claude",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.42,
-     "pred_margin": -4.0,
-     "pred_total": 228.0,
-     "confidence": "low",
-     "reasoning": "The Lakers' far superior net rating and Doncic-led lineup outweigh the loss of Reaves, though the absence narrows the gap against a Suns team that is decent at home. Expect a close game with LAL winning by a few points, roughly in line with the market's +3 line.",
-     "reasoning_zh": "湖人的淨效率明顯較佳，加上唐西奇領軍的陣容，足以彌補里維斯缺陣的影響。不過他的缺席縮小了雙方差距，而太陽主場表現尚可。預期比賽膠著，湖人以幾分之差勝出，大致符合市場讓3分的盤口。",
-     "odds": 1.65,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Gemini",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.38,
-     "pred_margin": -5.0,
-     "pred_total": 231.0,
-     "confidence": "med",
-     "reasoning": "Even without Austin Reaves, the Lakers boast a significant offensive advantage and are riding a seven-game winning streak. Led by Luka Doncic, Los Angeles' high-powered offense should outpace a Suns team that struggles defensively, despite Phoenix having the home-court edge.",
-     "reasoning_zh": "儘管缺少了奧斯汀·里夫斯，湖人隊在進攻端依然擁有顯著優勢，且目前正處於七連勝的絕佳狀態。在盧卡·唐西奇的帶領下，洛杉磯強大的火力預計將壓制防守較為薄弱的太陽隊，即便太陽擁有主場優勢也難以抵擋。",
-     "odds": 1.65,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "DeepSeek",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.39,
-     "pred_margin": -6.0,
-     "pred_total": 230.0,
-     "confidence": "med",
-     "reasoning": "Despite Austin Reaves' absence, the Lakers' superior net rating, road form, and pace/lineup edge outweigh Phoenix's home and rest advantages. Expect a moderately close Lakers win.",
-     "reasoning_zh": "儘管湖人缺少 Austin Reaves，但湖人較佳的淨效率、客場表現與節奏陣容優勢仍勝過太陽的主場與休息優勢，預期湖人中等差距取勝。",
-     "odds": 1.65,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Kimi",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.38,
-     "pred_margin": -6.0,
-     "pred_total": 232.0,
-     "confidence": "med",
-     "reasoning": "The Lakers’ substantially better net rating, road dominance, and available star power give them the edge despite Austin Reaves’ absence and the Suns’ home-court advantage. Phoenix’s below-average defense and inconsistent offense are unlikely to keep pace with Los Angeles over four quarters.",
-     "reasoning_zh": "儘管Austin Reaves缺陣且太陽擁有主場優勢，湖人隊憑藉明顯更優的淨效率值、強勢的客場戰績與到位的明星戰力仍佔上風。鳳凰城低於平均的防守與不穩定的進攻，難以在整場比賽中跟上洛杉磯的節奏。",
-     "odds": 1.65,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Grok",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.36,
-     "pred_margin": -5.0,
-     "pred_total": 231.0,
-     "confidence": "med",
-     "reasoning": "Los Angeles is the clearly better team by record, net rating, and road form, and the matchup modules still lean their way even with Austin Reaves out. Phoenix's home edge and lighter injury load should keep it close, but not enough to overturn the Lakers.",
-     "reasoning_zh": "湖人在戰績、淨效率與客場表現上都明顯優於太陽，即使Austin Reaves缺陣，對位與球員能力模組仍偏向洛杉磯。太陽主場優勢與較輕傷兵能把比賽壓縮，但不足以翻轉劣勢。",
-     "odds": 1.65,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "GLM",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.38,
-     "pred_margin": -4.0,
-     "pred_total": 232.0,
-     "confidence": "med",
-     "reasoning": "Despite losing Austin Reaves (35 mpg), the Lakers' superior overall quality — a 12.4-point season net-rating gap, a 7-game win streak, and a 6-1 road record led by Luka Doncic — outweighs the injury hit against a below-.500 Phoenix team. The Suns' home form, rest, and Booker's hot hand keep it competitive, but LA's two-way matchup edge (-9.4 per 100) should decide a moderately paced game by a small margin.",
-     "reasoning_zh": "儘管湖人失去 Austin Reaves（場均 35 分鐘），整體戰力差距（季賽淨勝分相差 12.4 分、七連勝、客場 6 勝 1 敗，由 Luka Doncic 領軍）仍明顯壓過傷兵影響，優於勝率不到五成的太陽。太陽有主場優勢、充足休息與 Booker 的火燙手感，能讓比賽保持膠著，但湖人近十場每百回合淨勝 9.4 分的攻防優勢應能以小分差取勝。",
-     "odds": 1.65,
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "recs": [],
-   "hits": null
-  },
-  {
-   "game_id": "2026-11-15_CHA@LAC",
-   "game_date": "2026-11-15",
-   "status": "live",
-   "commence_time": "2026-11-15T21:30:00Z",
-   "tw": "11/15(日) 14:30",
-   "home": "LAC",
-   "away": "CHA",
-   "home_zh": "快艇",
-   "away_zh": "黃蜂",
-   "home_name": "Los Angeles Clippers",
-   "away_name": "Charlotte Hornets",
-   "home_en": "Clippers",
-   "away_en": "Hornets",
-   "home_score": 93,
-   "away_score": 90,
-   "odds": {
-    "n_books": 9,
-    "fetched_at": "2026-11-15T21:35:02Z",
-    "ml_home": 1.88,
-    "ml_away": 1.95,
-    "spread_line": -1.0,
-    "spread_home_odds": 1.89,
-    "spread_away_odds": 1.93
-   },
-   "consensus": {
-    "home_win_prob": 0.591,
-    "pred_margin": 6.0,
-    "pred_total": 216.3,
-    "agreement": 1.0,
-    "n_models": 7,
-    "fav": "LAC",
-    "fav_zh": "快艇",
-    "fav_en": "Clippers",
-    "fav_prob": 0.591
-   },
-   "models": [
-    {
-     "name": "GPT",
-     "pick": "LAC",
-     "pick_zh": "快艇",
-     "pick_en": "Clippers",
-     "home_win_prob": 0.58,
-     "pred_margin": 7.0,
-     "pred_total": 215.0,
-     "confidence": "med",
-     "reasoning": "LAC's home court, superior recent offensive profile, and Charlotte's more consequential quantified absence outweigh the Hornets' extra rest. The matchup remains relatively close because both teams have poor recent form and negative scoring differentials.",
-     "reasoning_zh": "快艇的主場優勢、較佳的近期進攻表現，以及黃蜂較具實質影響的傷兵損失，整體上足以抵銷黃蜂多一天休息的優勢。不過兩隊近期狀態都不理想，且得失分差皆為負值，因此預期比賽仍會相當接近。",
-     "odds": 1.94,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Claude",
-     "pick": "LAC",
-     "pick_zh": "快艇",
-     "pick_en": "Clippers",
-     "home_win_prob": 0.6,
-     "pred_margin": 6.0,
-     "pred_total": 214.0,
-     "confidence": "low",
-     "reasoning": "Charlotte's offense has been anemic (98.6 ppg), and the Hornets are without Schroder. Their net rating gap against the Clippers is about 5 points per 100 possessions, and the Clippers have home court. The near-even market tempers confidence, but the data leans toward LAC.",
-     "reasoning_zh": "黃蜂進攻疲弱（場均98.6分），且Schroder缺陣。快艇淨效率每百回合領先約5分，又坐擁主場。市場盤口接近五五波，因此信心有所保留，但數據仍偏向快艇。",
-     "odds": 1.94,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Gemini",
-     "pick": "LAC",
-     "pick_zh": "快艇",
-     "pick_en": "Clippers",
-     "home_win_prob": 0.55,
-     "pred_margin": 6.0,
-     "pred_total": 218.0,
-     "confidence": "med",
-     "reasoning": "Despite the market slightly favoring Charlotte, the Clippers have a clear edge at home where they are 3-3, compared to the Hornets' 1-4 road record. Charlotte's offense has struggled mightily, averaging under 100 points per game, and the loss of Dennis Schroder will further hamper their playmaking. The Clippers, buoyed by a recent win over the Thunder, should control the pace and secure the home victory.",
-     "reasoning_zh": "儘管市場微幅看好黃蜂，但快艇在主場擁有明顯優勢（主場 3 勝 3 敗，而黃蜂客場僅 1 勝 4 敗）。黃蜂的進攻表現相當掙扎，場均得分不到 100 分，加上主力後衛施洛德（Dennis Schroder）缺陣，將進一步削弱他們的組織能力。剛擊敗雷霆的快艇士氣正旺，預計能掌控比賽節奏並在主場拿下勝利。",
-     "odds": 1.94,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "DeepSeek",
-     "pick": "LAC",
-     "pick_zh": "快艇",
-     "pick_en": "Clippers",
-     "home_win_prob": 0.63,
-     "pred_margin": 6.0,
-     "pred_total": 218.0,
-     "confidence": "med",
-     "reasoning": "LAC's rest advantage, healthier roster, and better recent per-100 net rating outweigh CHA's slightly better record. CHA's poor road form and missing Schroder make an away win less likely.",
-     "reasoning_zh": "快艇在休息天數、陣容健康度及近十場每百回合淨效率上都優於黃蜂，黃蜂客場僅1勝4敗且缺少Schroder，因此快艇勝算較高。",
-     "odds": 1.94,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Kimi",
-     "pick": "LAC",
-     "pick_zh": "快艇",
-     "pick_en": "Clippers",
-     "home_win_prob": 0.58,
-     "pred_margin": 5.0,
-     "pred_total": 217.0,
-     "confidence": "med",
-     "reasoning": "Despite the market pricing Charlotte as a slight favorite, the quantitative models favor Los Angeles thanks to a +5.3 net rating edge per 100 possessions, Schroder's absence severely weakening Charlotte's backcourt, and the Clippers' momentum after defeating Oklahoma City. The Hornets' anemic road offense and Los Angeles's tempo control should lead to a home win.",
-     "reasoning_zh": "儘管盤路稍微看好黃蜂，但量化模型明顯偏向快艇：淨效率每100回合領先+5.3、Dennis Schroder缺陣重創黃蜂後場進攻與組織，且快艇剛擊敗雷霆氣勢正旺。黃蜂客場進攻低迷，快艇掌握節奏優勢，應能主場勝出。",
-     "odds": 1.94,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Grok",
-     "pick": "LAC",
-     "pick_zh": "快艇",
-     "pick_en": "Clippers",
-     "home_win_prob": 0.57,
-     "pred_margin": 6.0,
-     "pred_total": 218.0,
-     "confidence": "med",
-     "reasoning": "Los Angeles has the clearer edge at home: Charlotte already scores only 98.6 points per game and is without its 30-minute point guard, while the Clippers’ listed absences do not cut current rotation minutes. Efficiency (matchup net +5.3 per 100), home form (3-3), and a win over Oklahoma City also favor LAC against a Hornets team that is 1-4 on the road. The gap should stay modest given both poor records and a near coin-flip market.",
-     "reasoning_zh": "快艇坐鎮主場優勢較明確：黃蜂場均僅得98.6分，又缺場均30分鐘的控衛，快艇名單上的缺陣則未削減目前輪替時間。效率（對位淨值每百回合+5.3）、主場3勝3敗，以及剛險勝雷霆，都偏向快艇，黃蜂客場僅1勝4敗。不過兩隊戰績都差、盤口接近五五波，分差應不會太大。",
-     "odds": 1.94,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "GLM",
-     "pick": "LAC",
-     "pick_zh": "快艇",
-     "pick_en": "Clippers",
-     "home_win_prob": 0.63,
-     "pred_margin": 6.0,
-     "pred_total": 214.0,
-     "confidence": "med",
-     "reasoning": "All three quantitative modules favor LAC: Charlotte is missing 36 minutes of rotation (Schroder/Knueppel) while the Clippers' outs are long-term and already reflected in their data, and LAC holds a clear net-rating and home-court edge against a Hornets team scoring under 99 ppg on the road. The market prices this near pick'em, so I temper the edge, but the data supports a modest LAC win at home.",
-     "reasoning_zh": "三項量化模組均傾向快艇:黃蜂少了施羅德等約36分鐘的輪替戰力,而快艇的傷兵皆為長期缺陣、已反映在近期數據中;快艇淨勝分(-5.2 對 -11.0)與主場優勢明顯,黃蜂客場場均得分不到99分且客績1勝4敗。市場開盤接近五五波,因此我適度下修優勢幅度,但數據仍支持快艇在主場小勝。",
-     "odds": 1.94,
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "recs": [
-    {
-     "market": "spread",
-     "pick": "home +1",
-     "label": "讓分 快艇 +1",
-     "label_en": "Clippers +1",
-     "odds": 1.88,
-     "line": 1.0,
-     "edge": null,
-     "confidence": "med",
-     "why": "共識分差 +6.1 vs 盤口 +1（差 7.1 分）",
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "hits": null
-  },
   {
    "game_id": "2026-11-15_SAS@UTA",
    "game_date": "2026-11-15",
@@ -492,8 +194,8 @@
    "away_name": "San Antonio Spurs",
    "home_en": "Jazz",
    "away_en": "Spurs",
-   "home_score": 70,
-   "away_score": 79,
+   "home_score": 96,
+   "away_score": 92,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-15T22:00:07Z",
@@ -638,8 +340,8 @@
    "away_name": "Dallas Mavericks",
    "home_en": "Celtics",
    "away_en": "Mavericks",
-   "home_score": 42,
-   "away_score": 9,
+   "home_score": 67,
+   "away_score": 37,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-15T22:35:02Z",
@@ -784,8 +486,8 @@
    "away_name": "New York Knicks",
    "home_en": "Raptors",
    "away_en": "Knicks",
-   "home_score": 17,
-   "away_score": 14,
+   "home_score": 36,
+   "away_score": 36,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-15T22:35:02Z",
@@ -934,10 +636,10 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T23:35:02Z",
-    "ml_home": 3.6,
-    "ml_away": 1.31,
-    "spread_line": 8.0,
+    "fetched_at": "2026-11-16T00:00:06Z",
+    "ml_home": 3.8,
+    "ml_away": 1.29,
+    "spread_line": 8.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
@@ -1080,9 +782,9 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T23:35:02Z",
-    "ml_home": 3.61,
-    "ml_away": 1.31,
+    "fetched_at": "2026-11-16T00:00:06Z",
+    "ml_home": 3.65,
+    "ml_away": 1.3,
     "spread_line": 8.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
@@ -1226,15 +928,131 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-15T23:35:02Z",
+    "fetched_at": "2026-11-16T00:00:06Z",
     "ml_home": 4.75,
     "ml_away": 1.21,
-    "spread_line": 11.5,
-    "spread_home_odds": 1.89,
-    "spread_away_odds": 1.91
+    "spread_line": 11.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.9
    },
-   "consensus": null,
-   "models": [],
+   "consensus": {
+    "home_win_prob": 0.233,
+    "pred_margin": -10.0,
+    "pred_total": 222.3,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "OKC",
+    "fav_zh": "雷霆",
+    "fav_en": "Thunder",
+    "fav_prob": 0.767
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "OKC",
+     "pick_zh": "雷霆",
+     "pick_en": "Thunder",
+     "home_win_prob": 0.22,
+     "pred_margin": -9.0,
+     "pred_total": 221.0,
+     "confidence": "med",
+     "reasoning": "OKC's defensive and overall efficiency advantages should outweigh its substantial injury burden, especially against a Sacramento team that has yet to win at home. The absences lower the projected margin and prevent a high-confidence rating, but Shai Gilgeous-Alexander and OKC remain the more reliable side.",
+     "reasoning_zh": "雷霆在防守與整體效率上的優勢，應足以抵銷嚴重的傷兵問題，尤其國王本季主場仍未開胡。多名主力缺陣會縮小預估分差，也使信心無法評為高，但由 Shai Gilgeous-Alexander 領軍的雷霆仍是較可靠的一方。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Claude",
+     "pick": "OKC",
+     "pick_zh": "雷霆",
+     "pick_en": "Thunder",
+     "home_win_prob": 0.24,
+     "pred_margin": -9.0,
+     "pred_total": 221.0,
+     "confidence": "med",
+     "reasoning": "Sacramento has been dreadful on both ends and is winless at home, while OKC still holds a strong defensive rating despite heavy injuries. OKC's missing rotation players shrink the margin, so I project a win just under the 11-point market spread.",
+     "reasoning_zh": "國王攻守兩端表現都很差，主場至今未嘗勝績；雷霆雖然傷兵嚴重，防守效率依然穩定。不過雷霆多名輪換球員缺陣，預期分差會縮小，預測雷霆以略低於11分盤口的差距獲勝。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Gemini",
+     "pick": "OKC",
+     "pick_zh": "雷霆",
+     "pick_en": "Thunder",
+     "home_win_prob": 0.2,
+     "pred_margin": -11.0,
+     "pred_total": 223.0,
+     "confidence": "high",
+     "reasoning": "Despite missing key starters like Chet Holmgren and Jalen Williams, the Thunder remain heavy favorites due to the Kings' abysmal form and poor defense. Shai Gilgeous-Alexander has been carrying the offensive load for OKC, and Sacramento's inability to get stops at home (0-7 record) makes an upset highly unlikely.",
+     "reasoning_zh": "儘管雷霆缺少霍姆格倫（Chet Holmgren）和傑倫·威廉斯（Jalen Williams）等核心先發，但國王目前狀態極糟且防守破洞百出（主場0勝7敗），使雷霆依然備受看好。亞歷山大（SGA）近期火力全開撐起球隊進攻，國王要在主場爆冷取勝的難度極高。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "OKC",
+     "pick_zh": "雷霆",
+     "pick_en": "Thunder",
+     "home_win_prob": 0.26,
+     "pred_margin": -8.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "Despite missing several rotation players, Oklahoma City should still beat a Sacramento team that is winless at home and has struggled defensively. The injury gap and OKC's three-game slide add variance, but SGA and SAC's poor defense give OKC the edge.",
+     "reasoning_zh": "儘管奧克拉荷馬雷霆多名輪替缺陣，但沙加緬度國王主場0勝7敗且防守效率差，SGA與團隊攻守對位仍讓雷霆佔優。傷兵差距和雷霆三連敗增添變數，但雷霆贏面較高。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Kimi",
+     "pick": "OKC",
+     "pick_zh": "雷霆",
+     "pick_en": "Thunder",
+     "home_win_prob": 0.21,
+     "pred_margin": -16.0,
+     "pred_total": 224.0,
+     "confidence": "high",
+     "reasoning": "Oklahoma City's last-10 efficiency metrics (+4.1 net rating) significantly outperform Sacramento's (-12.1), producing a projected double-digit road win despite over 100 minutes of missing rotation players. Sacramento's catastrophic defense and 1-11 record provide no evidence they can capitalize on OKC's injury-depleted depth.",
+     "reasoning_zh": "雷霆近10場效率值（+4.1淨評分）顯著優於國王的-12.1，即使輪替陣容缺陣超過100分鐘，仍預計在客場取得雙位數勝利。國王崩盤級的防守與1勝11負的戰績，顯示他們無法利用雷霆的傷兵劣勢。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "Grok",
+     "pick": "OKC",
+     "pick_zh": "雷霆",
+     "pick_en": "Thunder",
+     "home_win_prob": 0.28,
+     "pred_margin": -9.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "Sacramento’s home collapse and a large efficiency gap outweigh Oklahoma City’s injury list. Shorthanded Thunder still profile as the better team behind Gilgeous-Alexander, so they should win on the road, but absences and a 3-5 road mark keep the margin inside the market number and confidence moderate.",
+     "reasoning_zh": "國王主場戰績崩盤，每百回合對位淨值大幅落後，這比雷霆傷兵更關鍵。雷霆雖缺少霍姆格倫、傑倫威廉斯等輪替，仍有SGA且效率為正，客場應能取勝，但傷兵與客場起伏會壓縮分差，信心維持中等。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    },
+    {
+     "name": "GLM",
+     "pick": "OKC",
+     "pick_zh": "雷霆",
+     "pick_en": "Thunder",
+     "home_win_prob": 0.22,
+     "pred_margin": -8.0,
+     "pred_total": 216.0,
+     "confidence": "med",
+     "reasoning": "Despite OKC's heavy injury toll (~107 minutes missing), Sacramento's league-worst form (1-11, 0-7 at home, -12.7 differential) and the -16.1 per-100 matchup gap make OKC clear favorites, with SGA's 40-point outburst showing the short-handed offense remains functional. Expect OKC to win by high single digits to low double digits, slightly under the market spread given the depth losses.",
+     "reasoning_zh": "儘管雷霆傷兵滿營（缺陣約107分鐘輪替戰力），但國王戰績全聯盟最差（1勝11敗、主場0勝7敗、淨勝分-12.7），且近十場每百回合對位差距達-16.1，加上SGA剛砍下40分顯示傷兵陣容進攻仍有水準，雷霆仍是明顯優勢方。預期雷霆以個位數至低位數兩位數的分差取勝，因板凳深度損失，贏分可能略低於盤口。",
+     "odds": 1.21,
+     "result": null,
+     "pnl": null
+    }
+   ],
    "recs": [],
    "hits": null
   },
@@ -1416,6 +1234,312 @@
   }
  ],
  "results": [
+  {
+   "game_id": "2026-11-15_CHA@LAC",
+   "game_date": "2026-11-15",
+   "status": "final",
+   "commence_time": "2026-11-15T21:30:00Z",
+   "tw": "11/15(日) 14:30",
+   "home": "LAC",
+   "away": "CHA",
+   "home_zh": "快艇",
+   "away_zh": "黃蜂",
+   "home_name": "Los Angeles Clippers",
+   "away_name": "Charlotte Hornets",
+   "home_en": "Clippers",
+   "away_en": "Hornets",
+   "home_score": 113,
+   "away_score": 105,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-15T21:35:02Z",
+    "ml_home": 1.88,
+    "ml_away": 1.95,
+    "spread_line": -1.0,
+    "spread_home_odds": 1.89,
+    "spread_away_odds": 1.93
+   },
+   "consensus": {
+    "home_win_prob": 0.591,
+    "pred_margin": 6.0,
+    "pred_total": 216.3,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "LAC",
+    "fav_zh": "快艇",
+    "fav_en": "Clippers",
+    "fav_prob": 0.591
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.58,
+     "pred_margin": 7.0,
+     "pred_total": 215.0,
+     "confidence": "med",
+     "reasoning": "LAC's home court, superior recent offensive profile, and Charlotte's more consequential quantified absence outweigh the Hornets' extra rest. The matchup remains relatively close because both teams have poor recent form and negative scoring differentials.",
+     "reasoning_zh": "快艇的主場優勢、較佳的近期進攻表現，以及黃蜂較具實質影響的傷兵損失，整體上足以抵銷黃蜂多一天休息的優勢。不過兩隊近期狀態都不理想，且得失分差皆為負值，因此預期比賽仍會相當接近。",
+     "odds": 1.94,
+     "result": "WON",
+     "pnl": 94.0
+    },
+    {
+     "name": "Claude",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.6,
+     "pred_margin": 6.0,
+     "pred_total": 214.0,
+     "confidence": "low",
+     "reasoning": "Charlotte's offense has been anemic (98.6 ppg), and the Hornets are without Schroder. Their net rating gap against the Clippers is about 5 points per 100 possessions, and the Clippers have home court. The near-even market tempers confidence, but the data leans toward LAC.",
+     "reasoning_zh": "黃蜂進攻疲弱（場均98.6分），且Schroder缺陣。快艇淨效率每百回合領先約5分，又坐擁主場。市場盤口接近五五波，因此信心有所保留，但數據仍偏向快艇。",
+     "odds": 1.94,
+     "result": "WON",
+     "pnl": 94.0
+    },
+    {
+     "name": "Gemini",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.55,
+     "pred_margin": 6.0,
+     "pred_total": 218.0,
+     "confidence": "med",
+     "reasoning": "Despite the market slightly favoring Charlotte, the Clippers have a clear edge at home where they are 3-3, compared to the Hornets' 1-4 road record. Charlotte's offense has struggled mightily, averaging under 100 points per game, and the loss of Dennis Schroder will further hamper their playmaking. The Clippers, buoyed by a recent win over the Thunder, should control the pace and secure the home victory.",
+     "reasoning_zh": "儘管市場微幅看好黃蜂，但快艇在主場擁有明顯優勢（主場 3 勝 3 敗，而黃蜂客場僅 1 勝 4 敗）。黃蜂的進攻表現相當掙扎，場均得分不到 100 分，加上主力後衛施洛德（Dennis Schroder）缺陣，將進一步削弱他們的組織能力。剛擊敗雷霆的快艇士氣正旺，預計能掌控比賽節奏並在主場拿下勝利。",
+     "odds": 1.94,
+     "result": "WON",
+     "pnl": 94.0
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.63,
+     "pred_margin": 6.0,
+     "pred_total": 218.0,
+     "confidence": "med",
+     "reasoning": "LAC's rest advantage, healthier roster, and better recent per-100 net rating outweigh CHA's slightly better record. CHA's poor road form and missing Schroder make an away win less likely.",
+     "reasoning_zh": "快艇在休息天數、陣容健康度及近十場每百回合淨效率上都優於黃蜂，黃蜂客場僅1勝4敗且缺少Schroder，因此快艇勝算較高。",
+     "odds": 1.94,
+     "result": "WON",
+     "pnl": 94.0
+    },
+    {
+     "name": "Kimi",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.58,
+     "pred_margin": 5.0,
+     "pred_total": 217.0,
+     "confidence": "med",
+     "reasoning": "Despite the market pricing Charlotte as a slight favorite, the quantitative models favor Los Angeles thanks to a +5.3 net rating edge per 100 possessions, Schroder's absence severely weakening Charlotte's backcourt, and the Clippers' momentum after defeating Oklahoma City. The Hornets' anemic road offense and Los Angeles's tempo control should lead to a home win.",
+     "reasoning_zh": "儘管盤路稍微看好黃蜂，但量化模型明顯偏向快艇：淨效率每100回合領先+5.3、Dennis Schroder缺陣重創黃蜂後場進攻與組織，且快艇剛擊敗雷霆氣勢正旺。黃蜂客場進攻低迷，快艇掌握節奏優勢，應能主場勝出。",
+     "odds": 1.94,
+     "result": "WON",
+     "pnl": 94.0
+    },
+    {
+     "name": "Grok",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.57,
+     "pred_margin": 6.0,
+     "pred_total": 218.0,
+     "confidence": "med",
+     "reasoning": "Los Angeles has the clearer edge at home: Charlotte already scores only 98.6 points per game and is without its 30-minute point guard, while the Clippers’ listed absences do not cut current rotation minutes. Efficiency (matchup net +5.3 per 100), home form (3-3), and a win over Oklahoma City also favor LAC against a Hornets team that is 1-4 on the road. The gap should stay modest given both poor records and a near coin-flip market.",
+     "reasoning_zh": "快艇坐鎮主場優勢較明確：黃蜂場均僅得98.6分，又缺場均30分鐘的控衛，快艇名單上的缺陣則未削減目前輪替時間。效率（對位淨值每百回合+5.3）、主場3勝3敗，以及剛險勝雷霆，都偏向快艇，黃蜂客場僅1勝4敗。不過兩隊戰績都差、盤口接近五五波，分差應不會太大。",
+     "odds": 1.94,
+     "result": "WON",
+     "pnl": 94.0
+    },
+    {
+     "name": "GLM",
+     "pick": "LAC",
+     "pick_zh": "快艇",
+     "pick_en": "Clippers",
+     "home_win_prob": 0.63,
+     "pred_margin": 6.0,
+     "pred_total": 214.0,
+     "confidence": "med",
+     "reasoning": "All three quantitative modules favor LAC: Charlotte is missing 36 minutes of rotation (Schroder/Knueppel) while the Clippers' outs are long-term and already reflected in their data, and LAC holds a clear net-rating and home-court edge against a Hornets team scoring under 99 ppg on the road. The market prices this near pick'em, so I temper the edge, but the data supports a modest LAC win at home.",
+     "reasoning_zh": "三項量化模組均傾向快艇:黃蜂少了施羅德等約36分鐘的輪替戰力,而快艇的傷兵皆為長期缺陣、已反映在近期數據中;快艇淨勝分(-5.2 對 -11.0)與主場優勢明顯,黃蜂客場場均得分不到99分且客績1勝4敗。市場開盤接近五五波,因此我適度下修優勢幅度,但數據仍支持快艇在主場小勝。",
+     "odds": 1.94,
+     "result": "WON",
+     "pnl": 94.0
+    }
+   ],
+   "recs": [
+    {
+     "market": "spread",
+     "pick": "home +1",
+     "label": "讓分 快艇 +1",
+     "label_en": "Clippers +1",
+     "odds": 1.88,
+     "line": 1.0,
+     "edge": null,
+     "confidence": "med",
+     "why": "共識分差 +6.1 vs 盤口 +1（差 7.1 分）",
+     "result": "WON",
+     "pnl": 88.0
+    }
+   ],
+   "hits": "7/7"
+  },
+  {
+   "game_id": "2026-11-15_LAL@PHX",
+   "game_date": "2026-11-15",
+   "status": "final",
+   "commence_time": "2026-11-15T21:00:00Z",
+   "tw": "11/15(日) 14:00",
+   "home": "PHX",
+   "away": "LAL",
+   "home_zh": "太陽",
+   "away_zh": "湖人",
+   "home_name": "Phoenix Suns",
+   "away_name": "Los Angeles Lakers",
+   "home_en": "Suns",
+   "away_en": "Lakers",
+   "home_score": 123,
+   "away_score": 131,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-15T20:00:07Z",
+    "ml_home": 2.35,
+    "ml_away": 1.62,
+    "spread_line": 3.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.9
+   },
+   "consensus": {
+    "home_win_prob": 0.383,
+    "pred_margin": -5.0,
+    "pred_total": 230.7,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "LAL",
+    "fav_zh": "湖人",
+    "fav_en": "Lakers",
+    "fav_prob": 0.617
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.37,
+     "pred_margin": -5.0,
+     "pred_total": 231.0,
+     "confidence": "med",
+     "reasoning": "LAL's superior scoring margin, road performance, and recent efficiency matchup outweigh the impact of Reaves being out. PHX's 5-3 home record and LAL's heavier injury burden should keep the game competitive.",
+     "reasoning_zh": "湖人較優異的得失分差、客場表現與近期攻防效率對位，足以抵銷 Austin Reaves 缺陣的影響。不過太陽主場戰績為 5 勝 3 敗，加上湖人傷病負擔較重，預期比賽仍會相當接近。",
+     "odds": 1.65,
+     "result": "WON",
+     "pnl": 65.0
+    },
+    {
+     "name": "Claude",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.42,
+     "pred_margin": -4.0,
+     "pred_total": 228.0,
+     "confidence": "low",
+     "reasoning": "The Lakers' far superior net rating and Doncic-led lineup outweigh the loss of Reaves, though the absence narrows the gap against a Suns team that is decent at home. Expect a close game with LAL winning by a few points, roughly in line with the market's +3 line.",
+     "reasoning_zh": "湖人的淨效率明顯較佳，加上唐西奇領軍的陣容，足以彌補里維斯缺陣的影響。不過他的缺席縮小了雙方差距，而太陽主場表現尚可。預期比賽膠著，湖人以幾分之差勝出，大致符合市場讓3分的盤口。",
+     "odds": 1.65,
+     "result": "WON",
+     "pnl": 65.0
+    },
+    {
+     "name": "Gemini",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.38,
+     "pred_margin": -5.0,
+     "pred_total": 231.0,
+     "confidence": "med",
+     "reasoning": "Even without Austin Reaves, the Lakers boast a significant offensive advantage and are riding a seven-game winning streak. Led by Luka Doncic, Los Angeles' high-powered offense should outpace a Suns team that struggles defensively, despite Phoenix having the home-court edge.",
+     "reasoning_zh": "儘管缺少了奧斯汀·里夫斯，湖人隊在進攻端依然擁有顯著優勢，且目前正處於七連勝的絕佳狀態。在盧卡·唐西奇的帶領下，洛杉磯強大的火力預計將壓制防守較為薄弱的太陽隊，即便太陽擁有主場優勢也難以抵擋。",
+     "odds": 1.65,
+     "result": "WON",
+     "pnl": 65.0
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.39,
+     "pred_margin": -6.0,
+     "pred_total": 230.0,
+     "confidence": "med",
+     "reasoning": "Despite Austin Reaves' absence, the Lakers' superior net rating, road form, and pace/lineup edge outweigh Phoenix's home and rest advantages. Expect a moderately close Lakers win.",
+     "reasoning_zh": "儘管湖人缺少 Austin Reaves，但湖人較佳的淨效率、客場表現與節奏陣容優勢仍勝過太陽的主場與休息優勢，預期湖人中等差距取勝。",
+     "odds": 1.65,
+     "result": "WON",
+     "pnl": 65.0
+    },
+    {
+     "name": "Kimi",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.38,
+     "pred_margin": -6.0,
+     "pred_total": 232.0,
+     "confidence": "med",
+     "reasoning": "The Lakers’ substantially better net rating, road dominance, and available star power give them the edge despite Austin Reaves’ absence and the Suns’ home-court advantage. Phoenix’s below-average defense and inconsistent offense are unlikely to keep pace with Los Angeles over four quarters.",
+     "reasoning_zh": "儘管Austin Reaves缺陣且太陽擁有主場優勢，湖人隊憑藉明顯更優的淨效率值、強勢的客場戰績與到位的明星戰力仍佔上風。鳳凰城低於平均的防守與不穩定的進攻，難以在整場比賽中跟上洛杉磯的節奏。",
+     "odds": 1.65,
+     "result": "WON",
+     "pnl": 65.0
+    },
+    {
+     "name": "Grok",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.36,
+     "pred_margin": -5.0,
+     "pred_total": 231.0,
+     "confidence": "med",
+     "reasoning": "Los Angeles is the clearly better team by record, net rating, and road form, and the matchup modules still lean their way even with Austin Reaves out. Phoenix's home edge and lighter injury load should keep it close, but not enough to overturn the Lakers.",
+     "reasoning_zh": "湖人在戰績、淨效率與客場表現上都明顯優於太陽，即使Austin Reaves缺陣，對位與球員能力模組仍偏向洛杉磯。太陽主場優勢與較輕傷兵能把比賽壓縮，但不足以翻轉劣勢。",
+     "odds": 1.65,
+     "result": "WON",
+     "pnl": 65.0
+    },
+    {
+     "name": "GLM",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.38,
+     "pred_margin": -4.0,
+     "pred_total": 232.0,
+     "confidence": "med",
+     "reasoning": "Despite losing Austin Reaves (35 mpg), the Lakers' superior overall quality — a 12.4-point season net-rating gap, a 7-game win streak, and a 6-1 road record led by Luka Doncic — outweighs the injury hit against a below-.500 Phoenix team. The Suns' home form, rest, and Booker's hot hand keep it competitive, but LA's two-way matchup edge (-9.4 per 100) should decide a moderately paced game by a small margin.",
+     "reasoning_zh": "儘管湖人失去 Austin Reaves（場均 35 分鐘），整體戰力差距（季賽淨勝分相差 12.4 分、七連勝、客場 6 勝 1 敗，由 Luka Doncic 領軍）仍明顯壓過傷兵影響，優於勝率不到五成的太陽。太陽有主場優勢、充足休息與 Booker 的火燙手感，能讓比賽保持膠著，但湖人近十場每百回合淨勝 9.4 分的攻防優勢應能以小分差取勝。",
+     "odds": 1.65,
+     "result": "WON",
+     "pnl": 65.0
+    }
+   ],
+   "recs": [],
+   "hits": "7/7"
+  },
   {
    "game_id": "2026-11-15_IND@PHI",
    "game_date": "2026-11-15",
