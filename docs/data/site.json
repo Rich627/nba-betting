@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T18:35:51-07:00",
+ "generated_at": "2026-11-15T19:00:14-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -22,45 +22,45 @@
  "wallet": [
   {
    "model": "Gemini",
-   "bets": 72,
-   "wins": 55,
-   "pnl": 518.0
+   "bets": 75,
+   "wins": 58,
+   "pnl": 595.0
   },
   {
    "model": "Claude",
-   "bets": 72,
-   "wins": 55,
-   "pnl": 465.0
+   "bets": 75,
+   "wins": 58,
+   "pnl": 542.0
   },
   {
    "model": "DeepSeek",
-   "bets": 72,
-   "wins": 54,
-   "pnl": 382.0
+   "bets": 75,
+   "wins": 57,
+   "pnl": 459.0
   },
   {
    "model": "Grok",
-   "bets": 72,
-   "wins": 52,
-   "pnl": 182.0
+   "bets": 75,
+   "wins": 55,
+   "pnl": 259.0
   },
   {
    "model": "GPT",
-   "bets": 72,
-   "wins": 52,
-   "pnl": -30.0
+   "bets": 75,
+   "wins": 55,
+   "pnl": 47.0
   },
   {
    "model": "GLM",
-   "bets": 71,
-   "wins": 50,
-   "pnl": -164.0
+   "bets": 74,
+   "wins": 53,
+   "pnl": -87.0
   },
   {
    "model": "Kimi",
-   "bets": 71,
-   "wins": 48,
-   "pnl": -394.0
+   "bets": 74,
+   "wins": 51,
+   "pnl": -317.0
   }
  ],
  "wallet_history": {
@@ -91,7 +91,7 @@
     773.0,
     502.0,
     306.0,
-    465.0
+    542.0
    ],
    "DeepSeek": [
     61.0,
@@ -105,7 +105,7 @@
     689.0,
     418.0,
     223.0,
-    382.0
+    459.0
    ],
    "GLM": [
     46.0,
@@ -119,7 +119,7 @@
     143.0,
     -128.0,
     -323.0,
-    -164.0
+    -87.0
    ],
    "GPT": [
     61.0,
@@ -133,7 +133,7 @@
     277.0,
     6.0,
     -189.0,
-    -30.0
+    47.0
    ],
    "Gemini": [
     61.0,
@@ -147,7 +147,7 @@
     654.0,
     554.0,
     359.0,
-    518.0
+    595.0
    ],
    "Grok": [
     61.0,
@@ -161,7 +161,7 @@
     194.0,
     218.0,
     23.0,
-    182.0
+    259.0
    ],
    "Kimi": [
     61.0,
@@ -175,157 +175,11 @@
     129.0,
     -204.0,
     -553.0,
-    -394.0
+    -317.0
    ]
   }
  },
  "upcoming": [
-  {
-   "game_id": "2026-11-15_NYK@TOR",
-   "game_date": "2026-11-15",
-   "status": "live",
-   "commence_time": "2026-11-15T23:00:00Z",
-   "tw": "11/15(日) 16:00",
-   "home": "TOR",
-   "away": "NYK",
-   "home_zh": "暴龍",
-   "away_zh": "尼克",
-   "home_name": "Toronto Raptors",
-   "away_name": "New York Knicks",
-   "home_en": "Raptors",
-   "away_en": "Knicks",
-   "home_score": 95,
-   "away_score": 95,
-   "odds": {
-    "n_books": 9,
-    "fetched_at": "2026-11-15T22:35:02Z",
-    "ml_home": 2.46,
-    "ml_away": 1.58,
-    "spread_line": 4.0,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
-   },
-   "consensus": {
-    "home_win_prob": 0.369,
-    "pred_margin": -5.0,
-    "pred_total": 219.0,
-    "agreement": 1.0,
-    "n_models": 7,
-    "fav": "NYK",
-    "fav_zh": "尼克",
-    "fav_en": "Knicks",
-    "fav_prob": 0.631
-   },
-   "models": [
-    {
-     "name": "GPT",
-     "pick": "NYK",
-     "pick_zh": "尼克",
-     "pick_en": "Knicks",
-     "home_win_prob": 0.35,
-     "pred_margin": -6.0,
-     "pred_total": 218.0,
-     "confidence": "med",
-     "reasoning": "New York's superior recent two-way efficiency and healthier lineup outweigh Toronto's extra rest and home court. Toronto's faster pace could add variance, but the matchup data favors the Knicks overall.",
-     "reasoning_zh": "紐約近期攻守效率較佳，且陣容更健康，足以抵銷多倫多多休一天與主場優勢。暴龍較快的節奏可能增加比賽變數，但整體對戰數據仍偏向尼克。",
-     "odds": 1.58,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Claude",
-     "pick": "NYK",
-     "pick_zh": "尼克",
-     "pick_en": "Knicks",
-     "home_win_prob": 0.4,
-     "pred_margin": -4.0,
-     "pred_total": 218.0,
-     "confidence": "med",
-     "reasoning": "With Leonard out and Barnes listed through a groin strain, Toronto's thin rotation faces a Knicks side with a much better last-10 defensive rating and a stronger star duo in Towns and Brunson. Toronto's extra rest and home court narrow the gap, but New York is the modest favorite, roughly in line with the market.",
-     "reasoning_zh": "雷納德缺陣，巴恩斯帶著鼠蹊部拉傷出賽，暴龍輪替單薄。尼克近十場防守效率明顯較佳，唐斯與布朗森的雙核心也更強。暴龍多一天休息又有主場之利，能縮小差距，但尼克仍是小幅看好的一方，與盤口大致相符。",
-     "odds": 1.58,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Gemini",
-     "pick": "NYK",
-     "pick_zh": "尼克",
-     "pick_en": "Knicks",
-     "home_win_prob": 0.35,
-     "pred_margin": -5.0,
-     "pred_total": 217.0,
-     "confidence": "med",
-     "reasoning": "The Knicks boast a significantly stronger defense and a fully healthy roster, whereas the Raptors are missing a key contributor in Kawhi Leonard. Despite Toronto having an extra day of rest, New York's superior net rating and defensive stability should allow them to control the pace and secure a road victory.",
-     "reasoning_zh": "尼克擁有明顯更強的防守與完全健康的陣容，而暴龍則缺少了關鍵球員雷納德（Kawhi Leonard）。儘管多倫多有多一天的休息時間，紐約較佳的淨效率值和防守穩定性應能讓他們控制比賽節奏，並在客場拿下勝利。",
-     "odds": 1.58,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "DeepSeek",
-     "pick": "NYK",
-     "pick_zh": "尼克",
-     "pick_en": "Knicks",
-     "home_win_prob": 0.38,
-     "pred_margin": -4.0,
-     "pred_total": 220.0,
-     "confidence": "med",
-     "reasoning": "New York's cleaner injury report, stronger recent form, and better net rating offset Toronto's rest advantage and home court. The Raptors' missing Leonard and poor home record make an upset less likely, though the spread is close.",
-     "reasoning_zh": "紐約在傷兵名單、近期狀態與淨效率值上都優於多倫多，即使暴龍有主場與休息天數優勢，但缺少 Leonard 且主場戰績不佳，爆冷機率較低。",
-     "odds": 1.58,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Kimi",
-     "pick": "NYK",
-     "pick_zh": "尼克",
-     "pick_en": "Knicks",
-     "home_win_prob": 0.37,
-     "pred_margin": -4.0,
-     "pred_total": 224.0,
-     "confidence": "med",
-     "reasoning": "New York’s elite defense, full health, and stronger recent form outweigh Toronto’s slight rest advantage and home court, especially with the Raptors missing Kawhi Leonard and struggling through a three-game losing streak.",
-     "reasoning_zh": "紐約頂級的防守、完整的健康陣容與更佳的近況，壓過多倫多微薄的休息優勢與主場條件；尤其暴龍缺少 Kawhi Leonard，且正苦吞三連敗，尼克客場勝算較高。",
-     "odds": 1.58,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Grok",
-     "pick": "NYK",
-     "pick_zh": "尼克",
-     "pick_en": "Knicks",
-     "home_win_prob": 0.38,
-     "pred_margin": -5.0,
-     "pred_total": 219.0,
-     "confidence": "med",
-     "reasoning": "New York is the better side on recent form, point differential, and matchup efficiency, and Toronto is without Kawhi Leonard. Home court and a rest edge for the Raptors narrow the gap but do not flip it, so the Knicks are a moderate road favorite in a lower-scoring game.",
-     "reasoning_zh": "紐約尼克在近期狀態、得失分差與攻防對位效率上都優於多倫多暴龍，且暴龍缺少場均26分鐘的Kawhi Leonard。暴龍雖有主場與多休息一天的優勢，仍不足以扭轉劣勢，因此尼克是溫和客場熱門，預測比分落在偏低的得分區間。",
-     "odds": 1.58,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "GLM",
-     "pick": "NYK",
-     "pick_zh": "尼克",
-     "pick_en": "Knicks",
-     "home_win_prob": 0.35,
-     "pred_margin": -7.0,
-     "pred_total": 217.0,
-     "confidence": "med",
-     "reasoning": "All three quantitative modules favor New York: Toronto is without Kawhi Leonard's 26 mpg while the Knicks are fully healthy, and NYK's superior two-way efficiency (114.9/105.7 per-100 vs 112.0/111.2) plus better recent form (6-4 vs 3-7) points to a road win despite Toronto's slight rest advantage. Expect a moderately paced game around 217 total points with NYK winning by roughly 7.",
-     "reasoning_zh": "三項量化模組均指向尼克獲勝：暴龍缺少場均上場26分鐘的Kawhi Leonard，而尼克陣容健康無傷兵；尼克攻防效率（每百回合114.9/105.7）優於暴龍（112.0/111.2），近況也較佳（6-4對3-7）。預期比賽節奏中等、總分約217分，尼克以約7分之差客場取勝，暴龍的主場體能優勢僅能小幅抵銷。",
-     "odds": 1.58,
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "recs": [],
-   "hits": null
-  },
   {
    "game_id": "2026-11-15_HOU@WAS",
    "game_date": "2026-11-15",
@@ -340,8 +194,8 @@
    "away_name": "Houston Rockets",
    "home_en": "Wizards",
    "away_en": "Rockets",
-   "home_score": 67,
-   "away_score": 98,
+   "home_score": 85,
+   "away_score": 119,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-16T00:00:06Z",
@@ -486,8 +340,8 @@
    "away_name": "Atlanta Hawks",
    "home_en": "Bucks",
    "away_en": "Hawks",
-   "home_score": 37,
-   "away_score": 18,
+   "home_score": 51,
+   "away_score": 47,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-16T00:35:02Z",
@@ -1007,8 +861,8 @@
      "reasoning": "Boston has decisive advantages in recent efficiency, availability, home performance, and rest. Dallas' depleted rotation and back-to-back spot make it unlikely to sustain enough offense against Boston's strong defense.",
      "reasoning_zh": "波士頓在近期攻守效率、球員健康度、主場表現與休息時間上都占有明顯優勢。達拉斯陣容短缺且背靠背出賽，面對波士頓的強勢防守，很難維持足夠的進攻火力。",
      "odds": 1.1,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 10.0
     },
     {
      "name": "Claude",
@@ -1022,8 +876,8 @@
      "reasoning": "Boston is a 10-2 team with a dominant net rating, unbeaten at home, and well rested. Dallas is on a back-to-back and missing Irving plus several rotation players. The market's -15 spread is steep, so a margin of around 14 is the most likely outcome, with a Boston win highly probable.",
      "reasoning_zh": "塞爾提克戰績10勝2敗，淨效率值優異，主場保持全勝，且休息充足。獨行俠背靠背出賽，Irving及多名輪換球員缺陣。市場讓15分偏高，預估分差約14分最有可能，塞爾提克勝率極高。",
      "odds": 1.1,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 10.0
     },
     {
      "name": "Gemini",
@@ -1037,8 +891,8 @@
      "reasoning": "Boston holds a massive situational advantage with four days of rest compared to Dallas playing on the second night of a back-to-back. The Mavericks are also severely depleted, missing Kyrie Irving and multiple rotation players, which should allow the fully healthy, top-seeded Celtics to dominate at home.",
      "reasoning_zh": "波士頓擁有巨大的賽程優勢，他們休息了四天，而達拉斯則是背靠背出賽。獨行俠陣容嚴重受損，缺少了厄文（Kyrie Irving）和多名輪替球員，這將讓全員健康且高居東區第一的塞爾提克在主場輕鬆取勝。",
      "odds": 1.1,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 10.0
     },
     {
      "name": "DeepSeek",
@@ -1052,8 +906,8 @@
      "reasoning": "Boston is at home, well-rested, and nearly fully healthy, while Dallas is on a back-to-back and missing Kyrie Irving plus several rotation players. The Celtics' recent net rating and home dominance point to a comfortable win.",
      "reasoning_zh": "波士頓主場作戰、休息充足且陣容幾乎完整，而達拉斯背靠背出賽且缺少厄文與多名輪替球員。塞爾提克近期淨效率與主場統治力顯示他們將輕鬆取勝。",
      "odds": 1.1,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 10.0
     },
     {
      "name": "Kimi",
@@ -1067,8 +921,8 @@
      "reasoning": "Boston is fully rested, dominant at home, and faces a shorthanded Dallas team playing its second game in as many days without Kyrie Irving and several key role players.",
      "reasoning_zh": "塞爾提克休息充足且主場全勝，獨行俠則是背靠背第二場並缺少Kyrie Irving與多名輪替球員，難以在客場對抗聯盟頂級防守。",
      "odds": 1.1,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 10.0
     },
     {
      "name": "Grok",
@@ -1082,8 +936,8 @@
      "reasoning": "Boston is the clearer side on form, home record, and efficiency, while Dallas is on a back-to-back and without Irving plus several rotation players. The rest and injury edges, plus a large defensive gap, support a comfortable Celtics win rather than a toss-up.",
      "reasoning_zh": "波士頓在戰績、主場與效率上都明顯占優，達拉斯則背靠背出賽，且缺少厄文與多名輪換球員。休息與傷兵劣勢，加上防守端的大幅差距，支持塞爾提克輕鬆取勝，而非五五波。",
      "odds": 1.1,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 10.0
     },
     {
      "name": "GLM",
@@ -1097,12 +951,158 @@
      "reasoning": "Boston is fully healthy, on 4 days rest, 5-0 at home and riding a 5-game win streak with a +11.2 differential, while Dallas is on the second night of a back-to-back without Kyrie Irving and roughly 75 minutes of rotation depth. The per-100 matchup favors Boston by over 12 points, and Dallas's road form (2-4) and fading defense suggest a comfortable home win around double digits.",
      "reasoning_zh": "塞爾提克陣容完整、休息四天、主場五連勝且近十場九勝，淨勝分達+11.2；反觀獨行俠背靠背出賽，少了Kyrie Irving及約75分鐘的輪替戰力。每百回合對位數據顯示塞爾提克淨勝超過12分，加上獨行俠客場戰績僅2勝4敗且防守下滑，預期主隊將輕鬆贏下雙位數分差。",
      "odds": 1.1,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 10.0
     }
    ],
    "recs": [],
-   "hits": null
+   "hits": "7/7"
+  },
+  {
+   "game_id": "2026-11-15_NYK@TOR",
+   "game_date": "2026-11-15",
+   "status": "final",
+   "commence_time": "2026-11-15T23:00:00Z",
+   "tw": "11/15(日) 16:00",
+   "home": "TOR",
+   "away": "NYK",
+   "home_zh": "暴龍",
+   "away_zh": "尼克",
+   "home_name": "Toronto Raptors",
+   "away_name": "New York Knicks",
+   "home_en": "Raptors",
+   "away_en": "Knicks",
+   "home_score": 108,
+   "away_score": 112,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-15T22:35:02Z",
+    "ml_home": 2.46,
+    "ml_away": 1.58,
+    "spread_line": 4.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
+   "consensus": {
+    "home_win_prob": 0.369,
+    "pred_margin": -5.0,
+    "pred_total": 219.0,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "NYK",
+    "fav_zh": "尼克",
+    "fav_en": "Knicks",
+    "fav_prob": 0.631
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "NYK",
+     "pick_zh": "尼克",
+     "pick_en": "Knicks",
+     "home_win_prob": 0.35,
+     "pred_margin": -6.0,
+     "pred_total": 218.0,
+     "confidence": "med",
+     "reasoning": "New York's superior recent two-way efficiency and healthier lineup outweigh Toronto's extra rest and home court. Toronto's faster pace could add variance, but the matchup data favors the Knicks overall.",
+     "reasoning_zh": "紐約近期攻守效率較佳，且陣容更健康，足以抵銷多倫多多休一天與主場優勢。暴龍較快的節奏可能增加比賽變數，但整體對戰數據仍偏向尼克。",
+     "odds": 1.58,
+     "result": "WON",
+     "pnl": 58.0
+    },
+    {
+     "name": "Claude",
+     "pick": "NYK",
+     "pick_zh": "尼克",
+     "pick_en": "Knicks",
+     "home_win_prob": 0.4,
+     "pred_margin": -4.0,
+     "pred_total": 218.0,
+     "confidence": "med",
+     "reasoning": "With Leonard out and Barnes listed through a groin strain, Toronto's thin rotation faces a Knicks side with a much better last-10 defensive rating and a stronger star duo in Towns and Brunson. Toronto's extra rest and home court narrow the gap, but New York is the modest favorite, roughly in line with the market.",
+     "reasoning_zh": "雷納德缺陣，巴恩斯帶著鼠蹊部拉傷出賽，暴龍輪替單薄。尼克近十場防守效率明顯較佳，唐斯與布朗森的雙核心也更強。暴龍多一天休息又有主場之利，能縮小差距，但尼克仍是小幅看好的一方，與盤口大致相符。",
+     "odds": 1.58,
+     "result": "WON",
+     "pnl": 58.0
+    },
+    {
+     "name": "Gemini",
+     "pick": "NYK",
+     "pick_zh": "尼克",
+     "pick_en": "Knicks",
+     "home_win_prob": 0.35,
+     "pred_margin": -5.0,
+     "pred_total": 217.0,
+     "confidence": "med",
+     "reasoning": "The Knicks boast a significantly stronger defense and a fully healthy roster, whereas the Raptors are missing a key contributor in Kawhi Leonard. Despite Toronto having an extra day of rest, New York's superior net rating and defensive stability should allow them to control the pace and secure a road victory.",
+     "reasoning_zh": "尼克擁有明顯更強的防守與完全健康的陣容，而暴龍則缺少了關鍵球員雷納德（Kawhi Leonard）。儘管多倫多有多一天的休息時間，紐約較佳的淨效率值和防守穩定性應能讓他們控制比賽節奏，並在客場拿下勝利。",
+     "odds": 1.58,
+     "result": "WON",
+     "pnl": 58.0
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "NYK",
+     "pick_zh": "尼克",
+     "pick_en": "Knicks",
+     "home_win_prob": 0.38,
+     "pred_margin": -4.0,
+     "pred_total": 220.0,
+     "confidence": "med",
+     "reasoning": "New York's cleaner injury report, stronger recent form, and better net rating offset Toronto's rest advantage and home court. The Raptors' missing Leonard and poor home record make an upset less likely, though the spread is close.",
+     "reasoning_zh": "紐約在傷兵名單、近期狀態與淨效率值上都優於多倫多，即使暴龍有主場與休息天數優勢，但缺少 Leonard 且主場戰績不佳，爆冷機率較低。",
+     "odds": 1.58,
+     "result": "WON",
+     "pnl": 58.0
+    },
+    {
+     "name": "Kimi",
+     "pick": "NYK",
+     "pick_zh": "尼克",
+     "pick_en": "Knicks",
+     "home_win_prob": 0.37,
+     "pred_margin": -4.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "New York’s elite defense, full health, and stronger recent form outweigh Toronto’s slight rest advantage and home court, especially with the Raptors missing Kawhi Leonard and struggling through a three-game losing streak.",
+     "reasoning_zh": "紐約頂級的防守、完整的健康陣容與更佳的近況，壓過多倫多微薄的休息優勢與主場條件；尤其暴龍缺少 Kawhi Leonard，且正苦吞三連敗，尼克客場勝算較高。",
+     "odds": 1.58,
+     "result": "WON",
+     "pnl": 58.0
+    },
+    {
+     "name": "Grok",
+     "pick": "NYK",
+     "pick_zh": "尼克",
+     "pick_en": "Knicks",
+     "home_win_prob": 0.38,
+     "pred_margin": -5.0,
+     "pred_total": 219.0,
+     "confidence": "med",
+     "reasoning": "New York is the better side on recent form, point differential, and matchup efficiency, and Toronto is without Kawhi Leonard. Home court and a rest edge for the Raptors narrow the gap but do not flip it, so the Knicks are a moderate road favorite in a lower-scoring game.",
+     "reasoning_zh": "紐約尼克在近期狀態、得失分差與攻防對位效率上都優於多倫多暴龍，且暴龍缺少場均26分鐘的Kawhi Leonard。暴龍雖有主場與多休息一天的優勢，仍不足以扭轉劣勢，因此尼克是溫和客場熱門，預測比分落在偏低的得分區間。",
+     "odds": 1.58,
+     "result": "WON",
+     "pnl": 58.0
+    },
+    {
+     "name": "GLM",
+     "pick": "NYK",
+     "pick_zh": "尼克",
+     "pick_en": "Knicks",
+     "home_win_prob": 0.35,
+     "pred_margin": -7.0,
+     "pred_total": 217.0,
+     "confidence": "med",
+     "reasoning": "All three quantitative modules favor New York: Toronto is without Kawhi Leonard's 26 mpg while the Knicks are fully healthy, and NYK's superior two-way efficiency (114.9/105.7 per-100 vs 112.0/111.2) plus better recent form (6-4 vs 3-7) points to a road win despite Toronto's slight rest advantage. Expect a moderately paced game around 217 total points with NYK winning by roughly 7.",
+     "reasoning_zh": "三項量化模組均指向尼克獲勝：暴龍缺少場均上場26分鐘的Kawhi Leonard，而尼克陣容健康無傷兵；尼克攻防效率（每百回合114.9/105.7）優於暴龍（112.0/111.2），近況也較佳（6-4對3-7）。預期比賽節奏中等、總分約217分，尼克以約7分之差客場取勝，暴龍的主場體能優勢僅能小幅抵銷。",
+     "odds": 1.58,
+     "result": "WON",
+     "pnl": 58.0
+    }
+   ],
+   "recs": [],
+   "hits": "7/7"
   },
   {
    "game_id": "2026-11-15_SAS@UTA",
@@ -1153,8 +1153,8 @@
      "reasoning": "San Antonio has decisive advantages in recent efficiency, season form and player availability, with equal rest removing a potential Utah edge. Fox's absence lowers the Spurs' ceiling, but Utah's depleted frontcourt and persistent defensive struggles make SAS the clear pick.",
      "reasoning_zh": "聖安東尼奧在近期攻防效率、賽季狀態與球員可用性方面都占有明顯優勢，而且雙方休息天數相同，猶他沒有體能上的利多。Fox 缺陣會壓低馬刺的上限，但爵士前場嚴重缺兵且防守持續低迷，因此明顯看好 SAS。",
      "odds": 1.09,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 9.0
     },
     {
      "name": "Claude",
@@ -1168,8 +1168,8 @@
      "reasoning": "San Antonio is a dominant 11-2 team with an elite defense. Utah is on an 11-game skid and is missing its frontcourt core, including Markkanen and Jackson Jr. Fox's absence trims the Spurs' edge slightly, but the gap in efficiency and depth points to a double-digit road win near the market line.",
      "reasoning_zh": "馬刺戰績11勝2敗，防守頂尖；爵士吞下11連敗，且缺少Markkanen、Jackson Jr.等前場核心。Fox缺陣雖然稍微削弱馬刺的優勢，但雙方在效率與陣容深度上差距懸殊，預期馬刺將在客場贏下雙位數分差，與盤口讓分相近。",
      "odds": 1.09,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 9.0
     },
     {
      "name": "Gemini",
@@ -1183,8 +1183,8 @@
      "reasoning": "The Spurs are the hottest team in the league, riding an 11-game winning streak with an elite net rating. The Jazz are completely depleted in the frontcourt without Markkanen and Jackson Jr., and are currently on an 11-game losing streak. San Antonio's overwhelming talent advantage, led by Victor Wembanyama, will easily cover the large spread against a struggling Utah squad.",
      "reasoning_zh": "馬刺是目前聯盟狀態最火熱的球隊，帶著11連勝與極佳的淨勝分差來到猶他。爵士正處於11連敗的低潮，且前場核心馬卡南（Lauri Markkanen）與傑克森（Jaren Jackson Jr.）皆因傷缺陣，戰力大打折扣。在文班亞馬（Victor Wembanyama）的帶領下，馬刺擁有壓倒性的天賦優勢，預計能輕鬆擊潰殘缺的爵士並過盤。",
      "odds": 1.09,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 9.0
     },
     {
      "name": "DeepSeek",
@@ -1198,8 +1198,8 @@
      "reasoning": "San Antonio is clearly superior on both ends and Utah is severely shorthanded, so the Spurs should control the game comfortably. Utah's home pace may keep the margin from getting too extreme.",
      "reasoning_zh": "聖安東尼奧攻防兩端明顯優於猶他，且爵士缺少多名主力，馬刺應能輕鬆掌控比賽。爵士主場節奏可能讓分差不至於過度擴大。",
      "odds": 1.09,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 9.0
     },
     {
      "name": "Kimi",
@@ -1213,8 +1213,8 @@
      "reasoning": "San Antonio enters on an 11-game winning streak with elite last-10 efficiency metrics, while Utah is mired in an 11-game skid with a severely depleted frontcourt due to injuries. The quantitative modules show a massive per-100-possession gap and far heavier injury impact on the Jazz, making a Spurs road win highly probable.",
      "reasoning_zh": "聖安東尼奧近期11連勝且近10場效率極佳，反觀爵士傷兵滿營、苦吞11連敗，數據模組顯示雙方每100回合差距高達28分，馬刺客勝機率極高。",
      "odds": 1.09,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 9.0
     },
     {
      "name": "Grok",
@@ -1228,8 +1228,8 @@
      "reasoning": "San Antonio is the far stronger side on form, efficiency and availability. Utah’s 11-game skid and four key absences leave a thin roster against a Spurs team that is 6-0 on the road, so San Antonio should win by a comfortable double-digit margin even without Fox.",
      "reasoning_zh": "馬刺在戰績、效率與陣容完整度上都明顯佔優。爵士連吞11敗且四名主力缺陣，面對客場6勝0敗、正處連勝的馬刺，即使馬刺缺少福克斯，仍應以雙位數分差取勝。",
      "odds": 1.09,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 9.0
     },
     {
      "name": "GLM",
@@ -1243,12 +1243,12 @@
      "reasoning": "San Antonio is 11-2 riding an 11-game win streak with a +13.3 differential, while Utah is 1-12 on an 11-game skid and missing roughly 81 minutes of rotation (Markkanen, Jackson Jr., Hayes, Nurkic) versus only 28 for the Spurs. Every quantitative module favors SAS, including a -28 per-100 matchup edge, so expect a comfortable double-digit road win around 120-101.",
      "reasoning_zh": "馬刺11勝2敗、正處11連勝且淨勝分+13.3；爵士1勝12敗、苦吞11連敗，且傷兵缺陣時間高達約81分鐘（Markkanen、Jackson Jr.、Hayes、Nurkic皆報銷），馬刺僅損失Fox約28分鐘。所有量化模組皆明顯偏向馬刺，每百回合對位差距達-28，預期馬刺客場以約120比101輕鬆大勝雙位數分差。",
      "odds": 1.09,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 9.0
     }
    ],
    "recs": [],
-   "hits": null
+   "hits": "7/7"
   },
   {
    "game_id": "2026-11-15_CHA@LAC",
