@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T07:00:08-07:00",
+ "generated_at": "2026-11-17T08:00:09-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -204,7 +204,15 @@
    "away_en": "Knicks",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-17T15:00:09Z",
+    "ml_home": 2.25,
+    "ml_away": 1.68,
+    "spread_line": 3.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -226,7 +234,15 @@
    "away_en": "Trail Blazers",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-17T15:00:09Z",
+    "ml_home": 1.77,
+    "ml_away": 2.1,
+    "spread_line": -2.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -248,7 +264,15 @@
    "away_en": "Pistons",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-17T15:00:09Z",
+    "ml_home": 1.25,
+    "ml_away": 4.1,
+    "spread_line": -9.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -270,7 +294,15 @@
    "away_en": "Jazz",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-17T15:00:09Z",
+    "ml_home": 1.42,
+    "ml_away": 2.98,
+    "spread_line": -6.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -292,7 +324,15 @@
    "away_en": "Hornets",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-17T15:00:09Z",
+    "ml_home": 1.33,
+    "ml_away": 3.5,
+    "spread_line": -7.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
