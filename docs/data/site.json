@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T07:00:09-07:00",
+ "generated_at": "2026-11-18T08:00:11-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -214,12 +214,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-18T03:35:03Z",
-    "ml_home": 1.49,
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 1.53,
     "ml_away": 2.64,
-    "spread_line": -5.0,
-    "spread_home_odds": 1.9,
-    "spread_away_odds": 1.95
+    "spread_line": -4.5,
+    "spread_home_odds": 1.88,
+    "spread_away_odds": 1.94
    },
    "consensus": null,
    "models": [],
@@ -244,12 +244,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-18T03:35:03Z",
-    "ml_home": 3.05,
-    "ml_away": 1.38,
-    "spread_line": 6.5,
-    "spread_home_odds": 1.95,
-    "spread_away_odds": 1.87
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 3.4,
+    "ml_away": 1.33,
+    "spread_line": 7.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -274,12 +274,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-18T03:35:03Z",
-    "ml_home": 1.12,
-    "ml_away": 6.25,
-    "spread_line": -12.5,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 1.15,
+    "ml_away": 5.75,
+    "spread_line": -11.5,
+    "spread_home_odds": 1.87,
+    "spread_away_odds": 1.93
    },
    "consensus": null,
    "models": [],
@@ -304,9 +304,9 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-18T03:35:03Z",
+    "fetched_at": "2026-11-18T15:00:11Z",
     "ml_home": 2.05,
-    "ml_away": 1.8,
+    "ml_away": 1.79,
     "spread_line": 1.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
@@ -334,8 +334,8 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-18T03:35:03Z",
-    "ml_home": 1.66,
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 1.69,
     "ml_away": 2.25,
     "spread_line": -2.5,
     "spread_home_odds": 1.91,
@@ -363,13 +363,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 6,
-    "fetched_at": "2026-11-18T03:35:03Z",
-    "ml_home": 1.36,
-    "ml_away": 3.26,
-    "spread_line": -7.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.94
+    "n_books": 9,
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 1.4,
+    "ml_away": 3.05,
+    "spread_line": -6.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -392,7 +392,15 @@
    "away_en": "Pistons",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 3.17,
+    "ml_away": 1.38,
+    "spread_line": 6.5,
+    "spread_home_odds": 1.94,
+    "spread_away_odds": 1.89
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -416,10 +424,10 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-18T03:35:03Z",
-    "ml_home": 1.35,
-    "ml_away": 3.2,
-    "spread_line": -7.0,
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 1.38,
+    "ml_away": 3.19,
+    "spread_line": -6.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
@@ -446,11 +454,11 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-18T03:35:03Z",
-    "ml_home": 1.43,
-    "ml_away": 2.85,
-    "spread_line": -5.5,
-    "spread_home_odds": 1.91,
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 1.52,
+    "ml_away": 2.64,
+    "spread_line": -4.5,
+    "spread_home_odds": 1.89,
     "spread_away_odds": 1.94
    },
    "consensus": null,
@@ -476,12 +484,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-18T03:35:03Z",
-    "ml_home": 2.15,
-    "ml_away": 1.71,
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 2.2,
+    "ml_away": 1.7,
     "spread_line": 2.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.94
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -504,7 +512,15 @@
    "away_en": "Jazz",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 1.23,
+    "ml_away": 4.41,
+    "spread_line": -10.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -528,9 +544,9 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-18T03:35:03Z",
-    "ml_home": 3.1,
-    "ml_away": 1.37,
+    "fetched_at": "2026-11-18T15:00:11Z",
+    "ml_home": 3.15,
+    "ml_away": 1.38,
     "spread_line": 6.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
