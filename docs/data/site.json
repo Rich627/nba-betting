@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T23:45:10-07:00",
+ "generated_at": "2026-11-18T07:00:09-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -16,51 +16,51 @@
   "n_predicted_games": 91,
   "n_recs": 21,
   "recs_won": 6,
-  "recs_graded": 20,
-  "recs_pnl": -860.0
+  "recs_graded": 21,
+  "recs_pnl": -960.0
  },
  "wallet": [
   {
    "model": "Claude",
-   "bets": 89,
-   "wins": 68,
-   "pnl": 673.0
+   "bets": 90,
+   "wins": 69,
+   "pnl": 707.0
   },
   {
    "model": "Gemini",
-   "bets": 90,
-   "wins": 68,
-   "pnl": 626.0
+   "bets": 91,
+   "wins": 69,
+   "pnl": 660.0
   },
   {
    "model": "DeepSeek",
-   "bets": 90,
-   "wins": 67,
-   "pnl": 490.0
+   "bets": 91,
+   "wins": 68,
+   "pnl": 524.0
   },
   {
    "model": "Grok",
-   "bets": 90,
-   "wins": 64,
-   "pnl": 85.0
+   "bets": 91,
+   "wins": 65,
+   "pnl": 119.0
   },
   {
    "model": "GLM",
-   "bets": 89,
-   "wins": 63,
-   "pnl": -56.0
+   "bets": 90,
+   "wins": 64,
+   "pnl": -22.0
   },
   {
    "model": "GPT",
-   "bets": 90,
-   "wins": 64,
-   "pnl": -127.0
+   "bets": 91,
+   "wins": 65,
+   "pnl": -93.0
   },
   {
    "model": "Kimi",
-   "bets": 89,
-   "wins": 61,
-   "pnl": -286.0
+   "bets": 90,
+   "wins": 62,
+   "pnl": -252.0
   }
  ],
  "wallet_history": {
@@ -95,7 +95,7 @@
     306.0,
     619.0,
     732.0,
-    673.0
+    707.0
    ],
    "DeepSeek": [
     61.0,
@@ -111,7 +111,7 @@
     223.0,
     536.0,
     549.0,
-    490.0
+    524.0
    ],
    "GLM": [
     46.0,
@@ -127,7 +127,7 @@
     -323.0,
     -10.0,
     3.0,
-    -56.0
+    -22.0
    ],
    "GPT": [
     61.0,
@@ -143,7 +143,7 @@
     -189.0,
     124.0,
     -68.0,
-    -127.0
+    -93.0
    ],
    "Gemini": [
     61.0,
@@ -159,7 +159,7 @@
     359.0,
     672.0,
     685.0,
-    626.0
+    660.0
    ],
    "Grok": [
     61.0,
@@ -175,7 +175,7 @@
     23.0,
     336.0,
     144.0,
-    85.0
+    119.0
    ],
    "Kimi": [
     61.0,
@@ -191,171 +191,11 @@
     -553.0,
     -240.0,
     -227.0,
-    -286.0
+    -252.0
    ]
   }
  },
  "upcoming": [
-  {
-   "game_id": "2026-11-17_CHA@LAL",
-   "game_date": "2026-11-17",
-   "status": "live",
-   "commence_time": "2026-11-18T04:00:00Z",
-   "tw": "11/17(二) 21:00",
-   "home": "LAL",
-   "away": "CHA",
-   "home_zh": "湖人",
-   "away_zh": "黃蜂",
-   "home_name": "Los Angeles Lakers",
-   "away_name": "Charlotte Hornets",
-   "home_en": "Lakers",
-   "away_en": "Hornets",
-   "home_score": 111,
-   "away_score": 114,
-   "odds": {
-    "n_books": 9,
-    "fetched_at": "2026-11-18T03:35:03Z",
-    "ml_home": 1.34,
-    "ml_away": 3.4,
-    "spread_line": -7.0,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
-   },
-   "consensus": {
-    "home_win_prob": 0.794,
-    "pred_margin": 12.3,
-    "pred_total": 223.1,
-    "agreement": 1.0,
-    "n_models": 7,
-    "fav": "LAL",
-    "fav_zh": "湖人",
-    "fav_en": "Lakers",
-    "fav_prob": 0.794
-   },
-   "models": [
-    {
-     "name": "GPT",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.79,
-     "pred_margin": 13.0,
-     "pred_total": 221.0,
-     "confidence": "high",
-     "reasoning": "Los Angeles has the substantially stronger offense, recent form and home performance, while Charlotte's low-scoring attack is a poor matchup against the Lakers' positive efficiency profile. The Lakers' absences reduce the expected margin, but their remaining talent advantage, led by Luka Doncic, still makes them the clear pick.",
-     "reasoning_zh": "洛杉磯在進攻火力、近期狀態與主場表現上都明顯占優，而夏洛特得分能力偏弱，對上湖人的正效率表現相當不利。里夫斯與凱斯勒缺陣會壓低預期勝分差，但以盧卡・唐西奇為核心的剩餘戰力仍讓湖人成為明確較看好的一方。",
-     "odds": 1.34,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Claude",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.76,
-     "pred_margin": 12.0,
-     "pred_total": 224.0,
-     "confidence": "med",
-     "reasoning": "The Lakers hold a massive efficiency edge and strong form, while Charlotte's offense has been among the weakest (100.7 ORTG last 10) and struggles on the road. Reaves and Kessler being out trims the margin somewhat, but Charlotte is also shorthanded, so LAL remains a solid favorite near the -7 line.",
-     "reasoning_zh": "湖人在攻守效率上擁有巨大優勢且近況火熱，黃蜂近10場進攻效率僅100.7，客場戰績也很差。雖然Reaves與Kessler缺陣會縮小分差，但黃蜂同樣有主力缺陣，湖人仍是穩健熱門，分差預估接近讓7分盤口。",
-     "odds": 1.34,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Gemini",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.75,
-     "pred_margin": 10.0,
-     "pred_total": 222.0,
-     "confidence": "high",
-     "reasoning": "Despite missing Austin Reaves and Walker Kessler, the Lakers boast an elite offense spearheaded by Luka Doncic, who is coming off a 43-point performance. The Hornets struggle significantly on the road and lack the offensive firepower to keep pace, especially with Dennis Schroder and Grayson Allen sidelined. Expect Los Angeles to control the tempo and extend their winning streak.",
-     "reasoning_zh": "儘管缺少里夫斯（Austin Reaves）和凱斯勒（Walker Kessler），湖人仍擁有由剛砍下43分的唐西奇（Luka Doncic）領軍的頂級進攻火力。黃蜂在客場表現掙扎，且在缺少施洛德（Dennis Schroder）和艾倫（Grayson Allen）的情況下，缺乏足夠的得分能力來與湖人抗衡。預計洛杉磯將掌控比賽節奏並延續連勝。",
-     "odds": 1.34,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "DeepSeek",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.88,
-     "pred_margin": 17.0,
-     "pred_total": 225.0,
-     "confidence": "high",
-     "reasoning": "The Lakers are at home on an 8-game win streak with a much stronger net rating and a dominant lineup/pace matchup, while Charlotte is 1-5 on the road and missing key guards. Even with Reaves and Kessler out, Luka Doncic and the Lakers' depth should control the game.",
-     "reasoning_zh": "湖人主場作戰且正處8連勝，淨效率值遠優於黃蜂，陣容與節奏對位也大幅占優；黃蜂客場僅1勝5敗且缺少主力後衛。即使湖人缺少Reaves與Kessler，Doncic與陣容深度仍足以掌控比賽。",
-     "odds": 1.34,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Kimi",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.79,
-     "pred_margin": 10.0,
-     "pred_total": 224.0,
-     "confidence": "high",
-     "reasoning": "The Lakers' elite offensive efficiency and eight-game winning streak stand in stark contrast to the Hornets' bottom-tier offense and 1-5 road record. With rest equal and injury impact roughly offsetting, the per-100-possession matchup model gives Los Angeles a massive net-rating edge, pointing to a comfortable home victory.",
-     "reasoning_zh": "湖人擁有頂尖進攻效率與八連勝氣勢，反觀黃蜂進攻低迷且客場僅1勝5敗；在休息天數相同且傷病影響大致抵消的情況下，百回合對位模型顯示洛杉磯擁有巨大的淨效率優勢，主場取勝機會極高。",
-     "odds": 1.34,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Grok",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.74,
-     "pred_margin": 9.0,
-     "pred_total": 225.0,
-     "confidence": "high",
-     "reasoning": "Los Angeles is the objective side: 12-2 with an eight-game win streak and a last-10 profile that projects about +20 per 100 against a 4-9 Hornets team that is 1-5 on the road and scores only 99 points per game. Rest is even and both clubs lose similar rotation minutes, but Charlotte's absences are lower-impact while Doncic is available, so the gap should still be a high-single to low-double-digit Lakers win rather than a toss-up.",
-     "reasoning_zh": "湖人是客觀上較合理的一方：12勝2敗且八連勝，近十場攻防對上黃蜂約每百回合淨勝近20分，黃蜂則是4勝9敗、客場1勝5敗，場均僅得99分。雙方休息天數相同、缺陣分鐘數接近，但黃蜂缺的球員影響力較低，東契奇仍可出賽，因此應是湖人高個位數到低雙位數取勝，而非五五波。",
-     "odds": 1.34,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "GLM",
-     "pick": "LAL",
-     "pick_zh": "湖人",
-     "pick_en": "Lakers",
-     "home_win_prob": 0.85,
-     "pred_margin": 15.0,
-     "pred_total": 221.0,
-     "confidence": "high",
-     "reasoning": "Despite losing Reaves and Kessler (~66 min), Charlotte is similarly depleted (~63 min) and fields one of the league's worst offenses on a 1-5 road record, while Doncic's MVP-level form and LAL's +7.9 net rating on an 8-game streak should produce a comfortable home win. The injury edge slightly favoring CHA is overwhelmed by the massive form, matchup, and player-ability gaps.",
-     "reasoning_zh": "儘管湖人缺少瑞維斯與凱斯勒（約66分鐘），黃蜂同樣傷兵滿營（約63分鐘），且客場戰績僅1勝5敗、場均得分不到100分；唐西奇近況火熱（上場43分）加上湖人+7.9的淨勝分與8連勝氣勢，預期湖人主場能輕鬆贏下兩位數分差。",
-     "odds": 1.34,
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "recs": [
-    {
-     "market": "spread",
-     "pick": "home -7",
-     "label": "讓分 湖人 -7",
-     "label_en": "Lakers -7",
-     "odds": 1.91,
-     "line": -7.0,
-     "edge": null,
-     "confidence": "med",
-     "why": "共識分差 +12.5 vs 盤口 -7（差 5.5 分）",
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "hits": null
-  },
   {
    "game_id": "2026-11-18_MEM@CLE",
    "game_date": "2026-11-18",
@@ -790,6 +630,166 @@
   }
  ],
  "results": [
+  {
+   "game_id": "2026-11-17_CHA@LAL",
+   "game_date": "2026-11-17",
+   "status": "final",
+   "commence_time": "2026-11-18T04:00:00Z",
+   "tw": "11/17(二) 21:00",
+   "home": "LAL",
+   "away": "CHA",
+   "home_zh": "湖人",
+   "away_zh": "黃蜂",
+   "home_name": "Los Angeles Lakers",
+   "away_name": "Charlotte Hornets",
+   "home_en": "Lakers",
+   "away_en": "Hornets",
+   "home_score": 118,
+   "away_score": 114,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-18T03:35:03Z",
+    "ml_home": 1.34,
+    "ml_away": 3.4,
+    "spread_line": -7.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
+   "consensus": {
+    "home_win_prob": 0.794,
+    "pred_margin": 12.3,
+    "pred_total": 223.1,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "LAL",
+    "fav_zh": "湖人",
+    "fav_en": "Lakers",
+    "fav_prob": 0.794
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.79,
+     "pred_margin": 13.0,
+     "pred_total": 221.0,
+     "confidence": "high",
+     "reasoning": "Los Angeles has the substantially stronger offense, recent form and home performance, while Charlotte's low-scoring attack is a poor matchup against the Lakers' positive efficiency profile. The Lakers' absences reduce the expected margin, but their remaining talent advantage, led by Luka Doncic, still makes them the clear pick.",
+     "reasoning_zh": "洛杉磯在進攻火力、近期狀態與主場表現上都明顯占優，而夏洛特得分能力偏弱，對上湖人的正效率表現相當不利。里夫斯與凱斯勒缺陣會壓低預期勝分差，但以盧卡・唐西奇為核心的剩餘戰力仍讓湖人成為明確較看好的一方。",
+     "odds": 1.34,
+     "result": "WON",
+     "pnl": 34.0
+    },
+    {
+     "name": "Claude",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.76,
+     "pred_margin": 12.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "The Lakers hold a massive efficiency edge and strong form, while Charlotte's offense has been among the weakest (100.7 ORTG last 10) and struggles on the road. Reaves and Kessler being out trims the margin somewhat, but Charlotte is also shorthanded, so LAL remains a solid favorite near the -7 line.",
+     "reasoning_zh": "湖人在攻守效率上擁有巨大優勢且近況火熱，黃蜂近10場進攻效率僅100.7，客場戰績也很差。雖然Reaves與Kessler缺陣會縮小分差，但黃蜂同樣有主力缺陣，湖人仍是穩健熱門，分差預估接近讓7分盤口。",
+     "odds": 1.34,
+     "result": "WON",
+     "pnl": 34.0
+    },
+    {
+     "name": "Gemini",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.75,
+     "pred_margin": 10.0,
+     "pred_total": 222.0,
+     "confidence": "high",
+     "reasoning": "Despite missing Austin Reaves and Walker Kessler, the Lakers boast an elite offense spearheaded by Luka Doncic, who is coming off a 43-point performance. The Hornets struggle significantly on the road and lack the offensive firepower to keep pace, especially with Dennis Schroder and Grayson Allen sidelined. Expect Los Angeles to control the tempo and extend their winning streak.",
+     "reasoning_zh": "儘管缺少里夫斯（Austin Reaves）和凱斯勒（Walker Kessler），湖人仍擁有由剛砍下43分的唐西奇（Luka Doncic）領軍的頂級進攻火力。黃蜂在客場表現掙扎，且在缺少施洛德（Dennis Schroder）和艾倫（Grayson Allen）的情況下，缺乏足夠的得分能力來與湖人抗衡。預計洛杉磯將掌控比賽節奏並延續連勝。",
+     "odds": 1.34,
+     "result": "WON",
+     "pnl": 34.0
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.88,
+     "pred_margin": 17.0,
+     "pred_total": 225.0,
+     "confidence": "high",
+     "reasoning": "The Lakers are at home on an 8-game win streak with a much stronger net rating and a dominant lineup/pace matchup, while Charlotte is 1-5 on the road and missing key guards. Even with Reaves and Kessler out, Luka Doncic and the Lakers' depth should control the game.",
+     "reasoning_zh": "湖人主場作戰且正處8連勝，淨效率值遠優於黃蜂，陣容與節奏對位也大幅占優；黃蜂客場僅1勝5敗且缺少主力後衛。即使湖人缺少Reaves與Kessler，Doncic與陣容深度仍足以掌控比賽。",
+     "odds": 1.34,
+     "result": "WON",
+     "pnl": 34.0
+    },
+    {
+     "name": "Kimi",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.79,
+     "pred_margin": 10.0,
+     "pred_total": 224.0,
+     "confidence": "high",
+     "reasoning": "The Lakers' elite offensive efficiency and eight-game winning streak stand in stark contrast to the Hornets' bottom-tier offense and 1-5 road record. With rest equal and injury impact roughly offsetting, the per-100-possession matchup model gives Los Angeles a massive net-rating edge, pointing to a comfortable home victory.",
+     "reasoning_zh": "湖人擁有頂尖進攻效率與八連勝氣勢，反觀黃蜂進攻低迷且客場僅1勝5敗；在休息天數相同且傷病影響大致抵消的情況下，百回合對位模型顯示洛杉磯擁有巨大的淨效率優勢，主場取勝機會極高。",
+     "odds": 1.34,
+     "result": "WON",
+     "pnl": 34.0
+    },
+    {
+     "name": "Grok",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.74,
+     "pred_margin": 9.0,
+     "pred_total": 225.0,
+     "confidence": "high",
+     "reasoning": "Los Angeles is the objective side: 12-2 with an eight-game win streak and a last-10 profile that projects about +20 per 100 against a 4-9 Hornets team that is 1-5 on the road and scores only 99 points per game. Rest is even and both clubs lose similar rotation minutes, but Charlotte's absences are lower-impact while Doncic is available, so the gap should still be a high-single to low-double-digit Lakers win rather than a toss-up.",
+     "reasoning_zh": "湖人是客觀上較合理的一方：12勝2敗且八連勝，近十場攻防對上黃蜂約每百回合淨勝近20分，黃蜂則是4勝9敗、客場1勝5敗，場均僅得99分。雙方休息天數相同、缺陣分鐘數接近，但黃蜂缺的球員影響力較低，東契奇仍可出賽，因此應是湖人高個位數到低雙位數取勝，而非五五波。",
+     "odds": 1.34,
+     "result": "WON",
+     "pnl": 34.0
+    },
+    {
+     "name": "GLM",
+     "pick": "LAL",
+     "pick_zh": "湖人",
+     "pick_en": "Lakers",
+     "home_win_prob": 0.85,
+     "pred_margin": 15.0,
+     "pred_total": 221.0,
+     "confidence": "high",
+     "reasoning": "Despite losing Reaves and Kessler (~66 min), Charlotte is similarly depleted (~63 min) and fields one of the league's worst offenses on a 1-5 road record, while Doncic's MVP-level form and LAL's +7.9 net rating on an 8-game streak should produce a comfortable home win. The injury edge slightly favoring CHA is overwhelmed by the massive form, matchup, and player-ability gaps.",
+     "reasoning_zh": "儘管湖人缺少瑞維斯與凱斯勒（約66分鐘），黃蜂同樣傷兵滿營（約63分鐘），且客場戰績僅1勝5敗、場均得分不到100分；唐西奇近況火熱（上場43分）加上湖人+7.9的淨勝分與8連勝氣勢，預期湖人主場能輕鬆贏下兩位數分差。",
+     "odds": 1.34,
+     "result": "WON",
+     "pnl": 34.0
+    }
+   ],
+   "recs": [
+    {
+     "market": "spread",
+     "pick": "home -7",
+     "label": "讓分 湖人 -7",
+     "label_en": "Lakers -7",
+     "odds": 1.91,
+     "line": -7.0,
+     "edge": null,
+     "confidence": "med",
+     "why": "共識分差 +12.5 vs 盤口 -7（差 5.5 分）",
+     "result": "LOST",
+     "pnl": -100.0
+    }
+   ],
+   "hits": "7/7"
+  },
   {
    "game_id": "2026-11-17_UTA@LAC",
    "game_date": "2026-11-17",
