@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T07:00:07-07:00",
+ "generated_at": "2026-11-19T08:00:09-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -220,7 +220,15 @@
    "away_en": "Warriors",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-19T15:00:08Z",
+    "ml_home": 1.41,
+    "ml_away": 3.0,
+    "spread_line": -6.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -242,7 +250,15 @@
    "away_en": "Trail Blazers",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-19T15:00:08Z",
+    "ml_home": 4.5,
+    "ml_away": 1.22,
+    "spread_line": 10.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.93
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -264,7 +280,15 @@
    "away_en": "Knicks",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-19T15:00:08Z",
+    "ml_home": 1.96,
+    "ml_away": 1.87,
+    "spread_line": 1.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -287,13 +311,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 6,
-    "fetched_at": "2026-11-19T02:35:03Z",
-    "ml_home": 1.07,
-    "ml_away": 8.5,
-    "spread_line": -16.5,
-    "spread_home_odds": 1.93,
-    "spread_away_odds": 1.88
+    "n_books": 9,
+    "fetched_at": "2026-11-19T15:00:08Z",
+    "ml_home": 1.09,
+    "ml_away": 7.7,
+    "spread_line": -15.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
