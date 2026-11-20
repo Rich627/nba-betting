@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T07:00:08-07:00",
+ "generated_at": "2026-11-20T08:00:08-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -229,13 +229,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 6,
-    "fetched_at": "2026-11-20T00:35:03Z",
-    "ml_home": 1.48,
-    "ml_away": 2.62,
-    "spread_line": -5.0,
-    "spread_home_odds": 1.87,
-    "spread_away_odds": 1.95
+    "n_books": 9,
+    "fetched_at": "2026-11-20T15:00:08Z",
+    "ml_home": 1.43,
+    "ml_away": 2.95,
+    "spread_line": -6.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -259,11 +259,11 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 5,
-    "fetched_at": "2026-11-20T00:35:03Z",
-    "ml_home": 2.68,
-    "ml_away": 1.5,
-    "spread_line": 5.0,
+    "n_books": 9,
+    "fetched_at": "2026-11-20T15:00:08Z",
+    "ml_home": 2.88,
+    "ml_away": 1.44,
+    "spread_line": 5.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
@@ -289,13 +289,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 6,
-    "fetched_at": "2026-11-20T00:35:03Z",
-    "ml_home": 1.41,
+    "n_books": 9,
+    "fetched_at": "2026-11-20T15:00:08Z",
+    "ml_home": 1.43,
     "ml_away": 2.9,
-    "spread_line": -7.0,
+    "spread_line": -6.0,
     "spread_home_odds": 1.95,
-    "spread_away_odds": 1.87
+    "spread_away_odds": 1.9
    },
    "consensus": null,
    "models": [],
@@ -319,13 +319,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 6,
-    "fetched_at": "2026-11-20T00:35:03Z",
-    "ml_home": 1.34,
-    "ml_away": 3.37,
-    "spread_line": -7.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.92
+    "n_books": 9,
+    "fetched_at": "2026-11-20T15:00:08Z",
+    "ml_home": 1.38,
+    "ml_away": 3.15,
+    "spread_line": -6.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -349,13 +349,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 4,
-    "fetched_at": "2026-11-20T00:35:03Z",
-    "ml_home": 1.68,
-    "ml_away": 2.17,
-    "spread_line": -3.0,
-    "spread_home_odds": 1.87,
-    "spread_away_odds": 1.95
+    "n_books": 9,
+    "fetched_at": "2026-11-20T15:00:08Z",
+    "ml_home": 1.7,
+    "ml_away": 2.2,
+    "spread_line": -2.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -378,7 +378,15 @@
    "away_en": "Pelicans",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-20T15:00:08Z",
+    "ml_home": 1.17,
+    "ml_away": 5.4,
+    "spread_line": -11.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -400,7 +408,15 @@
    "away_en": "Suns",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-20T15:00:08Z",
+    "ml_home": 2.55,
+    "ml_away": 1.56,
+    "spread_line": 4.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -422,7 +438,15 @@
    "away_en": "Rockets",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-20T15:00:08Z",
+    "ml_home": 1.83,
+    "ml_away": 2.02,
+    "spread_line": -1.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -444,7 +468,15 @@
    "away_en": "Kings",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-20T15:00:08Z",
+    "ml_home": 1.11,
+    "ml_away": 7.1,
+    "spread_line": -14.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
