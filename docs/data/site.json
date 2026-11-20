@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T17:37:14-07:00",
+ "generated_at": "2026-11-19T19:00:06-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -215,7 +215,7 @@
   {
    "game_id": "2026-11-19_GSW@MEM",
    "game_date": "2026-11-19",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-20T01:00:00Z",
    "tw": "11/19(四) 18:00",
    "home": "MEM",
@@ -226,8 +226,8 @@
    "away_name": "Golden State Warriors",
    "home_en": "Grizzlies",
    "away_en": "Warriors",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 52,
+   "away_score": 39,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-20T00:35:03Z",
@@ -375,7 +375,7 @@
   {
    "game_id": "2026-11-19_POR@MIL",
    "game_date": "2026-11-19",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-20T01:00:00Z",
    "tw": "11/19(四) 18:00",
    "home": "MIL",
@@ -386,8 +386,8 @@
    "away_name": "Portland Trail Blazers",
    "home_en": "Bucks",
    "away_en": "Trail Blazers",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 42,
+   "away_score": 42,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-20T00:35:03Z",
@@ -521,7 +521,7 @@
   {
    "game_id": "2026-11-19_NYK@MIN",
    "game_date": "2026-11-19",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-20T01:00:00Z",
    "tw": "11/19(四) 18:00",
    "home": "MIN",
@@ -532,8 +532,8 @@
    "away_name": "New York Knicks",
    "home_en": "Timberwolves",
    "away_en": "Knicks",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 45,
+   "away_score": 56,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-20T00:35:03Z",
@@ -667,7 +667,7 @@
   {
    "game_id": "2026-11-19_LAC@SAS",
    "game_date": "2026-11-19",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-20T01:00:00Z",
    "tw": "11/19(四) 18:00",
    "home": "SAS",
@@ -678,8 +678,8 @@
    "away_name": "Los Angeles Clippers",
    "home_en": "Spurs",
    "away_en": "Clippers",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 51,
+   "away_score": 49,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-20T00:35:03Z",
