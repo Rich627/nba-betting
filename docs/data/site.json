@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T11:00:07-07:00",
+ "generated_at": "2026-11-21T13:00:07-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -223,7 +223,7 @@
   {
    "game_id": "2026-11-21_MIL@PHI",
    "game_date": "2026-11-21",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-21T18:00:00Z",
    "tw": "11/21(六) 11:00",
    "home": "PHI",
@@ -234,8 +234,8 @@
    "away_name": "Milwaukee Bucks",
    "home_en": "76ers",
    "away_en": "Bucks",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 106,
+   "away_score": 103,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-21T17:35:03Z",
