@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T17:37:06-07:00",
+ "generated_at": "2026-11-20T19:00:06-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -234,8 +234,8 @@
    "away_name": "Charlotte Hornets",
    "home_en": "Hawks",
    "away_en": "Hornets",
-   "home_score": 19,
-   "away_score": 28,
+   "home_score": 99,
+   "away_score": 82,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-21T00:05:05Z",
@@ -383,7 +383,7 @@
   {
    "game_id": "2026-11-20_ORL@BKN",
    "game_date": "2026-11-20",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-21T00:30:00Z",
    "tw": "11/20(五) 17:30",
    "home": "BKN",
@@ -394,8 +394,8 @@
    "away_name": "Orlando Magic",
    "home_en": "Nets",
    "away_en": "Magic",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 61,
+   "away_score": 62,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-21T00:35:02Z",
@@ -529,7 +529,7 @@
   {
    "game_id": "2026-11-20_IND@CLE",
    "game_date": "2026-11-20",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-21T00:30:00Z",
    "tw": "11/20(五) 17:30",
    "home": "CLE",
@@ -540,8 +540,8 @@
    "away_name": "Indiana Pacers",
    "home_en": "Cavaliers",
    "away_en": "Pacers",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 70,
+   "away_score": 63,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-21T00:35:02Z",
@@ -675,7 +675,7 @@
   {
    "game_id": "2026-11-20_TOR@DET",
    "game_date": "2026-11-20",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-21T00:30:00Z",
    "tw": "11/20(五) 17:30",
    "home": "DET",
@@ -686,8 +686,8 @@
    "away_name": "Toronto Raptors",
    "home_en": "Pistons",
    "away_en": "Raptors",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 50,
+   "away_score": 61,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-21T00:35:02Z",
@@ -821,7 +821,7 @@
   {
    "game_id": "2026-11-20_WAS@CHI",
    "game_date": "2026-11-20",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-21T01:00:00Z",
    "tw": "11/20(五) 18:00",
    "home": "CHI",
@@ -832,8 +832,8 @@
    "away_name": "Washington Wizards",
    "home_en": "Bulls",
    "away_en": "Wizards",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 56,
+   "away_score": 46,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-21T00:35:02Z",
@@ -981,7 +981,7 @@
   {
    "game_id": "2026-11-20_NOP@OKC",
    "game_date": "2026-11-20",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-21T01:00:00Z",
    "tw": "11/20(五) 18:00",
    "home": "OKC",
@@ -992,8 +992,8 @@
    "away_name": "New Orleans Pelicans",
    "home_en": "Thunder",
    "away_en": "Pelicans",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 49,
+   "away_score": 59,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-21T00:35:02Z",
