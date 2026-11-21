@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T07:00:06-07:00",
+ "generated_at": "2026-11-21T08:00:08-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -237,13 +237,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 8,
-    "fetched_at": "2026-11-21T02:35:03Z",
-    "ml_home": 1.14,
-    "ml_away": 5.92,
-    "spread_line": -12.5,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
+    "n_books": 9,
+    "fetched_at": "2026-11-21T15:00:07Z",
+    "ml_home": 1.18,
+    "ml_away": 5.1,
+    "spread_line": -11.5,
+    "spread_home_odds": 1.95,
+    "spread_away_odds": 1.87
    },
    "consensus": null,
    "models": [],
@@ -267,13 +267,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 8,
-    "fetched_at": "2026-11-21T02:35:03Z",
-    "ml_home": 1.46,
-    "ml_away": 2.76,
-    "spread_line": -5.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.95
+    "n_books": 9,
+    "fetched_at": "2026-11-21T15:00:07Z",
+    "ml_home": 1.5,
+    "ml_away": 2.68,
+    "spread_line": -5.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -297,10 +297,10 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 8,
-    "fetched_at": "2026-11-21T02:35:03Z",
-    "ml_home": 1.49,
-    "ml_away": 2.68,
+    "n_books": 9,
+    "fetched_at": "2026-11-21T15:00:07Z",
+    "ml_home": 1.48,
+    "ml_away": 2.77,
     "spread_line": -5.5,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
@@ -327,12 +327,12 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 8,
-    "fetched_at": "2026-11-21T02:35:03Z",
-    "ml_home": 1.48,
-    "ml_away": 2.7,
-    "spread_line": -5.5,
-    "spread_home_odds": 1.91,
+    "n_books": 9,
+    "fetched_at": "2026-11-21T15:00:07Z",
+    "ml_home": 1.43,
+    "ml_away": 2.95,
+    "spread_line": -6.5,
+    "spread_home_odds": 1.93,
     "spread_away_odds": 1.91
    },
    "consensus": null,
@@ -357,13 +357,13 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 7,
-    "fetched_at": "2026-11-21T02:35:03Z",
+    "n_books": 9,
+    "fetched_at": "2026-11-21T15:00:07Z",
     "ml_home": 1.07,
     "ml_away": 9.5,
-    "spread_line": -16.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.95
+    "spread_line": -18.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
    },
    "consensus": null,
    "models": [],
@@ -386,7 +386,15 @@
    "away_en": "Celtics",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-21T15:00:07Z",
+    "ml_home": 6.34,
+    "ml_away": 1.13,
+    "spread_line": 13.5,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
