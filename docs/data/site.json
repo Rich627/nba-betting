@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T17:35:55-07:00",
+ "generated_at": "2026-11-22T19:00:07-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -15,52 +15,52 @@
  "summary": {
   "n_predicted_games": 129,
   "n_recs": 28,
-  "recs_won": 11,
-  "recs_graded": 27,
-  "recs_pnl": -546.0
+  "recs_won": 12,
+  "recs_graded": 28,
+  "recs_pnl": -458.0
  },
  "wallet": [
   {
    "model": "Gemini",
-   "bets": 123,
-   "wins": 90,
-   "pnl": 519.0
+   "bets": 124,
+   "wins": 91,
+   "pnl": 573.0
   },
   {
    "model": "DeepSeek",
-   "bets": 123,
-   "wins": 89,
-   "pnl": 473.0
+   "bets": 124,
+   "wins": 90,
+   "pnl": 527.0
   },
   {
    "model": "Claude",
-   "bets": 122,
-   "wins": 89,
-   "pnl": 378.0
+   "bets": 123,
+   "wins": 90,
+   "pnl": 432.0
   },
   {
    "model": "Grok",
-   "bets": 123,
-   "wins": 87,
-   "pnl": 228.0
+   "bets": 124,
+   "wins": 88,
+   "pnl": 282.0
   },
   {
    "model": "GPT",
-   "bets": 123,
-   "wins": 87,
-   "pnl": 16.0
+   "bets": 124,
+   "wins": 88,
+   "pnl": 70.0
   },
   {
    "model": "GLM",
-   "bets": 122,
-   "wins": 85,
-   "pnl": -73.0
+   "bets": 123,
+   "wins": 86,
+   "pnl": -19.0
   },
   {
    "model": "Kimi",
-   "bets": 122,
-   "wins": 83,
-   "pnl": -303.0
+   "bets": 123,
+   "wins": 84,
+   "pnl": -249.0
   }
  ],
  "wallet_history": {
@@ -105,7 +105,7 @@
     444.0,
     578.0,
     478.0,
-    378.0
+    432.0
    ],
    "DeepSeek": [
     61.0,
@@ -126,7 +126,7 @@
     539.0,
     673.0,
     573.0,
-    473.0
+    527.0
    ],
    "GLM": [
     46.0,
@@ -147,7 +147,7 @@
     -7.0,
     127.0,
     27.0,
-    -73.0
+    -19.0
    ],
    "GPT": [
     61.0,
@@ -168,7 +168,7 @@
     82.0,
     216.0,
     116.0,
-    16.0
+    70.0
    ],
    "Gemini": [
     61.0,
@@ -189,7 +189,7 @@
     585.0,
     719.0,
     619.0,
-    519.0
+    573.0
    ],
    "Grok": [
     61.0,
@@ -210,7 +210,7 @@
     294.0,
     428.0,
     328.0,
-    228.0
+    282.0
    ],
    "Kimi": [
     61.0,
@@ -231,171 +231,11 @@
     -237.0,
     -103.0,
     -203.0,
-    -303.0
+    -249.0
    ]
   }
  },
  "upcoming": [
-  {
-   "game_id": "2026-11-22_OKC@MIA",
-   "game_date": "2026-11-22",
-   "status": "live",
-   "commence_time": "2026-11-22T23:00:00Z",
-   "tw": "11/22(日) 16:00",
-   "home": "MIA",
-   "away": "OKC",
-   "home_zh": "熱火",
-   "away_zh": "雷霆",
-   "home_name": "Miami Heat",
-   "away_name": "Oklahoma City Thunder",
-   "home_en": "Heat",
-   "away_en": "Thunder",
-   "home_score": 80,
-   "away_score": 65,
-   "odds": {
-    "n_books": 9,
-    "fetched_at": "2026-11-22T22:35:02Z",
-    "ml_home": 1.54,
-    "ml_away": 2.61,
-    "spread_line": -4.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.95
-   },
-   "consensus": {
-    "home_win_prob": 0.721,
-    "pred_margin": 10.1,
-    "pred_total": 223.6,
-    "agreement": 1.0,
-    "n_models": 7,
-    "fav": "MIA",
-    "fav_zh": "熱火",
-    "fav_en": "Heat",
-    "fav_prob": 0.721
-   },
-   "models": [
-    {
-     "name": "GPT",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.69,
-     "pred_margin": 8.0,
-     "pred_total": 224.0,
-     "confidence": "med",
-     "reasoning": "OKC's exceptional injury burden removes most of its primary creation, scoring and rim protection, giving Miami the clearer available-lineup advantage despite Giannis being out. Miami's extra rest and home court further outweigh OKC's better season point differential and recent defensive efficiency.",
-     "reasoning_zh": "雷霆的傷兵負擔極重，主要持球創造、得分與護框核心大多缺陣；即使熱火少了 Giannis，現有陣容仍占明顯優勢。熱火又有較充足休息與主場優勢，足以壓過雷霆較佳的球季得失分差及近期防守效率。",
-     "odds": 1.54,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Claude",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.66,
-     "pred_margin": 8.0,
-     "pred_total": 224.0,
-     "confidence": "med",
-     "reasoning": "Oklahoma City is missing its top creator and most of its rotation, which outweighs Miami's loss of Giannis. Miami is also fresher and on a hot streak. OKC's elite defense and depth culture may keep it close, but Miami should win at home by mid-single digits.",
-     "reasoning_zh": "雷霆缺少頭號持球核心與大部分輪替球員，影響遠大於熱火少了字母哥。熱火休息較充足且正值連勝，主場優勢明顯。雷霆的頂級防守與板凳深度或許能讓比賽保持接近，但熱火應能以個位數中段差距在主場取勝。",
-     "odds": 1.54,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Gemini",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.78,
-     "pred_margin": 13.0,
-     "pred_total": 219.0,
-     "confidence": "high",
-     "reasoning": "Oklahoma City is dealing with a catastrophic injury list, missing their top three players (SGA, Jalen Williams, Chet Holmgren) and several key rotation pieces, totaling 182 lost minutes per game. Meanwhile, Miami is riding a six-game winning streak, enjoys a significant rest advantage (4 days vs 2 days), and despite missing Giannis Antetokounmpo, has more than enough firepower to comfortably handle a severely depleted Thunder squad at home.",
-     "reasoning_zh": "奧克拉荷馬雷霆面臨災難性的傷兵潮，包含 SGA、Jalen Williams 與 Chet Holmgren 等三大主力及多名輪替球員皆缺陣，每場流失高達 182 分鐘的上場時間。另一方面，邁阿密熱火正處於六連勝的高潮，且享有四天的充分休息（雷霆僅休兩天），儘管少了字母哥（Giannis Antetokounmpo），熱火在主場依然有絕對的戰力優勢來擊退陣容殘缺的雷霆。",
-     "odds": 1.54,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "DeepSeek",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.72,
-     "pred_margin": 7.0,
-     "pred_total": 227.0,
-     "confidence": "med",
-     "reasoning": "Miami's far cleaner injury situation and home rest outweigh OKC's per-100 lineup edge, especially with OKC missing its top creators and defenders. Expect Miami to control tempo and win by roughly 7 points.",
-     "reasoning_zh": "熱火在傷兵與休息方面明顯佔優，雷霆缺少 Shai、Jalen Williams 與 Chet 等主將，儘管雷霆近況的每百回合陣容數據稍有優勢，仍難抵銷客場劣勢。預期熱火掌控節奏，以約 7 分取勝。",
-     "odds": 1.54,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Kimi",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.8,
-     "pred_margin": 14.0,
-     "pred_total": 224.0,
-     "confidence": "high",
-     "reasoning": "Miami faces a catastrophically depleted Oklahoma City squad that has lost nearly its entire rotation, while the well-rested Heat enter on a six-game winning streak with far superior available talent, creating a decisive matchup advantage.",
-     "reasoning_zh": "邁阿密熱火面對一支幾乎整個輪替陣容都缺陣的殘陣雷霆，包含SGA、Jalen Williams與Chet Holmgren等主力，加上熱火已休息四天且正處於六連勝狀態，可用戰力與狀態皆佔壓倒性優勢。",
-     "odds": 1.54,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Grok",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.68,
-     "pred_margin": 9.0,
-     "pred_total": 223.0,
-     "confidence": "med",
-     "reasoning": "Miami should win at home because Oklahoma City is missing nearly its full rotation, including Shai Gilgeous-Alexander, Jalen Williams, and Chet Holmgren, while Miami is only without Giannis and is fresher on a six-game win streak. OKC's superior point differential and defensive profile do not travel with those players out, so the injury and rest edge outweighs the paper efficiency matchup. Expect a thinner Thunder offense and a moderate Heat win.",
-     "reasoning_zh": "熱火應能在主場取勝，因為雷霆缺席近乎整套輪值，包括SGA、Jalen Williams與Chet Holmgren，熱火則僅少Giannis，且休息更充分並豪取六連勝。雷霆本季淨勝分與防守表現雖較佳，但核心無法出賽，傷兵與休息優勢足以蓋過紙面效率對位。預計雷霆進攻產能下滑，熱火以中等分差取勝。",
-     "odds": 1.54,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "GLM",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.72,
-     "pred_margin": 12.0,
-     "pred_total": 224.0,
-     "confidence": "high",
-     "reasoning": "OKC enters without essentially its entire core — SGA, Jalen Williams, Holmgren, Caruso and more (~182 minutes of sidelined rotation) — while Miami misses only Giannis and rides a six-game win streak with four days of rest at home. OKC's superior season efficiency was produced by a healthy roster, so Miami's rested, high-scoring team should control this game comfortably.",
-     "reasoning_zh": "雷霆幾乎缺少全部主力——SGA、Jalen Williams、Holmgren、Caruso 等人合計約 182 分鐘的輪替缺陣，而熱火僅缺少 Giannis，且在主場挾六連勝、休息四天的優勢出賽。雷霆本季較佳的效率數據是完整陣容下的成果，因此休息充足、得分火力旺盛的熱火應能輕鬆掌控這場比賽。",
-     "odds": 1.54,
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "recs": [
-    {
-     "market": "spread",
-     "pick": "home -4.5",
-     "label": "讓分 熱火 -4.5",
-     "label_en": "Heat -4.5",
-     "odds": 1.88,
-     "line": -4.5,
-     "edge": null,
-     "confidence": "med",
-     "why": "共識分差 +9.4 vs 盤口 -4.5（差 4.9 分）",
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "hits": null
-  },
   {
    "game_id": "2026-11-22_ORL@WAS",
    "game_date": "2026-11-22",
@@ -410,8 +250,8 @@
    "away_name": "Orlando Magic",
    "home_en": "Wizards",
    "away_en": "Magic",
-   "home_score": 38,
-   "away_score": 19,
+   "home_score": 103,
+   "away_score": 85,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-23T00:00:12Z",
@@ -556,8 +396,8 @@
    "away_name": "Denver Nuggets",
    "home_en": "Bulls",
    "away_en": "Nuggets",
-   "home_score": 31,
-   "away_score": 33,
+   "home_score": 108,
+   "away_score": 110,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-23T00:00:12Z",
@@ -702,8 +542,8 @@
    "away_name": "Dallas Mavericks",
    "home_en": "Jazz",
    "away_en": "Mavericks",
-   "home_score": 33,
-   "away_score": 33,
+   "home_score": 86,
+   "away_score": 104,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-23T00:00:12Z",
@@ -837,7 +677,7 @@
   {
    "game_id": "2026-11-22_IND@NYK",
    "game_date": "2026-11-22",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-23T01:00:00Z",
    "tw": "11/22(日) 18:00",
    "home": "NYK",
@@ -848,8 +688,8 @@
    "away_name": "Indiana Pacers",
    "home_en": "Knicks",
    "away_en": "Pacers",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 48,
+   "away_score": 45,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-23T00:35:03Z",
@@ -983,7 +823,7 @@
   {
    "game_id": "2026-11-22_BOS@GSW",
    "game_date": "2026-11-22",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-23T01:30:00Z",
    "tw": "11/22(日) 18:30",
    "home": "GSW",
@@ -994,8 +834,8 @@
    "away_name": "Boston Celtics",
    "home_en": "Warriors",
    "away_en": "Celtics",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 20,
+   "away_score": 15,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-23T00:35:03Z",
@@ -1364,6 +1204,166 @@
   }
  ],
  "results": [
+  {
+   "game_id": "2026-11-22_OKC@MIA",
+   "game_date": "2026-11-22",
+   "status": "final",
+   "commence_time": "2026-11-22T23:00:00Z",
+   "tw": "11/22(日) 16:00",
+   "home": "MIA",
+   "away": "OKC",
+   "home_zh": "熱火",
+   "away_zh": "雷霆",
+   "home_name": "Miami Heat",
+   "away_name": "Oklahoma City Thunder",
+   "home_en": "Heat",
+   "away_en": "Thunder",
+   "home_score": 123,
+   "away_score": 113,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-22T22:35:02Z",
+    "ml_home": 1.54,
+    "ml_away": 2.61,
+    "spread_line": -4.5,
+    "spread_home_odds": 1.88,
+    "spread_away_odds": 1.95
+   },
+   "consensus": {
+    "home_win_prob": 0.721,
+    "pred_margin": 10.1,
+    "pred_total": 223.6,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "MIA",
+    "fav_zh": "熱火",
+    "fav_en": "Heat",
+    "fav_prob": 0.721
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.69,
+     "pred_margin": 8.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "OKC's exceptional injury burden removes most of its primary creation, scoring and rim protection, giving Miami the clearer available-lineup advantage despite Giannis being out. Miami's extra rest and home court further outweigh OKC's better season point differential and recent defensive efficiency.",
+     "reasoning_zh": "雷霆的傷兵負擔極重，主要持球創造、得分與護框核心大多缺陣；即使熱火少了 Giannis，現有陣容仍占明顯優勢。熱火又有較充足休息與主場優勢，足以壓過雷霆較佳的球季得失分差及近期防守效率。",
+     "odds": 1.54,
+     "result": "WON",
+     "pnl": 54.0
+    },
+    {
+     "name": "Claude",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.66,
+     "pred_margin": 8.0,
+     "pred_total": 224.0,
+     "confidence": "med",
+     "reasoning": "Oklahoma City is missing its top creator and most of its rotation, which outweighs Miami's loss of Giannis. Miami is also fresher and on a hot streak. OKC's elite defense and depth culture may keep it close, but Miami should win at home by mid-single digits.",
+     "reasoning_zh": "雷霆缺少頭號持球核心與大部分輪替球員，影響遠大於熱火少了字母哥。熱火休息較充足且正值連勝，主場優勢明顯。雷霆的頂級防守與板凳深度或許能讓比賽保持接近，但熱火應能以個位數中段差距在主場取勝。",
+     "odds": 1.54,
+     "result": "WON",
+     "pnl": 54.0
+    },
+    {
+     "name": "Gemini",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.78,
+     "pred_margin": 13.0,
+     "pred_total": 219.0,
+     "confidence": "high",
+     "reasoning": "Oklahoma City is dealing with a catastrophic injury list, missing their top three players (SGA, Jalen Williams, Chet Holmgren) and several key rotation pieces, totaling 182 lost minutes per game. Meanwhile, Miami is riding a six-game winning streak, enjoys a significant rest advantage (4 days vs 2 days), and despite missing Giannis Antetokounmpo, has more than enough firepower to comfortably handle a severely depleted Thunder squad at home.",
+     "reasoning_zh": "奧克拉荷馬雷霆面臨災難性的傷兵潮，包含 SGA、Jalen Williams 與 Chet Holmgren 等三大主力及多名輪替球員皆缺陣，每場流失高達 182 分鐘的上場時間。另一方面，邁阿密熱火正處於六連勝的高潮，且享有四天的充分休息（雷霆僅休兩天），儘管少了字母哥（Giannis Antetokounmpo），熱火在主場依然有絕對的戰力優勢來擊退陣容殘缺的雷霆。",
+     "odds": 1.54,
+     "result": "WON",
+     "pnl": 54.0
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.72,
+     "pred_margin": 7.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "Miami's far cleaner injury situation and home rest outweigh OKC's per-100 lineup edge, especially with OKC missing its top creators and defenders. Expect Miami to control tempo and win by roughly 7 points.",
+     "reasoning_zh": "熱火在傷兵與休息方面明顯佔優，雷霆缺少 Shai、Jalen Williams 與 Chet 等主將，儘管雷霆近況的每百回合陣容數據稍有優勢，仍難抵銷客場劣勢。預期熱火掌控節奏，以約 7 分取勝。",
+     "odds": 1.54,
+     "result": "WON",
+     "pnl": 54.0
+    },
+    {
+     "name": "Kimi",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.8,
+     "pred_margin": 14.0,
+     "pred_total": 224.0,
+     "confidence": "high",
+     "reasoning": "Miami faces a catastrophically depleted Oklahoma City squad that has lost nearly its entire rotation, while the well-rested Heat enter on a six-game winning streak with far superior available talent, creating a decisive matchup advantage.",
+     "reasoning_zh": "邁阿密熱火面對一支幾乎整個輪替陣容都缺陣的殘陣雷霆，包含SGA、Jalen Williams與Chet Holmgren等主力，加上熱火已休息四天且正處於六連勝狀態，可用戰力與狀態皆佔壓倒性優勢。",
+     "odds": 1.54,
+     "result": "WON",
+     "pnl": 54.0
+    },
+    {
+     "name": "Grok",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.68,
+     "pred_margin": 9.0,
+     "pred_total": 223.0,
+     "confidence": "med",
+     "reasoning": "Miami should win at home because Oklahoma City is missing nearly its full rotation, including Shai Gilgeous-Alexander, Jalen Williams, and Chet Holmgren, while Miami is only without Giannis and is fresher on a six-game win streak. OKC's superior point differential and defensive profile do not travel with those players out, so the injury and rest edge outweighs the paper efficiency matchup. Expect a thinner Thunder offense and a moderate Heat win.",
+     "reasoning_zh": "熱火應能在主場取勝，因為雷霆缺席近乎整套輪值，包括SGA、Jalen Williams與Chet Holmgren，熱火則僅少Giannis，且休息更充分並豪取六連勝。雷霆本季淨勝分與防守表現雖較佳，但核心無法出賽，傷兵與休息優勢足以蓋過紙面效率對位。預計雷霆進攻產能下滑，熱火以中等分差取勝。",
+     "odds": 1.54,
+     "result": "WON",
+     "pnl": 54.0
+    },
+    {
+     "name": "GLM",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.72,
+     "pred_margin": 12.0,
+     "pred_total": 224.0,
+     "confidence": "high",
+     "reasoning": "OKC enters without essentially its entire core — SGA, Jalen Williams, Holmgren, Caruso and more (~182 minutes of sidelined rotation) — while Miami misses only Giannis and rides a six-game win streak with four days of rest at home. OKC's superior season efficiency was produced by a healthy roster, so Miami's rested, high-scoring team should control this game comfortably.",
+     "reasoning_zh": "雷霆幾乎缺少全部主力——SGA、Jalen Williams、Holmgren、Caruso 等人合計約 182 分鐘的輪替缺陣，而熱火僅缺少 Giannis，且在主場挾六連勝、休息四天的優勢出賽。雷霆本季較佳的效率數據是完整陣容下的成果，因此休息充足、得分火力旺盛的熱火應能輕鬆掌控這場比賽。",
+     "odds": 1.54,
+     "result": "WON",
+     "pnl": 54.0
+    }
+   ],
+   "recs": [
+    {
+     "market": "spread",
+     "pick": "home -4.5",
+     "label": "讓分 熱火 -4.5",
+     "label_en": "Heat -4.5",
+     "odds": 1.88,
+     "line": -4.5,
+     "edge": null,
+     "confidence": "med",
+     "why": "共識分差 +9.4 vs 盤口 -4.5（差 4.9 分）",
+     "result": "WON",
+     "pnl": 88.0
+    }
+   ],
+   "hits": "7/7"
+  },
   {
    "game_id": "2026-11-22_DET@ATL",
    "game_date": "2026-11-22",
