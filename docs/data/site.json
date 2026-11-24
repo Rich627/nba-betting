@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T17:05:53-07:00",
+ "generated_at": "2026-11-23T17:35:36-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -247,7 +247,7 @@
   {
    "game_id": "2026-11-23_MEM@CHA",
    "game_date": "2026-11-23",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-24T00:00:00Z",
    "tw": "11/23(一) 17:00",
    "home": "CHA",
@@ -258,8 +258,8 @@
    "away_name": "Memphis Grizzlies",
    "home_en": "Hornets",
    "away_en": "Grizzlies",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 32,
+   "away_score": 28,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-24T00:05:02Z",
@@ -392,7 +392,7 @@
   {
    "game_id": "2026-11-23_POR@PHI",
    "game_date": "2026-11-23",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-24T00:00:00Z",
    "tw": "11/23(一) 17:00",
    "home": "PHI",
@@ -403,8 +403,8 @@
    "away_name": "Portland Trail Blazers",
    "home_en": "76ers",
    "away_en": "Trail Blazers",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 28,
+   "away_score": 27,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-24T00:05:02Z",
@@ -553,11 +553,11 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-24T00:05:02Z",
-    "ml_home": 2.59,
-    "ml_away": 1.53,
+    "fetched_at": "2026-11-24T00:35:03Z",
+    "ml_home": 2.55,
+    "ml_away": 1.54,
     "spread_line": 4.5,
-    "spread_home_odds": 1.91,
+    "spread_home_odds": 1.87,
     "spread_away_odds": 1.91
    },
    "consensus": {
@@ -699,10 +699,10 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-24T00:05:02Z",
-    "ml_home": 1.22,
-    "ml_away": 4.48,
-    "spread_line": -10.5,
+    "fetched_at": "2026-11-24T00:35:03Z",
+    "ml_home": 1.24,
+    "ml_away": 4.3,
+    "spread_line": -10.0,
     "spread_home_odds": 1.91,
     "spread_away_odds": 1.91
    },
@@ -845,12 +845,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-24T00:05:02Z",
-    "ml_home": 1.19,
-    "ml_away": 5.05,
+    "fetched_at": "2026-11-24T00:35:03Z",
+    "ml_home": 1.2,
+    "ml_away": 4.95,
     "spread_line": -10.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.95
+    "spread_home_odds": 1.93,
+    "spread_away_odds": 1.88
    },
    "consensus": {
     "home_win_prob": 0.78,
@@ -991,23 +991,23 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-24T00:05:02Z",
-    "ml_home": 3.8,
+    "fetched_at": "2026-11-24T00:35:03Z",
+    "ml_home": 3.75,
     "ml_away": 1.29,
     "spread_line": 8.5,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
+    "spread_home_odds": 1.95,
+    "spread_away_odds": 1.9
    },
    "consensus": {
-    "home_win_prob": 0.234,
-    "pred_margin": -9.9,
-    "pred_total": 234.1,
+    "home_win_prob": 0.239,
+    "pred_margin": -9.6,
+    "pred_total": 235.0,
     "agreement": 1.0,
     "n_models": 7,
     "fav": "CLE",
     "fav_zh": "騎士",
     "fav_en": "Cavaliers",
-    "fav_prob": 0.766
+    "fav_prob": 0.761
    },
    "models": [
     {
@@ -1016,11 +1016,11 @@
      "pick_zh": "騎士",
      "pick_en": "Cavaliers",
      "home_win_prob": 0.22,
-     "pred_margin": -8.0,
-     "pred_total": 238.0,
-     "confidence": "med",
-     "reasoning": "Cleveland's superior efficiency profile, substantial rest advantage, and Chicago's heavier injury burden make the Cavaliers the more likely winner. Chicago's poor home record and vulnerable defense support a Cleveland win, though Mobley's absence and Chicago's pace add uncertainty.",
-     "reasoning_zh": "克里夫蘭在攻守效率、休息天數與傷兵影響方面都較有優勢，因此騎士較可能獲勝。芝加哥主場戰績不佳且防守薄弱，但莫布里缺陣以及公牛偏快的比賽節奏仍增添一些不確定性。",
+     "pred_margin": -9.0,
+     "pred_total": 239.0,
+     "confidence": "high",
+     "reasoning": "Cleveland holds clear advantages in form, efficiency, rest and available depth. Mobley's absence weakens the Cavaliers inside, but Chicago's poor defense, 1-6 home record and heavier injury burden make CLE the more likely winner.",
+     "reasoning_zh": "克里夫蘭在近況、攻防效率、休息天數與可用陣容深度方面皆占明顯優勢。莫布里的缺陣會削弱騎士禁區，但芝加哥防守不佳、主場僅1勝6敗，加上傷兵損失更大，因此騎士較可能獲勝。",
      "odds": 1.29,
      "result": null,
      "pnl": null
@@ -1030,12 +1030,12 @@
      "pick": "CLE",
      "pick_zh": "騎士",
      "pick_en": "Cavaliers",
-     "home_win_prob": 0.26,
-     "pred_margin": -9.0,
-     "pred_total": 233.0,
+     "home_win_prob": 0.28,
+     "pred_margin": -8.0,
+     "pred_total": 232.0,
      "confidence": "med",
-     "reasoning": "Chicago is on a back-to-back after an exhausting overtime game, is missing two rotation starters and has a much worse net rating, while Cleveland is rested with Mitchell and Harden available. Mobley's absence and Cleveland's weak road form keep this from being a lock, but the Cavaliers should cover most scenarios.",
-     "reasoning_zh": "公牛背靠背出賽，前一晚剛打完延長賽，且缺少兩名主力輪替球員，淨效率也明顯較差；騎士休息充足，米契爾與哈登都能上場。莫布利缺陣加上騎士客場戰績不佳，讓這場並非穩贏，但騎士仍應在多數情境下勝出。",
+     "reasoning": "Chicago is on a fatigued back-to-back after an overtime game, is missing two starters, and holds a -8 point differential, which gives Cleveland a clear edge. Mobley's absence and Cleveland's poor road record keep this from being a lock, but the Cavs should win by about 7-9 points.",
+     "reasoning_zh": "公牛前一晚打完延長賽後背靠背出戰，且缺兩名主力，場均分差為-8，騎士優勢明顯。不過騎士少了Mobley，客場戰績也不佳（2勝5敗），所以並非穩贏，但預期騎士約贏7至9分。",
      "odds": 1.29,
      "result": null,
      "pnl": null
@@ -1047,10 +1047,10 @@
      "pick_en": "Cavaliers",
      "home_win_prob": 0.22,
      "pred_margin": -12.0,
-     "pred_total": 238.0,
+     "pred_total": 236.0,
      "confidence": "high",
-     "reasoning": "The Bulls are in a terrible spot, playing on a back-to-back after an exhausting overtime loss and missing key players like Caleb Wilson and Norman Powell. The Cavaliers have a significant rest advantage (3 days) and feature a potent backcourt with James Harden coming off a 51-point performance. Cleveland's offense should easily dismantle Chicago's porous defense, which allows over 124 points per game.",
-     "reasoning_zh": "公牛隊目前處境艱難，在經歷一場消耗極大的延長賽失利後背靠背出戰，且缺少 Caleb Wilson 和 Norman Powell 等主力球員。騎士隊則擁有三天的充分休息優勢，加上 James Harden 剛砍下 51 分，後場火力旺盛。克里夫蘭的進攻應能輕鬆撕裂芝加哥場均失分超過 124 分的脆弱防線。",
+     "reasoning": "Cleveland holds a massive rest advantage with three days off, while Chicago is on a back-to-back following a grueling overtime loss to Denver. The Bulls are also missing key players in Caleb Wilson and Norman Powell, further depleting a defense that already allows over 124 points per game. With James Harden in top form, the rested Cavaliers should comfortably outscore the fatigued Bulls.",
+     "reasoning_zh": "騎士擁有三天的充分休息優勢，而公牛剛經歷對陣金塊的延長賽苦戰，且處於背靠背出賽的疲勞狀態。公牛還缺少了 Caleb Wilson 和 Norman Powell 兩名主力，這讓他們原本場均失分超過124分的防守雪上加霜。在 James Harden 狀態火熱的帶領下，以逸待勞的騎士應能輕鬆擊敗疲憊的公牛。",
      "odds": 1.29,
      "result": null,
      "pnl": null
@@ -1060,12 +1060,12 @@
      "pick": "CLE",
      "pick_zh": "騎士",
      "pick_en": "Cavaliers",
-     "home_win_prob": 0.22,
-     "pred_margin": -9.0,
-     "pred_total": 233.0,
+     "home_win_prob": 0.25,
+     "pred_margin": -10.0,
+     "pred_total": 236.0,
      "confidence": "med",
-     "reasoning": "Cleveland is fresher, healthier, and has a clear recent form and matchup edge. Chicago's back-to-back and missing rotation pieces make an upset unlikely, though home court and pace keep the margin moderate.",
-     "reasoning_zh": "騎士休息更充足、陣容更完整，近期狀態與對位也佔優。公牛背靠背且缺少輪替主力，爆冷機會不高，但主場與節奏讓分差不會過大。",
+     "reasoning": "Cleveland has a clear rest and injury edge, and their offense should exploit Chicago's poor defense and fatigue. Chicago's home struggles and missing key scorers make an upset unlikely, though Cleveland's road form adds some risk.",
+     "reasoning_zh": "克里夫蘭騎士在休息天數與傷兵狀況上明顯佔優，且進攻端能針對芝加哥公牛疲憊且薄弱的防守。公牛主場戰績差又缺少關鍵得分手，爆冷機會不高，但騎士客場不穩仍有些風險。",
      "odds": 1.29,
      "result": null,
      "pnl": null
@@ -1075,12 +1075,12 @@
      "pick": "CLE",
      "pick_zh": "騎士",
      "pick_en": "Cavaliers",
-     "home_win_prob": 0.2,
+     "home_win_prob": 0.18,
      "pred_margin": -10.0,
-     "pred_total": 234.0,
+     "pred_total": 232.0,
      "confidence": "high",
-     "reasoning": "Cleveland is significantly fresher and healthier, while Chicago faces a back-to-back after an overtime defeat without two key rotation players, making the Cavaliers' superior offense and net rating decisive on the road.",
-     "reasoning_zh": "騎士在體能與健康狀況上明顯佔優，而公牛在延長賽落敗後背靠背出賽，且缺少兩名關鍵輪替球員，這讓騎士更強大的進攻火力與淨評分成為客場取勝的關鍵。",
+     "reasoning": "Chicago enters with zero rest following an overtime defeat and is missing key rotation pieces, while well-rested Cleveland holds a superior net rating and defensive profile. The Bulls' tired, depleted roster should struggle to contain the Cavaliers, resulting in a comfortable road win.",
+     "reasoning_zh": "公牛在延長賽落敗後完全無休，且缺少關鍵輪替球員；反觀騎士擁有三天完整休息，且淨效率值與防守表現皆明顯更佳。疲憊且人手短缺的公牛難以抵擋騎士進攻，預料騎士將在客場輕鬆獲勝。",
      "odds": 1.29,
      "result": null,
      "pnl": null
@@ -1092,10 +1092,10 @@
      "pick_en": "Cavaliers",
      "home_win_prob": 0.3,
      "pred_margin": -9.0,
-     "pred_total": 233.0,
+     "pred_total": 237.0,
      "confidence": "med",
-     "reasoning": "Chicago is fatigued on a back-to-back after overtime, is 1-6 at home, and is without Powell and Wilson, while Cleveland is rested and holds the better point differential and efficiency profile even without Mobley. Cleveland’s 2-5 road record keeps this from a high-confidence call, but the rest, injury, and rating gaps still point to a Cavaliers win by about nine points.",
-     "reasoning_zh": "芝加哥公牛背靠背出賽且前一戰打到延長賽，主場僅1勝6敗，又缺陣Powell與Wilson；克里夫蘭騎士休息較充足，即使缺少Mobley，淨勝分與攻防效率仍明顯占優。騎士客場2勝5敗使信心無法拉到高檔，但體能、傷兵與效率差距仍支持騎士以約九分優勢取勝。",
+     "reasoning": "Chicago is short-handed and on a back-to-back after overtime, while Cleveland is rested and has the better record and point differential even without Mobley. Cleveland’s 2-5 road mark and Mobley’s absence prevent a blowout lock, but the matchup still points to a Cavaliers win by about nine points.",
+     "reasoning_zh": "公牛缺少主力且背靠背剛打完延長賽，騎士休息較充足、戰績與淨效率也較佳，即使沒有莫布里仍佔上風。騎士客場僅2勝5敗、加上莫布里缺陣，使這場不至於一面倒，但數據仍支持騎士以約九分之差取勝。",
      "odds": 1.29,
      "result": null,
      "pnl": null
@@ -1106,11 +1106,11 @@
      "pick_zh": "騎士",
      "pick_en": "Cavaliers",
      "home_win_prob": 0.22,
-     "pred_margin": -12.0,
-     "pred_total": 230.0,
+     "pred_margin": -9.0,
+     "pred_total": 233.0,
      "confidence": "high",
-     "reasoning": "Cleveland enters rested (3 days) and in form (W1, Harden's 51-point outburst), while Chicago is on a back-to-back after an overtime loss, missing roughly 61+ rotation minutes (Wilson, Powell, possibly Claxton) and sitting at 1-6 at home with a -8.0 differential. All three quantitative modules favor the Cavaliers, so I project a comfortable road win around 121-109.",
-     "reasoning_zh": "騎士休息三天且狀態正佳（近期哈登單場51分帶隊取勝），公牛則是背靠背出賽（前一場加時不敵金塊），又少了 Wilson、Powell 等主力輪替（合計逾60分鐘），主場戰績僅1勝6敗、淨勝分-8.0。三項量化模組均偏向騎士，預估客隊以約121比109輕鬆取勝。",
+     "reasoning": "Cleveland is well-rested (3 days) and faces a Bulls team on the second night of a back-to-back after an overtime loss, missing two 30-minute-per-game contributors in Wilson and Powell. Although Cleveland loses Mobley's defense and is 2-5 on the road, Chicago's 1-6 home record, -8.0 differential, and fatigue point to a comfortable Cavaliers win behind Mitchell and Harden.",
+     "reasoning_zh": "騎士休息三天出賽,而公牛剛歷經延長賽失利又得背靠背出戰,且缺少Wilson與Powell兩名場均約30分鐘的主力。雖然騎士失去Mobley的防守且客場戰績僅2勝5敗,但公牛主場1勝6敗、淨勝分-8.0,加上體能劣勢,騎士在Mitchell與Harden帶領下應能順利取勝。",
      "odds": 1.29,
      "result": null,
      "pnl": null
@@ -1137,12 +1137,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-24T00:05:02Z",
+    "fetched_at": "2026-11-24T00:35:03Z",
     "ml_home": 2.3,
     "ml_away": 1.67,
-    "spread_line": 3.5,
-    "spread_home_odds": 1.87,
-    "spread_away_odds": 1.95
+    "spread_line": 3.0,
+    "spread_home_odds": 1.93,
+    "spread_away_odds": 1.91
    },
    "consensus": {
     "home_win_prob": 0.33,
@@ -1297,12 +1297,12 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-24T00:05:02Z",
+    "fetched_at": "2026-11-24T00:35:03Z",
     "ml_home": 1.15,
     "ml_away": 5.91,
-    "spread_line": -12.5,
-    "spread_home_odds": 1.89,
-    "spread_away_odds": 1.93
+    "spread_line": -13.0,
+    "spread_home_odds": 1.87,
+    "spread_away_odds": 1.95
    },
    "consensus": {
     "home_win_prob": 0.84,
@@ -1443,9 +1443,9 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-24T00:05:02Z",
+    "fetched_at": "2026-11-24T00:35:03Z",
     "ml_home": 1.12,
-    "ml_away": 6.47,
+    "ml_away": 6.5,
     "spread_line": -13.5,
     "spread_home_odds": 1.87,
     "spread_away_odds": 1.94
@@ -1589,7 +1589,7 @@
    "away_score": null,
    "odds": {
     "n_books": 9,
-    "fetched_at": "2026-11-24T00:05:02Z",
+    "fetched_at": "2026-11-24T00:35:03Z",
     "ml_home": 5.67,
     "ml_away": 1.16,
     "spread_line": 12.5,
@@ -1733,7 +1733,15 @@
    "away_en": "Pistons",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 5,
+    "fetched_at": "2026-11-24T00:35:03Z",
+    "ml_home": 2.06,
+    "ml_away": 1.79,
+    "spread_line": 1.5,
+    "spread_home_odds": 1.88,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
@@ -1756,8 +1764,8 @@
    "home_score": null,
    "away_score": null,
    "odds": {
-    "n_books": 3,
-    "fetched_at": "2026-11-24T00:05:02Z",
+    "n_books": 4,
+    "fetched_at": "2026-11-24T00:35:03Z",
     "ml_home": 4.5,
     "ml_away": 1.22,
     "spread_line": 10.0,
@@ -1785,7 +1793,15 @@
    "away_en": "Mavericks",
    "home_score": null,
    "away_score": null,
-   "odds": null,
+   "odds": {
+    "n_books": 3,
+    "fetched_at": "2026-11-24T00:35:03Z",
+    "ml_home": 1.3,
+    "ml_away": 3.65,
+    "spread_line": -8.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
    "consensus": null,
    "models": [],
    "recs": [],
