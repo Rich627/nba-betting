@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T19:37:02-07:00",
+ "generated_at": "2026-11-24T23:45:08-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -22,45 +22,45 @@
  "wallet": [
   {
    "model": "Gemini",
-   "bets": 139,
-   "wins": 99,
-   "pnl": 188.0
+   "bets": 142,
+   "wins": 100,
+   "pnl": 11.0
   },
   {
    "model": "DeepSeek",
-   "bets": 139,
-   "wins": 98,
-   "pnl": 142.0
+   "bets": 142,
+   "wins": 99,
+   "pnl": -35.0
   },
   {
    "model": "Claude",
-   "bets": 137,
-   "wins": 98,
-   "pnl": 112.0
-  },
-  {
-   "model": "Grok",
-   "bets": 139,
-   "wins": 96,
-   "pnl": -103.0
+   "bets": 140,
+   "wins": 99,
+   "pnl": -65.0
   },
   {
    "model": "GPT",
-   "bets": 139,
+   "bets": 142,
+   "wins": 99,
+   "pnl": -174.0
+  },
+  {
+   "model": "Grok",
+   "bets": 142,
    "wins": 97,
-   "pnl": -182.0
+   "pnl": -280.0
   },
   {
    "model": "GLM",
-   "bets": 138,
-   "wins": 95,
-   "pnl": -271.0
+   "bets": 141,
+   "wins": 96,
+   "pnl": -448.0
   },
   {
    "model": "Kimi",
-   "bets": 138,
-   "wins": 92,
-   "pnl": -634.0
+   "bets": 141,
+   "wins": 93,
+   "pnl": -811.0
   }
  ],
  "wallet_history": {
@@ -109,7 +109,7 @@
     478.0,
     367.0,
     112.0,
-    112.0
+    -65.0
    ],
    "DeepSeek": [
     61.0,
@@ -132,7 +132,7 @@
     573.0,
     462.0,
     142.0,
-    142.0
+    -35.0
    ],
    "GLM": [
     46.0,
@@ -155,7 +155,7 @@
     27.0,
     -84.0,
     -271.0,
-    -271.0
+    -448.0
    ],
    "GPT": [
     61.0,
@@ -178,7 +178,7 @@
     116.0,
     5.0,
     -182.0,
-    -182.0
+    -174.0
    ],
    "Gemini": [
     61.0,
@@ -201,7 +201,7 @@
     619.0,
     508.0,
     188.0,
-    188.0
+    11.0
    ],
    "Grok": [
     61.0,
@@ -224,7 +224,7 @@
     328.0,
     217.0,
     -103.0,
-    -103.0
+    -280.0
    ],
    "Kimi": [
     61.0,
@@ -247,303 +247,11 @@
     -203.0,
     -314.0,
     -634.0,
-    -634.0
+    -811.0
    ]
   }
  },
  "upcoming": [
-  {
-   "game_id": "2026-11-24_BOS@WAS",
-   "game_date": "2026-11-24",
-   "status": "live",
-   "commence_time": "2026-11-25T01:00:00Z",
-   "tw": "11/24(二) 18:00",
-   "home": "WAS",
-   "away": "BOS",
-   "home_zh": "巫師",
-   "away_zh": "塞爾提克",
-   "home_name": "Washington Wizards",
-   "away_name": "Boston Celtics",
-   "home_en": "Wizards",
-   "away_en": "Celtics",
-   "home_score": 65,
-   "away_score": 88,
-   "odds": {
-    "n_books": 9,
-    "fetched_at": "2026-11-25T00:00:08Z",
-    "ml_home": 4.5,
-    "ml_away": 1.22,
-    "spread_line": 11.0,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
-   },
-   "consensus": {
-    "home_win_prob": 0.224,
-    "pred_margin": -10.0,
-    "pred_total": 218.9,
-    "agreement": 1.0,
-    "n_models": 7,
-    "fav": "BOS",
-    "fav_zh": "塞爾提克",
-    "fav_en": "Celtics",
-    "fav_prob": 0.776
-   },
-   "models": [
-    {
-     "name": "GPT",
-     "pick": "BOS",
-     "pick_zh": "塞爾提克",
-     "pick_en": "Celtics",
-     "home_win_prob": 0.18,
-     "pred_margin": -11.0,
-     "pred_total": 221.0,
-     "confidence": "high",
-     "reasoning": "Boston's substantial defensive and net-rating advantages outweigh its four-game losing streak and Washington's three-game winning streak. Washington's home record is only 3-5, while the matchup data projects Boston to control efficiency on both ends.",
-     "reasoning_zh": "波士頓在防守效率與淨得分方面的明顯優勢，足以壓過自身四連敗及華盛頓三連勝的近期走勢。華盛頓主場僅3勝5敗，而對位數據顯示波士頓有望在攻守兩端掌握效率優勢。",
-     "odds": 1.23,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Claude",
-     "pick": "BOS",
-     "pick_zh": "塞爾提克",
-     "pick_en": "Celtics",
-     "home_win_prob": 0.24,
-     "pred_margin": -9.0,
-     "pred_total": 217.0,
-     "confidence": "med",
-     "reasoning": "Boston's large efficiency edge, especially its elite defense against a below-average Washington offense, makes it a clear favorite even on the road. Boston's 4-game skid includes close, low-scoring losses, and Washington's recent surge tempers the margin. A win probability near 76% fits slightly under the market's 11-point spread.",
-     "reasoning_zh": "塞爾提克效率優勢明顯，尤其頂級防守對上巫師偏弱的進攻，即使作客仍是明顯熱門。塞爾提克近期四連敗多為低比分的小分差落敗，加上巫師近期三連勝，因此預期分差會收斂。勝率約76%，預測分差略低於盤口的11分讓分。",
-     "odds": 1.23,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Gemini",
-     "pick": "BOS",
-     "pick_zh": "塞爾提克",
-     "pick_en": "Celtics",
-     "home_win_prob": 0.22,
-     "pred_margin": -12.0,
-     "pred_total": 220.0,
-     "confidence": "high",
-     "reasoning": "Despite Boston's recent four-game slide, their underlying metrics remain elite, particularly a stifling defense allowing just 102.1 points per game. Washington is riding a three-game win streak fueled by Anthony Davis, but their poor defensive rating (116.8 over the last 10) will struggle to contain Boston's balanced attack. The massive net rating differential heavily favors the Celtics to bounce back with a comfortable road victory.",
-     "reasoning_zh": "儘管波士頓塞爾提克近期遭遇四連敗，但他們的核心數據依然頂尖，特別是場均僅失 102.1 分的窒息式防守。華盛頓巫師雖然在安東尼·戴維斯的帶領下取得三連勝，但他們近十場高達 116.8 的防守效率將難以抵擋綠衫軍的均衡火力。巨大的淨勝分差優勢讓塞爾提克非常有機會在客場強勢反彈並輕鬆取勝。",
-     "odds": 1.23,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "DeepSeek",
-     "pick": "BOS",
-     "pick_zh": "塞爾提克",
-     "pick_en": "Celtics",
-     "home_win_prob": 0.24,
-     "pred_margin": -11.0,
-     "pred_total": 219.0,
-     "confidence": "med",
-     "reasoning": "Boston's superior point differential, defense, and player ability make them the clear favorite despite their recent losing streak, while Washington's injuries and defensive issues limit their upset chances.",
-     "reasoning_zh": "波士頓在淨效率、防守和球員能力上明顯優於巫師；巫師傷兵較多且防守較弱，因此塞爾提克勝算較高，但塞爾提克四連敗與巫師三連勝增添些許變數。",
-     "odds": 1.23,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Kimi",
-     "pick": "BOS",
-     "pick_zh": "塞爾提克",
-     "pick_en": "Celtics",
-     "home_win_prob": 0.2,
-     "pred_margin": -9.0,
-     "pred_total": 217.0,
-     "confidence": "high",
-     "reasoning": "Boston holds a massive per-possession efficiency edge over Washington, with a net rating differential near +19 per 100 possessions in the last ten games, and their elite defense should limit a Wizards team that has been below average despite a recent three-game winning streak.",
-     "reasoning_zh": "塞爾提克在過去十場的每百回合淨效率值大幅領先巫師近19分，且其頂級防守能有效限制近況雖有三連勝但整季表現低於平均的巫師進攻。",
-     "odds": 1.23,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Grok",
-     "pick": "BOS",
-     "pick_zh": "塞爾提克",
-     "pick_en": "Celtics",
-     "home_win_prob": 0.3,
-     "pred_margin": -9.0,
-     "pred_total": 221.0,
-     "confidence": "med",
-     "reasoning": "Boston's large efficiency edge, especially on defense, should outweigh a four-game skid and a .500 road record against a Wizards team that is hot but still allows far too many points. Home court, Washington's three-game streak, and Boston missing Robinson narrow the expected margin without flipping the pick.",
-     "reasoning_zh": "波士頓的效率優勢，尤其是防守端，應足以克服四連敗與客場五成勝率；巫師雖正處連勝，但失分仍然偏高。主場優勢、華盛頓三連勝，以及塞爾提克缺少Robinson，會縮小預期分差，但不足以翻轉勝負判斷。",
-     "odds": 1.23,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "GLM",
-     "pick": "BOS",
-     "pick_zh": "塞爾提克",
-     "pick_en": "Celtics",
-     "home_win_prob": 0.19,
-     "pred_margin": -9.0,
-     "pred_total": 217.0,
-     "confidence": "med",
-     "reasoning": "Boston's elite two-way profile (+9.1 net rating, 102.4 DRTG last 10) creates a ~19-point per-100 matchup edge over a Washington team whose 3-game win streak masks a bottom-tier defense (116.8 DRTG). The Celtics' 4-game skid tempers confidence, but the underlying numbers point to a comfortable road win of roughly 9-11 points.",
-     "reasoning_zh": "塞爾提克本季淨勝分+9.1、近10場防守效率102.4屬頂級水準，對上巫師近10場防守效率116.8的墊底表現，每百回合對位差距約19分明顯偏向波士頓；巫師雖三連勝（含大勝魔術），但整體淨勝分-5.1，塞爾提克四連敗僅降低信心而非翻轉優勢，預期客場贏約9-11分。",
-     "odds": 1.23,
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "recs": [],
-   "hits": null
-  },
-  {
-   "game_id": "2026-11-24_DAL@DEN",
-   "game_date": "2026-11-24",
-   "status": "scheduled",
-   "commence_time": "2026-11-25T03:00:00Z",
-   "tw": "11/24(二) 20:00",
-   "home": "DEN",
-   "away": "DAL",
-   "home_zh": "金塊",
-   "away_zh": "獨行俠",
-   "home_name": "Denver Nuggets",
-   "away_name": "Dallas Mavericks",
-   "home_en": "Nuggets",
-   "away_en": "Mavericks",
-   "home_score": null,
-   "away_score": null,
-   "odds": {
-    "n_books": 9,
-    "fetched_at": "2026-11-25T02:35:04Z",
-    "ml_home": 1.36,
-    "ml_away": 3.3,
-    "spread_line": -7.5,
-    "spread_home_odds": 1.88,
-    "spread_away_odds": 1.93
-   },
-   "consensus": {
-    "home_win_prob": 0.706,
-    "pred_margin": 7.0,
-    "pred_total": 229.0,
-    "agreement": 1.0,
-    "n_models": 7,
-    "fav": "DEN",
-    "fav_zh": "金塊",
-    "fav_en": "Nuggets",
-    "fav_prob": 0.706
-   },
-   "models": [
-    {
-     "name": "GPT",
-     "pick": "DEN",
-     "pick_zh": "金塊",
-     "pick_en": "Nuggets",
-     "home_win_prob": 0.72,
-     "pred_margin": 7.0,
-     "pred_total": 231.0,
-     "confidence": "med",
-     "reasoning": "Denver holds modest but consistent advantages in recent efficiency, player quality, health, and home court. Dallas can remain competitive behind its stronger recent defense, but its road record and depleted frontcourt make Denver the more likely winner.",
-     "reasoning_zh": "丹佛在近期效率、球員能力、健康狀況與主場優勢方面都略占上風。達拉斯憑藉近期較佳的防守仍有機會緊咬比分，但客場戰績不佳且前場人手不足，使丹佛更可能獲勝。",
-     "odds": 1.36,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Claude",
-     "pick": "DEN",
-     "pick_zh": "金塊",
-     "pick_en": "Nuggets",
-     "home_win_prob": 0.69,
-     "pred_margin": 7.0,
-     "pred_total": 229.0,
-     "confidence": "med",
-     "reasoning": "Denver is fully healthy with its two stars playing at a high level. Dallas is just 3-5 on the road, carries a slightly negative point differential and is missing frontcourt depth. Denver's thin home record (4-3) and Dallas's improved form keep this from being a blowout, so I favor DEN by about 7, near the market line.",
-     "reasoning_zh": "金塊陣容完整，雙星狀態極佳。獨行俠客場僅3勝5敗，淨分差略為負值，且缺少禁區深度。不過金塊主場戰績普通（4勝3敗），加上獨行俠近況回升，預期不會是一面倒，看好金塊贏約7分，與盤口相近。",
-     "odds": 1.36,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Gemini",
-     "pick": "DEN",
-     "pick_zh": "金塊",
-     "pick_en": "Nuggets",
-     "home_win_prob": 0.72,
-     "pred_margin": 8.0,
-     "pred_total": 228.0,
-     "confidence": "high",
-     "reasoning": "Denver is fully healthy and boasts a significant offensive advantage with Jokic and Murray in elite form. Dallas has struggled on the road and will miss key frontcourt depth with Dereck Lively II out, making it difficult to contain Denver's interior attack. The Nuggets' home-court advantage and superior net rating should allow them to secure a comfortable win.",
-     "reasoning_zh": "金塊目前全員健康，且約基奇與莫瑞近期狀態極佳，在進攻端擁有顯著優勢。獨行俠本季客場表現掙扎（3勝5敗），加上缺少萊夫利（Dereck Lively II）等前場深度，難以限制金塊的內線攻勢。金塊的主場優勢與較佳的淨效率值將幫助他們順利贏下比賽。",
-     "odds": 1.36,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "DeepSeek",
-     "pick": "DEN",
-     "pick_zh": "金塊",
-     "pick_en": "Nuggets",
-     "home_win_prob": 0.73,
-     "pred_margin": 8.0,
-     "pred_total": 230.0,
-     "confidence": "med",
-     "reasoning": "Denver has the healthier, deeper roster and home-court edge, while Dallas is shorthanded and weaker on the road. Jokic and Murray give Denver a clear top-end advantage, and the model modules all lean Denver. Expect a comfortable Nuggets win.",
-     "reasoning_zh": "金塊主場且陣容健康，獨行俠缺少 Lively II 等輪替，客場表現也較弱。Jokic 與 Murray 提供明顯的頂尖戰力優勢，模型各項均偏向金塊，預期金塊能穩健取勝。",
-     "odds": 1.36,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Kimi",
-     "pick": "DEN",
-     "pick_zh": "金塊",
-     "pick_en": "Nuggets",
-     "home_win_prob": 0.69,
-     "pred_margin": 5.0,
-     "pred_total": 229.0,
-     "confidence": "med",
-     "reasoning": "Denver holds measurable advantages in player ability, lineup efficiency, and injury availability, while Dallas’s road struggles and missing rotation minutes make slowing Denver’s elite offense difficult. The quantitative modules all favor the Nuggets, pointing to a Denver victory in a moderately high-scoring contest.",
-     "reasoning_zh": "金塊在球員能力、陣容效率與傷兵可用度上均具明顯優勢，獨行俠客場戰績疲弱且輪替人手短缺，難以壓制金塊的頂尖進攻。三項量化模型皆看好金塊，預期這將是一場得分偏高、由金塊勝出的比賽。",
-     "odds": 1.36,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Grok",
-     "pick": "DEN",
-     "pick_zh": "金塊",
-     "pick_en": "Nuggets",
-     "home_win_prob": 0.67,
-     "pred_margin": 7.0,
-     "pred_total": 227.0,
-     "confidence": "med",
-     "reasoning": "Denver is the rightful favorite behind a healthy Jokic-Murray core, a positive net rating, and Dallas missing rim protection, but the Nuggets' 4-3 home mark and a small efficiency gap argue against a blowout. Expect a Denver win by about seven rather than a comfortable cover of 7.5.",
-     "reasoning_zh": "丹佛在健康的約基奇與穆雷核心、正淨勝分，以及達拉斯缺少籃下護框的情況下應為合理熱門，但金塊主場僅四勝三敗、每百回合效率優勢不大，不太像能輕鬆覆蓋7.5分。預期丹佛以約七分之差取勝。",
-     "odds": 1.36,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "GLM",
-     "pick": "DEN",
-     "pick_zh": "金塊",
-     "pick_en": "Nuggets",
-     "home_win_prob": 0.72,
-     "pred_margin": 7.0,
-     "pred_total": 229.0,
-     "confidence": "med",
-     "reasoning": "Denver enters with the better record, a positive point differential, home court, and no injuries, while Dallas is missing key frontcourt depth (Dereck Lively II) that matters most against Jokic's interior dominance. Dallas's 3-5 road mark and roughly even scoring margin further tilt the matchup toward the Nuggets, though Dallas's current win streak and Flagg's late-game play keep some upset potential alive.",
-     "reasoning_zh": "金塊戰績較佳、得失分差為正，且坐擁主場優勢、無傷兵問題；獨行俠缺少禁區主力 Lively II，面對約基奇的內線統治力影響尤大。加上獨行俞客場僅 3 勝 5 敗、得失分差接近持平，整體看好金塊獲勝，但獨行俠近期三連勝與 Flagg 的關鍵球能力仍保留一絲爆冷可能。",
-     "odds": 1.36,
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "recs": [],
-   "hits": null
-  },
   {
    "game_id": "2026-11-25_MIA@PHI",
    "game_date": "2026-11-25",
@@ -817,6 +525,298 @@
  ],
  "results": [
   {
+   "game_id": "2026-11-24_DAL@DEN",
+   "game_date": "2026-11-24",
+   "status": "final",
+   "commence_time": "2026-11-25T03:00:00Z",
+   "tw": "11/24(二) 20:00",
+   "home": "DEN",
+   "away": "DAL",
+   "home_zh": "金塊",
+   "away_zh": "獨行俠",
+   "home_name": "Denver Nuggets",
+   "away_name": "Dallas Mavericks",
+   "home_en": "Nuggets",
+   "away_en": "Mavericks",
+   "home_score": 101,
+   "away_score": 120,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-25T02:35:04Z",
+    "ml_home": 1.36,
+    "ml_away": 3.3,
+    "spread_line": -7.5,
+    "spread_home_odds": 1.88,
+    "spread_away_odds": 1.93
+   },
+   "consensus": {
+    "home_win_prob": 0.706,
+    "pred_margin": 7.0,
+    "pred_total": 229.0,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "DEN",
+    "fav_zh": "金塊",
+    "fav_en": "Nuggets",
+    "fav_prob": 0.706
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "DEN",
+     "pick_zh": "金塊",
+     "pick_en": "Nuggets",
+     "home_win_prob": 0.72,
+     "pred_margin": 7.0,
+     "pred_total": 231.0,
+     "confidence": "med",
+     "reasoning": "Denver holds modest but consistent advantages in recent efficiency, player quality, health, and home court. Dallas can remain competitive behind its stronger recent defense, but its road record and depleted frontcourt make Denver the more likely winner.",
+     "reasoning_zh": "丹佛在近期效率、球員能力、健康狀況與主場優勢方面都略占上風。達拉斯憑藉近期較佳的防守仍有機會緊咬比分，但客場戰績不佳且前場人手不足，使丹佛更可能獲勝。",
+     "odds": 1.36,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Claude",
+     "pick": "DEN",
+     "pick_zh": "金塊",
+     "pick_en": "Nuggets",
+     "home_win_prob": 0.69,
+     "pred_margin": 7.0,
+     "pred_total": 229.0,
+     "confidence": "med",
+     "reasoning": "Denver is fully healthy with its two stars playing at a high level. Dallas is just 3-5 on the road, carries a slightly negative point differential and is missing frontcourt depth. Denver's thin home record (4-3) and Dallas's improved form keep this from being a blowout, so I favor DEN by about 7, near the market line.",
+     "reasoning_zh": "金塊陣容完整，雙星狀態極佳。獨行俠客場僅3勝5敗，淨分差略為負值，且缺少禁區深度。不過金塊主場戰績普通（4勝3敗），加上獨行俠近況回升，預期不會是一面倒，看好金塊贏約7分，與盤口相近。",
+     "odds": 1.36,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Gemini",
+     "pick": "DEN",
+     "pick_zh": "金塊",
+     "pick_en": "Nuggets",
+     "home_win_prob": 0.72,
+     "pred_margin": 8.0,
+     "pred_total": 228.0,
+     "confidence": "high",
+     "reasoning": "Denver is fully healthy and boasts a significant offensive advantage with Jokic and Murray in elite form. Dallas has struggled on the road and will miss key frontcourt depth with Dereck Lively II out, making it difficult to contain Denver's interior attack. The Nuggets' home-court advantage and superior net rating should allow them to secure a comfortable win.",
+     "reasoning_zh": "金塊目前全員健康，且約基奇與莫瑞近期狀態極佳，在進攻端擁有顯著優勢。獨行俠本季客場表現掙扎（3勝5敗），加上缺少萊夫利（Dereck Lively II）等前場深度，難以限制金塊的內線攻勢。金塊的主場優勢與較佳的淨效率值將幫助他們順利贏下比賽。",
+     "odds": 1.36,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "DEN",
+     "pick_zh": "金塊",
+     "pick_en": "Nuggets",
+     "home_win_prob": 0.73,
+     "pred_margin": 8.0,
+     "pred_total": 230.0,
+     "confidence": "med",
+     "reasoning": "Denver has the healthier, deeper roster and home-court edge, while Dallas is shorthanded and weaker on the road. Jokic and Murray give Denver a clear top-end advantage, and the model modules all lean Denver. Expect a comfortable Nuggets win.",
+     "reasoning_zh": "金塊主場且陣容健康，獨行俠缺少 Lively II 等輪替，客場表現也較弱。Jokic 與 Murray 提供明顯的頂尖戰力優勢，模型各項均偏向金塊，預期金塊能穩健取勝。",
+     "odds": 1.36,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Kimi",
+     "pick": "DEN",
+     "pick_zh": "金塊",
+     "pick_en": "Nuggets",
+     "home_win_prob": 0.69,
+     "pred_margin": 5.0,
+     "pred_total": 229.0,
+     "confidence": "med",
+     "reasoning": "Denver holds measurable advantages in player ability, lineup efficiency, and injury availability, while Dallas’s road struggles and missing rotation minutes make slowing Denver’s elite offense difficult. The quantitative modules all favor the Nuggets, pointing to a Denver victory in a moderately high-scoring contest.",
+     "reasoning_zh": "金塊在球員能力、陣容效率與傷兵可用度上均具明顯優勢，獨行俠客場戰績疲弱且輪替人手短缺，難以壓制金塊的頂尖進攻。三項量化模型皆看好金塊，預期這將是一場得分偏高、由金塊勝出的比賽。",
+     "odds": 1.36,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Grok",
+     "pick": "DEN",
+     "pick_zh": "金塊",
+     "pick_en": "Nuggets",
+     "home_win_prob": 0.67,
+     "pred_margin": 7.0,
+     "pred_total": 227.0,
+     "confidence": "med",
+     "reasoning": "Denver is the rightful favorite behind a healthy Jokic-Murray core, a positive net rating, and Dallas missing rim protection, but the Nuggets' 4-3 home mark and a small efficiency gap argue against a blowout. Expect a Denver win by about seven rather than a comfortable cover of 7.5.",
+     "reasoning_zh": "丹佛在健康的約基奇與穆雷核心、正淨勝分，以及達拉斯缺少籃下護框的情況下應為合理熱門，但金塊主場僅四勝三敗、每百回合效率優勢不大，不太像能輕鬆覆蓋7.5分。預期丹佛以約七分之差取勝。",
+     "odds": 1.36,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "GLM",
+     "pick": "DEN",
+     "pick_zh": "金塊",
+     "pick_en": "Nuggets",
+     "home_win_prob": 0.72,
+     "pred_margin": 7.0,
+     "pred_total": 229.0,
+     "confidence": "med",
+     "reasoning": "Denver enters with the better record, a positive point differential, home court, and no injuries, while Dallas is missing key frontcourt depth (Dereck Lively II) that matters most against Jokic's interior dominance. Dallas's 3-5 road mark and roughly even scoring margin further tilt the matchup toward the Nuggets, though Dallas's current win streak and Flagg's late-game play keep some upset potential alive.",
+     "reasoning_zh": "金塊戰績較佳、得失分差為正，且坐擁主場優勢、無傷兵問題；獨行俠缺少禁區主力 Lively II，面對約基奇的內線統治力影響尤大。加上獨行俞客場僅 3 勝 5 敗、得失分差接近持平，整體看好金塊獲勝，但獨行俠近期三連勝與 Flagg 的關鍵球能力仍保留一絲爆冷可能。",
+     "odds": 1.36,
+     "result": "LOST",
+     "pnl": -100.0
+    }
+   ],
+   "recs": [],
+   "hits": "0/7"
+  },
+  {
+   "game_id": "2026-11-24_BOS@WAS",
+   "game_date": "2026-11-24",
+   "status": "final",
+   "commence_time": "2026-11-25T01:00:00Z",
+   "tw": "11/24(二) 18:00",
+   "home": "WAS",
+   "away": "BOS",
+   "home_zh": "巫師",
+   "away_zh": "塞爾提克",
+   "home_name": "Washington Wizards",
+   "away_name": "Boston Celtics",
+   "home_en": "Wizards",
+   "away_en": "Celtics",
+   "home_score": 116,
+   "away_score": 131,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-25T00:00:08Z",
+    "ml_home": 4.5,
+    "ml_away": 1.22,
+    "spread_line": 11.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
+   "consensus": {
+    "home_win_prob": 0.224,
+    "pred_margin": -10.0,
+    "pred_total": 218.9,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "BOS",
+    "fav_zh": "塞爾提克",
+    "fav_en": "Celtics",
+    "fav_prob": 0.776
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "BOS",
+     "pick_zh": "塞爾提克",
+     "pick_en": "Celtics",
+     "home_win_prob": 0.18,
+     "pred_margin": -11.0,
+     "pred_total": 221.0,
+     "confidence": "high",
+     "reasoning": "Boston's substantial defensive and net-rating advantages outweigh its four-game losing streak and Washington's three-game winning streak. Washington's home record is only 3-5, while the matchup data projects Boston to control efficiency on both ends.",
+     "reasoning_zh": "波士頓在防守效率與淨得分方面的明顯優勢，足以壓過自身四連敗及華盛頓三連勝的近期走勢。華盛頓主場僅3勝5敗，而對位數據顯示波士頓有望在攻守兩端掌握效率優勢。",
+     "odds": 1.23,
+     "result": "WON",
+     "pnl": 23.0
+    },
+    {
+     "name": "Claude",
+     "pick": "BOS",
+     "pick_zh": "塞爾提克",
+     "pick_en": "Celtics",
+     "home_win_prob": 0.24,
+     "pred_margin": -9.0,
+     "pred_total": 217.0,
+     "confidence": "med",
+     "reasoning": "Boston's large efficiency edge, especially its elite defense against a below-average Washington offense, makes it a clear favorite even on the road. Boston's 4-game skid includes close, low-scoring losses, and Washington's recent surge tempers the margin. A win probability near 76% fits slightly under the market's 11-point spread.",
+     "reasoning_zh": "塞爾提克效率優勢明顯，尤其頂級防守對上巫師偏弱的進攻，即使作客仍是明顯熱門。塞爾提克近期四連敗多為低比分的小分差落敗，加上巫師近期三連勝，因此預期分差會收斂。勝率約76%，預測分差略低於盤口的11分讓分。",
+     "odds": 1.23,
+     "result": "WON",
+     "pnl": 23.0
+    },
+    {
+     "name": "Gemini",
+     "pick": "BOS",
+     "pick_zh": "塞爾提克",
+     "pick_en": "Celtics",
+     "home_win_prob": 0.22,
+     "pred_margin": -12.0,
+     "pred_total": 220.0,
+     "confidence": "high",
+     "reasoning": "Despite Boston's recent four-game slide, their underlying metrics remain elite, particularly a stifling defense allowing just 102.1 points per game. Washington is riding a three-game win streak fueled by Anthony Davis, but their poor defensive rating (116.8 over the last 10) will struggle to contain Boston's balanced attack. The massive net rating differential heavily favors the Celtics to bounce back with a comfortable road victory.",
+     "reasoning_zh": "儘管波士頓塞爾提克近期遭遇四連敗，但他們的核心數據依然頂尖，特別是場均僅失 102.1 分的窒息式防守。華盛頓巫師雖然在安東尼·戴維斯的帶領下取得三連勝，但他們近十場高達 116.8 的防守效率將難以抵擋綠衫軍的均衡火力。巨大的淨勝分差優勢讓塞爾提克非常有機會在客場強勢反彈並輕鬆取勝。",
+     "odds": 1.23,
+     "result": "WON",
+     "pnl": 23.0
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "BOS",
+     "pick_zh": "塞爾提克",
+     "pick_en": "Celtics",
+     "home_win_prob": 0.24,
+     "pred_margin": -11.0,
+     "pred_total": 219.0,
+     "confidence": "med",
+     "reasoning": "Boston's superior point differential, defense, and player ability make them the clear favorite despite their recent losing streak, while Washington's injuries and defensive issues limit their upset chances.",
+     "reasoning_zh": "波士頓在淨效率、防守和球員能力上明顯優於巫師；巫師傷兵較多且防守較弱，因此塞爾提克勝算較高，但塞爾提克四連敗與巫師三連勝增添些許變數。",
+     "odds": 1.23,
+     "result": "WON",
+     "pnl": 23.0
+    },
+    {
+     "name": "Kimi",
+     "pick": "BOS",
+     "pick_zh": "塞爾提克",
+     "pick_en": "Celtics",
+     "home_win_prob": 0.2,
+     "pred_margin": -9.0,
+     "pred_total": 217.0,
+     "confidence": "high",
+     "reasoning": "Boston holds a massive per-possession efficiency edge over Washington, with a net rating differential near +19 per 100 possessions in the last ten games, and their elite defense should limit a Wizards team that has been below average despite a recent three-game winning streak.",
+     "reasoning_zh": "塞爾提克在過去十場的每百回合淨效率值大幅領先巫師近19分，且其頂級防守能有效限制近況雖有三連勝但整季表現低於平均的巫師進攻。",
+     "odds": 1.23,
+     "result": "WON",
+     "pnl": 23.0
+    },
+    {
+     "name": "Grok",
+     "pick": "BOS",
+     "pick_zh": "塞爾提克",
+     "pick_en": "Celtics",
+     "home_win_prob": 0.3,
+     "pred_margin": -9.0,
+     "pred_total": 221.0,
+     "confidence": "med",
+     "reasoning": "Boston's large efficiency edge, especially on defense, should outweigh a four-game skid and a .500 road record against a Wizards team that is hot but still allows far too many points. Home court, Washington's three-game streak, and Boston missing Robinson narrow the expected margin without flipping the pick.",
+     "reasoning_zh": "波士頓的效率優勢，尤其是防守端，應足以克服四連敗與客場五成勝率；巫師雖正處連勝，但失分仍然偏高。主場優勢、華盛頓三連勝，以及塞爾提克缺少Robinson，會縮小預期分差，但不足以翻轉勝負判斷。",
+     "odds": 1.23,
+     "result": "WON",
+     "pnl": 23.0
+    },
+    {
+     "name": "GLM",
+     "pick": "BOS",
+     "pick_zh": "塞爾提克",
+     "pick_en": "Celtics",
+     "home_win_prob": 0.19,
+     "pred_margin": -9.0,
+     "pred_total": 217.0,
+     "confidence": "med",
+     "reasoning": "Boston's elite two-way profile (+9.1 net rating, 102.4 DRTG last 10) creates a ~19-point per-100 matchup edge over a Washington team whose 3-game win streak masks a bottom-tier defense (116.8 DRTG). The Celtics' 4-game skid tempers confidence, but the underlying numbers point to a comfortable road win of roughly 9-11 points.",
+     "reasoning_zh": "塞爾提克本季淨勝分+9.1、近10場防守效率102.4屬頂級水準，對上巫師近10場防守效率116.8的墊底表現，每百回合對位差距約19分明顯偏向波士頓；巫師雖三連勝（含大勝魔術），但整體淨勝分-5.1，塞爾提克四連敗僅降低信心而非翻轉優勢，預期客場贏約9-11分。",
+     "odds": 1.23,
+     "result": "WON",
+     "pnl": 23.0
+    }
+   ],
+   "recs": [],
+   "hits": "7/7"
+  },
+  {
    "game_id": "2026-11-24_DET@ORL",
    "game_date": "2026-11-24",
    "status": "final",
@@ -865,8 +865,8 @@
      "reasoning": "Detroit's stronger overall profile and favorable recent efficiency matchup narrowly outweigh its heavier injury burden. With both primary creators unavailable and Orlando just 1-5 at home, Detroit is a slight pick in a close, lower-confidence game.",
      "reasoning_zh": "底特律整體戰績輪廓較佳，近期攻防效率對位也較有利，勉強抵銷更嚴重的傷兵損失。雙方主要進攻核心皆缺陣，加上奧蘭多主場僅1勝5敗，因此低信心看好活塞在膠著比賽中小勝。",
      "odds": 1.85,
-     "result": null,
-     "pnl": null
+     "result": "WON",
+     "pnl": 85.0
     },
     {
      "name": "Claude",
@@ -880,8 +880,8 @@
      "reasoning": "Detroit's better season and last-10 efficiency numbers are offset by heavy absences, including Cunningham, Robinson and Duren. That leaves Orlando's Wagner-led group, missing only Banchero, a slight edge despite its poor home record. This is close to a coin flip.",
      "reasoning_zh": "活塞本季戰績與近十場效率數據較佳，但康寧漢、羅賓森與杜倫同時缺陣，抵銷了這些優勢。魔術只少了班切羅，由華格納領軍，儘管主場戰績不佳，仍略占上風。整體接近五五波。",
      "odds": 2.02,
-     "result": null,
-     "pnl": null
+     "result": "LOST",
+     "pnl": -100.0
     },
     {
      "name": "Gemini",
@@ -895,8 +895,8 @@
      "reasoning": "Detroit is severely depleted, missing 96 rotation minutes including their primary playmaker Cade Cunningham and starting center Jalen Duren. Although Orlando is without Paolo Banchero and has struggled at home, their healthier remaining core led by Franz Wagner should capitalize on the Pistons' offensive void.",
      "reasoning_zh": "底特律活塞面臨嚴重傷兵問題，缺少了主力控衛 Cade Cunningham 與先發中鋒 Jalen Duren 等共計 96 分鐘的輪替戰力。儘管奧蘭多魔術也少了 Paolo Banchero 且主場戰績不佳，但以 Franz Wagner 為首的健康陣容應能把握活塞進攻端的空缺拿下勝利。",
      "odds": 2.02,
-     "result": null,
-     "pnl": null
+     "result": "LOST",
+     "pnl": -100.0
     },
     {
      "name": "DeepSeek",
@@ -910,8 +910,8 @@
      "reasoning": "Detroit is missing its primary playmaker and several rotation pieces, which likely offsets its better road record; Orlando's available core led by Franz Wagner should have enough at home despite a poor home mark.",
      "reasoning_zh": "活塞缺少主力控球與多名輪替球員，影響大於魔術缺少 Banchero；魔術雖主場戰績差，但在 Wagner 帶領下應能小勝。",
      "odds": 2.02,
-     "result": null,
-     "pnl": null
+     "result": "LOST",
+     "pnl": -100.0
     },
     {
      "name": "Kimi",
@@ -925,8 +925,8 @@
      "reasoning": "Detroit’s massive injury losses—96 minutes including three starters—erase its road and efficiency advantages. Orlando’s remaining roster is nearly equal in weighted talent and benefits from home court, giving the Magic a slight edge in a low-scoring game.",
      "reasoning_zh": "活塞因傷損失高達96分鐘的輪替陣容，包含三名先發，使其客場與效率優勢蕩然無存。魔術可用戰力與之幾乎持平，且坐擁主場優勢，預計在這場低比分賽事中險勝。",
      "odds": 2.02,
-     "result": null,
-     "pnl": null
+     "result": "LOST",
+     "pnl": -100.0
     },
     {
      "name": "Grok",
@@ -940,8 +940,8 @@
      "reasoning": "Detroit's better record and 7-3 road mark were built with Cunningham, Robinson, and Duren, who are all out, a much larger minute loss than Orlando missing Banchero. Orlando's 1-5 home record and weaker efficiency keep this close, but the injury gap is the highest-confidence edge, so the Magic are a slight home pick.",
      "reasoning_zh": "活塞較佳戰績與客場 7 勝 3 敗，是在康寧漢、羅賓森與杜倫都在陣時打下的，三人同時缺席，輪值時間損失遠大於魔術少掉班凱羅。魔術主場 1 勝 5 敗且效率較差，使比賽仍接近，但傷兵落差是信心最高的優勢，因此小幅看好主場魔術。",
      "odds": 2.02,
-     "result": null,
-     "pnl": null
+     "result": "LOST",
+     "pnl": -100.0
     },
     {
      "name": "GLM",
@@ -955,12 +955,12 @@
      "reasoning": "Detroit's stronger season form and road record are offset by a far heavier injury burden (~96 missing rotation minutes vs ~34 for Orlando), which guts the Pistons' creation and spacing while Orlando still has the game's best available player in Franz Wagner at home. With rest even and both teams slumping, I lean narrowly to the Magic in a lower-scoring, shorthanded matchup.",
      "reasoning_zh": "活塞本季戰績與客場表現較佳，但傷兵差距懸殊（缺陣約 96 分鐘輪值，相較魔術約 34 分鐘），重創活塞的進攻發動與外線空間；魔術則仍擁有全場最佳可用球員法蘭茲·華格納坐鎮主場。在雙方休息天數相同、近況皆低迷的情況下，我小幅看好魔術在這場傷兵眾多、比分偏低的比賽中勝出。",
      "odds": 2.02,
-     "result": null,
-     "pnl": null
+     "result": "LOST",
+     "pnl": -100.0
     }
    ],
    "recs": [],
-   "hits": null
+   "hits": "1/7"
   },
   {
    "game_id": "2026-11-23_UTA@LAL",
