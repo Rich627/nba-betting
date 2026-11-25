@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T17:01:42-07:00",
+ "generated_at": "2026-11-24T19:00:07-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -255,7 +255,7 @@
   {
    "game_id": "2026-11-24_DET@ORL",
    "game_date": "2026-11-24",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-25T00:00:00Z",
    "tw": "11/24(二) 17:00",
    "home": "ORL",
@@ -266,8 +266,8 @@
    "away_name": "Detroit Pistons",
    "home_en": "Magic",
    "away_en": "Pistons",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 70,
+   "away_score": 83,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-25T00:00:08Z",
@@ -401,7 +401,7 @@
   {
    "game_id": "2026-11-24_BOS@WAS",
    "game_date": "2026-11-24",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-25T01:00:00Z",
    "tw": "11/24(二) 18:00",
    "home": "WAS",
@@ -412,8 +412,8 @@
    "away_name": "Boston Celtics",
    "home_en": "Wizards",
    "away_en": "Celtics",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 34,
+   "away_score": 57,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-25T00:00:08Z",
