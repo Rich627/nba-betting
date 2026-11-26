@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T17:02:56-07:00",
+ "generated_at": "2026-11-25T19:00:04-07:00",
  "timezone": "America/Phoenix",
  "season": "2026-27",
  "models": [
@@ -16,51 +16,51 @@
   "n_predicted_games": 151,
   "n_recs": 32,
   "recs_won": 14,
-  "recs_graded": 30,
-  "recs_pnl": -279.0
+  "recs_graded": 31,
+  "recs_pnl": -379.0
  },
  "wallet": [
   {
    "model": "Gemini",
-   "bets": 142,
+   "bets": 143,
    "wins": 100,
-   "pnl": 11.0
+   "pnl": -89.0
   },
   {
    "model": "DeepSeek",
-   "bets": 142,
+   "bets": 143,
    "wins": 99,
-   "pnl": -35.0
+   "pnl": -135.0
   },
   {
    "model": "Claude",
-   "bets": 140,
+   "bets": 141,
    "wins": 99,
-   "pnl": -65.0
+   "pnl": -165.0
   },
   {
    "model": "GPT",
-   "bets": 142,
+   "bets": 143,
    "wins": 99,
-   "pnl": -174.0
+   "pnl": -274.0
   },
   {
    "model": "Grok",
-   "bets": 142,
+   "bets": 143,
    "wins": 97,
-   "pnl": -280.0
+   "pnl": -380.0
   },
   {
    "model": "GLM",
-   "bets": 141,
+   "bets": 142,
    "wins": 96,
-   "pnl": -448.0
+   "pnl": -548.0
   },
   {
    "model": "Kimi",
-   "bets": 141,
+   "bets": 142,
    "wins": 93,
-   "pnl": -811.0
+   "pnl": -911.0
   }
  ],
  "wallet_history": {
@@ -111,7 +111,7 @@
     367.0,
     112.0,
     -65.0,
-    -65.0
+    -165.0
    ],
    "DeepSeek": [
     61.0,
@@ -135,7 +135,7 @@
     462.0,
     142.0,
     -35.0,
-    -35.0
+    -135.0
    ],
    "GLM": [
     46.0,
@@ -159,7 +159,7 @@
     -84.0,
     -271.0,
     -448.0,
-    -448.0
+    -548.0
    ],
    "GPT": [
     61.0,
@@ -183,7 +183,7 @@
     5.0,
     -182.0,
     -174.0,
-    -174.0
+    -274.0
    ],
    "Gemini": [
     61.0,
@@ -207,7 +207,7 @@
     508.0,
     188.0,
     11.0,
-    11.0
+    -89.0
    ],
    "Grok": [
     61.0,
@@ -231,7 +231,7 @@
     217.0,
     -103.0,
     -280.0,
-    -280.0
+    -380.0
    ],
    "Kimi": [
     61.0,
@@ -255,175 +255,15 @@
     -314.0,
     -634.0,
     -811.0,
-    -811.0
+    -911.0
    ]
   }
  },
  "upcoming": [
   {
-   "game_id": "2026-11-25_MIA@PHI",
-   "game_date": "2026-11-25",
-   "status": "live",
-   "commence_time": "2026-11-25T22:00:00Z",
-   "tw": "11/25(三) 15:00",
-   "home": "PHI",
-   "away": "MIA",
-   "home_zh": "76人",
-   "away_zh": "熱火",
-   "home_name": "Philadelphia 76ers",
-   "away_name": "Miami Heat",
-   "home_en": "76ers",
-   "away_en": "Heat",
-   "home_score": 90,
-   "away_score": 81,
-   "odds": {
-    "n_books": 9,
-    "fetched_at": "2026-11-25T22:00:07Z",
-    "ml_home": 1.93,
-    "ml_away": 1.91,
-    "spread_line": 1.0,
-    "spread_home_odds": 1.91,
-    "spread_away_odds": 1.91
-   },
-   "consensus": {
-    "home_win_prob": 0.419,
-    "pred_margin": -4.4,
-    "pred_total": 231.0,
-    "agreement": 1.0,
-    "n_models": 7,
-    "fav": "MIA",
-    "fav_zh": "熱火",
-    "fav_en": "Heat",
-    "fav_prob": 0.581
-   },
-   "models": [
-    {
-     "name": "GPT",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.39,
-     "pred_margin": -5.0,
-     "pred_total": 233.0,
-     "confidence": "med",
-     "reasoning": "Miami holds the stronger current-form, health, and rest profile, with Embiid's absence creating the clearest matchup edge. Philadelphia's 7-3 home record keeps the game competitive, but the available data gives Miami a moderate advantage.",
-     "reasoning_zh": "邁阿密在近期狀態、健康情況與休息天數方面都較占優勢，而恩比德缺陣是本場最明顯的對位利多。費城主場戰績為7勝3敗，仍有能力讓比賽保持膠著，但整體資料顯示熱火具備中等幅度的優勢。",
-     "odds": 1.87,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Claude",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.44,
-     "pred_margin": -4.0,
-     "pred_total": 230.0,
-     "confidence": "low",
-     "reasoning": "With Embiid out and Giannis available, Miami's better recent form and stronger last-10 defense outweigh Philadelphia's home court. The market has this near a coin flip. Miami's faster pace should push the total toward 230.",
-     "reasoning_zh": "恩比德因病缺陣，字母哥可以出賽，熱火近期狀態較佳、近十場防守也更穩，足以抵銷76人的主場優勢。市場盤口接近五五波。熱火節奏較快，總分預期上看230分左右。",
-     "odds": 1.87,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Gemini",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.42,
-     "pred_margin": -5.0,
-     "pred_total": 231.0,
-     "confidence": "med",
-     "reasoning": "With Joel Embiid sidelined for the 76ers, Miami holds a massive frontcourt advantage featuring an available Giannis Antetokounmpo and Bam Adebayo. The Heat are riding a seven-game winning streak, benefit from an extra day of rest, and should exploit Philadelphia's weakened interior defense to secure a road victory.",
-     "reasoning_zh": "由於 76 人缺少了 Joel Embiid，熱火在擁有 Giannis Antetokounmpo 和 Bam Adebayo 的情況下佔據了巨大的前場優勢。熱火目前正處於七連勝，並且比對手多一天的休息時間，預計他們能利用費城內線防守的弱點在客場拿下勝利。",
-     "odds": 1.87,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "DeepSeek",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.4,
-     "pred_margin": -4.0,
-     "pred_total": 230.0,
-     "confidence": "med",
-     "reasoning": "Miami is favored by the data due to Embiid's absence, Giannis's availability, and a 7-game win streak, despite Philadelphia's strong home record. The 76ers' interior defense and scoring take a hit without Embiid, while Miami's pace and Bam/Giannis frontcourt should control the game. Projected margin is small but clear.",
-     "reasoning_zh": "根據數據，邁阿密因恩比德缺陣、安戴托昆波可上場及七連勝而稍佔優勢，儘管費城主場戰績強勢。缺少恩比德使費城的內線防守與得分受損，而邁阿密的節奏與阿德巴約、安戴托昆波的前場應能掌控比賽。預期差距不大但方向明確。",
-     "odds": 1.87,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Kimi",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.42,
-     "pred_margin": -4.0,
-     "pred_total": 232.0,
-     "confidence": "high",
-     "reasoning": "Miami should win because Philadelphia is missing Joel Embiid, which erases the 76ers' interior advantage and drops their available player-ability rating below Miami's, while Giannis Antetokounmpo's availability gives the Heat a superstar edge on a 7-game winning streak with superior rest.",
-     "reasoning_zh": "邁阿密應該取勝，因為費城缺少 Joel Embiid，這消除了 76 人的內線優勢並使其可用戰力評級低於熱火，而 Giannis Antetokounmpo 的出賽讓處於 7 連勝且休息更充分的熱火擁有巨星優勢。",
-     "odds": 1.87,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "Grok",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.44,
-     "pred_margin": -3.0,
-     "pred_total": 231.0,
-     "confidence": "med",
-     "reasoning": "Philadelphia’s 14-4 mark and home court are offset by Joel Embiid’s absence and Miami’s extra rest plus a seven-game win streak. With Giannis available and all three quantitative modules favoring the Heat, Miami is a slight favorite in a close game.",
-     "reasoning_zh": "76人雖以14勝4敗坐鎮主場，但恩比德缺陣（場均32分鐘）大幅削弱內線，熱火多休一天且豪取七連勝，字母哥也可出賽。傷病、陣容對位與球員能力三項模組皆偏向熱火，因此客隊小幅看好，預期是一場比分接近的比賽。",
-     "odds": 1.87,
-     "result": null,
-     "pnl": null
-    },
-    {
-     "name": "GLM",
-     "pick": "MIA",
-     "pick_zh": "熱火",
-     "pick_en": "Heat",
-     "home_win_prob": 0.42,
-     "pred_margin": -6.0,
-     "pred_total": 230.0,
-     "confidence": "med",
-     "reasoning": "Embiid's absence (32 mpg, PHI's best big) is the decisive edge — PHI already lost at home to Portland without him, while MIA arrives on a 7-game win streak with Giannis available and an extra day of rest. All three quantitative modules favor MIA, though PHI's 14-4 record and home court keep the margin narrow, so I project a close Miami win around 118-112.",
-     "reasoning_zh": "恩比德缺陣（場均32分鐘、76人禁區核心）是最大關鍵——76人上一場沒有他就輸給拓荒者，而熱火帶著七連勝、字母哥可出賽且多休息一天來訪。三項量化指標都偏向熱火，但76人戰績14勝4敗加上主場優勢讓比數維持接近，預測熱火以約118比112險勝。",
-     "odds": 1.87,
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "recs": [
-    {
-     "market": "spread",
-     "pick": "away -1",
-     "label": "讓分 熱火 -1",
-     "label_en": "Heat -1",
-     "odds": 1.91,
-     "line": -1.0,
-     "edge": null,
-     "confidence": "med",
-     "why": "共識分差 -4.4 vs 盤口 +1（差 3.4 分）",
-     "result": null,
-     "pnl": null
-    }
-   ],
-   "hits": null
-  },
-  {
    "game_id": "2026-11-25_CHI@CHA",
    "game_date": "2026-11-25",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-26T00:00:00Z",
    "tw": "11/25(三) 17:00",
    "home": "CHA",
@@ -434,8 +274,8 @@
    "away_name": "Chicago Bulls",
    "home_en": "Hornets",
    "away_en": "Bulls",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 84,
+   "away_score": 85,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-26T00:00:07Z",
@@ -569,7 +409,7 @@
   {
    "game_id": "2026-11-25_CLE@NYK",
    "game_date": "2026-11-25",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-26T00:30:00Z",
    "tw": "11/25(三) 17:30",
    "home": "NYK",
@@ -580,8 +420,8 @@
    "away_name": "Cleveland Cavaliers",
    "home_en": "Knicks",
    "away_en": "Cavaliers",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 59,
+   "away_score": 68,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-26T00:00:07Z",
@@ -715,7 +555,7 @@
   {
    "game_id": "2026-11-25_MIN@OKC",
    "game_date": "2026-11-25",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-26T00:30:00Z",
    "tw": "11/25(三) 17:30",
    "home": "OKC",
@@ -726,8 +566,8 @@
    "away_name": "Minnesota Timberwolves",
    "home_en": "Thunder",
    "away_en": "Timberwolves",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 55,
+   "away_score": 47,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-26T00:00:07Z",
@@ -875,7 +715,7 @@
   {
    "game_id": "2026-11-25_LAC@MEM",
    "game_date": "2026-11-25",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-26T01:00:00Z",
    "tw": "11/25(三) 18:00",
    "home": "MEM",
@@ -886,8 +726,8 @@
    "away_name": "Los Angeles Clippers",
    "home_en": "Grizzlies",
    "away_en": "Clippers",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 44,
+   "away_score": 32,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-26T00:00:07Z",
@@ -1021,7 +861,7 @@
   {
    "game_id": "2026-11-25_BKN@MIL",
    "game_date": "2026-11-25",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-26T01:00:00Z",
    "tw": "11/25(三) 18:00",
    "home": "MIL",
@@ -1032,8 +872,8 @@
    "away_name": "Brooklyn Nets",
    "home_en": "Bucks",
    "away_en": "Nets",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 38,
+   "away_score": 47,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-26T00:00:07Z",
@@ -1167,7 +1007,7 @@
   {
    "game_id": "2026-11-25_PHX@HOU",
    "game_date": "2026-11-25",
-   "status": "scheduled",
+   "status": "live",
    "commence_time": "2026-11-26T01:30:00Z",
    "tw": "11/25(三) 18:30",
    "home": "HOU",
@@ -1178,8 +1018,8 @@
    "away_name": "Phoenix Suns",
    "home_en": "Rockets",
    "away_en": "Suns",
-   "home_score": null,
-   "away_score": null,
+   "home_score": 22,
+   "away_score": 18,
    "odds": {
     "n_books": 9,
     "fetched_at": "2026-11-26T00:00:07Z",
@@ -1604,6 +1444,166 @@
   }
  ],
  "results": [
+  {
+   "game_id": "2026-11-25_MIA@PHI",
+   "game_date": "2026-11-25",
+   "status": "final",
+   "commence_time": "2026-11-25T22:00:00Z",
+   "tw": "11/25(三) 15:00",
+   "home": "PHI",
+   "away": "MIA",
+   "home_zh": "76人",
+   "away_zh": "熱火",
+   "home_name": "Philadelphia 76ers",
+   "away_name": "Miami Heat",
+   "home_en": "76ers",
+   "away_en": "Heat",
+   "home_score": 111,
+   "away_score": 104,
+   "odds": {
+    "n_books": 9,
+    "fetched_at": "2026-11-25T22:00:07Z",
+    "ml_home": 1.93,
+    "ml_away": 1.91,
+    "spread_line": 1.0,
+    "spread_home_odds": 1.91,
+    "spread_away_odds": 1.91
+   },
+   "consensus": {
+    "home_win_prob": 0.419,
+    "pred_margin": -4.4,
+    "pred_total": 231.0,
+    "agreement": 1.0,
+    "n_models": 7,
+    "fav": "MIA",
+    "fav_zh": "熱火",
+    "fav_en": "Heat",
+    "fav_prob": 0.581
+   },
+   "models": [
+    {
+     "name": "GPT",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.39,
+     "pred_margin": -5.0,
+     "pred_total": 233.0,
+     "confidence": "med",
+     "reasoning": "Miami holds the stronger current-form, health, and rest profile, with Embiid's absence creating the clearest matchup edge. Philadelphia's 7-3 home record keeps the game competitive, but the available data gives Miami a moderate advantage.",
+     "reasoning_zh": "邁阿密在近期狀態、健康情況與休息天數方面都較占優勢，而恩比德缺陣是本場最明顯的對位利多。費城主場戰績為7勝3敗，仍有能力讓比賽保持膠著，但整體資料顯示熱火具備中等幅度的優勢。",
+     "odds": 1.87,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Claude",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.44,
+     "pred_margin": -4.0,
+     "pred_total": 230.0,
+     "confidence": "low",
+     "reasoning": "With Embiid out and Giannis available, Miami's better recent form and stronger last-10 defense outweigh Philadelphia's home court. The market has this near a coin flip. Miami's faster pace should push the total toward 230.",
+     "reasoning_zh": "恩比德因病缺陣，字母哥可以出賽，熱火近期狀態較佳、近十場防守也更穩，足以抵銷76人的主場優勢。市場盤口接近五五波。熱火節奏較快，總分預期上看230分左右。",
+     "odds": 1.87,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Gemini",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.42,
+     "pred_margin": -5.0,
+     "pred_total": 231.0,
+     "confidence": "med",
+     "reasoning": "With Joel Embiid sidelined for the 76ers, Miami holds a massive frontcourt advantage featuring an available Giannis Antetokounmpo and Bam Adebayo. The Heat are riding a seven-game winning streak, benefit from an extra day of rest, and should exploit Philadelphia's weakened interior defense to secure a road victory.",
+     "reasoning_zh": "由於 76 人缺少了 Joel Embiid，熱火在擁有 Giannis Antetokounmpo 和 Bam Adebayo 的情況下佔據了巨大的前場優勢。熱火目前正處於七連勝，並且比對手多一天的休息時間，預計他們能利用費城內線防守的弱點在客場拿下勝利。",
+     "odds": 1.87,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "DeepSeek",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.4,
+     "pred_margin": -4.0,
+     "pred_total": 230.0,
+     "confidence": "med",
+     "reasoning": "Miami is favored by the data due to Embiid's absence, Giannis's availability, and a 7-game win streak, despite Philadelphia's strong home record. The 76ers' interior defense and scoring take a hit without Embiid, while Miami's pace and Bam/Giannis frontcourt should control the game. Projected margin is small but clear.",
+     "reasoning_zh": "根據數據，邁阿密因恩比德缺陣、安戴托昆波可上場及七連勝而稍佔優勢，儘管費城主場戰績強勢。缺少恩比德使費城的內線防守與得分受損，而邁阿密的節奏與阿德巴約、安戴托昆波的前場應能掌控比賽。預期差距不大但方向明確。",
+     "odds": 1.87,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Kimi",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.42,
+     "pred_margin": -4.0,
+     "pred_total": 232.0,
+     "confidence": "high",
+     "reasoning": "Miami should win because Philadelphia is missing Joel Embiid, which erases the 76ers' interior advantage and drops their available player-ability rating below Miami's, while Giannis Antetokounmpo's availability gives the Heat a superstar edge on a 7-game winning streak with superior rest.",
+     "reasoning_zh": "邁阿密應該取勝，因為費城缺少 Joel Embiid，這消除了 76 人的內線優勢並使其可用戰力評級低於熱火，而 Giannis Antetokounmpo 的出賽讓處於 7 連勝且休息更充分的熱火擁有巨星優勢。",
+     "odds": 1.87,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "Grok",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.44,
+     "pred_margin": -3.0,
+     "pred_total": 231.0,
+     "confidence": "med",
+     "reasoning": "Philadelphia’s 14-4 mark and home court are offset by Joel Embiid’s absence and Miami’s extra rest plus a seven-game win streak. With Giannis available and all three quantitative modules favoring the Heat, Miami is a slight favorite in a close game.",
+     "reasoning_zh": "76人雖以14勝4敗坐鎮主場，但恩比德缺陣（場均32分鐘）大幅削弱內線，熱火多休一天且豪取七連勝，字母哥也可出賽。傷病、陣容對位與球員能力三項模組皆偏向熱火，因此客隊小幅看好，預期是一場比分接近的比賽。",
+     "odds": 1.87,
+     "result": "LOST",
+     "pnl": -100.0
+    },
+    {
+     "name": "GLM",
+     "pick": "MIA",
+     "pick_zh": "熱火",
+     "pick_en": "Heat",
+     "home_win_prob": 0.42,
+     "pred_margin": -6.0,
+     "pred_total": 230.0,
+     "confidence": "med",
+     "reasoning": "Embiid's absence (32 mpg, PHI's best big) is the decisive edge — PHI already lost at home to Portland without him, while MIA arrives on a 7-game win streak with Giannis available and an extra day of rest. All three quantitative modules favor MIA, though PHI's 14-4 record and home court keep the margin narrow, so I project a close Miami win around 118-112.",
+     "reasoning_zh": "恩比德缺陣（場均32分鐘、76人禁區核心）是最大關鍵——76人上一場沒有他就輸給拓荒者，而熱火帶著七連勝、字母哥可出賽且多休息一天來訪。三項量化指標都偏向熱火，但76人戰績14勝4敗加上主場優勢讓比數維持接近，預測熱火以約118比112險勝。",
+     "odds": 1.87,
+     "result": "LOST",
+     "pnl": -100.0
+    }
+   ],
+   "recs": [
+    {
+     "market": "spread",
+     "pick": "away -1",
+     "label": "讓分 熱火 -1",
+     "label_en": "Heat -1",
+     "odds": 1.91,
+     "line": -1.0,
+     "edge": null,
+     "confidence": "med",
+     "why": "共識分差 -4.4 vs 盤口 +1（差 3.4 分）",
+     "result": "LOST",
+     "pnl": -100.0
+    }
+   ],
+   "hits": "0/7"
+  },
   {
    "game_id": "2026-11-24_DAL@DEN",
    "game_date": "2026-11-24",
